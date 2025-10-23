@@ -117,7 +117,7 @@
   parent: PosterBase
   id: PosterContrabandClown
   name: "Клоун"
-  description: "Хонк."
+  description: "Гонк."
   components:
   - type: Sprite
     state: poster6_contraband

@@ -13,7 +13,7 @@
 - type: entity
   parent: AirlockServiceLocked
   id: AirlockLawyerLocked
-  suffix: Lawyer, Locked
+  suffix: Адвокат, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -31,7 +31,7 @@
 - type: entity
   parent: AirlockServiceLocked
   id: AirlockServiceTheatreLocked
-  suffix: Service, Theatre, Locked
+  suffix: Сервіс, Театр, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -76,7 +76,7 @@
 - type: entity
   parent: AirlockServiceLocked
   id: AirlockBarKitchenLocked
-  suffix: Bar&Kitchen, Locked
+  suffix: Бар, Кухня, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -125,7 +125,7 @@
 - type: entity
   parent: AirlockExternal
   id: AirlockExternalCommandLocked
-  suffix: External, Command, Locked
+  suffix: Зовнішній, Командування, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -136,7 +136,7 @@
 - type: entity
   parent: AirlockExternalGlass
   id: AirlockExternalGlassCommandLocked
-  suffix: External, Glass, Command, Locked
+  suffix: Зовнішній, Скло, Командування, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -180,7 +180,7 @@
 - type: entity
   parent: AirlockFreezer
   id: AirlockFreezerLocked
-  suffix: Кухня, Заблоковано
+  suffix: Холодильник, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -189,7 +189,7 @@
 - type: entity
   parent: AirlockFreezer
   id: AirlockFreezerKitchenHydroLocked
-  suffix: Кухня/Гідропоніка, Заблоковано
+  suffix: Холодильник, Кухня, Гідропоніка, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -198,7 +198,7 @@
 - type: entity
   parent: AirlockFreezer
   id: AirlockFreezerHydroponicsLocked
-  suffix: Гідропоніка, Заблоковано
+  suffix: Холодильник, Гідропоніка, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -234,7 +234,7 @@
 - type: entity
   parent: AirlockSalvage
   id: AirlockSalvageLocked
-  suffix: Порятунок, Заблоковано
+  suffix: Шахтарський, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -243,7 +243,7 @@
 - type: entity
   parent: AirlockMining
   id: AirlockMiningLocked
-  suffix: Шахтарський(Порятунок), Заблоковано
+  suffix: Шахтарський, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -297,7 +297,7 @@
 - type: entity
   parent: AirlockScience
   id: AirlockMedicalScienceLocked
-  suffix: Медичний/Науковий, Заблоковано
+  suffix: Медичний, Науковий, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -351,7 +351,7 @@
 - type: entity
   parent: AirlockCommand
   id: AirlockHeadOfSecurityLocked
-  suffix: Голова персоналу, Заблоковано
+  suffix: Голова безпеки, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -414,7 +414,7 @@
 - type: entity
   parent: AirlockSecurity
   id: AirlockSecurityLawyerLocked
-  suffix: Служба безпеки/Адвокат, Заблоковано
+  suffix: Служба безпеки, Адвокат, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -473,7 +473,7 @@
 - type: entity
   parent: AirlockServiceGlassLocked
   id: AirlockTheatreGlassLocked
-  suffix: Theatre, Locked
+  suffix: Театр, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -482,7 +482,7 @@
 - type: entity
   parent: AirlockServiceGlassLocked
   id: AirlockServiceTheatreGlassLocked
-  suffix: Service, Theatre, Locked
+  suffix: Сервіс, Театр, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -500,7 +500,7 @@
 - type: entity
   parent: AirlockServiceGlassLocked
   id: AirlockBarKitchenGlassLocked
-  suffix: Bar&Kitchen, Locked
+  suffix: Бар, Кухня, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -583,7 +583,7 @@
 - type: entity
   parent: AirlockServiceGlassLocked
   id: AirlockJanitorGlassLocked
-  suffix: Janitor, Locked
+  suffix: Прибиральник, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -610,7 +610,7 @@
 - type: entity
   parent: AirlockStandardGlass
   id: AirlockChapelStandardGlassLocked
-  suffix: Chapel, Locked
+  suffix: Каплиця, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -648,7 +648,7 @@
 - type: entity
   parent: AirlockSalvageGlass
   id: AirlockSalvageGlassLocked
-  suffix: Порятунок, Заблоковано
+  suffix: Шахтарський, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -657,7 +657,7 @@
 - type: entity
   parent: AirlockMiningGlass
   id: AirlockMiningGlassLocked
-  suffix: Шахтарський(Порятунок), Заблоковано
+  suffix: Шахтарський, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -675,7 +675,7 @@
 - type: entity
   parent: AirlockMedicalGlass
   id: AirlockMedicalMorgueGlassLocked
-  suffix: Morgue, Locked
+  suffix: Морг, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -711,7 +711,7 @@
 - type: entity
   parent: AirlockScienceGlass
   id: AirlockMedicalScienceGlassLocked
-  suffix: Медичний/Науковий, Заблоковано
+  suffix: Медичний, Науковий, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -765,7 +765,7 @@
 - type: entity
   parent: AirlockCommandGlass
   id: AirlockHeadOfSecurityGlassLocked
-  suffix: Голова персоналу, Заблоковано
+  suffix: Голова безпеки, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -828,7 +828,7 @@
 - type: entity
   parent: AirlockSecurityGlass
   id: AirlockSecurityLawyerGlassLocked
-  suffix: Служба безпеки/Адвокат, Заблоковано
+  suffix: Служба безпеки, Адвокат, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -883,7 +883,7 @@
 - type: entity
   parent: AirlockXeno
   id: AirlockXenoMaintLocked
-  suffix: Maintenance, Locked
+  suffix: Техи, Заблоковано
   components:
   - type: ContainerFill
     containers:
@@ -1136,7 +1136,7 @@
 - type: entity
   parent: AirlockXenoborg
   id: AirlockXenoborgLocked
-  suffix: Xenoborg, Locked
+  suffix: Ксеноборг, Заблоковано
   components:
   - type: StationAiWhitelist
     enabled: false
@@ -1175,7 +1175,7 @@
 - type: entity
   parent: AirlockShuttleXenoborg
   id: AirlockGlassShuttleXenoborgLocked
-  suffix: External, Docking, Xenoborg, Locked
+  suffix: Зовнішній, Стиковочний, Ксеноборг, Заблоковано
   components:
   - type: StationAiWhitelist
     enabled: false
@@ -1288,7 +1288,7 @@
 - type: entity
   parent: AirlockHatch
   id: AirlockHatchSyndicate
-  suffix: Syndicate, Locked
+  suffix: Синдикат, Заблоковано
   components:
   - type: ContainerFill
     containers:

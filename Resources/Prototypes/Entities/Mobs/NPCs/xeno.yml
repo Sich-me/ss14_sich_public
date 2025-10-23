@@ -1,6 +1,6 @@
 # Hacky for the stress test so don't even consider adding to this
 - type: entity
-  name: 76561199169318227
+  name: Копач
   id: MobXeno
   parent: SimpleSpaceMobBase
   description: Вони приходять переважно вночі. Здебільшого.

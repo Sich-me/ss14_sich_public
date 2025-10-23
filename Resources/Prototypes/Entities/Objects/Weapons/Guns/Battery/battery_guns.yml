@@ -789,10 +789,10 @@
       fireCost: 100
 
 - type: entity
-  name: око Біхонкера
+  name: око Бегонкера
   parent: BaseWeaponBatterySmall
   id: WeaponBehonkerLaser
-  description: Око Бехонкера, посланика Хонк Матері, воно стриляє лазером при стисканні.
+  description: Око Бегонкера, посланника Гонкоматері. Воно стріляє лазером при стисканні.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/behonker_eye.rsi

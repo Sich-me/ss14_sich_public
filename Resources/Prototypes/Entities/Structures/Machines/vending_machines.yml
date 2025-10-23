@@ -2115,8 +2115,8 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineHappyHonk
-  name: торговий автомат "Веселий Хонк"
-  description: Торговий автомат веселий хонк міл.
+  name: торговий автомат "Веселий Гонк"
+  description: Торговий автомат веселий гонк міл.
   components:
   - type: VendingMachine
     pack: HappyHonkDispenserInventory

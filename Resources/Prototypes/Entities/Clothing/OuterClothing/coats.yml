@@ -340,8 +340,8 @@
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterClownPriest
-  name: мантія служителя Хонкоматері
-  description: Мантія, призначена для клоуна. Слава Хонкоматері!
+  name: мантія служителя Гонкоматері
+  description: Мантія, призначена для клоуна. Слава Гонкоматері!
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Coats/clownpriest.rsi

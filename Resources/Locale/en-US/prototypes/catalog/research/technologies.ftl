@@ -86,7 +86,7 @@ technologies-ripley-technology = Екзокостюм: Ріплі
 technologies-ripley-technology-description = Найновіше та найкраще в механізованому вантажному будівництві.
 
 technologies-clown-technology = Екзокостюм: Х.О.Н.К.
-technologies-clown-technology-description = Хонк?!
+technologies-clown-technology-description = Гонк?!
 technologies-adv-parts-technology-description = Такі як попередні, але кращі!
 technologies-adv-parts-technology = Вдосконалена технологія запчастин
 

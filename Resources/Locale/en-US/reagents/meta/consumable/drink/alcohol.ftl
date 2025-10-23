@@ -91,7 +91,7 @@ reagent-desc-blue-hawaiian = Алоха! Це означає привіт чи �
 reagent-name-bahama-mama = багама мама
 reagent-desc-bahama-mama = Тропічний коктейль.
 
-reagent-name-banana-honk = банана хонк
+reagent-name-banana-honk = банана гонк
 reagent-desc-banana-honk = Напій прямо з Клоунського Раю.
 
 reagent-name-barefoot = барефут

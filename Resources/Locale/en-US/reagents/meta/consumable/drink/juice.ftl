@@ -2,7 +2,7 @@ reagent-name-juice-apple = яблучний сік
 reagent-desc-juice-apple = Маленький шматочок Едему.
 
 reagent-name-juice-banana = банановий сік
-reagent-desc-juice-banana = Сира есенція банана. ХОНК.
+reagent-desc-juice-banana = Сира есенція банана. ГОНК.
 
 reagent-name-juice-berry = ягідний сік
 reagent-desc-juice-berry = Смачна суміш кількох різних видів ягід.

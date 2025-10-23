@@ -38,7 +38,7 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackClown
-  name: сміхотун фон хонкертон
+  name: сміхотун фон гонкертон
   description: Цей рюкзак виготовлено у найкрутішій державі усія галактики! КОАЛІЦІЇ КЛОУНІВ!
   components:
   - type: Sprite
@@ -324,7 +324,7 @@
 - type: entity
   parent: ClothingBackpackClown
   id: ClothingBackpackCluwne
-  name: сміхотун фон хонкертон
+  name: сміхотун фон гонкертон
   suffix: Незнімний
   description: It's a backpack made by Jonk! Co.
   components:

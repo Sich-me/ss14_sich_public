@@ -192,8 +192,8 @@ ghost-role-information-loneop-name = Самотній оперативник
 ghost-role-information-loneop-description = Ви самотній ядерний оперативник. Знищити станцію!
 ghost-role-information-loneop-rules = Ви [color={role-type-team-antagonist-color}][bold]{role-type-solo-antagonist-name}[/bold][/color]. Приховані агенти синдикату не гарантують, що вам допоможуть.
 
-ghost-role-information-behonker-name = Бехонкер
-ghost-role-information-behonker-description = Ти - антагоніст, ти несеш смерть і хонк тим, хто не слідує за хонк-матір'ю.
+ghost-role-information-behonker-name = Бегонкер
+ghost-role-information-behonker-description = Ти - антагоніст, ти несеш смерть і гонк тим, хто не слідує за гонк-матір'ю.
 
 ghost-role-information-hellspawn-name = Пекельний Виродок
 ghost-role-information-hellspawn-description = Принесе смерть тим, хто не слідує великому богу Нар'Сі.

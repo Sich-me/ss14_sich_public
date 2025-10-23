@@ -173,8 +173,8 @@
 
 - type: entity
   parent: SeedBase
-  name: пачка насіння екстравимерного апельсинового дерева
-  description: "Полігональне насіння."
+  name: пачка насіння екстравимірного апельсинового дерева
+  description: "Екстравимірне насіння."
   id: ExtradimensionalOrangeSeeds
   components:
     - type: Seed
@@ -214,7 +214,7 @@
 
 - type: entity
   parent: SeedBase
-  name: packet of tea plant seeds
+  name: пачка насіння чаю
   id: TeaPlantSeeds
   components:
     - type: Seed
@@ -224,7 +224,7 @@
 
 - type: entity
   parent: SeedBase
-  name: packet of papercane seeds
+  name: пачка насіння паприки
   id: PapercaneSeeds
   components:
     - type: Seed
@@ -508,8 +508,8 @@
 
 - type: entity
   parent: SeedBase
-  name: packet of glasstle seeds
-  description: "Scars of gloomy nights."
+  name: пачка насіння скляників
+  description: "Шрами похмурих ночей."
   id: GlasstleSeeds
   components:
     - type: Seed
@@ -572,7 +572,7 @@
 
 - type: entity
   parent: SeedBase
-  name: пачка насіння spaceman's trumpet
+  name: пачка насіння тромбону космонавта
   id: SpacemansTrumpetSeeds
   components:
     - type: Seed
@@ -582,7 +582,7 @@
 
 - type: entity
   parent: SeedBase
-  name: пачка насіння koibean
+  name: пачка насіння койбобів
   id: KoibeanSeeds
   components:
     - type: Seed
@@ -643,7 +643,7 @@
 
 - type: entity
   parent: SeedBase
-  name: пачка насіння ягод
+  name: пачка насіння ягід
   id: BerrySeeds
   components:
     - type: Seed
@@ -653,7 +653,7 @@
 
 - type: entity
   parent: SeedBase
-  name: пачка насіння bungo
+  name: пачка насіння бунго
   description: "Не їж кісточки."
   id: BungoSeeds
   components:
@@ -745,7 +745,7 @@
 
 - type: entity
   parent: SeedBase
-  name: packet of cherry seeds
+  name: пачка насіння вишні
   id: CherrySeeds
   components:
     - type: Seed
@@ -755,7 +755,7 @@
 
 - type: entity
   parent: SeedBase
-  name: packet of anomaly berry seeds
+  name: пачка насіння аномальних ягід
   id: AnomalyBerrySeeds
   components:
     - type: Seed
@@ -765,7 +765,7 @@
 
 - type: entity
   parent: SeedBase
-  name: packet of bloonion seeds
+  name: пачка насіння цвітоцибулі
   id: BloonionSeeds
   components:
   - type: Seed

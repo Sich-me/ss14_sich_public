@@ -22,7 +22,7 @@ tool-quality-slicing-tool-name = Ніж
 tool-quality-sawing-name = Пиляння
 tool-quality-sawing-tool-name = Пилка
 
-tool-quality-honking-name = Хонкінг
+tool-quality-honking-name = Гонкінг
 tool-quality-honking-tool-name = Велосипедний гудок
 
 tool-quality-woodcutting-name = Дереворубка

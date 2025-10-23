@@ -67,7 +67,7 @@
   id: MechEquipmentHorn
   parent: BaseMechEquipment
   name: гудок меха
-  description: Покращений велосипедний гудок, який відтворює веселий набір звуків для задоволення екіпажу. ХОНК!
+  description: Покращений велосипедний гудок, який відтворює веселий набір звуків для задоволення екіпажу. ГОНК!
   components:
   - type: Sprite
     # TODO: use own sprite
