@@ -1,11 +1,10 @@
 - type: entity
-  parent: [BaseItem, BaseStash]
+  parent: BaseItem
   id: SichSignCringineer
   name: Знак "Увага Кринженери"
   description: Обережно, працюють інжири! Поряд можливі втечі сингулярності, втечі тесли, втечі атмосфери, витоки плазми, металевий присмак у роті, та можливо, щось що працює як треба.
   components:
   - type: Sprite
-    noRot: true
     sprite: _Sich/Objects/Misc/cringener.rsi
     state: icon
   - type: Item
@@ -18,7 +17,4 @@
     radius: 1.5
     energy: 2
     softness: 1
-  - type: Storage
-    grid:
-    - 0,0,2,2
 
