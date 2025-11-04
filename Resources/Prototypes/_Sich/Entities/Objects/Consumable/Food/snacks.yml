@@ -53,7 +53,7 @@
   - type: Item
     heldPrefix: sourcandy-open
   - type: Food
-    eatMessage: "Кислинка обпікає язика!"
+    eatMessage: eat-kyslynka-message
   - type: Tag
     tags:
       - FoodSnack
