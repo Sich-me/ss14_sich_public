@@ -1,0 +1,51 @@
+- type: entity
+  id: StalkerBonfire
+  parent: KitchenElectricGrill
+  name: Багаття
+  description: Що може бути краще ніж пізній вечір під відкритим небом з гітарою та друзями?
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: SkypunkTextures/Structures/Decoration/bonfire.rsi
+    layers:
+      - state: bonfire
+#      - state: burning
+  - type: PointLight
+    radius: 5
+    energy: 3
+    color: "#FFC90C"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 70
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: AmbientSound
+    volume: -5
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/fireplace.ogg
+  - type: AlwaysHot
+  - type: Appearance
+  - type: ApcPowerReceiver
+    powerLoad: 0 
+    needsPower: false
+  - type: ItemPlacer
+    maxEntities: 4
+    whitelist:
+      components:
+      - Temperature
+  - type: PlaceableSurface
+  - type: GenericVisualizer
+    visuals:
+      enum.EntityHeaterVisuals.Setting:
+        enum.EntityHeaterVisuals.Setting:
+          Off: { visible: false }          
+          Low: { visible: true, state: burning }
+          Medium: { visible: true, state: burning }
+          High: { visible: true, state: burning }

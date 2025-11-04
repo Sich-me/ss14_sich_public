@@ -1,0 +1,32 @@
+- type: entity
+  name: Кабан спавнер
+  id: StalkerMobBoarSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: SkypunkTextures/Mobs/Monsters/boar.rsi
+    layers:
+      - state: alive
+  - type: ConditionalSpawner
+    prototypes:
+      - StalkerMobBoar
+
+- type: entity
+  name: Часовий спавнер кабана
+  id: StalkerMobBoarTimedSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: SkypunkTextures/Mobs/Monsters/boar.rsi
+          state: alive
+        - state: timed
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+        - StalkerMobBoar
+      chance: 0.85
+      intervalSeconds: 1800
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1
