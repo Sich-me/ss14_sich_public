@@ -1,10 +1,10 @@
 - type: entity
-  id: BarrelWater
+  id: SichSkypunkBarrelWater
   name: Бочка з водою
   parent: BaseStructure
   components: 
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Decoration/barrels.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Decoration/barrels.rsi
     state: waterbarrel
   - type: Damageable
     damageContainer: Inorganic

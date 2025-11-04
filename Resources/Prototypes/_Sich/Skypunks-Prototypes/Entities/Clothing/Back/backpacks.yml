@@ -1,11 +1,11 @@
 - type: entity
   parent: ClothingBackpack
-  id: ClothingBackpackTourist
+  id: SichSkypunkClothingBackpackTourist
   name: Туристичний рюкзак
   description: Що ви кажете? Вас все ще не чутно.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Clothing/Back/Backpacks/tourist.rsi
+    sprite: _Sich/SkypunkTextures/Clothing/Back/Backpacks/tourist.rsi
     state: backpack-icon
   - type: Clothing
     equippedPrefix: backpack
@@ -26,12 +26,12 @@
 
 - type: entity
   parent: ClothingBackpackSatchel
-  id: ClothingBackpackSatchelTourist
+  id: SichSkypunkClothingBackpackSatchelTourist
   name: Туристиний ранець
   description: Настрій прекрасний, погоду не підскажу, за вікном щось мутно.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Clothing/Back/Backpacks/tourist.rsi
+    sprite: _Sich/SkypunkTextures/Clothing/Back/Backpacks/tourist.rsi
     state: satchel-icon
   - type: Clothing
     equippedPrefix: satchel

@@ -1,6 +1,6 @@
 - type: entity
   name: Кабан
-  id: StalkerMobBoar
+  id: SichSkypunkMobBoar
   parent: SimpleMobBase
   description: Не олександр!
   components:
@@ -16,7 +16,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
-      sprite: SkypunkTextures/Mobs/Monsters/boar.rsi
+      sprite: _Sich/SkypunkTextures/Mobs/Monsters/boar.rsi
   - type: Physics
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.2

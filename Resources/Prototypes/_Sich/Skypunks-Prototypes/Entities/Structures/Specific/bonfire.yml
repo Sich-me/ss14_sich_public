@@ -1,12 +1,12 @@
 - type: entity
-  id: StalkerBonfire
+  id: SichSkypunkBonfire
   parent: KitchenElectricGrill
   name: Багаття
   description: Що може бути краще ніж пізній вечір під відкритим небом з гітарою та друзями?
   components:
   - type: Sprite
     noRot: true
-    sprite: SkypunkTextures/Structures/Decoration/bonfire.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Decoration/bonfire.rsi
     layers:
       - state: bonfire
 #      - state: burning

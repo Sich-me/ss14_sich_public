@@ -1,0 +1,57 @@
+- type: entity
+  id: SichSkypunkRandomMattresSpawner50
+  name: Випадковий матрас можливість 50%
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
+          state: mattress
+    - type: RandomSpawner
+      prototypes:
+        - SichSkypunkComfyMattress
+        - SichSkypunkMattress1
+        - SichSkypunkMattress2
+        - SichSkypunkMattress3
+        - SichSkypunkMattress4
+        - SichSkypunkMattress5
+        - SichSkypunkMattress6
+        - SichSkypunkMattress7
+        - SichSkypunkMattress8
+        - SichSkypunkMattress9
+        - SichSkypunkMattress10
+        - SichSkypunkMattress11
+        - SichSkypunkMattress12
+        - SichSkypunkMattress13
+        - SichSkypunkMattress14
+      chance: 0.5
+
+- type: entity
+  id: SichSkypunkRandomMattresSpawner
+  name: Випадковий матрас
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
+          state: mattress
+    - type: RandomSpawner
+      prototypes:
+        - SichSkypunkComfyMattress
+        - SichSkypunkMattress1
+        - SichSkypunkMattress2
+        - SichSkypunkMattress3
+        - SichSkypunkMattress4
+        - SichSkypunkMattress5
+        - SichSkypunkMattress6
+        - SichSkypunkMattress7
+        - SichSkypunkMattress8
+        - SichSkypunkMattress9
+        - SichSkypunkMattress10
+        - SichSkypunkMattress11
+        - SichSkypunkMattress12
+        - SichSkypunkMattress13
+        - SichSkypunkMattress14
+      chance: 1

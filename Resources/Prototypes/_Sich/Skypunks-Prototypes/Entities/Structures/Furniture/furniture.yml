@@ -1,11 +1,11 @@
 - type: entity
   name: Старе ліжко
-  id: OldBed
+  id: SichSkypunkOldBed
   parent: Bed
   description: Видно, що в це ліжко лягали багато, а матрас був замінений.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: bed
   - type: HealOnBuckle
     damage:
@@ -15,12 +15,12 @@
 
 - type: entity
   name: Поламане ліжко
-  id: BrokenOldBed
+  id: SichSkypunkBrokenOldBed
   parent: Bed
   description: Це ліжко дасть вам відчути жахіття
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: bed1
   - type: HealOnBuckle
     damage:
@@ -28,8 +28,8 @@
         Blunt: 0.01
 
 - type: entity
-  parent: OldBed
-  id: OldMedicalBed
+  parent: SichSkypunkOldBed
+  id: SichSkypunkOldMedicalBed
   name: Медичне ліжко
   description: Не нашкодить!
   components:
@@ -51,152 +51,152 @@
 
 - type: entity
   parent: Bed
-  id: ComfyMattress
+  id: SichSkypunkComfyMattress
   name: Матрас з подушкою
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress
   - type: Damageable
     damageModifierSet: Inflatable
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress1
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress1
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress1
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress2
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress2
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress2
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress3
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress3
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress3
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress4
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress4
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress4
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress5
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress5
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress5
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress6
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress6
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress6
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress7
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress7
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress7
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress8
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress8
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress8
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress9
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress9
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress9
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress10
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress10
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress10
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress11
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress11
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress11
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress12
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress12
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress12
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress13
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress13
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress13
 
 - type: entity
-  parent: ComfyMattress
-  id: Mattress14
+  parent: SichSkypunkComfyMattress
+  id: SichSkypunkMattress14
   name: Брудний матрас
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress14
