@@ -52,8 +52,6 @@
     state: sourcandy-open
   - type: Item
     heldPrefix: sourcandy-open
-  - type: Food
-    eatMessage: eat-kyslynka-message
   - type: Tag
     tags:
       - FoodSnack
