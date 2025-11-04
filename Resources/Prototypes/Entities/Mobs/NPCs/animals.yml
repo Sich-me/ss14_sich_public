@@ -14,7 +14,7 @@
       state: bat
       sprite: Mobs/Animals/bat.rsi
   - type: Speech
-    speechSounds: Moth # Додавання білду Січі. Перенесено з КД
+    speechSounds: Squeak
     speechVerb: SmallMob
     allowedEmotes: ['Squeak']
   - type: Fixtures
@@ -503,7 +503,7 @@
   - type: GhostTakeoverAvailable
   - type: Speech
     speechVerb: Moth
-    speechSounds: Squeak
+    speechSounds: Moth # Додавання білду Січі. Перенесено з КД
     allowedEmotes: ['Chitter', 'Squeak']
   - type: FaxableObject
     insertingState: inserting_mothroach
