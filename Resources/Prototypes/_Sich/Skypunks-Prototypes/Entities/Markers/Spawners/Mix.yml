@@ -6,7 +6,7 @@
     - type: Sprite
       layers:
         - state: red
-        - sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
+        - sprite: _Sich/SkypunkTextures/Structures/Furniture/bed.rsi
           state: mattress
     - type: RandomSpawner
       prototypes:
@@ -35,7 +35,7 @@
     - type: Sprite
       layers:
         - state: red
-        - sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
+        - sprite: _Sich/SkypunkTextures/Structures/Furniture/bed.rsi
           state: mattress
     - type: RandomSpawner
       prototypes:
