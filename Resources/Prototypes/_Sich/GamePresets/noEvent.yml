@@ -1,0 +1,11 @@
+- type: gamePreset
+  id: EventFree
+  alias:
+  - Uneventful
+  - NoEventsAtAll
+  - NoEvents
+  - Eventless
+  - FreeofEvents
+  name: Без івентний режим
+  showInVote: true
+  description: Хай адміни розвжають гравців
