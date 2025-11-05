@@ -36,12 +36,12 @@
       - PottedPlant23
       - PottedPlant24
       - PottedPlant26
-      - PottedBonsai1
-      - PottedBonsai2
-      - PottedBonsai3
-      - PottedBonsai4
-      - PottedBonsai5
-      - PottedBonsai6
+      - SichPottedBonsai1
+      - SichPottedBonsai2
+      - SichPottedBonsai3
+      - SichPottedBonsai4
+      - SichPottedBonsai5
+      - SichPottedBonsai6
     chance: 1
 
 - type: entity

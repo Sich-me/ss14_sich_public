@@ -3,22 +3,22 @@
 ## Guns
 
 #- type: listing
-#  id: UplinkHardsuitMerc
+#  id: SichUplinkHardsuitMerc
 #  name: "Скафандр Найманця"
 #  description: "Скафандр що використовуєтсья найманцями. Добре захищає від бойових пошкоджень, але має поганий захист від навколишнього середовища"
 #  icon: { sprite: /Textures/_Sich/Clothing/OuterClothing/Hardsuits/merc.rsi, state: icon }
-#  productEntity: ClothingBackpackDuffelMercHardsuitBundle
+#  productEntity: SichClothingBackpackDuffelMercHardsuitBundle
 #  cost:
 #    Telecrystal: 10
 #  categories:
 #  - UplinkArmor
 
 #- type: listing
-#  id: UplinkSMGOtaku
+#  id: SichUplinkSMGOtaku
 #  name: "СМГ Отаку"
 #  description: "Пістолет-кулемет розроблений Азійською Співдружністю, що має вбудований глушник. Використовує патрони калібру .35"
 #  icon: { sprite: /Textures/_Sich/Objects/Weapons/Guns/SMGs/otaku.rsi, state: icon }
-#  productEntity: ClothingBackpackDuffelSyndicateSMGOtaku
+#  productEntity: SichClothingBackpackDuffelSyndicateSMGOtaku
 #  cost:
 #    Telecrystal: 11
 #  categories:

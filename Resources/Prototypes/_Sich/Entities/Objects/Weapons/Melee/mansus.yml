@@ -1,7 +1,7 @@
 - type: entity
   name: лезо Мансуса
   parent: BaseItem
-  id: MansusBlade
+  id: SichMansusBlade
   description: Загадкове лезо з великим оком на рукоятці, що наче споглядає за вами...
   components:
   - type: Sharp
@@ -29,7 +29,7 @@
 - type: entity
   name: лезо пустки
   parent: BaseItem
-  id: VoidBlade
+  id: SichVoidBlade
   description: Хоча інша зброя теж здавалася вам холодною, але це лезо залишається крижаним навіть під вашими долонями.
   components:
   - type: Sharp
@@ -58,7 +58,7 @@
 - type: entity
   name: лезо плоті
   parent: BaseItem
-  id: FleshBlade
+  id: SichFleshBlade
   description: Ця зброя пульсує у ваших руках, і дійсно відчувається живою.
   components:
   - type: Sharp
@@ -87,7 +87,7 @@
 - type: entity
   name: лезо іржі
   parent: BaseItem
-  id: RustBlade
+  id: SichRustBlade
   description: Іржа сипиться із цього леза, і моментально перетворюється на темний пил.
   components:
   - type: Sharp
@@ -115,7 +115,7 @@
 - type: entity
   name: лезо попелу
   parent: BaseItem
-  id: AshBlade
+  id: SichAshBlade
   description: Від цього леза несе тхліном, і воно поступово гріється у ваших руках.
   components:
   - type: Sharp
@@ -143,7 +143,7 @@
 - type: entity
   name: лезо космосу
   parent: BaseItem
-  id: CosmicBlade
+  id: SichCosmicBlade
   description: Це лезо притягує вас, але в той же час ви відчуваєтесь загубленим.
   components:
   - type: Sharp
@@ -171,7 +171,7 @@
 - type: entity
   name: лезо місяця
   parent: BaseItem
-  id: MoonBlade
+  id: SichMoonBlade
   description: Беручи це лезо з чогось схожого на мармур, ви чуєте дивний шепіт та віддалені крики у себе в голові
   components:
   - type: Sharp
@@ -200,7 +200,7 @@
 - type: entity
   name: лезо ключа
   parent: BaseItem
-  id: KeyBlade
+  id: SichKeyBlade
   description: Бачачи це лезо, у вас виникає відчуття наче десь у просторі існує щось страшне, але ви маєте це знайти.
   components:
   - type: Sharp

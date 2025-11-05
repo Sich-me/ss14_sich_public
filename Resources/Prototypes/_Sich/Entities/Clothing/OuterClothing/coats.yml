@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatChaosIncTrench
+  id: SichClothingOuterCoatChaosIncTrench
   name: пальто Корпорації Хаосу
   description: Пальто з додатковими броньованими пластинами під тканиною, що частіше всього носять Представники Корпорації Хаосу.
   components:

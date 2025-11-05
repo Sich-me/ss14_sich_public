@@ -1,6 +1,6 @@
 - type: entity
   parent: BasePlushie
-  id: PlushieN1
+  id: SichPlushieN1
   name: плюшевий N1 
   description: Це справді плюшевий N1!?
   components:
@@ -28,7 +28,7 @@
 
 - type: entity
   parent: BasePlushie
-  id: PlushieGabriel
+  id: SichPlushieGabriel
   name: Плюшевий Янгол
   description: СПОГЛЯДАЙ СИЛОМИЦЬ ЯНГОЛА!
   components:
@@ -84,7 +84,7 @@
     
 - type: entity
   parent: BasePlushie
-  id: PlushieUknown
+  id: SichPlushieError
   name: error.mising.itemname
   description: error.mising.itemdiscription
   components:
@@ -156,3 +156,224 @@
     radius: 1
     energy: 2.5
     color: "#ffde46"
+
+# Ніани
+- type: entity
+  parent: PlushieMoth
+  id: SichBasePlushieMoff
+  abstract: true
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Voice/Moth/moth_chitter.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Voice/Moth/moth_scream.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: Edible
+    useSound: /Audio/Voice/Moth/moth_laugh.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 10
+  - type: SolutionContainerManager #More food for moff from moff
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 15
+  - type: UseDelay
+    delay: 0.5
+
+## Міріадея. Міріадея Шовковязна. Персонажка Міюгі, авторки спрайтів серії цих плюшів
+- type: entity
+  parent: SichBasePlushieMoff
+  id: SichPlushieMoffMiriadeya
+  name: плюшева ніана "Міріадея"
+  description: " \"Темне тіло, що усіяне світлими плямами й ніжно переливається з ними, нагадує собою космічний пейзаж. Крила ж більш темні та прикрашені ледь чи не чорними візерунками. Виглядає більш розпушеною та м'якою, ніж має бути.\"
+    \n\nПросто іграшка у вигляді якоїсь фіолетовопухої ніани."
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Miriadea/base.rsi
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+  - type: SolutionContainerManager #Бавовна.
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 20
+
+- type: entity
+  parent: SichPlushieMoffMiriadeya
+  id: SichPlushieMoffMiriadeyaBar
+  name: плюшева ніана "Міріадея сервіс"
+  description: " \"Дззз!\"
+    \n\nВід погляду на неї ви відчуваєте внутрішню тривогу, що в сервісі сьогодні знову будуть подавати одну бавовняну випічку. . ."
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Miriadea/service.rsi
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+  - type: SolutionContainerManager #Бавовна з. . . Почнемо з цукру? А, й муки :)
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 20
+        - ReagentId: Sugar
+          Quantity: 2.5
+        - ReagentId: Flour
+          Quantity: 2.5
+
+- type: entity
+  parent: SichPlushieMoffMiriadeya
+  id: SichPlushieMoffMiriadeyaScience
+  name: плюшева ніана "Міріадея наука"
+  description: " \"Наука — це вибухи та підпали, тому- Це з неї попіл посипався? . .\"
+    \n\nОдяг вченої на ній виглядає ідеально, проте здається, наче від неї доноситься запах горілого пуху. . ."
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Miriadea/scientist.rsi
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+  - type: SolutionContainerManager #plasma
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 15
+        - ReagentId: Ash
+          Quantity: 5
+
+## Мірка. Мірка Злидина. Персонаж Дітрита
+- type: entity
+  parent: SichBasePlushieMoff
+  id: SichPlushieMoffMirka
+  name: плюшева ніана "Мірка"
+  description: " \"Пухнастий дисонанс - по-іншому це не назвеш, бо як таке диво може бути блакитним, як небо, а пухким, як хмара!\"
+    \n\nПросто іграшка у вигляді якогось блакитнопухого ніани (чи ніана?. .). Від неї ніби віє легким запахом алкоголю."
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Mirka/base.rsi
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        offset: "0, 0.0625"
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 15
+        - ReagentId: Ethanol #:stare:
+          Quantity: 5
+
+- type: entity
+  parent: SichPlushieMoffMirka
+  id: SichPlushieMoffMirkaBar
+  name: плюшева ніана "Мірка бар"
+  description: " \"Це птах? Це літак? Ні! Це Мірчук Злиденюк!\"
+    \n\nЦя версія одягнута у форму бармена та виглядає більш бойовою, запах алкоголю явно став сильніше."
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Mirka/bartender.rsi
+
+- type: entity
+  parent: SichPlushieMoffMirka
+  id: SichPlushieMoffMirkaService
+  name: плюшева ніана "Мірка сервіс"
+  description: " \"Кззз-\"
+    \n\nЦя версія одягнута у форму сервісника. Виглядає так, ніби її били. . ."
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Mirka/service.rsi
+
+## Ранч. Ранч Епіполос. Персонаж Пігріхи
+- type: entity
+  parent: SichBasePlushieMoff
+  id: SichPlushieMoffRanch
+  name: плюшева ніана "Ранч"
+  description: " \"Нічим непримітний у плані зовнішності, синього кольору, антенки та крила зазвичай притиснуті до тіла, другі мають візерунок схожий на дуже бідне нічне небо, праве чутка припущене. Очі темно-синього кольору постійно бігають, концентруючись та звертаючи увагу на будь-яку хоч малу дію з боку оточення.\"
+    \n\nПросто іграшка у вигляді якогось синьогопухого ніана (чи ніани?. .)"
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Ranch/base.rsi
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        offset: "0, 0.09375"
+
+- type: entity
+  parent: SichPlushieMoffRanch
+  id: SichPlushieMoffRanchBar
+  name: плюшева ніана "Ранч бар"
+  description: " Дивлячись на цю іграшку з'являється відчуття, що вас зараз будуть допитувати.
+    \n\nОдягнута у форму бармена та від неї ніби пахне сумішшю морозива з. . Алкоголем?"
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Ranch/bartender.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 15
+        - ReagentId: IceCream #Хмммм
+          Quantity: 4
+        - ReagentId: Ethanol #Він все ще не п'є!
+          Quantity: 1
+
+- type: entity
+  parent: SichPlushieMoffRanch
+  id: SichPlushieMoffRanchBotanic
+  name: плюшева ніана "Ранч ботаніка"
+  description: " \"Свіжа бавовна на стійці ботаніки!\", - лунає у вашій голові при погляді на цього плюша.
+    \n\nОдягнута у форму ботаніка та від неї пахне землею."
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Ranch/botanist.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 15
+        - ReagentId: EZNutrient #Ботанік все ж
+          Quantity: 5

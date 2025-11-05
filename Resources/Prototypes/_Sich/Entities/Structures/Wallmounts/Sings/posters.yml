@@ -1,14 +1,14 @@
 - type: entity
   parent: PosterBase
-  id: PosterBaseSich
+  id: SichPosterBase
   abstract: true
   components:
   - type: Sprite
     sprite: _Sich/Structures/Wallmounts/posters.rsi
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_settler
+  parent: SichPosterBase
+  id: SichPosterContrabandSettler
   name: "Settler corp."
   description: "Settler, корпорація яка відома своїми жахливими умовами праці й низькими стандартами. Вони відправляють велику кількість колоністів в далекі глибини космосу для видобутку плазми. Схоже вони настільки жадібні що навіть не дописали одну T на плакаті."
   components:
@@ -16,17 +16,17 @@
     state: sich_poster_settler
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_reinyn
+  parent: SichPosterBase
+  id: SichPosterContrabandRenyin
   name: "Постер Ренюінь"
   description: "Давно, у 2151 році, в комуністичному Китаї сталася революція, унаслідок якої владу було змінено на більш демократичну. Однак віддалені колонії, у яких існував автономний центр для ефективнішого управління, проголосили незалежність і утворили Міжпланетну асоціацію Ренюінь."
   components:
   - type: Sprite
-    state: sich_poster_reinyn
+    state: sich_poster_renyin
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_book_unath
+  parent: SichPosterBase
+  id: SichPosterLegitBookUnath
   name: "«Хтива діва з Могесу 2»"
   description: "Постер нової книги «Хтива діва з Могесу», яка розповідає про мандри унатха з Могесу що стала домогосподаркою багатого пана."
   components:
@@ -34,8 +34,8 @@
     state: sich_poster_book_unath
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_drg
+  parent: SichPosterBase
+  id: SichPosterLegitDRG
   name: "Dark Rock Gold"
   description: "Одна з найвідоміших компаній Доренвірської Конфедерації, яка спеціалізується на видобутку корисних копалин й створенні найміцнішого та найсмачнішого пива з каміння в усій галактиці."
   components:
@@ -43,8 +43,8 @@
     state: sich_poster_drg
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_dse
+  parent: SichPosterBase
+  id: SichPosterLegitDSE
   name: "Dnipro Space Engineering"
   description: "Одна з найвідоміших компаній Української Космічної Держави, яка створює двигуни для шатлів."
   components:
@@ -52,8 +52,8 @@
     state: sich_poster_dse
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_free_slime2
+  parent: SichPosterBase
+  id: SichPosterLegitFreeSlime2
   name: "Зіпсований постер Нанатрейзен"
   description: "Слаймолюди борються за свої права, адже їх вважають витратним матеріалом і майже не сприймають як живих істот. Невже кольоровим холодцям так погано живеться?"
   components:
@@ -61,8 +61,8 @@
     state: sich_poster_free_slime2
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_slime_free
+  parent: SichPosterBase
+  id: SichPosterLegitFreeSlime
   name: "Зіпсований постер Сонячної Федерації"
   description: "Слаймолюди борються за свої права, адже їх вважають витратним матеріалом і майже не сприймають як живих істот. Невже кольоровим холодцям так погано живеться?"
   components:
@@ -70,8 +70,8 @@
     state: sich_poster_slime_free
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_map_space
+  parent: SichPosterBase
+  id: SichPosterLegitMapSpace
   name: "Мапа ближнього сектора"
   description: "Мапа сектора поблизу НДС «Січ». Білим позначено саму станцію, жовтим — колонії Української Космічної Держави (Лаваленд ліворуч і Рутенія-Прайма навпроти), червоним — колонії Сполучених Штатів Північної Америки (Гесперос угорі й Пандора навпроти)."
   components:
@@ -79,8 +79,8 @@
     state: sich_poster_map_space
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_map_space2
+  parent: SichPosterBase
+  id: SichPosterLegitMapSpace2
   name: "Мапа космосу"
   description: "Це мапа всього наразі дослідженого космосу. Оранжевим позначено території Доренвірської Конфедерації (держави дворфів), синім - території Сонячної Федерації (СПША, УКД, Азійське Співтовариство, Європейська Федерація), червоним - території Ренюїн, а жовтим - Зоряну Республіку Мікаріс, у якій живуть ніани. Поруч із нею розташована планета арахнідів - Скеран."
   components:
@@ -88,8 +88,8 @@
     state: sich_poster_map_space2
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_solar_federation
+  parent: SichPosterBase
+  id: SichPosterLegitSolarFederation
   name: "Постер Сонячної Федерації"
   description: "Сонячна Федерація - держава людей, яка більше схожа на конфедерацію, адже кожна країна, що є на Землі, представляє саму себе. Вона була створена в середині 22-го століття."
   components:
@@ -97,8 +97,8 @@
     state: sich_poster_solar_federation
 
 - type: entity
-  parent: PosterBaseSich
-  id: poster_sich_passenger
+  parent: SichPosterBase
+  id: SichPosterLegitPassengerNotes
   name: "Постер книги «Нотатки пасажира»"
   description: "Колись NT проводило конкурс серед працівників на три найкращі роботи, однією з яких є «Нотатки пасажира». Ця історія розповідає про героя, який намагається вижити на космічній станції після початку вірусної загрози, що перетворює людей на зомбі. Чи зможе головний герой вижити та не перетворитися на ходячий труп?"
   components:
@@ -106,8 +106,8 @@
     state: poster_sich_passenger
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_poster_blood_knife
+  parent: SichPosterBase
+  id: SichPosterLegitBloodKnife
   name: "Постер книги «І крапля крові впала з кінчику її меча»"
   description: "Колись NT проводило конкурс серед працівників на три найкращі роботи, однією з яких є «І крапля крові впала з кінчика її меча». Історія розгортається навколо Кіріто Міто, жінки-самурая. Вона отримує завдання від корпорації Nanotrezen відновити контроль над бойовою станцією «O picătură de sânge» («Крапля крові»), захопленою ворогами. Які перешкоди чекають на неї, і чи зможе вона впоратися з цим?"
   components:
@@ -115,8 +115,8 @@
     state: sich_poster_blood_knife
 
 - type: entity
-  parent: PosterBaseSich
-  id: sich_plastic_poster
+  parent: SichPosterBase
+  id: SichPosterLegitPlasticDIY
   name: "Постер журналу «Робимо самі» випуск 1"
   description: "У цьому журналі ви дізнаєтеся, як самостійно зробити багато корисних речей! Наприклад, чи знали ви, що пластик для домашнього принтера можна виготовити вдома? Для цього потрібно змішати 5u олії, 3u попелу та 2u сірчаної кислоти і добре нагріти суміш."
   components:
@@ -124,8 +124,8 @@
     state: sich_plastic_poster
 
 - type: entity
-  parent: PosterBaseSich
-  id: poster_sich_space_marine
+  parent: SichPosterBase
+  id: SichPosterLegitSpaceMarine
   name: "Постер Космічних Десантників СПША"
   description: "В твоїй крові тече ненависть до ксеноморфів, окупантів, і комуністів? Приєднуйся до Космічних Десантників і врятуй галактику від цієї погані!"
   components:
@@ -133,8 +133,8 @@
     state: poster_sich_space_marine
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichFilmDayPay
+  parent: SichPosterBase
+  id: SichPosterLegitDayPay
   name: "Постер фільму «День виплат»"
   description: "Фільм про те, як відбиті на голову друзі вирішили пограбувати сховище станції. У фіналі їх усіх знешкодила Служба Безпеки."
   components:
@@ -142,8 +142,8 @@
     state: poster_sich_day_pay
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichFarCry
+  parent: SichPosterBase
+  id: SichPosterLegitFarCry
   name: "Постер фільму «Фар Край»"
   description: "Історія розповідає про станцію, захоплену терористами, які використовують членів екіпажу як рабів для тяжкої праці. Фільм містить багато драми, екшену та крові. Завдяки фінансовому успіху картини було випущено не менш цікавих продовжень."
   components:
@@ -151,8 +151,8 @@
     state: poster_sich_Far_Cray
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichGladiator
+  parent: SichPosterBase
+  id: SichPosterLegitGladiator
   name: "Постер фільму «Гладіатор»"
   description: "Історія розповідає про групу гладіаторів, яким доводиться битися за право жити. Кожен їхній день сповнений кров’ю, нутрощами та страхом, що ця битва може стати останньою. У фіналі турніру вони вирішують повстати проти короля, але гвардія їх зупиняє перш ніж вони встигають дістатися королівського палацу."
   components:
@@ -160,8 +160,8 @@
     state: poster_sich_gladiator
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichHellowin
+  parent: SichPosterBase
+  id: SichPosterLegitHalloween
   name: "Постер фільму «Кошмар перед гелловіном»"
   description: "На початку фільму уся станція готується до Гелловіну: розвішують привидів, вирізають гарбузи, шиють костюми, запалюють свічки. Але вони ще не знають, що на них чекає…"
   components:
@@ -169,8 +169,8 @@
     state: poster_sich_halloween
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichJaill
+  parent: SichPosterBase
+  id: SichPosterLegitJail
   name: "Постер фільму «Втеча з під варти»"
   description: "Фільм розповідає про тяжку долю в’язня в новій космічній в’язниці, спонсорованій компанією Nanotrasen. Ходять чутки, що туди відправляють \"незручних\" для бізнесу людей. Але одного дня все виходить з-під контролю: на станцію прилітають невідомі терористи, в’язні влаштовують бунт, а охорона не справляється з усіма проблемами. Чи зможе головний герой вибратися живим, і якою ціною?"
   components:
@@ -178,8 +178,8 @@
     state: poster_sich_jail
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichRimworld
+  parent: SichPosterBase
+  id: SichPosterLegitRimworld
   name: "Постер фільму «Колонії»"
   description: "Цей фільм розповідає про тяжку долю колонізаторів нових планет. У ньому поєднані драма, романтика та мальовничі краєвиди ще незаселеної планети. Фільм дуже сподобався публіці, тож було створено продовження з тими самими персонажами. Пізніше з’явилися сиквели, які розповідають про інших колонізаторів на зовсім інших планетах."
   components:
@@ -187,8 +187,8 @@
     state: poster_sich_rimworld
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichSkyPunk
+  parent: SichPosterBase
+  id: SichPosterLegitSkyPunk
   name: "Постер фільму «Скайпанк»"
   description: "Цей фільм розповідає про всесвіт, де королівства живуть на летючих островах. Глядачі відзначають чудову атмосферу, а всі декорації були виконані дуже якісно. Комп’ютерна графіка майже не використовувалася, адже сам фільм знімали на орбіті однієї з планет Доренвірської Конфедерації."
   components:
@@ -196,8 +196,8 @@
     state: poster_sich_sky_punk
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichSosfall
+  parent: SichPosterBase
+  id: SichPosterLegitSosFall
   name: "Постер фільму «Аварійне падіння»"
   description: "Фільм розповідає про жахливу катастрофу: у космічну станцію врізався метеорит, внаслідок чого станція злетіла з орбіти планети і почала падати в атмосферу."
   components:
@@ -205,8 +205,8 @@
     state: poster_sich_sos_fall
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichStalker
+  parent: SichPosterBase
+  id: SichPosterLegitStalker
   name: "Постер фільму «Сталкер»"
   description: "Цей фільм розповідає історію одного зі сталкерів, який намагається заробити гроші в усім відомій Зоні. Глядачам він сподобався завдяки атмосфері та цікавому сюжету."
   components:
@@ -214,8 +214,8 @@
     state: poster_sich_Stalker
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichWarclown
+  parent: SichPosterBase
+  id: SichPosterLegitWarClown
   name: "Постер фільму «Війна клоунів та мімів»"
   description: "Війни клоунів та мімів починаються на рівному місці: Кинутий пиріг, мило, чи невидима стіна - будь що може привести до вибуху конфлікту! Криваві, хаотичні та епічні битви тривають всю війну, допоки вона не закінчиться так само несподівано як і почалася!"
   components:
@@ -223,8 +223,8 @@
     state: poster_sich_war_clown
 
 - type: entity
-  parent: PosterBaseSich
-  id: PosterSichWarmime
+  parent: SichPosterBase
+  id: SichPosterLegitWarMime
   name: "Постер фільму «Війна клоунів та мімів»"
   description: "Війни клоунів та мімів починаються на рівному місці: Кинутий пиріг, мило, чи невидима стіна - будь що може привести до вибуху конфлікту! Криваві, хаотичні та епічні битви тривають всю війну, допоки вона не закінчиться так само несподівано як і почалася!"
   components:

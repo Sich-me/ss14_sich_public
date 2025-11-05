@@ -325,6 +325,15 @@
     - id: PlushieThrongler #hehe
       prob: 0.0005
       orGroup: Plushies
+    - id: SichPlushieMoffMiriadeya # Це та ще 3 плюша нижче - додаванні білду Січі. Наші власні
+      prob: 0.005
+      orGroup: Plushies
+    - id: SichPlushieMoffMirka
+      prob: 0.005
+      orGroup: Plushies
+    - id: SichPlushieMoffRanch
+      prob: 0.005
+      orGroup: Plushies
     #useful
     - id: AmeJar
       prob: 0.01

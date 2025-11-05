@@ -1,0 +1,25 @@
+- type: entity
+  parent: MarkerBase
+  id: SichPlushieMoffRandom
+  name: спавнер випадкової плюшевої ніани
+  suffix: випадкова, одна з наших
+  placement:
+    mode: PlaceFree
+  components:
+  - type: Transform
+    anchored: false
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Moffs/Miriadea/base.rsi
+    state: all_plushies
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - SichPlushieMoffMiriadeya
+      - SichPlushieMoffMiriadeyaBar
+      - SichPlushieMoffMiriadeyaScience
+      - SichPlushieMoffMirka
+      - SichPlushieMoffMirkaBar
+      - SichPlushieMoffMirkaService
+      - SichPlushieMoffRanch
+      - SichPlushieMoffRanchBar
+      - SichPlushieMoffRanchBotanic

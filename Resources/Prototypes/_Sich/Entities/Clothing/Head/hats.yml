@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatChaosIncBeret
+  id: SichClothingHeadHatChaosIncBeret
   name: берет Корпорації Хаосу
   description: Чорний берет Корпорації Хаосу. Контроль Хаосу - Запорука Безпеки!
   components:
@@ -15,7 +15,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCIABeret
+  id: SichClothingHeadHatCIABeret
   name: берет МКР НТ
   description: Берет що носять агенти Мережі Корпоративної Розвідки НТ. Мило.
   components:
@@ -30,7 +30,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatBlackBow
+  id: SichClothingHeadHatBlackBow
   name: чорний бант
   description: Дуже добре поєднується з уніформою покоївок
   components:
@@ -41,7 +41,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatWhiteBow
+  id: ClothingHeadHatWhiteBowSich
   name: Білий бант
   description: Гарний білий бант
   components:
@@ -52,7 +52,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatFrog
+  id: SichClothingHeadHatFrog
   name: жабопелюх
   description: Капелюх наче жаба, але капелюх!
   components:
@@ -71,7 +71,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatShroom
+  id: SichClothingHeadHatShroom
   name: грибопелюх
   description: Капелюх наче гриб, але капелюх!
   components:
@@ -90,7 +90,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatWitchSich
+  id: SichClothingHeadHatWitch
   name: капелюх відьми
   description: Розкішний капелюх! Можливо колись він належав дуже впливовій відьмі ...
   components:
@@ -118,7 +118,7 @@
     
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCrab
+  id: SichClothingHeadHatCrab
   name: крабопелюх
   description: Капелюх наче краб, але капелюх!
   components:

@@ -1,7 +1,7 @@
 - type: entity
   name: лазерна гвинтівка "Фалькон"
   parent: BaseWeaponBattery
-  id: WeaponLaserCarbineFalconBlackwater
+  id: SichWeaponLaserCarbineFalconBlackwater
   description: Лазерна гвинтівка виробництва Блеквотер, що має функцію автоматичного режиму стрільби.
   components:
   - type: Sprite

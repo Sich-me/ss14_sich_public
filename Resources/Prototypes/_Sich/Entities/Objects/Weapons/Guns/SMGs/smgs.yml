@@ -1,7 +1,7 @@
 - type: entity
   name: СМГ "Отаку"
   parent: BaseWeaponSubMachineGun
-  id: WeaponSubMachineGunOtaku
+  id: SichWeaponSubMachineGunOtaku
   description: Пістолет-кулемет розроблений Азійською Співдружністю, що має вбудований глушник. Використовує патрони калібру .35
   components:
   - type: Sprite

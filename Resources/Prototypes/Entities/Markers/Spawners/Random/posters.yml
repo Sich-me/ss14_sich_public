@@ -93,8 +93,8 @@
       - PosterContrabandInterdyne
       - PosterContrabandWaffleCorp
       - PosterContrabandMissingSpacepen
-      - sich_poster_settler
-      - sich_poster_reinyn
+      - SichPosterContrabandSettler
+      - SichPosterContrabandRenyin
       - PosterContrabandExoAcid
       - PosterContrabandExoRun
       - PosterContrabandExoChomp
@@ -162,28 +162,29 @@
       - PosterLegitSafetyMothMeth
       - PosterLegitSafetyMothHardhat
       - PosterLegitSafetyMothSSD
-      - sich_poster_book_unath
-      - sich_poster_drg
-      - sich_poster_dse
-      - sich_poster_free_slime2
-      - sich_poster_slime_free
-      - sich_poster_map_space
-      - sich_poster_map_space2
-      - sich_poster_solar_federation
-      - sich_plastic_poster
-      - sich_poster_blood_knife
-      - PosterSichFarCry
-      - PosterSichGladiator
-      - PosterSichHellowin
-      - PosterSichJaill
-      - PosterSichRimworld
-      - PosterSichSkyPunk
-      - PosterSichSosfall
-      - PosterSichStalker
-      - PosterSichWarclown
-      - PosterSichWarmime
-      - poster_sich_passenger
-      - poster_sich_space_marine
+      - SichPosterLegitBookUnath
+      - SichPosterLegitDRG
+      - SichPosterLegitDSE
+      - SichPosterLegitFreeSlime2
+      - SichPosterLegitFreeSlime
+      - SichPosterLegitMapSpace
+      - SichPosterLegitMapSpace2
+      - SichPosterLegitSolarFederation
+      - SichPosterLegitPassengerNotes
+      - SichPosterLegitBloodKnife
+      - SichPosterLegitPlasticDIY
+      - SichPosterLegitSpaceMarine
+      - SichPosterLegitDayPay
+      - SichPosterLegitFarCry
+      - SichPosterLegitGladiator
+      - SichPosterLegitHalloween
+      - SichPosterLegitJail
+      - SichPosterLegitRimworld
+      - SichPosterLegitSkyPunk
+      - SichPosterLegitSosFall
+      - SichPosterLegitStalker
+      - SichPosterLegitWarClown
+      - SichPosterLegitWarMime
       - PosterLegitOppenhopper
       - PosterLegitTyrone
       - PosterLegitHelio

@@ -39,11 +39,24 @@
     - id: PlushieDiona
     - id: PlushieXeno
     - id: PlushieHampter
-    - id: PlushieMoth
+#    - id: PlushieMoth - Змінда білда Січі. Вкрадено до категорії ніанів.
     - id: PlushieArachind
     - id: PlushiePenguin
-    - id: PlushieN1
+    - id: SichPlushieN1
     - id: PlushieVulp
+    - !type:GroupSelector # Ця категорія - додавання білду Січі. Наші власні плюші, плюс звичайний молі
+      children:
+      - id: PlushieMoth
+        weight: 81
+      - id: SichPlushieMoffMiriadeya
+      - id: SichPlushieMoffMiriadeyaBar
+      - id: SichPlushieMoffMiriadeyaScience
+      - id: SichPlushieMoffMirka
+      - id: SichPlushieMoffMirkaBar
+      - id: SichPlushieMoffMirkaService
+      - id: SichPlushieMoffRanch
+      - id: SichPlushieMoffRanchBar
+      - id: SichPlushieMoffRanchBotanic
 
 - type: entityTable
   id: AllPottedPlantsTable

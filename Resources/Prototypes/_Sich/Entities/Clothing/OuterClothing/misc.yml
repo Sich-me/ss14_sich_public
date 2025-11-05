@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingOuterBaseToggleable
-  id: ClothingOuterMansusRobe
+  id: SichClothingOuterMansusRobe
   name: таємнича роба
   description: Дивного вигляду роба, яка тримає в собі таємничу силу...
   components:
@@ -9,7 +9,7 @@
   - type: Clothing
     sprite: _Sich/Clothing/OuterClothing/Misc/mansus_robe.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodMansusRobe
+    clothingPrototype: SichClothingHeadHatHoodMansusRobe
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -25,4 +25,3 @@
         Radiation: 0.25
         Caustic: 0.4
         Cellular: 0.25
-    

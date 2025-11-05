@@ -1,6 +1,6 @@
 - type: entity
   parent: [ClothingEyesBase]
-  id: MechanicalGlasses
+  id: SichMechanicalGlasses
   name: механічні окуляри
   description: Механічні окуляри на ремінці з можливістю налаштування наближення, що дозволяє зручно паяти та збирати дрібні механізми. Також мають для зварювання.
   components:
@@ -19,7 +19,7 @@
 
 - type: entity
   parent: [ClothingEyesBase]
-  id: BigShotGlasses
+  id: SichBigShotGlasses
   name: окуляри торговця
   description: Непогані окуляри з лінзами різного кольору. На етикетці до них написано «ТІЛЬКИ ЗАРАЗ - УСЬОГО ЗА 0,99! ВИ МОЖЕТЕ КУПИТИ УЛЬТРАКРУТІ ОКУЛЯРИ, ЯКІ ДАЮТЬ +999 ДО ТОРГІВЛІ! ДЛЯ ВСІЄЇ СІМ’Ї ТА ДІТЕЙ!»
   components:

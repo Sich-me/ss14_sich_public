@@ -1,7 +1,7 @@
 #Syndicate EVA Helmet
 - type: entity
   parent: ClothingHeadEVAHelmetBase
-  id: ClothingHeadHelmetContractor
+  id: SichClothingHeadHelmetContractor
   name: ЄВА шолом контрактора
   description: Дизайн розроблений таємничою та мутною організацією GoldenEye.
   components:

@@ -1,7 +1,7 @@
 # SolFed
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitSolFed
+  id: SichClothingOuterHardsuitSolFed
   name: скафандр Сонячної Федерації
   description: Скафандр що використовується Поліцією СолФеду. За демократію!
   components:
@@ -30,12 +30,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitSolFed
+    clothingPrototype: SichClothingHeadHelmetHardsuitSolFed
 
 # Ukraine (USN)
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitUkraine
+  id: SichClothingOuterHardsuitUkraine
   name: скафандр Української Космічної Держави
   description: Бойовий скафандр солдатів УКД, заснованій на армійському костюмі типу "Булат"
   components:
@@ -64,12 +64,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitUkraine
+    clothingPrototype: SichClothingHeadHelmetHardsuitUkraine
     
 # Renuin
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitRenuin
+  id: SichClothingOuterHardsuitRenuin
   name: скафандр Міжпланетної Асоціації Ренюінь
   description: Скафандр Ренюіньського ВПК, що використовується в умовах бойових дій у вакуумі. Підозріло схожий на скафандри виробництва Кіберсану.
   components:
@@ -98,12 +98,12 @@
     sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitRenuin
+    clothingPrototype: SichClothingHeadHelmetHardsuitRenuin
     
 # Dorenvir (Dwarves)
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitDorenvir
+  id: SichClothingOuterHardsuitDorenvir
   name: броньований скафандр Доренвірської Конфедерації
   description: Міцний скафандр розроблений компаніями Дворфів, який дозволяє перебувати у екстремальних умовах найрізноманітніших планет.
   components:
@@ -132,12 +132,12 @@
     sprintModifier: 0.6
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitDorenvir
+    clothingPrototype: SichClothingHeadHelmetHardsuitDorenvir
 
 # Mikaris (Nian)
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitMikaris
+  id: SichClothingOuterHardsuitMikaris
   name: скафандр Мікарісу
   description: Ніанський скафандр з широким броньованим склом, яке дуже розширює поле зору Ніани.
   components:
@@ -166,12 +166,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitMikaris
+    clothingPrototype: SichClothingHeadHelmetHardsuitMikaris
     
 # Adomai (Tajaran)
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitAdomai
+  id: SichClothingOuterHardsuitAdomai
   name: скафандр Нового Королівства Адомай
   description: Скафандр Нового Королівства Адомай, зроблений спеціально під представників раси Таяран.
   components:
@@ -200,12 +200,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitAdomai
+    clothingPrototype: SichClothingHeadHelmetHardsuitAdomai
     
 # Hegemony (Unathi)
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitHegemony
+  id: SichClothingOuterHardsuitHegemony
   name: скафандр Гегемонії Зіра
   description: Бойовий скафандр що підходить представникам раси Унатхів, і розроблений для солдатів Гегемонії Зіра.
   components:
@@ -234,12 +234,12 @@
     sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitHegemony
+    clothingPrototype: SichClothingHeadHelmetHardsuitHegemony
     
 #Centcom
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitCentcom
+  id: SichClothingOuterHardsuitCentcom
   name: скафандр Центрального Командування
   description: Скафандр що використовується Представниками Центрального Командування задля захисту від страшного вакууму.
   components:
@@ -268,12 +268,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitCentcom
+    clothingPrototype: SichClothingHeadHelmetHardsuitCentcom
     
 #Inquisitor
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitERTInquisitor
+  id: SichClothingOuterHardsuitERTInquisitor
   name: скафандр ГШР Інквізитора
   description: Скафандр що використовується підрозділом ГШР, який націлений на знищення оккультних загроз.
   components:
@@ -303,12 +303,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitERTInquisitor
+    clothingPrototype: SichClothingHeadHelmetHardsuitERTInquisitor
     
 # Death Shadow (CIA)
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitShadow
+  id: SichClothingOuterHardsuitShadow
   name: скафандр тіней смерті
   description: Бойовий скафандр що використовується професійною Групою Тіней Смерті МКР НТ. Остання сила після Загону Смерті. І останнє що ви скоріш за все побачите...
   components:
@@ -338,12 +338,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitShadow
+    clothingPrototype: SichClothingHeadHelmetHardsuitShadow
 
 # Blackwater Mercenary
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitBlackwater
+  id: SichClothingOuterHardsuitBlackwater
   name: бойовий скафандр Блеквотер
   description: Бойовий скафандр моделі MR-5, який використовується найманцями Асоціації Блеквотер.
   components:
@@ -372,12 +372,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitBlackwater
+    clothingPrototype: SichClothingHeadHelmetHardsuitBlackwater
 
 # Mercenary
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitMerc
+  id: SichClothingOuterHardsuitMerc
   name: бойовий скафандр найманця
   description: Модифікований бойовий скафандр лінійки MR, широко використовуваний космічними найманцями. Має підвищений захист від бойових пошкоджень, але погано захищає від екстремального оточення.
   components:
@@ -406,12 +406,12 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitMerc
+    clothingPrototype: SichClothingHeadHelmetHardsuitMerc
 
 # Archivarius League
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitLeague
+  id: SichClothingOuterHardsuitLeague
   name: броня Ліги Архіваріусів
   description: Костюм-роба МОГ Ліги Архіваріусів. Від неї віє старовиною, магією та небезпекою.
   components:
@@ -440,12 +440,12 @@
     walkModifier: 1.0
     sprintModifier: 1.0
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitLeague
+    clothingPrototype: SichClothingHeadHelmetHardsuitLeague
     
 # Mansus Legion
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitMansus
+  id: SichClothingOuterHardsuitMansus
   name: броня легіонера Мансуса
   description: Стара модель броні Корпорації Хаосу, модифікована задля потреб адептів Завіси Мансуса.
   components:
@@ -474,14 +474,14 @@
     walkModifier: 1.0
     sprintModifier: 1.0
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitMansus
+    clothingPrototype: SichClothingHeadHelmetHardsuitMansus
     
 #Debug Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitAdmin
-  name: bluespace traveler hardsuit [admeme]
-  description: A modified Bluespace Traveler hardsuit, or Bluespace God, or whoever this guy is.
+  id: SichClothingOuterHardsuitAdmin
+  name: скафандр мандрівника блюспейс-простором [admeme]
+  description: Модифікований скафандр мандрівника у блюспейс-просторі, чи блюспейс-бога, чи як цього хлопа взагалі звати.
   components:
   - type: Sprite
     sprite: _Sich/Clothing/OuterClothing/Hardsuits/debugadmin.rsi
@@ -510,11 +510,11 @@
     walkModifier: 1.0
     sprintModifier: 1.0
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitAdmin
+    clothingPrototype: SichClothingHeadHelmetHardsuitAdmin
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitCIO3
+  id: SichClothingOuterHardsuitCIO3
   name: cio-3 hardsuit
   description: Броня солдатів Оперативних Груп Корпорації Хаосу. Видно сталося щось дійсно серйозне...
   components:
@@ -540,11 +540,11 @@
   - type: ExplosionResistance
     damageCoefficient: 0.4
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitCIO3
+    clothingPrototype: SichClothingHeadHelmetHardsuitCIO3
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterVoidsuitIHS
+  id: SichClothingOuterVoidsuitIHS
   name: скафандр БАГ
   description: Старий та дещо пошкоджений, але все ще дієздатний скафандр Безпеки Айронгамер. Хто це такі? Гарне питання. Що він тут робить? Як ти це хочеш дізнатися, оглядаючи його. . .
   components:
@@ -567,4 +567,4 @@
     sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetVoidsuitIHS
+    clothingPrototype: SichClothingHeadHelmetVoidsuitIHS

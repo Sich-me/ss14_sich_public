@@ -1,0 +1,210 @@
+- type: entity
+  name: кислинка
+  parent: BaseItem
+  id: SichFoodSnackSourcandy
+  description: Смакує перекрученою пикою.
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/snacks.rsi
+    state: sourcandy
+  - type: Item
+    heldPrefix: sourcandy
+    size: Tiny
+  - type: Tag
+    tags:
+      - FoodSnack
+  - type: SpawnItemsOnUse
+    items:
+      - id: SichFoodPacketSourcandyTrash
+      - id: SichFoodSnackSourcandyOpen
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: FoodPacketTrash
+  id: SichFoodPacketSourcandyTrash
+  name: обгортка кислинки
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/snacks.rsi
+    state: sourcandy-trash
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: trash-inhand-left
+        color: "#A20000"
+      right:
+      - state: trash-inhand-right
+        color: "#A20000"
+
+- type: entity
+  name: кислинка
+  parent: FoodSnackBase
+  id: SichFoodSnackSourcandyOpen
+  description: Смакує перекрученою пикою.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sour
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/snacks.rsi
+    state: sourcandy-open
+  - type: Item
+    heldPrefix: sourcandy-open
+  - type: Tag
+    tags:
+      - FoodSnack
+      - ReptilianFood
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+
+
+## базова кислинка вгорі, червона
+
+## далі йде синя, жовта та зелена відповідно
+
+
+- type: entity
+  name: кислинка
+  parent: SichFoodSnackSourcandy
+  id: SichFoodSnackSourcandyBlue
+  components:
+  - type: Sprite
+    state: sourcandy-blue
+  - type: SpawnItemsOnUse
+    items:
+      - id: SichFoodPacketSourcandyTrash
+      - id: SichFoodSnackSourcandyOpenBlue
+
+- type: entity
+  name: кислинка
+  parent: SichFoodSnackSourcandyOpen
+  id: SichFoodSnackSourcandyOpenBlue
+  description: Смакує перекрученою пикою.
+  components:
+  - type: Sprite
+    state: sourcandy-blue-open
+##
+- type: entity
+  name: кислинка
+  parent: SichFoodSnackSourcandy
+  id: SichFoodSnackSourcandyYellow
+  components:
+  - type: Sprite
+    state: sourcandy-yellow
+  - type: SpawnItemsOnUse
+    items:
+      - id: SichFoodPacketSourcandyTrash
+      - id: SichFoodSnackSourcandyOpenYellow
+
+- type: entity
+  name: кислинка
+  parent: SichFoodSnackSourcandyOpen
+  id: SichFoodSnackSourcandyOpenYellow
+  description: Смакує перекрученою пикою.
+  components:
+  - type: Sprite
+    state: sourcandy-yellow-open
+##
+- type: entity
+  name: кислинка
+  parent: SichFoodSnackSourcandy
+  id: SichFoodSnackSourcandyGreen
+  components:
+  - type: Sprite
+    state: sourcandy-green
+  - type: SpawnItemsOnUse
+    items:
+      - id: SichFoodPacketSourcandyTrash
+      - id: SichFoodSnackSourcandyOpenGreen
+
+- type: entity
+  name: кислинка
+  parent: SichFoodSnackSourcandyOpen
+  id: SichFoodSnackSourcandyOpenGreen
+  description: Смакує перекрученою пикою.
+  components:
+  - type: Sprite
+    state: sourcandy-green-open
+
+- type: entity
+  parent: BaseItem
+  id: SichFoodSnackEyeLollipop
+  name: льодяник у вигляді ока
+  description: Це льодяник, який виглядає як звичайне око, ні це не Око Ктулху.
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/candy.rsi
+    state: eye_lollipop
+  - type: Item
+    sprite: _Sich/Objects/Consumable/Food/candy.rsi
+    heldPrefix: eye_lollipop
+    size: Small
+    storedRotation: -45
+    storedOffset: 0,-1
+  - type: Tag
+    tags:
+    - FoodSnack
+    - ReptilianFood
+  - type: SpawnItemsOnUse
+    items:
+      - id: SichFoodPacketEyeLollipopTrash
+      - id: SichFoodSnackEyeLollipopOpen
+
+- type: entity
+  parent: FoodPacketTrash
+  id: SichFoodPacketEyeLollipopTrash
+  name: обгортка льодяника
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/candy.rsi
+    state: eye_lollipop-trash
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: trash-inhand-left
+        color: "#A20000"
+      right:
+      - state: trash-inhand-right
+        color: "#A20000"
+
+- type: entity
+  parent: FoodSnackSwirlLollipop
+  id: SichFoodSnackEyeLollipopOpen
+  name: льодяник у вигляді ока
+  description: Це льодяник який виглядає як звичайне око, ні це не Око Ктулху.
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/candy.rsi
+    state: eye_lollipop-open
+  - type: Item
+    sprite: _Sich/Objects/Consumable/Food/candy.rsi
+    heldPrefix: eye_lollipop-open
+    size: Small
+    storedRotation: -45
+    storedOffset: 0,-1
+  - type: Edible
+    trash:
+    - SichFoodSnackEyeLollipopPopsicleTrash
+
+- type: entity
+  name: паличка для льодяника
+  parent: BaseItem
+  id: SichFoodSnackEyeLollipopPopsicleTrash
+  description: Колись тут було дуже смачно. Тепер це пустка.
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/candy.rsi
+    layers:
+      - state: eye_lollipop-stick
+        map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Tag
+    tags:
+    - Trash
+  - type: SpaceGarbage

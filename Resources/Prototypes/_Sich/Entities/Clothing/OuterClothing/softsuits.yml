@@ -1,7 +1,7 @@
 #Contractor EVA
 - type: entity
   parent: ClothingOuterEVASuitBase
-  id: ClothingOuterEVAsuitContractor
+  id: SichClothingOuterEVAsuitContractor
   name: ЕВА костюм контрактора
   description: "Дизайн розроблений таємничою та мутною організацією GoldenEye."
   components:

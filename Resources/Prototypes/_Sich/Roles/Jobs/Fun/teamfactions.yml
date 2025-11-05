@@ -1,6 +1,6 @@
 # Chaos Inc.
 - type: job
-  id: ChaosIncRespentative
+  id: SichChaosIncRespentative
   name: "Представник Корпорації Хаосу"
   description: "Публічна особа що представляє Корпорацію Хаосу."
   playTimeTracker: ChaosIncRespentative
@@ -15,23 +15,23 @@
   - CentralCommand
 
 - type: startingGear
-  id: ChaosIncRespentativeGear
+  id: SichChaosIncRespentativeGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerBlack
     back: ClothingBackpackSatchelHolding
     shoes: ClothingShoesBootsCombatFilled
-    head: ClothingHeadHatChaosIncBeret
+    head: SichClothingHeadHatChaosIncBeret
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterCoatChaosIncTrench
-    id: CIRespentativeIDCard
+    outerClothing: SichClothingOuterCoatChaosIncTrench
+    id: SichCIRespentativeIDCard
     ears: ClothingHeadsetAltCentCom
     belt: WeaponTaser
     pocket1: WeaponPulsePistol
     pocket2: FlashlightSeclite
 
 - type: startingGear
-  id: ChaosIncOperative
+  id: SichChaosIncOperative
   equipment:
     jumpsuit: ClothingUniformJumpsuitTacticool
     back: ClothingBackpackHolding
@@ -49,30 +49,30 @@
 #SolFed and Co.
 
 - type: startingGear
-  id: SolFedPoliceGear
+  id: SichSolFedPoliceGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSolFed
+    jumpsuit: SichClothingUniformJumpsuitSolFed
     back: ClothingBackpackSecurity
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSolFed
-    id: SolFedOfficerIDCard
+    outerClothing: SichClothingOuterHardsuitSolFed
+    id: SichSolFedOfficerIDCard
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPulsePistol
     pocket2: FlashlightSeclite
     
 - type: startingGear
-  id: SBUSNGear
+  id: SichSBUSNGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSolFed
+    jumpsuit: SichClothingUniformJumpsuitSolFed
     back: ClothingBackpackSecurity
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitUkraine
-    id: SBUSNIDCard
+    outerClothing: SichClothingOuterHardsuitUkraine
+    id: SichSBUSNIDCard
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPulsePistol
@@ -81,12 +81,12 @@
 #CIA NT
 
 - type: startingGear
-  id: CIAAgentGear
+  id: SichCIAAgentGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCIAAgent
+    jumpsuit: SichClothingUniformJumpsuitCIAAgent
     back: ClothingBackpackSatchelHolding
     shoes: ClothingShoesBootsCombatFilled
-    head: ClothingHeadHatCIABeret
+    head: SichClothingHeadHatCIABeret
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBasic
@@ -97,7 +97,7 @@
     pocket2: BoxFolderBlack
     
 - type: startingGear
-  id: DeathShadowOperative
+  id: SichDeathShadowOperative
   equipment:
     jumpsuit: ClothingUniformJumpsuitTacticool
     back: ClothingBackpackDeathSquad
@@ -105,7 +105,7 @@
     mask: ClothingMaskGasSwat
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitShadow
+    outerClothing: SichClothingOuterHardsuitShadow
     suitstorage: AirTankFilled
     id: DeathsquadPDA
     ears: ClothingHeadsetAltCentCom
@@ -116,15 +116,15 @@
 #Renuin
 
 - type: startingGear
-  id: RenuinSoliderGear
+  id: SichRenuinSoliderGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitTacticool
     back: ClothingBackpackSecurity
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitRenuin
-    id: RenuinSoliderIDCard
+    outerClothing: SichClothingOuterHardsuitRenuin
+    id: SichRenuinSoliderIDCard
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbing
     pocket1: WeaponPistolN1984

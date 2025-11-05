@@ -1,7 +1,7 @@
 - type: entity
   name: Трікстер
   parent: BaseWeaponRifle
-  id: WeaponRifleTricksterBlackwater
+  id: SichWeaponRifleTricksterBlackwater
   description: Гвинтівка виробництва Асоціації Блеквотер. Використовує патрони калібру .30
   components:
   - type: Sprite

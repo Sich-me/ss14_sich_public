@@ -1,7 +1,7 @@
 - type: entity
   name: blue energy katana
   parent: Katana
-  id: EnergyKatanaBlue
+  id: SichEnergyKatanaBlue
   description: A katana infused with strong energy. Blue version.
   components:
   - type: Sprite
@@ -26,7 +26,7 @@
 - type: entity
   name: red energy katana
   parent: Katana
-  id: EnergyKatanaRed
+  id: SichEnergyKatanaRed
   description: A katana infused with strong energy. Red version.
   components:
   - type: Sprite

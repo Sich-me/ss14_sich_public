@@ -1,7 +1,7 @@
 #SolFed
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitSolFed
+  id: SichClothingHeadHelmetHardsuitSolFed
   categories: [ HideSpawnMenu ]
   name: шолом Сонячної Федерації
   description: Шолом що використовується Поліцією СолФеду. За демократію!
@@ -27,7 +27,7 @@
 #Ukraine (USN)
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitUkraine
+  id: SichClothingHeadHelmetHardsuitUkraine
   categories: [ HideSpawnMenu ]
   name: шолом Української Космічної Держави
   description: Бойовий шолом солдатів УКД, заснованій на армійському костюмі типу "Булат".
@@ -53,7 +53,7 @@
 #Renuin
 - type: entity
   parent: ClothingHeadHardsuitBase
-  id: ClothingHeadHelmetHardsuitRenuin
+  id: SichClothingHeadHelmetHardsuitRenuin
   categories: [ HideSpawnMenu ]
   name: шолом-акваріум Міжпланетної Асоціації Ренюінь
   description: Шолом від скафандру Ренюіня. Підозріло схожий на скафандри виробництва Кіберсану.
@@ -77,7 +77,7 @@
 #Dorenvir
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitDorenvir
+  id: SichClothingHeadHelmetHardsuitDorenvir
   categories: [ HideSpawnMenu ]
   name: важкий шолом Доренвірської Конфедерації
   description: Міцний шолом розроблений компаніями Дворфів, який дозволяє перебувати у екстремальних умовах найрізноманітніших планет.
@@ -103,7 +103,7 @@
 #Hegemony
 - type: entity
   parent: ClothingHeadHardsuitBase
-  id: ClothingHeadHelmetHardsuitHegemony
+  id: SichClothingHeadHelmetHardsuitHegemony
   categories: [ HideSpawnMenu ]
   name: шолом Гегемонії Зіра
   description: Бойовий шолом що підходить представникам раси Унатхів, і розроблений для солдатів Гегемонії Зіра.
@@ -127,7 +127,7 @@
 #Adomai
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitAdomai
+  id: SichClothingHeadHelmetHardsuitAdomai
   categories: [ HideSpawnMenu ]
   name: шолом Нового Королівства Адомай
   description: Шолом Нового Королівства Адомай, зроблений спеціально під представників раси Таяран.
@@ -165,7 +165,7 @@
 #Mikaris
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitMikaris
+  id: SichClothingHeadHelmetHardsuitMikaris
   categories: [ HideSpawnMenu ]
   name: шолом Мікаріс
   description: Ніанський шолом з широким броньованим склом, яке дуже розширює поле зору Ніани.
@@ -191,7 +191,7 @@
 #Centcom
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitCentcom
+  id: SichClothingHeadHelmetHardsuitCentcom
   categories: [ HideSpawnMenu ]
   name: шолом Центрального Командування
   description: Шолом що використовується Представниками Центрального Командування задля захисту від страшного вакууму.
@@ -217,7 +217,7 @@
 #Inquisitor
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitERTInquisitor
+  id: SichClothingHeadHelmetHardsuitERTInquisitor
   categories: [ HideSpawnMenu ]
   name: шолом ГШР Інквізитора
   description: Шолом що використовується підрозділом ГШР, який націлений на знищення оккультних загроз. Хто зробив йому цей дивний ірокез...
@@ -243,7 +243,7 @@
 #Death Shadow (CIA)
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitShadow
+  id: SichClothingHeadHelmetHardsuitShadow
   categories: [ HideSpawnMenu ]
   name: шолом тіней смерті
   description: Бойовий скафандр що використовується професійною Групою Тіней Смерті МКР НТ. Остання сила після Загону Смерті. І останнє що ви скоріш за все побачите...
@@ -281,7 +281,7 @@
 # Blackwater Mercenary
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitBlackwater
+  id: SichClothingHeadHelmetHardsuitBlackwater
   categories: [ HideSpawnMenu ]
   name: шолом Блеквотер
   description: Шолом бойового скафандру моделі MR-5, який використовується найманцями Асоціації Блеквотер.
@@ -307,7 +307,7 @@
 # Mercenary
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitMerc
+  id: SichClothingHeadHelmetHardsuitMerc
   categories: [ HideSpawnMenu ]
   name: шолом найманця
   description: Шолом модифікованого бойового скафандру лінійки MR, широко використовуваний космічними найманцями. Має підвищений захист від бойових пошкоджень, але погано захищає від екстремального оточення.
@@ -333,7 +333,7 @@
 # League
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndieCommander
-  id: ClothingHeadHelmetHardsuitLeague
+  id: SichClothingHeadHelmetHardsuitLeague
   categories: [ HideSpawnMenu ]
   name: шолом Ліги Архіваріусів
   description: Шолом МОГ Ліги Архіваріусів. Від неї віє старовиною, магією та небезпекою.
@@ -358,7 +358,7 @@
 # Mansus Legion
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndieCommander
-  id: ClothingHeadHelmetHardsuitMansus
+  id: SichClothingHeadHelmetHardsuitMansus
   categories: [ HideSpawnMenu ]
   name: Шолом-капюшон Легіонера Мансуса
   description: Капюшон, під яким знаходиться модифікований шолом-протигаз.
@@ -383,10 +383,10 @@
 #Debug Hardsuit
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndieCommander
-  id: ClothingHeadHelmetHardsuitAdmin
+  id: SichClothingHeadHelmetHardsuitAdmin
   categories: [ HideSpawnMenu ]
-  name: bluespace traveler hardsuit helmet [admeme]
-  description: Some modified bluespace helmet. Why does it look like a biker helmet?
+  name: шолом мандрівника блюспейс-простором [admeme]
+  description: Модифікований блюспейс шолом. Чому він підозріло схожий на байкерський шолом?..
   components:
   - type: Sprite
     sprite: _Sich/Clothing/Head/Hardsuits/debugadmin.rsi
@@ -409,7 +409,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitBase
-  id: ClothingHeadHelmetHardsuitCIO3
+  id: SichClothingHeadHelmetHardsuitCIO3
   categories: [ HideSpawnMenu ]
   name: cio-3 hardsuit
   description: Шолом солдатів Оперативних Груп Корпорації Хаосу. Видно сталося щось дійсно серйозне...
@@ -424,7 +424,7 @@
 
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetVoidsuitIHS
+  id: SichClothingHeadHelmetVoidsuitIHS
   name: шолом БАГ
   description: Кріпкий та бойовий шолом скафандру Безпеки Айронгамер.
   components:

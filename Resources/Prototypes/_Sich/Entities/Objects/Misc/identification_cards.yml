@@ -1,6 +1,6 @@
 - type: entity
   parent: Clothing
-  id: IDCardFaction
+  id: SichIDCardFaction
   name: identification card
   description: A card necessary to access various areas aboard the station.
   abstract: true
@@ -28,8 +28,8 @@
 #Faction IDs
 
 - type: entity
-  parent: IDCardFaction
-  id: FactionBlankIDCard
+  parent: SichIDCardFaction
+  id: SichFactionBlankIDCard
   name: Фракційна ID картка
   components:
   - type: Sprite
@@ -42,8 +42,8 @@
     - CentralCommand
 
 - type: entity
-  parent: IDCardFaction
-  id: SolFedIDCard
+  parent: SichIDCardFaction
+  id: SichSolFedIDCard
   name: ID картка Сонячної Федерації
   components:
   - type: Sprite
@@ -56,8 +56,8 @@
     - CentralCommand
     
 - type: entity
-  parent: IDCardFaction
-  id: USNIDCard
+  parent: SichIDCardFaction
+  id: SichUSNIDCard
   name: ID картка УКД
   components:
   - type: Sprite
@@ -70,8 +70,8 @@
     - CentralCommand
     
 - type: entity
-  parent: IDCardFaction
-  id: RenuinIDCard
+  parent: SichIDCardFaction
+  id: SichRenuinIDCard
   name: ID картка Ренюіня
   components:
   - type: Sprite
@@ -84,8 +84,8 @@
     - CentralCommand
     
 - type: entity
-  parent: IDCardFaction
-  id: ChaosIncIDCard
+  parent: SichIDCardFaction
+  id: SichChaosIncIDCard
   name: ID картка Корпорації Хаосу
   components:
   - type: Sprite
@@ -98,8 +98,8 @@
     - CentralCommand
     
 - type: entity
-  parent: IDCardFaction
-  id: TCCIDCard
+  parent: SichIDCardFaction
+  id: SichTCCIDCard
   name: ID картка Коаліції Тео-Контролю
   components:
   - type: Sprite
@@ -114,8 +114,8 @@
 #Job Faction IDs
 
 - type: entity
-  parent: ChaosIncIDCard
-  id: CIRespentativeIDCard
+  parent: SichChaosIncIDCard
+  id: SichCIRespentativeIDCard
   name: ID картка Представника Корпорації Хаосу
   components:
   - type: Sprite
@@ -126,8 +126,8 @@
     jobTitle: sich-job-chaos
     
 - type: entity
-  parent: SolFedIDCard
-  id: SolFedOfficerIDCard
+  parent: SichSolFedIDCard
+  id: SichSolFedOfficerIDCard
   name: ID картка Офіцера Поліції СолФеду
   components:
   - type: Sprite
@@ -138,8 +138,8 @@
     jobTitle: sich-job-police-solfed
     
 - type: entity
-  parent: USNIDCard
-  id: SBUSNIDCard
+  parent: SichUSNIDCard
+  id: SichSBUSNIDCard
   name: ID картка Офіцера СБУКД
   components:
   - type: Sprite
@@ -150,8 +150,8 @@
     jobTitle: sich-job-officer-sbusn
     
 - type: entity
-  parent: RenuinIDCard
-  id: RenuinSoliderIDCard
+  parent: SichRenuinIDCard
+  id: SichRenuinSoliderIDCard
   name: ID картка Солдата МАР
   components:
   - type: Sprite

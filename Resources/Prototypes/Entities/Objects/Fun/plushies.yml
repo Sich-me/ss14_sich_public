@@ -19,9 +19,9 @@
   - type: EmitSoundOnTrigger
     sound: *BasePlushieSound
   - type: UseDelay
-    delay: 3.0
+    delay: 1.0 # 3.0 в оригіналі. Зміна білду Січі, #NoMorePlushie's1984
   - type: MeleeWeapon
-    attackRate: 0.333
+#    attackRate: 0.333 - прибрано білдом Січі. #NoMorePlushie's1984
     wideAnimationRotation: 180
     soundHit: *BasePlushieSound
     damage:

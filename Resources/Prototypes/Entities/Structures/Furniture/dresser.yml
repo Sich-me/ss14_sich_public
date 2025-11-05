@@ -286,6 +286,15 @@
       - id: PlushieLizard
         prob: 0.03
         orGroup: dresserthirdloot
+      - id: SichPlushieMoffMiriadeya # Це та ще 3 плюша нижче - додаванні білду Січі. Наші власні
+        prob: 0.015
+        orGroup: dresserthirdloot
+      - id: SichPlushieMoffMirka
+        prob: 0.015
+        orGroup: dresserthirdloot
+      - id: SichPlushieMoffRanch
+        prob: 0.015
+        orGroup: dresserthirdloot
       - id: ClothingOuterSuitShrineMaiden
         prob: 0.03
         orGroup: dressersecondloot

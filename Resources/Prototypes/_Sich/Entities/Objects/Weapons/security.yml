@@ -1,7 +1,7 @@
 - type: entity
   name: станбатон контрактора
   parent: BaseItem
-  id: ContractorStunbaton
+  id: SichContractorStunbaton
   description: Унікальний станбатон виробництва GoldenEye, який створений задля швидкого обеззброєння та захоплення цілі.
   components:
   - type: Sprite

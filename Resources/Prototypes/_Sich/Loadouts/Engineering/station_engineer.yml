@@ -1,7 +1,7 @@
 - type: loadout
-  id: SichCriengineerSign
+  id: SichCringineerSign
   effects:
   - !type:GroupLoadoutEffect
     proto: SeniorEngineering
   equipment:
-    id: SichSignriengener
+    id: SichSignCringineer

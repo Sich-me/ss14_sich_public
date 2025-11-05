@@ -1,6 +1,13 @@
 - type: vendingMachineInventory
   id: GetmoreChocolateCorpInventory
   startingInventory:
+    SichFoodSnackSourcandy: 4
+    SichFoodSnackSourcandyBlue: 4
+    SichFoodSnackSourcandyYellow: 4
+    SichFoodSnackSourcandyGreen: 4
+    SichFoodFrozenMelted: 4
+    SichFoodFrozenGhost: 4
+    SichFoodSnackEyeLollipop: 4
     FoodSnackRaisins: 3
     FoodSnackChocolate: 3
     FoodSnackCnDs: 3

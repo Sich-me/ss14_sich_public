@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "sprites by svetoslav505 on discord.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "sourcandy"
+    },
+    {
+      "name": "sourcandy-open"
+    },
+        {
+      "name": "sourcandy-yellow"
+    },
+    {
+      "name": "sourcandy-yellow-open"
+    },
+        {
+      "name": "sourcandy-green"
+    },
+    {
+      "name": "sourcandy-green-open"
+    },
+        {
+      "name": "sourcandy-blue"
+    },
+    {
+      "name": "sourcandy-blue-open"
+    },
+    {
+      "name": "sourcandy-trash"
+    }
+  ]
+}

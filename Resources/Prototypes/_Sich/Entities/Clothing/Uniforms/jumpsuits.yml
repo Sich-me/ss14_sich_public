@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCIAAgent
+  id: SichClothingUniformJumpsuitCIAAgent
   name: уніформа агента МКР НТ
   description: Холодний чорний костюм, що зазвичай носять агенти Мережи Корпоративної Розвідки.
   components:
@@ -11,7 +11,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitSolFed
+  id: SichClothingUniformJumpsuitSolFed
   name: військова форма Сонячної Федерації
   description: Водолазка яку носять військові Сонячної Федерації та її країн-членів.
   components:

@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingBackpackDuffel
-  id: ClothingBackpackDuffelMerc
+  id: SichClothingBackpackDuffelMerc
   name: торба найманця
   description: Велика торба що зачасту використовується найманцями та ПВК.
   components:
@@ -10,8 +10,8 @@
     damageCoefficient: 0.1
 
 - type: entity
-  parent: ClothingBackpackDuffelMerc
-  id: ClothingBackpackDuffelMercBundle
+  parent: SichClothingBackpackDuffelMerc
+  id: SichClothingBackpackDuffelMercBundle
   abstract: true
   components:
   - type: Tag

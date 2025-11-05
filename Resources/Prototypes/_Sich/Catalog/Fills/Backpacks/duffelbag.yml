@@ -1,24 +1,24 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
-  id: ClothingBackpackDuffelSyndicateSMGOtaku
+  id: SichClothingBackpackDuffelSyndicateSMGOtaku
   name: набір СМГ "Отаку"
   description: "СМГ з вбудованим глушником, розроблений Азійською Співдружністю. Два магазини в комплекті."
   components:
   - type: StorageFill
     contents:
-      - id: WeaponSubMachineGunOtaku
+      - id: SichWeaponSubMachineGunOtaku
       - id: MagazinePistolSubMachineGun
         amount: 2
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
-  id: ClothingBackpackDuffelMercHardsuitBundle
+  id: SichClothingBackpackDuffelMercHardsuitBundle
   name: набір зі скафандром Найманця
   description: "Містить модифікований скафандр незалежного найманця, а також необхідні до нього прибамбаси."
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterHardsuitMerc
+      - id: SichClothingOuterHardsuitMerc
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
       - id: DoubleEmergencyOxygenTankFilled

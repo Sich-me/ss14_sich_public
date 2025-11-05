@@ -1,0 +1,42 @@
+- type: entity
+  parent: FoodFrozenBase
+  id: SichFoodFrozenBase
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/frozen.rsi
+
+- type: entity
+  name: поплавлене морозиво
+  parent: SichFoodFrozenBase
+  id: SichFoodFrozenMelted
+  description: Схоже, це морозиво дуже поплавило.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: melted-inhand-left
+      right:
+      - state: melted-inhand-right
+  - type: Sprite
+    state: melted
+  - type: FlavorProfile
+    flavors:
+      - banana
+
+- type: entity
+  name: морозиво привид
+  parent: SichFoodFrozenBase
+  id: SichFoodFrozenGhost
+  description: Трохи прозоре морозиво у вигляді привида, на смак як пломбір з ектоплазмою.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: ghost-inhand-left
+      right:
+      - state: ghost-inhand-right
+  - type: Sprite
+    state: ghost
+  - type: FlavorProfile
+    flavors:
+      - milk
