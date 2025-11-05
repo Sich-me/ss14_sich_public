@@ -1,11 +1,18 @@
 - type: entity
-  name: Старе ліжко
-  id: SichSkypunkOldBed
+  id: SichSkypunkBedBase
   parent: Bed
   description: Видно, що в це ліжко лягали багато, а матрас був замінений.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
+    sprite: _Sich/SkypunkTextures/Structures/Furniture/bed.rsi
+
+- type: entity
+  name: Старе ліжко
+  id: SichSkypunkOldBed
+  parent: SichSkypunkBedBase
+  description: Видно, що в це ліжко лягали багато, а матрас був замінений.
+  components:
+  - type: Sprite
     state: bed
   - type: HealOnBuckle
     damage:
@@ -16,11 +23,10 @@
 - type: entity
   name: Поламане ліжко
   id: SichSkypunkBrokenOldBed
-  parent: Bed
+  parent: SichSkypunkBedBase
   description: Це ліжко дасть вам відчути жахіття
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: bed1
   - type: HealOnBuckle
     damage:
@@ -48,15 +54,13 @@
     guides:
     - MedicalDoctor
 
-
 - type: entity
-  parent: Bed
+  parent: SichSkypunkBedBase
   id: SichSkypunkComfyMattress
   name: Матрас з подушкою
   description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress
   - type: Damageable
     damageModifierSet: Inflatable
