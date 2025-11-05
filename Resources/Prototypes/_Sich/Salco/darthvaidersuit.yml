@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingOuterEVASuitBase, BaseRestrictedContraband, ClothingOuterStorageBase]
+  parent: [ClothingOuterEVASuitBase, ClothingOuterStorageBase]
   categories: [HideSpawnMenu]
   id: DarthVaderSuit
   name: костюм Дарта Вейдера
