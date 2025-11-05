@@ -1,18 +1,4 @@
 # Chaos Inc.
-- type: job
-  id: SichChaosIncRespentative
-  name: "Представник Корпорації Хаосу"
-  description: "Публічна особа що представляє Корпорацію Хаосу."
-  playTimeTracker: ChaosIncRespentative
-  setPreference: false
-  startingGear: ChaosIncRespentativeGear
-  icon: "SichJobIconChaosIncRespentative"
-  supervisors: "Корпорація Хаосу"
-  canBeAntag: false
-  accessGroups:
-  - AllAccess
-  access:
-  - CentralCommand
 
 - type: startingGear
   id: SichChaosIncRespentativeGear

@@ -41,7 +41,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatWhiteBowSich
+  id: SichClothingHeadHatWhiteBow
   name: Білий бант
   description: Гарний білий бант
   components:
