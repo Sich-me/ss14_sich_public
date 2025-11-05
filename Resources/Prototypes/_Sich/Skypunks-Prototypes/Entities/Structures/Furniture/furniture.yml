@@ -64,139 +64,97 @@
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress1
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress1
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress2
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress2
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress3
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress3
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress4
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress4
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress5
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress5
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress6
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress6
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress7
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress7
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress8
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress8
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress9
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress9
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress10
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress10
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress11
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress11
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress12
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress12
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress13
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress13
 
 - type: entity
   parent: SichSkypunkComfyMattress
   id: SichSkypunkMattress14
-  name: Брудний матрас
-  description: Я думаю, краще спати на цьому ніж на підлозі.
   components:
   - type: Sprite
-    sprite: _Sich/SkypunkTextures/Structures/Furniture/furniture.rsi
     state: mattress14
