@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urist McBot
-  parent: BaseMobSpecies
+  parent: [BaseMobSpecies, MobRespirator]
   id: BaseMobIPC
   abstract: true
   components:
