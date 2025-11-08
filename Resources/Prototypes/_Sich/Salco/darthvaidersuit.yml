@@ -1,7 +1,7 @@
 - type: entity
   parent: [ClothingOuterEVASuitBase, ClothingOuterStorageBase]
   categories: [HideSpawnMenu]
-  id: DarthVaderSuit
+  id: SalcoDarthVaderSuit
   name: костюм Дарта Вейдера
   description: Поруч і з ним чутно Імперський Марш
   components:
@@ -47,7 +47,7 @@
 - type: entity
   parent: ClothingHeadEVAHelmetBase
   categories: [HideSpawnMenu]
-  id: DarthVaderHemlet
+  id: SalcoDarthVaderHemlet
   name: шолом Дарта Вейдера
   description: Поруч і з ним чутно Імперський Марш
   components:
@@ -83,7 +83,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: DarthVaderHemletCloak
+  id: SalcoDarthVaderHemletCloak
   categories: [HideSpawnMenu]
   name: плащ Дарта Вейдера 
   description: Поруч і з ним чутно Імперський Марш
@@ -95,7 +95,7 @@
 
 - type: entity
   parent: ClothingShoesBase
-  id: darthVaderBoots
+  id: SalcoDarthVaderBoots
   categories: [HideSpawnMenu]
   name: чоботи Дарта Вейдера
   description: Поруч і з ними чутно Імперський Марш
@@ -112,14 +112,14 @@
 
 - type: entity
   parent: BaseSubdermalImplant
-  id: COTelekinesisImplant
+  id: SalcoTelekinesisImplant
   name: Telekinesis implant
   description: This implant gives you extraordinary powers!
   categories: [HideSpawnMenu]
   components:
     - type: SubdermalImplant
       permanent: true
-      implantAction: ActionRetractableTelekinesis
+      implantAction: SalcoActionRetractableTelekinesis
     - type: TriggerOnActivateImplant
     - type: Tag
       tags:
@@ -127,18 +127,18 @@
         - HideContextMenu
 
 - type: entity
-  id: COTelekinesisImplanter
+  id: SalcoTelekinesisImplanter
   name: Telekinesis implanter
   parent: BaseImplantOnlyImplanter
   components:
     - type: Implanter
-      implant: COTelekinesisImplant
+      implant: SalcoTelekinesisImplant
 
 # action
 
 - type: entity
   parent: BaseAction
-  id: ActionRetractableTelekinesis
+  id: SalcoActionRetractableTelekinesis
   name: Сила
   description: Використай свою силу, щоб душити та кидати ворогів
   components:
@@ -155,7 +155,7 @@
   - type: InstantAction
     event: !type:OnRetractableItemActionEvent
   - type: RetractableItemAction
-    spawnedPrototype: COTelekinesisAbilityPower
+    spawnedPrototype: SalcoTelekinesisAbilityPower
 
 - type: Tag
   id: ExtraordTelekinesis
@@ -167,7 +167,7 @@
   suffix: DO NOT MAP
   parent: BaseItem
   categories: [HideSpawnMenu]
-  id: COTelekinesisAbilityPower
+  id: SalcoTelekinesisAbilityPower
   description: Manipulates gravity around objects to fling them at high velocities.
   components:
     - type: Item
@@ -197,7 +197,7 @@
 - type: entity
   name: енергетичний меч Дарта Вейдера
   parent: [BaseMeleeWeaponEnergy, BaseSyndicateContraband]
-  id: EnergySwordDarthVader
+  id: SalcoEnergySwordDarthVader
   categories: [HideSpawnMenu]
   description: Тримаючі його в руках ви відчуваєте всю його силу
   components:
@@ -232,15 +232,15 @@
     malus: 0
 
 - type: startingGear
-  id: DarthVader
+  id: SalcoDarthVader
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBlack
-    shoes: darthVaderBoots
+    shoes: SalcoDarthVaderBoots
     gloves: ClothingHandsGlovesCombat
-    head: DarthVaderHemlet
-    neck: DarthVaderHemletCloak
-    outerClothing: DarthVaderSuit
+    head: SalcoDarthVaderHemlet
+    neck: SalcoDarthVaderHemletCloak
+    outerClothing: SalcoDarthVaderSuit
     eyes: ClothingEyesGlassesSunglasses
   inhand:
-  - COTelekinesisImplanter
-  - EnergySwordDarthVader
+  - SalcoTelekinesisImplanter
+  - SalcoEnergySwordDarthVader

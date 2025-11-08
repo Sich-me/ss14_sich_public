@@ -1,5 +1,5 @@
 - type: cargoProduct
-  id: ArmoryRifleTrickster
+  id: SichArmoryRifleTrickster
   icon:
     sprite: _Sich/Objects/Weapons/Guns/Rifles/trickster.rsi
     state: icon
@@ -9,7 +9,7 @@
   group: market
 
 - type: cargoProduct
-  id: ArmoryLaserFalcon
+  id: SichArmoryLaserFalcon
   icon:
     sprite: _Sich/Objects/Weapons/Guns/Battery/falcon.rsi
     state: icon
