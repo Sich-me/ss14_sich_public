@@ -1,5 +1,5 @@
 - type: gamePreset
-  id: EventFree
+  id: SichEventFree
   alias:
   - Uneventful
   - NoEventsAtAll
