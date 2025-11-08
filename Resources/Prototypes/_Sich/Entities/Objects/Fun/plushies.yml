@@ -214,6 +214,10 @@
   components:
   - type: Sprite
     sprite: _Sich/Objects/Fun/Plushies/Moffs/Miriadea/base.rsi
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
   - type: Extractable
     juiceSolution:
       reagents:

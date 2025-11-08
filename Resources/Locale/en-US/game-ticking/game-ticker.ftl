@@ -35,7 +35,7 @@ player-leave-message = Гравець {$name} вийшов!
 
 latejoin-arrival-announcement = {$character} ({$job}) прибув на станцію!
 latejoin-arrival-announcement-special = {$job} {$character} на борту!
-latejoin-arrival-sender = Станція
+latejoin-arrival-sender = Станційне
 latejoin-arrivals-direction = Трансфер до вашої станції прибуде незабаром.
 latejoin-arrivals-direction-time = Шатл який перевозить вас на станцію прибуде за {$time}.
 latejoin-arrivals-dumped-from-shuttle = Таємнича сила заважає вам вилетіти з шатлом прибуття.

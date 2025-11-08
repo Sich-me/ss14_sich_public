@@ -1,2 +1,2 @@
 sample:
-  filter: true
+  filter: false # true в оригіналі, змінено білдом Січі (щоб те true страждало)

@@ -42,7 +42,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: SichClothingHeadHatWhiteBow
-  name: Білий бант
+  name: білий бант
   description: Гарний білий бант
   components:
   - type: Sprite

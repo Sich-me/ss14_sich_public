@@ -3,7 +3,7 @@
   categories: [ HideSpawnMenu ]
   id: BaseAPC
   name: ЗКЖ
-  description: Термінал зонального контролю живлення.
+  description: Термінал зонального контролера живлення.
   placement:
     mode: SnapgridCenter
   components:
@@ -157,7 +157,7 @@
   categories: [ HideSpawnMenu ]
   id: APCFrame
   name: каркас ЗКЖ
-  description: Термінал зонального контролю живлення, якому не вистачає компонентів.
+  description: Термінал зонального контролера живлення, якому не вистачає компонентів.
   placement:
     mode: SnapgridCenter
   components:

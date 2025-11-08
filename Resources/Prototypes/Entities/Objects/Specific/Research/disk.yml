@@ -2,7 +2,7 @@
   parent: BaseItem
   id: ResearchDisk
   name: диск технологічних балів (1000)
-  description: Диск для сервера відділу дослідження та розробки, що містить 1000 точок.
+  description: Диск для сервера відділу дослідження та розробки, що містить 1000 балів.
   components:
   - type: Sprite
     sprite: Objects/Specific/Research/researchdisk.rsi
@@ -16,7 +16,7 @@
   parent: ResearchDisk
   id: ResearchDisk5000
   name: диск технологічних балів (5000)
-  description: Диск для сервера відділу дослідження та розробки, що містить 5000 точок.
+  description: Диск для сервера відділу дослідження та розробки, що містить 5000 балів.
   components:
   - type: ResearchDisk
     points: 5000
@@ -25,7 +25,7 @@
   parent: ResearchDisk
   id: ResearchDisk10000
   name: диск технологічних балів (10000)
-  description: Диск для сервера відділу дослідження та розробки, що містить 10000 точок.
+  description: Диск для сервера відділу дослідження та розробки, що містить 10000 балів.
   components:
   - type: ResearchDisk
     points: 10000

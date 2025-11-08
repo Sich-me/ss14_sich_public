@@ -66,11 +66,11 @@ alerts-internals-desc = Перемикає подачу газу у вашому
 alerts-piloting-name = Пілот шатлу
 alerts-piloting-desc = Ви пілотуєте шатл. Клацніть сповіщення, щоб перестати.
 
-alerts-hunger-name = [color=yellow]Peckish[/color]
-alerts-hunger-desc = Some food would be good right about now.
+alerts-hunger-name = [color=yellow]Зголоднів[/color]
+alerts-hunger-desc = Було б добре трохи поїсти.
 
 alerts-stamina-name = Витривалість
-alerts-stamina-desc = Оглушує вас, якщо на занадто низьому рівні.
+alerts-stamina-desc = Приголомшить вас, якщо впаде надто низько.
 
 alerts-starving-name = [color=red]Сильний голод[/color]
 alerts-starving-desc = Ви сильно хочете їсти. Біль у шлунку сповільнює ваші рухи.
@@ -88,7 +88,7 @@ alerts-vow-silence-name = Обітниця мовчання
 alerts-vow-silence-desc = Ви прийняли обітницю, яка забороняє усне чи письмове спілкування як частину посвячення у секту Містіко Мімон. Натисніть, щоб порушити обітницю.
 
 alerts-vow-broken-name = Обітниця порушена
-alerts-vow-broken-desc = Ви порушили свої клятви мімам. Ви вмієте говорити і писати, але ви втратили свої сили щонайменше на цілих 5 хвилин!!! Натисніть, щоб спробувати повторно скласти обітницю.
+alerts-vow-broken-desc = Ви порушили свою обітницю мімам. Ви вмієте говорити і писати, але ви втратили свої сили щонайменше на цілих 5 хвилин!!! Натисніть, щоб спробувати повторно прийняти обітницю.
 
 alerts-pulled-name = Вас тягнуть
 alerts-pulled-desc = Вас хтось тягне. Рухайтесь, щоб звільнитися.
@@ -109,7 +109,7 @@ alerts-suit-power-name = Живлення Костюму
 alerts-suit-power-desc = Скільки заряду має ваш костюм космічного ніндзя.
 
 alerts-magboots-name = Магнітні чоботи
-alerts-magboots-desc = Ви несприйнятливі до потоку повітря, але трохи повільніше.
+alerts-magboots-desc = Примагнічуються до підлоги, трохи уповільнюють рух.
 
 alerts-revenant-essence-name = Суть
 alerts-revenant-essence-desc = Сила душ. Це підтримує вас і використовується для здібностей. Він повільно регенерує з часом.
@@ -121,4 +121,4 @@ alerts-rooted-name = Вкорінений
 alerts-rooted-desc = Ви прив’язані до землі. Ви не можете посковзнутися, але ви вбираєте рідину під собою.
 
 alerts-stealthy-name = Кишенькова крадіжка
-alerts-stealthy-desc = Чи ви зараз займаєтесь кишеньковою крадіжкою. Натисніть, щоб перемкнути.
+alerts-stealthy-desc = Режим крадіжки. Натисніть, щоб перемкнути.

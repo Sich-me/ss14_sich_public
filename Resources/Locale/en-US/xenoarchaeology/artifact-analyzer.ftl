@@ -2,7 +2,7 @@ analysis-console-menu-title = Консоль аналізу Broad-Spectrum Mark 
 analysis-console-server-list-button = Список серверів
 analysis-console-extract-button = Вилучити
 
-analysis-console-info-no-scanner = Аналізатор не підключено! Будь ласка, підключіть його за допомогою мультітула.
+analysis-console-info-no-scanner = Аналізатор не підключено! Будь ласка, підключіть його за допомогою мультитула.
 analysis-console-info-no-artifact = Артефакт відсутній! Помістіть один на платформу і проскануйте.
 analysis-console-info-ready = Системи працюють. Готовий до сканування.
 

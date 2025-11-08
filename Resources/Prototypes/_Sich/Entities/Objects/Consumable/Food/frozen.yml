@@ -1,5 +1,6 @@
 - type: entity
   parent: FoodFrozenBase
+  abstract: true
   id: SichFoodFrozenBase
   components:
   - type: Sprite
