@@ -471,8 +471,6 @@
   - type: Sprite
     sprite: _Sich/Objects/Fun/Plushies/Hitaroko/mirka.rsi
     state: icon
-  - type: Clothing
-    quickEquip: false
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Voice/Moth/moth_chitter.ogg
@@ -517,3 +515,12 @@
     sprite: _Sich/Objects/Fun/Plushies/Hitaroko/zegl.rsi
     state: icon
 
+- type: entity
+  parent: BasePlushie
+  id: SichPlushieTayar
+  name: Плюшевий таяран
+  description: На етикетці написано; 0% котячої шерсті, 0% вошей, 100% милості
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Hitaroko/tayara.rsi
+    state: icon
