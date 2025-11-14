@@ -1,6 +1,6 @@
 - type: entity
   id: CratePirateChestCaptain
-  name: captains pirate chest
+  name: сундук капітана піратів
   suffix: Filled
   parent: CratePirate
   components:
@@ -12,7 +12,7 @@
 
 - type: entity
   id: CratePirateChest
-  name: crews pirate chest
+  name: сундук піратського екіпажу
   suffix: Filled
   parent: CratePirate
   components:

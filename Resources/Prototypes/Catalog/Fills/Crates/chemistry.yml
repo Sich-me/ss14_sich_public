@@ -1,8 +1,8 @@
 - type: entity
   id: CrateChemistryP
   parent: CrateChemistrySecure
-  name: chemicals crate (P)
-  description: Contains chemicals from the P-Block of elements. Requires Chemistry access to open.
+  name: ящик з хімікатами (P)
+  description: Містить хімічні речовини з p-блоку елементів. Потребує доступ Хімії для відкриття.
   components:
     - type: StorageFill
       contents:
@@ -30,8 +30,8 @@
 - type: entity
   id: CrateChemistryS
   parent: CrateChemistrySecure
-  name: chemicals crate (S)
-  description: Contains chemicals from the S-Block of elements. Requires Chemistry access to open.
+  name: ящик з хімікатами (S)
+  description: Містить хімічні речовини з s-блоку елементів. Потребує доступ Хімії для відкриття.
   components:
     - type: StorageFill
       contents:
@@ -49,8 +49,8 @@
 - type: entity
   id: CrateChemistryD
   parent: CrateChemistrySecure
-  name: chemicals crate (D)
-  description: Contains chemicals from the D-Block of elements. Requires Chemistry access to open.
+  name: ящик з хімікатами (D)
+  description: Містить хімічні речовини з d-блоку елементів. Потребує доступ Хімії для відкриття.
   components:
     - type: StorageFill
       contents:
