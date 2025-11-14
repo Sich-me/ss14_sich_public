@@ -1214,6 +1214,7 @@
         volume: -5
   - type: MeleeWeapon
     soundHit: *PlushieVulpSound
+    attackRate: 0.333 # Додавання білду Січі. Більшості плюшок ми повернули, але ця має занадто довгий звук #YesSomePlushie's1984
   - type: Clothing
     quickEquip: false
     sprite: Objects/Fun/Plushies/vulp.rsi
@@ -1226,3 +1227,5 @@
   - type: FoodSequenceElement
     entries:
       CottonBurger: PlushieVulp
+  - type: UseDelay # Додавання білду Січі #YesSomePlushie's1984
+    delay: 3.0

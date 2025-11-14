@@ -8,28 +8,28 @@
     state: n1plushie
     sprite: _Sich/Objects/Fun/Plushies/n1.rsi
   - type: EmitSoundOnUse
-    sound:
+    sound: &PlushieN1Sound
       path: /Audio/Machines/Arcade/hahaha.ogg
+      params:
+        volume: -3 #YesSomePlushie's1984
   - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Machines/Arcade/hahaha.ogg
+    sound: *PlushieN1Sound
   - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Machines/Arcade/hahaha.ogg
+    sound: *PlushieN1Sound
   - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Machines/Arcade/hahaha.ogg
+    sound: *PlushieN1Sound
   - type: Edible
-    useSound:
-      path: /Audio/Machines/Arcade/hahaha.ogg
+    useSound: *PlushieN1Sound
   - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Machines/Arcade/pew_pew.ogg
+    soundHit: *PlushieN1Sound
+    attackRate: 0.2 #YesSomePlushie's1984
+  - type: UseDelay #YesSomePlushie's1984
+    delay: 5.0
 
 - type: entity
   parent: BasePlushie
   id: SichPlushieGabriel
-  name: Плюшевий Янгол
+  name: плюшевий янгол
   description: СПОГЛЯДАЙ СИЛОМИЦЬ ЯНГОЛА!
   components:
   - type: Sprite
@@ -38,28 +38,20 @@
   - type: Item
     heldPrefix: gabrielplushie
   - type: EmitSoundOnUse
-    sound:
+    sound: &PlushieGabrielSound
       path: /Audio/Effects/holy.ogg
   - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Effects/holy.ogg
+    sound: *PlushieGabrielSound
   - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Effects/holy.ogg
+    sound: *PlushieGabrielSound
   - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Effects/holy.ogg
+    sound: *PlushieGabrielSound
   - type: EmitSoundOnCollide
-    sound:
-      path: /Audio/Effects/holy.ogg
+    sound: *PlushieGabrielSound
   - type: Edible
-    requiresSpecialDigestion: true
-    useSound:
-      path: /Audio/Effects/holy.ogg
+    useSound: *PlushieGabrielSound
   - type: MeleeWeapon
-    wideAnimationRotation: 180
-    soundHit:
-      path: /Audio/Effects/holy.ogg
+    soundHit: *PlushieGabrielSound
   - type: Extractable
     juiceSolution:
       reagents:
@@ -76,11 +68,6 @@
           Quantity: 10
   - type: Speech
     speechVerb: Reptilian
-  - type: Tag
-    tags:
-    - ClothMade
-    - Payload
-    - PlushieLizard
     
 - type: entity
   parent: BasePlushie
@@ -93,32 +80,28 @@
     layers:
     - state: errorplushie_on
       map: [ "enum.ToggleableVisuals.Layer" ]
-  - type: UseDelay
-    delay: 100.0
   - type: Item
     heldPrefix: errorplushie
   - type: EmitSoundOnUse
-    sound:
+    sound: &PlushieErrorSound
       path: /Audio/Ambience/ambicave.ogg
+      params:
+        volume: -10 #YesSomePlushie's1984
     handle: false
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Effects/bodyfall1.ogg
   - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Ambience/ambicave.ogg
+    sound: *PlushieErrorSound
   - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Ambience/ambicave.ogg
+    sound: *PlushieErrorSound
   - type: EmitSoundOnCollide
     sound:
       path: /Audio/Effects/bodyfall1.ogg
   - type: Edible
-    requiresSpecialDigestion: true
     useSound:
       path: /Audio/Machines/airlock_electrify_on.ogg
   - type: MeleeWeapon
-    wideAnimationRotation: 180
     soundHit:
       path: /Audio/UserInterface/hover.ogg
   - type: Extractable
@@ -137,11 +120,6 @@
           Quantity: 10
   - type: Speech
     speechVerb: Reptilian
-  - type: Tag
-    tags:
-    - ClothMade
-    - Payload
-    - PlushieLizard
   - type: TimerTrigger
     delay: 20
     examinable: false
@@ -156,6 +134,8 @@
     radius: 1
     energy: 2.5
     color: "#ffde46"
+  - type: UseDelay
+    delay: 100.0
 
 # Ніани
 - type: entity
@@ -173,20 +153,17 @@
     sound:
       path: /Audio/Voice/Moth/moth_chitter.ogg
   - type: EmitSoundOnLand
-    sound:
+    sound: &PlushieMoffSound
       path: /Audio/Voice/Moth/moth_squeak.ogg
   - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
+    sound: *PlushieMoffSound
   - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
+    sound: *PlushieMoffSound
   - type: EmitSoundOnCollide
     sound:
       path: /Audio/Voice/Moth/moth_scream.ogg
   - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
+    soundHit: *PlushieMoffSound
   - type: Edible
     useSound: /Audio/Voice/Moth/moth_laugh.ogg
   - type: Extractable
