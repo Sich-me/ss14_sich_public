@@ -1,6 +1,5 @@
 - type: cargoProduct
   id: FoodPizza
-  name: піца
   icon:
     sprite: Objects/Consumable/Food/Baked/pizza.rsi
     state: margherita-slice
@@ -11,7 +10,6 @@
 
 - type: cargoProduct
   id: FoodMRE
-  name: сухий пайок
   icon:
     sprite: Objects/Consumable/Food/snacks.rsi
     state: nutribrick
@@ -42,7 +40,6 @@
 
 - type: cargoProduct
   id: FoodBarSupply
-  name: щось для бару
   icon:
     sprite: Objects/Consumable/Drinks/beerglass.rsi
     state: icon

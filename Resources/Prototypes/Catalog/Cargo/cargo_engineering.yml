@@ -1,6 +1,5 @@
 - type: cargoProduct
   id: EngineeringCableLv
-  name: кабелі низьковольтні
   icon:
     sprite: Objects/Tools/cable-coils.rsi
     state: coillv-30
@@ -11,7 +10,6 @@
 
 - type: cargoProduct
   id: EngineeringCableMv
-  name: кабелі середньої вольтажності
   icon:
     sprite: Objects/Tools/cable-coils.rsi
     state: coilmv-30
@@ -22,7 +20,6 @@
 
 - type: cargoProduct
   id: EngineeringCableHv
-  name: кабелі високовольтні
   icon:
     sprite: Objects/Tools/cable-coils.rsi
     state: coilhv-30
@@ -43,7 +40,6 @@
 
 - type: cargoProduct
   id: EngineeringCableBulk
-  name: кабелі різновольтажні
   icon:
     sprite: Objects/Tools/cable-coils.rsi
     state: coilall-30
@@ -54,7 +50,6 @@
 
 - type: cargoProduct
   id: EngineeringElectricalSupplies
-  name: приладдя для електритка
   icon:
     sprite: Objects/Tools/Toolboxes/toolbox_yellow.rsi
     state: icon
@@ -75,7 +70,6 @@
 
 - type: cargoProduct
   id: EngineeringJetpack
-  name: інженерні джетпаки
   icon:
     sprite: Objects/Tanks/Jetpacks/blue.rsi
     state: icon
@@ -86,7 +80,6 @@
 
 - type: cargoProduct
   id: EngineeringMiniJetpack
-  name: інженерні міні джетпаки
   icon:
     sprite: Objects/Tanks/Jetpacks/mini.rsi
     state: icon

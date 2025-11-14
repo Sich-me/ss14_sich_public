@@ -1,6 +1,5 @@
 - type: cargoProduct
   id: HydroponicsSeedsExotic
-  name: Ящик з екзотичними зернятами
   icon:
     sprite: Objects/Specific/Hydroponics/banana.rsi
     state: seed
@@ -11,7 +10,6 @@
 
 - type: cargoProduct
   id: HydroponicsSeedsMedicinal
-  name: Ящик з медичними зернятами
   icon:
     sprite: Objects/Specific/Hydroponics/galaxythistle.rsi
     state: seed
@@ -22,7 +20,6 @@
 
 - type: cargoProduct
   id: HydroponicsTools
-  name: Інструменти ботаніка
   icon:
     sprite: Objects/Tools/Hydroponics/hoe.rsi
     state: icon
@@ -33,7 +30,6 @@
 
 - type: cargoProduct
   id: HydroponicsSeeds
-  name: Ящик з зернятами
   icon:
     sprite: Objects/Specific/Hydroponics/apple.rsi
     state: seed
