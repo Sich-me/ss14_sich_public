@@ -1,0 +1,22 @@
+# Комплекти покращення ПКП (ПротоКінетичних прискорювачів)
+- type: entityTable
+  id: PKAUgradeKitsTable
+  table: !type:GroupSelector
+    children:
+    - PKAUpgradeDamage
+    - PKAUpgradeRange
+    - PKAUpgradeFireRate
+
+# Нагороди шахтарям
+- type: entity
+  parent: CrateGenericSteel
+  id: SichCratePKAUpgradeKits
+  name: ящик покращень протокінетика
+  description: Містить у собі 4 комплектів покращення для протокінетичних прискорювачів. Використовується для покращення тих самих прискорювачів.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: PKAUgradeKitsTable
+        rolls: !type:ConstantNumberSelector
+          value: 4

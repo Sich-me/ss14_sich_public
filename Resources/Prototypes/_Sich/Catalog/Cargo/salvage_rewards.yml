@@ -1,0 +1,10 @@
+# Другий рівень
+- type: cargoProduct
+  id: CargoPKAUpgradeKits
+  icon:
+    sprite: Objects/Tanks/emergency_double.rsi
+    state: icon
+  product: SichCratePKAUpgradeKits
+  cost: 6000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
