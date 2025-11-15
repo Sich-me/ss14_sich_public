@@ -21,7 +21,8 @@
   - type: Edible
     useSound: *PlushieN1Sound
   - type: MeleeWeapon
-    soundHit: *PlushieN1Sound
+    soundHit: 
+      path: /Audio/Machines/Arcade/pew_pew.ogg
     attackRate: 0.2 #YesSomePlushie's1984
   - type: UseDelay #YesSomePlushie's1984
     delay: 5.0
@@ -66,8 +67,6 @@
           Quantity: 10
         - ReagentId: Holywater
           Quantity: 10
-  - type: Speech
-    speechVerb: Reptilian
     
 - type: entity
   parent: BasePlushie
@@ -86,7 +85,7 @@
     sound: &PlushieErrorSound
       path: /Audio/Ambience/ambicave.ogg
       params:
-        volume: -10 #YesSomePlushie's1984
+        volume: -12 #YesSomePlushie's1984
     handle: false
   - type: EmitSoundOnLand
     sound:
@@ -118,8 +117,6 @@
           Quantity: 10
         - ReagentId: Blood
           Quantity: 10
-  - type: Speech
-    speechVerb: Reptilian
   - type: TimerTrigger
     delay: 20
     examinable: false
@@ -135,7 +132,7 @@
     energy: 2.5
     color: "#ffde46"
   - type: UseDelay
-    delay: 100.0
+    delay: 120.0
 
 # Ніани
 - type: entity

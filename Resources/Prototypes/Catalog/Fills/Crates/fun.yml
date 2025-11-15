@@ -42,9 +42,11 @@
 #    - id: PlushieMoth - Змінда білда Січі. Вкрадено до категорії ніанів.
     - id: PlushieArachind
     - id: PlushiePenguin
-    - id: SichPlushieN1
     - id: PlushieVulp
-    - !type:GroupSelector # Ця категорія - додавання білду Січі. Наші власні плюші, плюс звичайний молі
+    - id: SichPlushieN1 # Звідси та до кінця прототипу - додавання білду Січі
+    - id: SichPlushieError
+      weight: 0.05
+    - !type:GroupSelector # пищитьпищитьпищить
       children:
       - id: PlushieMoth
         weight: 81
