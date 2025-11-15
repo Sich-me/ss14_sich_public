@@ -5,8 +5,8 @@
   description: Це справді плюшевий N1!?
   components:
   - type: Sprite
-    state: n1plushie
     sprite: _Sich/Objects/Fun/Plushies/n1.rsi
+    state: icon
   - type: EmitSoundOnUse
     sound: &PlushieN1Sound
       path: /Audio/Machines/Arcade/hahaha.ogg
@@ -21,7 +21,7 @@
   - type: Edible
     useSound: *PlushieN1Sound
   - type: MeleeWeapon
-    soundHit: 
+    soundHit:
       path: /Audio/Machines/Arcade/pew_pew.ogg
     attackRate: 0.2 #YesSomePlushie's1984
   - type: UseDelay #YesSomePlushie's1984
@@ -35,9 +35,7 @@
   components:
   - type: Sprite
     sprite: _Sich/Objects/Fun/Plushies/gabriel.rsi
-    state: gabrielplushie
-  - type: Item
-    heldPrefix: gabrielplushie
+    state: icon
   - type: EmitSoundOnUse
     sound: &PlushieGabrielSound
       path: /Audio/Effects/holy.ogg
@@ -77,10 +75,8 @@
   - type: Sprite
     sprite: _Sich/Objects/Fun/Plushies/error.rsi
     layers:
-    - state: errorplushie_on
+    - state: icon_on
       map: [ "enum.ToggleableVisuals.Layer" ]
-  - type: Item
-    heldPrefix: errorplushie
   - type: EmitSoundOnUse
     sound: &PlushieErrorSound
       path: /Audio/Ambience/ambicave.ogg
@@ -128,8 +124,7 @@
     canCreateVacuum: false
   - type: ExplodeOnTrigger
   - type: PointLight
-    radius: 1
-    energy: 2.5
+    radius: 2.5
     color: "#ffde46"
   - type: UseDelay
     delay: 120.0
