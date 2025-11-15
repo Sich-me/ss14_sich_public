@@ -81,7 +81,7 @@
     sound: &PlushieErrorSound
       path: /Audio/Ambience/ambicave.ogg
       params:
-        volume: -12 #YesSomePlushie's1984
+        volume: -8 #YesSomePlushie's1984
     handle: false
   - type: EmitSoundOnLand
     sound:
@@ -117,12 +117,10 @@
     delay: 20
     examinable: false
   - type: Explosive
-    explosionType: Default
-    maxIntensity: 1
-    intensitySlope: 1
-    totalIntensity: 1
-    canCreateVacuum: false
   - type: ExplodeOnTrigger
+    keysIn:
+    - timer
+  - type: TriggerOnUse
   - type: PointLight
     radius: 2.5
     color: "#ffde46"
