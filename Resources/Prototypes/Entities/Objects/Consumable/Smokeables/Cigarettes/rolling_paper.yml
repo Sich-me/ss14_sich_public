@@ -27,11 +27,6 @@
   id: PackPaperRollingFilters
   description: Пачка фільтрів і тонких шматочків паперу, з яких виготовляють тонкі самокрутки.
   components:
-  - type: Storage # Redundant
-    whitelist:
-      tags:
-      - RollingPaper
-      - CigFilter
   - type: StorageFill
     contents:
       - id: PaperRolling

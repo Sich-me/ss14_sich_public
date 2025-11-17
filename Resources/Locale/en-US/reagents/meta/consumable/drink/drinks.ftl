@@ -85,7 +85,7 @@ reagent-desc-dry-ramen = Суха локшина та сіль.
 reagent-name-hot-ramen = гарячий рамен
 reagent-desc-hot-ramen = Гаряча локшина.
 
-reagent-name-pilk = pilk
+reagent-name-pilk = пілк
 reagent-desc-pilk = Нудотна суміш молока з колою.
 
 reagent-name-posca = поска
@@ -93,3 +93,6 @@ reagent-desc-posca = Напій бідних воїнів із забутої е
 
 reagent-name-mopwata = Шваброда
 reagent-desc-mopwata = Брудна, застояна вода від швабри.
+
+reagent-name-orange-lime-soda = Цитрусовий холівар
+reagent-desc-orange-lime-soda = Содова має бути апельсиновою! Ні, лимонно-лаймовою!

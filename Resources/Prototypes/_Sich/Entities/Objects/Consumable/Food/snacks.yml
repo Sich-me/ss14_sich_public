@@ -52,8 +52,6 @@
     state: sourcandy-open
   - type: Item
     heldPrefix: sourcandy-open
-  - type: Food
-    eatMessage: "Кислинка обпікає язика!"
   - type: Tag
     tags:
       - FoodSnack

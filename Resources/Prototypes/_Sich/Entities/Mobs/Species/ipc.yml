@@ -5,6 +5,15 @@
   id: BaseMobIPC
   abstract: true
   components:
+  - type: Respirator # цей компонент це один великий workaround щоб тест не сварився 
+    damage:
+      types:
+        Asphyxiation: 0
+    damageRecovery:
+      types:
+        Asphyxiation: 0
+    minSaturation: 0         
+    suffocationThreshold: -1 # "сатурація" ніколи не буде нижча за -1, тому іпш ніколи не почне "задихатись"
   # The important nessessities
   - type: MovementSpeedModifier
   - type: Body

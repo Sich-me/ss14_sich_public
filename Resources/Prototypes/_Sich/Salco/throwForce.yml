@@ -15,7 +15,7 @@
           Structural: 0
     - type: MeleeThrowOnHit
       speed: 20
-      unanchorOnHit: true
+      unanchorOnHit: Unanchorable
     - type: Tag
       tags:
         - SalcoThrowForce

@@ -14,6 +14,7 @@ changelog-button-new-entries = Оновлення (!)
 changelog-tab-title-Changelog = Журнал змін
 changelog-tab-title-Admin = Адмін
 changelog-tab-title-Maps = Карти
+changelog-tab-title-Rules = Правила
 changelog-tab-title-Sich-Changelog = Січ
 
 cmd-changelog-desc = Відкриває список змін.

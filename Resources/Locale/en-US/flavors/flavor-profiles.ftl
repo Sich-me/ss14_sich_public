@@ -183,6 +183,7 @@ flavor-complex-false-meat = не зовсім схожий на м'ясо
 flavor-complex-paper = як кашоподібна м'якоть
 flavor-complex-compressed-meat = як пресоване м'ясо.
 flavor-complex-dog-food = як собача їжа
+flavor-complex-canned-tuna = як консервований тунець
 
 # Drink-specific flavors.
 

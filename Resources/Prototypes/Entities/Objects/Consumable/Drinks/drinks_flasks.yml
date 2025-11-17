@@ -92,8 +92,8 @@
 - type: entity
   parent: FlaskBase
   id: DrinkFlaskBar
-  name: барна фляга
-  description: Металева фляга, яку бармен часто видає напрокат. Не забудьте її повернути!
+  name: фляга
+  description: Багаторазова металева фляга. Елегантніше, ніж пити просто з пляшки.
   components:
     - type: Sprite
       sprite: Objects/Consumable/Drinks/barflask.rsi

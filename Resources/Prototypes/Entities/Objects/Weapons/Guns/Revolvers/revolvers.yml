@@ -154,10 +154,6 @@
   suffix: бронебійний
   components:
   - type: RevolverAmmoProvider
-    whitelist: # Redundant
-      tags:
-        - CartridgeMagnum
-        - SpeedLoaderMagnum
     proto: CartridgeMagnumAP
 
 

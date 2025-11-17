@@ -1,0 +1,11 @@
+- type: gamePreset
+  id: SichEventFree
+  alias:
+  - Uneventful
+  - NoEventsAtAll
+  - NoEvents
+  - Eventless
+  - FreeofEvents
+  name: Безівентний режим
+  showInVote: true
+  description: Хай адміни розважають гравців

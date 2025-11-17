@@ -51,6 +51,7 @@
 - type: entity
   parent: BaseAction
   id: ActionBorgSwapModule
+  # Name and description will normally be changed by BorgSystem
   name: змінний модуль
   description: Виберіть цей модуль, щоб ви могли використовувати інструменти, які він надає.
   components:

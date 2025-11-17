@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   id: StationAnchorBase
   abstract: true
-  name: станційний якорь
-  description: Перешкоджає переміщенню станцій.
+  name: станційний якір
+  description: Запобігає дрейфуванню станції в космосі.
   suffix: On
   placement:
     mode: AlignTileAny

@@ -1,7 +1,0 @@
-- type: jobIcon
-  parent: JobIcon
-  id: SichJobIconChaosIncRespentative
-  icon:
-    sprite: &sich-icon-rsi /Textures/_Sich/Interface/Misc/job_icons.rsi
-    state: ChaosIncRes
-  jobName: "Представник Корпорації Хаосу"

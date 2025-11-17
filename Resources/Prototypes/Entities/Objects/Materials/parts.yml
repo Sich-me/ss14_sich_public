@@ -81,10 +81,6 @@
   name: металевий стрижень
   suffix: 10
   components:
-  - type: Tag
-    tags:
-    - RodMetal1
-    - ConstructionMaterial
   - type: Sprite
     state: rods
   - type: Stack
@@ -96,10 +92,6 @@
   name: металевий стрижень
   suffix: 1
   components:
-  - type: Tag
-    tags:
-    - RodMetal1
-    - ConstructionMaterial
   - type: Sprite
     state: rods
   - type: Stack

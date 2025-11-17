@@ -19,7 +19,7 @@
   - type: EmitSoundOnTrigger
     sound:
       path: /Audio/Machines/Arcade/hahaha.ogg
-  - type: Food
+  - type: Edible
     useSound:
       path: /Audio/Machines/Arcade/hahaha.ogg
   - type: MeleeWeapon
@@ -52,7 +52,7 @@
   - type: EmitSoundOnCollide
     sound:
       path: /Audio/Effects/holy.ogg
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/Effects/holy.ogg
@@ -113,7 +113,7 @@
   - type: EmitSoundOnCollide
     sound:
       path: /Audio/Effects/bodyfall1.ogg
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/Machines/airlock_electrify_on.ogg
@@ -214,6 +214,10 @@
   components:
   - type: Sprite
     sprite: _Sich/Objects/Fun/Plushies/Moffs/Miriadea/base.rsi
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
   - type: Extractable
     juiceSolution:
       reagents:

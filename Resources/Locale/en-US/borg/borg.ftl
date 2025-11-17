@@ -10,6 +10,9 @@ borg-module-too-many = Для ще одного модуля не вистача
 borg-module-duplicate = Цей модуль вже встановлений у цьому кіборзі.
 borg-module-whitelist-deny = Цей модуль не підходить для такого типу кіборгів...
 
+borg-module-action-name = Активувати {$moduleName}
+borg-module-action-description = Виберіть {$moduleName}, щоб отримати доступ до інструментів, які він надає.
+
 borg-construction-guide-string = Кінцівки та тулуб кіборга мають бути прикріплені до ендоскелету.
 
 borg-ui-menu-title = Інтерфейс Кіборга
@@ -60,5 +63,3 @@ borg-type-medical-transponder = медичний кіборг
 borg-type-service-name = Сервісний
 borg-type-service-desc = Допомагайте з широким спектром послуг екіпажу, від подачі закусок і напоїв до ботаніки та розваг.
 borg-type-service-transponder = сервісний кіборг
-
-

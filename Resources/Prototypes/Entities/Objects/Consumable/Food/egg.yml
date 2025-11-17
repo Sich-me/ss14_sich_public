@@ -69,7 +69,7 @@
   id: Eggshells
   description: Ти ходиш по ним, друже.
   components:
-  - type: Food
+  - type: Edible
   - type: Sprite
     sprite: Objects/Consumable/Food/egg.rsi
     state: eggshells

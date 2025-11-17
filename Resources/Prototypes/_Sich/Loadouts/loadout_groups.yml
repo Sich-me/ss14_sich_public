@@ -1,5 +1,5 @@
 - type: loadoutGroup
   id: SichEngineerAdvanced
-  name: Дрібнички
+  name: loadout-group-Sich-trinkets
   loadouts:
   - SichCringineerSign
