@@ -13,7 +13,7 @@ barsign-prototype-name-singulo = Одинак
 barsign-prototype-description-singulo = Куди йдуть люди, які воліли б не називатися своїм ім'ям.
 
 ## The Drunk Carp
-barsign-prototype-name-drunk-carp = П'яний Карп
+barsign-prototype-name-drunk-carp = П'яний Короп
 barsign-prototype-description-drunk-carp = Не будь рагульом, не пий за рульом.
 
 ## Officer Beersky

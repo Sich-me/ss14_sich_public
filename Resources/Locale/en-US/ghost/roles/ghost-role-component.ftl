@@ -99,8 +99,8 @@ ghost-role-information-rat-servant-description = Ви Слуга-Щур. Ви п
 ghost-role-information-salvage-carp-name = Космічний короп на уламках
 ghost-role-information-salvage-carp-description = Захистіть здобич всередині уламків!
 
-ghost-role-information-sentient-carp-name = Портальний карп
-ghost-role-information-sentient-carp-description = Допоможіть дракону захопити станцію, карп!
+ghost-role-information-sentient-carp-name = Портальний короп
+ghost-role-information-sentient-carp-description = Допоможіть дракону захопити станцію, рядовий короп!
 
 ghost-role-information-willow-name = кенгуру Віллоу
 ghost-role-information-willow-description = Ви кенгуру на ім'я Віллоу! Віллоу подобається боксувати.
@@ -138,7 +138,7 @@ ghost-role-information-ifrit-description = Слухай свого господ�
 
 ghost-role-information-space-dragon-name = Космічний дракон
 ghost-role-information-space-dragon-description = Створіть 3 космічних розлома та заволодійте цим квадрантом! У вас є лише 5 хвилин між кожним розривом, перш ніж ви зникнете.
-ghost-role-information-space-dragon-rules = Ви [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] з усіма вашими викликаними карпами.
+ghost-role-information-space-dragon-rules = Ви [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] з усіма вашими викликаними коропами.
 ghost-role-information-space-dragon-summoned-carp-rules = Ви [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] зі своїм драконом та його союзниками.
 
 ghost-role-information-space-dragon-dungeon-description = Захистіть підземелля експедиції з вашими рибними товаришами!
