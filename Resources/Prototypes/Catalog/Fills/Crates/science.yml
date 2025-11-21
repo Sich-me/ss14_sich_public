@@ -1,8 +1,8 @@
 - type: entity
   id: CrateScienceBiosuit
   parent: CrateScienceSecure
-  name: scientist bio suit crate
-  description: Contains 2 biohazard suits to ensure that no disease will distract you from doing science. Requires Science access to open.
+  name: ящик з костюмами біозахисту вчених
+  description: Містить 2 костюми біологічного захисту, щоб жодна хвороба чи калюжа кислоти не відволікала вас від НАУКИ. Потребує доступ НВ для відкриття.
   components:
   - type: StorageFill
     contents:
@@ -16,8 +16,8 @@
 - type: entity
   id: CrateCrewMonitoring
   parent: CrateScienceSecure
-  name: crew monitoring crate
-  description: Contains a flatpack of a crew monitoring server and a few crew monitoring computers. Requires Science access to open.
+  name: ящик з обладнанням для моніторингу екіпажу
+  description: Містить у собі флетпак сервера моніторингу екіпажу та кілька комп'ютерів моніторингу екіпажу. Потребує доступ НВ для відкриття.
   components:
   - type: StorageFill
     contents:
@@ -28,8 +28,8 @@
 - type: entity
   id: CrateStationAiCore
   parent: CrateScienceSecure
-  name: station AI core crate
-  description: Contains the components for constructing a station AI core. Positronic brain not included. Requires Science access to open.
+  name: ящик з ядром станційного ШІ
+  description: Містить у собі компоненти для побудови ядра ШІ станції. Позитронний мозок не входить до комплекту. Потребує доступ НВ для відкриття.
   components:
   - type: StorageFill
     contents:

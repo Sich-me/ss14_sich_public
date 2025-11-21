@@ -2,8 +2,8 @@
 - type: cargoProduct
   id: CargoPKAUpgradeKits
   icon:
-    sprite: Objects/Tanks/emergency_double.rsi
-    state: icon
+    sprite: Objects/Tools/upgrade.rsi
+    state: base
   product: SichCratePKAUpgradeKits
   cost: 6000
   category: cargoproduct-category-name-cargo

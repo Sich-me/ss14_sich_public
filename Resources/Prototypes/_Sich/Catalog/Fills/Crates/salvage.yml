@@ -3,16 +3,16 @@
   id: PKAUgradeKitsTable
   table: !type:GroupSelector
     children:
-    - PKAUpgradeDamage
-    - PKAUpgradeRange
-    - PKAUpgradeFireRate
+    - id: PKAUpgradeDamage
+    - id: PKAUpgradeRange
+    - id: PKAUpgradeFireRate
 
 # Нагороди шахтарям
 - type: entity
   parent: CrateGenericSteel
   id: SichCratePKAUpgradeKits
   name: ящик покращень протокінетика
-  description: Містить у собі 4 комплектів покращення для протокінетичних прискорювачів. Використовується для покращення тих самих прискорювачів.
+  description: Містить у собі 4 комплекта покращення для протокінетичних прискорювачів. Використовується для покращення тих самих прискорювачів.
   components:
   - type: EntityTableContainerFill
     containers:
