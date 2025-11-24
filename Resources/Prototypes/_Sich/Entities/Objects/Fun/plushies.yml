@@ -117,6 +117,7 @@
     delay: 20
     examinable: false
   - type: Explosive
+    explosionType: Default
   - type: ExplodeOnTrigger
     keysIn:
     - timer
