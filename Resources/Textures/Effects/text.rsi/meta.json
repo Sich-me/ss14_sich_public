@@ -234,6 +234,15 @@
     },
     {
       "name": "я"
+    },
+    {
+      "name": "apostrophe"
+    },
+    {
+      "name": "dot"
+    },
+    {
+      "name": "coma"
     }
   ]
 }
