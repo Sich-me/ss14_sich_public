@@ -49,15 +49,17 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
             { '~', "tilde" }, // Sich
             { '=', "equal" }, // Sich
             { '_', "underscore" }, // Sich
-            { '(', "parentheses" }, // Sich
-            { ')', "parentheses_2" }, // Sich
-            { '[', "square_bracket" }, // Sich
-            { ']', "square_bracket_2" }, // Sich
-            { ';', "semicolon" }, // Sich
+            { '(', "parentheses-left" }, // Sich
+            { ')', "parentheses-right" }, // Sich
+            { '[', "square_bracket-left" }, // Sich
+            { ']', "square_bracket-right" }, // Sich
+            { '{', "curly_bracket-left" }, // Sich
+            { '}', "curly_bracket-right" }, // Sich
             { '#', "hash" }, // Sich
             { '>', "greater" }, // Sich
             { '<', "less" }, // Sich
             { '%', "percent" }, // Sich
+            { '^', "caret" }, // Sich
             { '`', "apostrophe" } // Sich
         };
 

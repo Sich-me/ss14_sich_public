@@ -243,6 +243,57 @@
     },
     {
       "name": "coma"
+    },
+    {
+      "name": "slash"
+    },
+    {
+      "name": "quotation"
+    },
+    {
+      "name": "vbar"
+    },
+    {
+      "name": "tilde"
+    },
+    {
+      "name": "equal"
+    },
+    {
+      "name": "underscore"
+    },
+    {
+      "name": "parentheses-left"
+    },
+    {
+      "name": "parentheses-right"
+    },
+    {
+      "name": "square_bracket-left"
+    },
+    {
+      "name": "square_bracket-right"
+    },
+    {
+      "name": "curly_bracket-left"
+    },
+    {
+      "name": "curly_bracket-right"
+    },
+    {
+      "name": "hash"
+    },
+    {
+      "name": "greater"
+    },
+    {
+      "name": "less"
+    },
+    {
+      "name": "percent"
+    },
+    {
+      "name": "caret"
     }
   ]
 }
