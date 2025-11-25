@@ -49,8 +49,8 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
             { '~', "tilde" }, // Sich
             { '=', "equal" }, // Sich
             { '_', "underscore" }, // Sich
-            { '(', "parentheses-left" }, // Sich
-            { ')', "parentheses-right" }, // Sich
+            { '(', "bracket-left" }, // Sich
+            { ')', "bracket-right" }, // Sich
             { '[', "square_bracket-left" }, // Sich
             { ']', "square_bracket-right" }, // Sich
             { '{', "curly_bracket-left" }, // Sich
@@ -60,6 +60,10 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
             { '<', "less" }, // Sich
             { '%', "percent" }, // Sich
             { '^', "caret" }, // Sich
+            { '•', "bullet" }, // Sich
+            { '¡', "inverted_exclamation" }, // Sich
+            { '¿', "invereted_question" }, // Sich
+            { ';', "semicolon" }, // Sich
             { '`', "apostrophe" } // Sich
         };
 

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC0-1.0",
-  "copyright": "Created by rolfero (github) for Space Station 14 та кирилічні зроблені Pgriha (гітхаб/ДС) для Січі",
+  "copyright": "Created by rolfero (github) for Space Station 14 та Pgriha (гітхаб/ДС) зробив кириличні для Січі",
   "size": {
     "x": 4,
     "y": 6
@@ -263,10 +263,10 @@
       "name": "underscore"
     },
     {
-      "name": "parentheses-left"
+      "name": "bracket-left"
     },
     {
-      "name": "parentheses-right"
+      "name": "bracket-right"
     },
     {
       "name": "square_bracket-left"
@@ -294,6 +294,18 @@
     },
     {
       "name": "caret"
+    },
+    {
+      "name": "bullet"
+    },
+    {
+      "name": "inverted_exclamation"
+    },
+    {
+      "name": "invereted_question"
+    },
+    {
+      "name": "semicolon"
     }
   ]
 }
