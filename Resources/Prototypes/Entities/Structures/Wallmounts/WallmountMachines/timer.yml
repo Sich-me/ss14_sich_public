@@ -2,7 +2,7 @@
   parent: BaseWallmountMachine
   id: SignalTimer
   name: сигнальний таймер
-  description: Це таймер для надсилання сигналів із затримкою.
+  description: Це таймер. Створений для надсилання сигналів іншим пристроям з затримкою.
   components:
   - type: StationAiWhitelist
   - type: WallMount
@@ -58,8 +58,8 @@
 - type: entity
   id: ScreenTimer
   parent: SignalTimer
-  name: екранний таймер
-  description: Це таймер для надсилання синхронізованих сигналів речам, з вбудованим екраном.
+  name: таймер з екраном
+  description: Це таймер з екраном. Створений для надсилання сигналів іншим пристроям з затримкою. Також, здатен відображати залишившийся час та текст за допомогою екрана!
   components:
   - type: SignalTimer
     canEditLabel: true
@@ -87,7 +87,7 @@
   id: BrigTimer
   parent: ScreenTimer
   name: таймер брігу
-  description: Це таймер для камер заключення.
+  description: Це таймер з екраном. Призначений спеціально для камер ув'язнення.
   components:
   - type: AccessReader
     access: [["Security"]]
@@ -105,7 +105,7 @@
 - type: entity
   id: TimerFrame
   name: рамка таймеру
-  description: Це залізна рама для таймеру.
+  description: Це залізна рама для таймеру з екраном.
   components:
   - type: Sprite
     drawdepth: WallMountedItems
