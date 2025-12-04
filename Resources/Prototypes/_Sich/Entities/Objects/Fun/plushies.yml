@@ -382,8 +382,6 @@
         - ReagentId: EZNutrient #Ботанік все ж
           Quantity: 5
 
-
-
 #Іграшки від Хітароко
 
 - type: entity
@@ -428,82 +426,6 @@
   - type: FoodSequenceElement
     entries:
       CottonBurger: MothPlushie
-
-- type: entity
-  parent: BasePlushie
-  id: SichPlushieSayvo
-  name: Плюшевий Сяйво
-  description: Вам потрібен справжній лікар., бзззз!
-  components:
-  - type: Sprite
-    sprite: _Sich/Objects/Fun/Plushies/Hitaroko/sayvo.rsi
-    state: icon
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Voice/Moth/moth_chitter.ogg
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnCollide
-    sound:
-      path: /Audio/Voice/Moth/moth_scream.ogg
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: Edible
-    useSound: /Audio/Voice/Moth/moth_laugh.ogg
-  - type: FoodSequenceElement
-    entries:
-      CottonBurger: MothPlushie
-
-- type: entity
-  parent: BasePlushie
-  id: SichPlushieMirka
-  name: Плюшевий Мірка
-  description: Любить Зірку, бзззз!
-  components:
-  - type: Sprite
-    sprite: _Sich/Objects/Fun/Plushies/Hitaroko/mirka.rsi
-    state: icon
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Voice/Moth/moth_chitter.ogg
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnCollide
-    sound:
-      path: /Audio/Voice/Moth/moth_scream.ogg
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: Edible
-    useSound: /Audio/Voice/Moth/moth_laugh.ogg
-  - type: FoodSequenceElement
-    entries:
-      CottonBurger: MothPlushie
-
-- type: entity
-  parent: BasePlushie
-  id: SichPlushieCatseta
-  name: Плюшева Кацета
-  description: Це і є наш капітан?
-  components:
-  - type: Sprite
-    sprite: _Sich/Objects/Fun/Plushies/Hitaroko/catseta.rsi
-    state: icon
 
 - type: entity
   parent: BasePlushie
