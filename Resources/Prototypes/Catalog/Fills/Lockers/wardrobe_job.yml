@@ -267,6 +267,8 @@
     - id: ClothingUniformJumpsuitChaplain
     - id: ClothingShoesColorBlack
     - id: ClothingUniformJumpskirtChaplain
+    - id: SichPlushieGabriel # Додавання білду Січі
+      prob: 0.5
 
 - type: entity
   id: WardrobeSecurityFilled

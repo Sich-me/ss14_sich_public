@@ -40,7 +40,31 @@ public sealed class TextScreenSystem : VisualizerSystem<TextScreenVisualsCompone
             { '*', "star" },
             { '+', "plus" },
             { '-', "dash" },
-            { ' ', "blank" }
+            { ' ', "blank" },
+            { '.', "dot" }, // Sich
+            { ',', "coma" }, // Sich
+            { '/', "slash" }, // Sich
+            { '"', "quotation" }, // Sich
+            { '|', "vbar" }, // Sich
+            { '~', "tilde" }, // Sich
+            { '=', "equal" }, // Sich
+            { '_', "underscore" }, // Sich
+            { '(', "bracket-left" }, // Sich
+            { ')', "bracket-right" }, // Sich
+            { '[', "square_bracket-left" }, // Sich
+            { ']', "square_bracket-right" }, // Sich
+            { '{', "curly_bracket-left" }, // Sich
+            { '}', "curly_bracket-right" }, // Sich
+            { '#', "hash" }, // Sich
+            { '>', "greater" }, // Sich
+            { '<', "less" }, // Sich
+            { '%', "percent" }, // Sich
+            { '^', "caret" }, // Sich
+            { '•', "bullet" }, // Sich
+            { '¡', "inverted_exclamation" }, // Sich
+            { '¿', "invereted_question" }, // Sich
+            { ';', "semicolon" }, // Sich
+            { '`', "apostrophe" } // Sich
         };
 
     private const string DefaultState = "blank";

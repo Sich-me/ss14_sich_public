@@ -1,11 +1,20 @@
 ﻿- type: entity
   parent: BaseItem
+  id: BasePDACartridge
+  abstract: true
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Sprite
+    sprite: Objects/Devices/cartridge.rsi
+
+- type: entity
+  parent: BasePDACartridge
   id: NotekeeperCartridge
   name: картридж записника
   description: Програма для записника.
   components:
   - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
     state: cart-y
   - type: UIFragment
     ui: !type:NotekeeperUi
@@ -16,15 +25,13 @@
       state: book_icon
   - type: NotekeeperCartridge
 
-
 - type: entity
-  parent: BaseItem
+  parent: BasePDACartridge
   id: NanoTaskCartridge
   name: NanoTask cartridge
   description: A program that allows you to keep a list of tasks to do.
   components:
   - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
     state: cart-nav
   - type: Cartridge
     programName: nano-task-program-name
@@ -36,13 +43,12 @@
   - type: NanoTaskCartridge
 
 - type: entity
-  parent: BaseItem
+  parent: BasePDACartridge
   id: NewsReaderCartridge
   name: картридж новин
   description: Програма для читання новин.
   components:
   - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
     state: cart-y
   - type: UIFragment
     ui: !type:NewsReaderUi
@@ -54,13 +60,12 @@
   - type: NewsReaderCartridge
 
 - type: entity
-  parent: BaseItem
+  parent: BasePDACartridge
   id: CrewManifestCartridge
   name: картридж маніфесту екіпажу
   description: Програма перерахування ваших улюблених членів екіпажу.
   components:
     - type: Sprite
-      sprite: Objects/Devices/cartridge.rsi
       state: cart-y
     - type: UIFragment
       ui: !type:CrewManifestUi
@@ -72,13 +77,12 @@
     - type: CrewManifestCartridge
 
 - type: entity
-  parent: BaseItem
+  parent: BasePDACartridge
   id: NetProbeCartridge
   name: картридж НетПроб
   description: Програма для отримання адреси та частоти мережевих пристроїв.
   components:
     - type: Sprite
-      sprite: Objects/Devices/cartridge.rsi
       state: cart-y
     - type: UIFragment
       ui: !type:NetProbeUi
@@ -90,13 +94,12 @@
     - type: NetProbeCartridge
 
 - type: entity
-  parent: BaseItem
+  parent: BasePDACartridge
   id: LogProbeCartridge
   name: картридж ЛогПроб
   description: Програма для отримання логів доступу з пристроїв.
   components:
     - type: Sprite
-      sprite: Objects/Devices/cartridge.rsi
       state: cart-log
     - type: Icon
       sprite: Objects/Devices/cartridge.rsi
@@ -114,13 +117,12 @@
       - Forensics
 
 - type: entity
-  parent: BaseItem
+  parent: BasePDACartridge
   id: WantedListCartridge
   name: картридж списку розшуку
   description: Програма, аби мати завжди під рукою список розшукуваємих персон.
   components:
   - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
     state: cart-sec
   - type: Icon
     sprite: Objects/Devices/cartridge.rsi
@@ -137,13 +139,12 @@
     stealGroup: WantedListCartridge
 
 - type: entity
-  parent: BaseItem
+  parent: BasePDACartridge
   id: MedTekCartridge
   name: картридж МедТек
   description: Програма, що оснащує ваш девайс усіма необхідними аналізуючими властивостями.
   components:
     - type: Sprite
-      sprite: Objects/Devices/cartridge.rsi
       state: cart-med
     - type: Icon
       sprite: Objects/Devices/cartridge.rsi
@@ -156,13 +157,12 @@
     - type: MedTekCartridge
 
 - type: entity
-  parent: BaseItem
+  parent: BasePDACartridge
   id: AstroNavCartridge
   name: картридж АстроНав
   description: Програма для навігації за GPS координатами.
   components:
     - type: Sprite
-      sprite: Objects/Devices/cartridge.rsi
       state: cart-nav
     - type: Icon
       sprite: Objects/Devices/cartridge.rsi

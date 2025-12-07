@@ -1,8 +1,8 @@
 - type: entity
-  name: гіпоспрей
   parent: [BaseItem, BaseGrandTheftContraband]
-  description: Стерильний інжектор для швидкого введення ліків пацієнтам.
   id: Hypospray
+  name: гіпоспрей
+  description: Стерильний інжектор для швидкого введення ліків пацієнтам.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/hypospray.rsi
@@ -41,10 +41,10 @@
     solutionName: hypospray
 
 - type: entity
-  name: гіпоспрей горлакса
   parent: BaseItem
-  description: Використовуючи зворотню інженерну конструкцію з Нанотрейзен, Кіберсан виготовив їх в обмежених кількостях для оперативників-мародерів горлакса.
   id: SyndiHypo
+  name: гіпоспрей горлакса
+  description: Використовуючи зворотню інженерну конструкцію з Нанотрейзен, Кіберсан виготовив їх в обмежених кількостях для оперативників-мародерів горлакса.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/syndihypo.rsi
@@ -76,10 +76,10 @@
     solutionName: hypospray
 
 - type: entity
-  name: борг-гіпо
   parent: BaseItem
-  description: Стерильний інжектор для швидкого введення ліків пацієнтам. Дешевша і більш спеціалізована версія для медичних боргів.
   id: BorgHypo
+  name: борг-гіпо
+  description: Стерильний інжектор для швидкого введення ліків пацієнтам. Дешевша і більш спеціалізована версія для медичних боргів.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/hypospray.rsi
@@ -100,11 +100,11 @@
     delay: 0.5
 
 - type: entity
-  name: експериментальний гіпоспрей
-  suffix: Адмем
   parent: SyndiHypo
-  description: Максимальне застосування технології блюспейс і швидкого введення хімікатів.
   id: AdminHypo
+  name: експериментальний гіпоспрей
+  suffix: Admeme
+  description: Максимальне застосування технології блюспейс і швидкого введення хімікатів.
   components:
     - type: SolutionContainerManager
       solutions:
@@ -114,10 +114,10 @@
       delay: 0.0
 
 - type: entity
-  name: хімічний медіпен
   parent: BaseItem
-  description: Стерильний інжектор для швидкого введення ліків пацієнтам. Не перезаправляється.
   id: ChemicalMedipen
+  name: хімічний медіпен
+  description: Стерильний інжектор для швидкого введення ліків пацієнтам. Не перезаправляється.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
@@ -165,9 +165,9 @@
     solution: pen
 
 - type: entity
-  name: екстрений медіпен
   parent: ChemicalMedipen
   id: EmergencyMedipen
+  name: екстрений медіпен
   description: Швидкий і безпечний спосіб стабілізації пацієнтів у критичному стані для персоналу без передових медичних знань. Будьте обережні, оскільки передозування адреналіну та транексамової кислоти дуже просто отримати.
   components:
   - type: Sprite
@@ -190,9 +190,9 @@
           Quantity: 3
 
 - type: entity
-  name: протиотрутний медіпен
   parent: ChemicalMedipen
   id: AntiPoisonMedipen
+  name: протиотрутний медіпен
   description: Швидка доза протиотрути. Містить ультраваскулін і адреналін.
   components:
   - type: Item
@@ -227,9 +227,9 @@
           Quantity: 5
 
 - type: entity
-  name: протисинцевий медіпен
   parent: ChemicalMedipen
   id: BruteAutoInjector
+  name: протисинцевий медіпен
   description: Швидка доза бікарідину та транексамової кислоти, призначена для бойових застосувань.
   components:
   - type: Item
@@ -269,9 +269,9 @@
           Quantity: 5
 
 - type: entity
-  name: протиопіковий медіпен
   parent: ChemicalMedipen
   id: BurnAutoInjector
+  name: протиопіковий медіпен
   description: Швидка доза дермаліну та лепоразину, призначена для бойових застосувань.
   components:
   - type: Item
@@ -311,9 +311,9 @@
           Quantity: 10
 
 - type: entity
-  name: протирадіаційний медіпен
   parent: ChemicalMedipen
   id: RadAutoInjector
+  name: протирадіаційний медіпен
   description: Швидка доза антирадіації. Містить аритразин і бікарідин.
   components:
   - type: Item
@@ -353,9 +353,9 @@
           Quantity: 5
 
 - type: entity
-  name: автоінжектор від проколів
   parent: ChemicalMedipen
   id: PunctAutoInjector
+  name: автоінжектор від проколів
   description: Швидка доза пунктурази та транексамової кислоти, призначена для бойового застосування.
   components:
   - type: Item
@@ -395,9 +395,9 @@
           Quantity: 5
 
 - type: entity
-  name: автоінжектор піразину
   parent: ChemicalMedipen
   id: PyraAutoInjector
+  name: автоінжектор піразину
   description: Швидка доза піразину та дерматину, призначена для бойового застосування.
   components:
   - type: Item
@@ -437,9 +437,9 @@
           Quantity: 10
 
 - type: entity
-  name: автоматичний інжектор від асфіксії
   parent: ChemicalMedipen
   id: AirlossAutoInjector
+  name: автоматичний інжектор від асфіксії
   description: Швидка доза фізіологічного розчину і дексаліну плюс, призначена для того, щоб швидко підняти людину.
   components:
   - type: Item
@@ -479,9 +479,9 @@
           Quantity: 20
 
 - type: entity
-  name: космічний медіпен
   parent: ChemicalMedipen
   id: SpaceMedipen
+  name: космічний медіпен
   description: Містить суміш хімічних речовин, які захищають вас від смертоносного впливу космосу.
   components:
   - type: Item
@@ -522,9 +522,9 @@
             Quantity: 20
 
 - type: entity
-  name: інжектор гіперзину
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: Stimpack
+  name: інжектор гіперзину
   description: Містить достатню кількість гіперзину, аби надавати ефект протягом 30 секунд. Використовуйте його, коли будете впевнені, що готові кинути.
   components:
   - type: Item
@@ -566,9 +566,9 @@
     price: 1500
 
 - type: entity
-  name: мікроінжектор гіперзину
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: StimpackMini
+  name: мікроінжектор гіперзину
   description: Мікроінжектор гіперзину, надає ефект від речовини на 15 секунд.
   components:
   - type: Item
@@ -605,9 +605,9 @@
     price: 583 # 3500 for 6 as a freaky fraction
 
 - type: entity
-  name: бойовий медіпен
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: CombatMedipen
+  name: бойовий медіпен
   description: Одноразовий медіпен, що допомогає від практично будь яких поранень.
   components:
   - type: Item
@@ -649,11 +649,9 @@
     price: 1500
 
 - type: entity
-  name: ручка
-  suffix: Гіпопен
   parent: Pen # It is just like normal pen, isn't it?
-  description: Чорнильна ручка.
   id: Hypopen
+  suffix: Hypopen
   components:
   - type: SolutionContainerManager
     solutions:
@@ -695,10 +693,10 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: weh auto-injector
   parent: ChemicalMedipen
   id: WehMedipen
-  description: A rapid dose of Weh. Contains juice that makes you Weh.
+  name: weh auto-injector
+  description: A non-refillable medipen containing multiple doses of weh.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi

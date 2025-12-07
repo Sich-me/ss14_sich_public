@@ -1,0 +1,117 @@
+- type: entity
+  parent: [VolatileGrenadeBase, GrenadeBase, BaseSecurityContraband ]
+  id: SmokeGrenade
+  name: димова шашка
+  description: Тактична граната, яка при використанні випускає велику, довготривалу хмару диму.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/smoke.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 30
+    spreadAmount: 50
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: DeleteOnTrigger
+    keysIn:
+    - timer
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Items/smoke_grenade_prime.ogg
+
+- type: entity
+  parent: [ BaseCivilianContraband, SmokeGrenade ]
+  id: CleanerGrenade
+  name: чинада
+  description: Спеціальна граната для прибиральників, що випускає велику хмару очисної піни.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/janitor.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 15
+    spreadAmount: 50
+    smokePrototype: Foam
+    solution:
+      reagents:
+      - ReagentId: SpaceCleaner
+        Quantity: 30
+
+- type: entity
+  parent: SmokeGrenade
+  id: TearGasGrenade
+  name: граната зі сльозогінним газом
+  description: Граната зі сльозогінним газом для боротьби з масовими заворушеннями. Викликає роздратування, біль і змушує плакати крокодилячими сльозами.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/tear_gas.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 10
+    spreadAmount: 30
+    smokePrototype: TearGasSmokeWhite
+    solution:
+      reagents:
+      - ReagentId: TearGas
+        Quantity: 20
+
+- type: entity
+  parent: [ BaseEngineeringContraband, SmokeGrenade ]
+  id: MetalFoamGrenade
+  name: граната металевої піни
+  description: Аварійний інструмент, який використовується для латання проломів спеціальною швидкосхоплюваною металевою піною. Майже так само добре, як справжні стіни.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/metalfoam.rsi
+  - type: TimerTrigger
+    delay: 5
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 10
+    spreadAmount: 20
+    smokePrototype: AluminiumMetalFoam
+  - type: StaticPrice
+    price: 350
+
+- type: entity
+  parent: [ BaseEngineeringContraband, VolatileGrenadeBase, GrenadeBase ] # Prevent inheriting DeleteOnTrigger from SmokeGrenade
+  id: AirGrenade
+  name: повітряна граната
+  description: Спеціальна твердотільна хімічна граната, яка використовується для швидкого випуску стандартного повітря у вакуумний простір. Заповнює до 30 тайлів!
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/airboom.rsi
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Items/smoke_grenade_prime.ogg
+  - type: TimerTrigger
+    delay: 3
+  - type: ReleaseGasOnTrigger
+    keysIn:
+    - timer
+    removeFraction: 0.25
+    air:
+      volume: 1000
+      moles: # Target is 3117.84 mols total for filling 30 tiles (goal is 101.325 kPa @ 20C)
+        Oxygen: 654.7464 # oxygen
+        Nitrogen: 2463.0936 # nitrogen
+      temperature: 293.15
+  - type: StaticPrice
+    price: 350
+  - type: GenericVisualizer
+    visuals:
+      enum.ReleaseGasOnTriggerVisuals.Key:
+        enabled:
+          True: { state: active }
+          False: { state: spent }

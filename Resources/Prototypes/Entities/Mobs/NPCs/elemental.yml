@@ -350,7 +350,10 @@
     speedModifierThresholds:
       50: 0.4
   - type: Bloodstream
-    bloodReagent: Water
+    bloodReagents:
+      reagents:
+      - ReagentId: Water
+        Quantity: 1
     chemicalMaxVolume: 100
   - type: StatusEffects
     allowed:
@@ -419,7 +422,10 @@
   suffix: Пиво
   components:
   - type: Bloodstream
-    bloodReagent: Beer
+    bloodReagents:
+      reagents:
+      - ReagentId: Beer
+        Quantity: 1
   - type: PointLight
     color: "#cfa85f"
   - type: Sprite
@@ -436,7 +442,10 @@
   suffix: Пакс
   components:
   - type: Bloodstream
-    bloodReagent: Pax
+    bloodReagents:
+      reagents:
+      - ReagentId: Pax
+        Quantity: 1
   - type: PointLight
     color: "#AAAAAA"
   - type: Sprite
@@ -456,7 +465,10 @@
   suffix: Нактюрин
   components:
   - type: Bloodstream
-    bloodReagent: Nocturine
+    bloodReagents:
+      reagents:
+      - ReagentId: Nocturine
+        Quantity: 1
   - type: PointLight
     color: "#128e80"
   - type: Sprite
@@ -476,7 +488,10 @@
   suffix: ТГК
   components:
   - type: Bloodstream
-    bloodReagent: THC
+    bloodReagents:
+      reagents:
+      - ReagentId: THC
+        Quantity: 1
   - type: PointLight
     color: "#808080"
   - type: Sprite
@@ -493,7 +508,10 @@
   suffix: Бікардин
   components:
   - type: Bloodstream
-    bloodReagent: Bicaridine
+    bloodReagents:
+      reagents:
+      - ReagentId: Bicaridine
+        Quantity: 1
   - type: PointLight
     color: "#ffaa00"
   - type: Sprite
@@ -510,7 +528,10 @@
   suffix: Токсин
   components:
   - type: Bloodstream
-    bloodReagent: Toxin
+    bloodReagents:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 1
   - type: PointLight
     color: "#cf3600"
   - type: Sprite
@@ -527,7 +548,10 @@
   suffix: Напалм
   components:
   - type: Bloodstream
-    bloodReagent: Napalm
+    bloodReagents:
+      reagents:
+      - ReagentId: Napalm
+        Quantity: 1
   - type: PointLight
     color: "#FA00AF"
   - type: Sprite
@@ -544,7 +568,10 @@
   suffix: Омнізин
   components:
   - type: Bloodstream
-    bloodReagent: Omnizine
+    bloodReagents:
+      reagents:
+      - ReagentId: Omnizine
+        Quantity: 1
   - type: PointLight
     color: "#fcf7f9"
   - type: Sprite
@@ -561,7 +588,10 @@
   suffix: німоксин
   components:
   - type: Bloodstream
-    bloodReagent: MuteToxin
+    bloodReagents:
+      reagents:
+      - ReagentId: MuteToxin
+        Quantity: 1
   - type: PointLight
     color: "#0f0f0f"
   - type: Sprite
@@ -578,7 +608,10 @@
   suffix: Норадреналінова кислота
   components:
   - type: Bloodstream
-    bloodReagent: NorepinephricAcid
+    bloodReagents:
+      reagents:
+      - ReagentId: NorepinephricAcid
+        Quantity: 1
   - type: PointLight
     color: "#96a8b5"
   - type: Sprite
@@ -595,7 +628,10 @@
   suffix: Ефедрин
   components:
   - type: Bloodstream
-    bloodReagent: Ephedrine
+    bloodReagents:
+      reagents:
+      - ReagentId: Ephedrine
+        Quantity: 1
   - type: PointLight
     color: "#D2FFFA"
   - type: Sprite
@@ -612,7 +648,10 @@
   suffix: Робастний збір
   components:
   - type: Bloodstream
-    bloodReagent: RobustHarvest
+    bloodReagents:
+      reagents:
+      - ReagentId: RobustHarvest
+        Quantity: 1
   - type: PointLight
     color: "#3e901c"
   - type: Sprite

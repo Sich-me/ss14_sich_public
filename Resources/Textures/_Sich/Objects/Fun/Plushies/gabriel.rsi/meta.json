@@ -8,14 +8,14 @@
     },
     "states": [
         {
-            "name": "gabrielplushie"
+            "name": "icon"
         },
         {
-            "name": "gabrielplushie-inhand-left",
+            "name": "inhand-left",
             "directions": 4
         },
         {
-            "name": "gabrielplushie-inhand-right",
+            "name": "inhand-right",
             "directions": 4
         }
     ]

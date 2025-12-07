@@ -1,8 +1,9 @@
 - type: entity
-  name: лом
+  abstract: true
   parent: BaseItem
   id: BaseCrowbar
-  abstract: true
+  name: лом
+  description: Багатофункціональний інструмент, який використовується для багатьох завдань, як-от підважування дверей або лупцювання міжвимірних загарбників.
   components:
   - type: EmitSoundOnLand
     sound:
@@ -46,7 +47,6 @@
 - type: entity
   parent: BaseCrowbar
   id: Crowbar
-  description: Багатозадачний інструмент для відкривання дверей і боротьби з міжвимірними загарбниками.
   components:
   - type: Sprite
     state: icon
@@ -57,10 +57,8 @@
 
 # Emergency (red) Crowbar
 - type: entity
-  name: аварійний лом
   parent: BaseCrowbar
   id: CrowbarRed
-  description: Аварійний лом, призначений для відмикання дверей та аварійних шлюзів під час відключення електроенергії.
   components:
   - type: Tag
     tags:
@@ -95,7 +93,6 @@
 - type: entity
   parent: BaseCrowbar
   id: CrowbarGreen
-  description: Багатофункціональний інструмент для відчинення дверей та боротьби з міжпросторовими загарбниками, надрукований на токарному верстаті.
   components:
   - type: Sprite
     layers:
@@ -126,7 +123,6 @@
 - type: entity
   parent: BaseCrowbar
   id: CrowbarOrange
-  description: Багатофункціональний інструмент для відчинення дверей і боротьби з міжпросторовими загарбниками, який зазвичай можна знайти в ящиках з інструментами.
   components:
   - type: Sprite
     layers:
@@ -157,7 +153,6 @@
 - type: entity
   parent: BaseCrowbar
   id: CrowbarYellow
-  description: Багатофункціональний інструмент для відчинення дверей та боротьби з міжпросторовими загарбниками, виданий Інженерним відділом.
   components:
   - type: Sprite
     layers:

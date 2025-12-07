@@ -2,7 +2,7 @@
   parent: BaseWallmountMachine
   id: Screen
   name: екран
-  description: Відображає текст або час.
+  description: Відображає текст або час до прибуття евакуаційного шатла. Зазвичай сюди пишуть щось корисне члени командування або ШІ.
   components:
   - type: Rotatable
   - type: TextScreenVisuals
@@ -37,8 +37,8 @@
 - type: entity
   id: ArrivalsShuttleTimer
   parent: Screen
-  name: arrivals screen
-  description: Displays time of arrivals shuttle ETA.
+  name: екран прибуття
+  description: Відображає час до прибуття шатла.. прибуття.
   components:
   - type: DeviceNetwork
     deviceNetId: Private

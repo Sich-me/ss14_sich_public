@@ -1,5 +1,5 @@
-lock-comp-on-examined-is-locked = Здається {$entityName} заблоковано.
-lock-comp-on-examined-is-unlocked = Здається {$entityName} розблоковано.
+lock-comp-on-examined-is-locked = Здається {$entityName} [color=darkred]заблоковано[/color].
+lock-comp-on-examined-is-unlocked = Здається {$entityName} [color=darkgreen]розблоковано[/color].
 lock-comp-do-lock-success = Ти заблокував {$entityName}.
 lock-comp-do-unlock-success = Ти розблокував {$entityName}.
 lock-comp-has-user-access-fail = Відмовлено у доступі.
