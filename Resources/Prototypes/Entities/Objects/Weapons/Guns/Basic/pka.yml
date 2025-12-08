@@ -2,7 +2,7 @@
   name: протокінетичний прискорювач
   id: WeaponProtoKineticAccelerator
   parent: [WeaponProtoKineticAcceleratorBase, BaseCargoContraband]
-  description: Стріляє кінетичними болтами з малою шкодою на невелику відстань.
+  description: Стріляє кінетичними болтами на невелику відстань. Вони здатні наносити шкоду на рівні з малокаліберними кулями, будьте обачні!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi

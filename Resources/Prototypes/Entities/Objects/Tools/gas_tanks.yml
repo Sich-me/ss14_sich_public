@@ -86,7 +86,7 @@
 - type: entity
   parent: GasTankRoundBase
   id: EmergencyOxygenTank
-  name: аварійний кисневий баллон
+  name: аварійний кисневий балон
   description: Для надзвичайних ситуацій. Містить дуже мало кисню, тому зберігайте до крайньої необхідності. Вміщує 0.66 л газу.
   components:
   - type: Sprite
@@ -115,8 +115,8 @@
 - type: entity
   parent: EmergencyOxygenTank
   id: EmergencyNitrogenTank
-  name: аварійний азотний баллон
-  description: Для надзвичайних ситуацій. Містить дуже мало азоту, тому зберігайте до крайньої необхідності. Віщує 0.66 л газу.
+  name: аварійний азотний балон
+  description: Для надзвичайних ситуацій. Містить дуже мало азоту, тому зберігайте до крайньої необхідності. Вміщує 0.66 л газу.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_red.rsi
@@ -128,8 +128,8 @@
 - type: entity
   parent: EmergencyOxygenTank
   id: ExtendedEmergencyOxygenTank
-  name: аварійний кисневий баллон розширеної місткості
-  description: Аварійний бак збільшеної місткості. Технічно розрахований на тривале використання. Вміщує 1.5 л газу.
+  name: аварійний кисневий балон збільшеного об'єму
+  description: Аварійний газовий балон збільшеного об'єму. Технічно розрахований на відносно тривале використання. Вміщує 1.5 л газу.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_extended.rsi
@@ -145,8 +145,8 @@
 - type: entity
   parent: ExtendedEmergencyOxygenTank
   id: ExtendedEmergencyNitrogenTank
-  name: аварійний азотний баллон розширеної місткості
-  description: Аварійний балон збільшеної місткості. Технічно розрахований на тривале використання. Вміщує 1,5 л газу.
+  name: аварійний азотний балон збільшеного об'єму
+  description: Аварійний газовий балон збільшеного об'єму. Технічно розрахований на відносно тривале використання. Вміщує 1.5 л газу.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_extended_red.rsi
@@ -158,8 +158,8 @@
 - type: entity
   parent: ExtendedEmergencyOxygenTank
   id: DoubleEmergencyOxygenTank
-  name: подвійний аварійний кисневий баллон
-  description: Високоякісний двобалонний аварійний контейнер для життєзабезпечення. Містить достатню кількість кисню, як на свій невеликий розмір. Вміщує 2.5 л газу.
+  name: подвійний аварійний кисневий балон
+  description: Високоякісний подвійний аварійний газовий балон для чистого та безпечного дихання. Містить зовсім не мало кисню, як на свій малий розмір. Вміщує 2.5 л газу.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_double.rsi
@@ -180,8 +180,8 @@
 - type: entity
   parent: DoubleEmergencyOxygenTank
   id: DoubleEmergencyNitrogenTank
-  name: подвійний аварійний балон з азотом
-  description: Високоякісний двобалонний контейнер для аварійної життєзабезпечення. Вміщує пристойну кількість азоту, як на свій невеликий розмір. Вміщує 2,5 л газу.
+  name: подвійний аварійний азотний балон
+  description: Високоякісний подвійний аварійний газовий балон для чистого та безпечного дихання. Містить зовсім не мало азоту, як на свій малий розмір. Вміщує 2.5 л газу.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_double_red.rsi
@@ -194,7 +194,7 @@
   parent: EmergencyOxygenTank
   id: EmergencyFunnyOxygenTank
   name: кумедний аварійний кисневий балон
-  description: Легко переносний балон для надзвичайних ситуацій. Містить дуже мало кисню з додаванням веселячого газу, призначений лише для виживання. Вміщує 0,66 л газу.
+  description: Для надзвичайних ситуацій. Містить дуже мало кисню разом з краплею веселящого газу, тому зберігайте до крайньої хонк-небхідності! Вміщує 0.66 л газу.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_clown.rsi
@@ -216,7 +216,7 @@
   parent: GasTankRoundBase
   id: NitrousOxideTank
   name: балон закису азоту
-  description: Містить суміш повітря та закису азоту. Переконайтеся, що ви не наповнили його чистим N2O. Вміщує 5 л газу.
+  description: Містить суміш кисня та закису азоту. Переконайтеся, що ви не наповнили його чистим N2O. Вміщує 5 л газу.
   components:
   - type: Sprite
     sprite: Objects/Tanks/anesthetic.rsi
@@ -232,7 +232,7 @@
   parent: GasTankBase
   id: PlasmaTank
   name: балон плазми
-  description: Містить небезпечну плазму. Не газонюхати! Дуже легкозаймиста речовина. Вміщує 5 л газу.
+  description: Містить отруйну та легкозаймисту плазму. Не газонюхати! Вміщує 5 л газу.
   components:
   - type: Sprite
     sprite: Objects/Tanks/plasma.rsi

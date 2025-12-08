@@ -5,7 +5,7 @@ salvage-system-announcement-arrived = Притягнуто уламок для �
 salvage-asteroid-name = Астероїд
 
 salvage-magnet-window-title = Шахтарський магніт
-salvage-expedition-window-progression = Прогрес
+salvage-expedition-window-progression = Час
 
 salvage-magnet-resources = {$resource ->
     [OreIron] Залізо
@@ -32,7 +32,7 @@ salvage-magnet-resources-count = {$count ->
 }
 
 # Debris
-salvage-magnet-debris-ChunkDebris = Космічні уламки
+salvage-magnet-debris-ChunkDebris = Уламки з космосу
 
 # Asteroids
 dungeon-config-proto-BlobAsteroid = Група астероїдів

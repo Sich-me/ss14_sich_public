@@ -10,7 +10,7 @@ salvage-expedition-window-modifiers = Модифікатори:
 offering-window-claimed = Обрано
 offering-window-claim = Обрати
 
-salvage-expedition-window-next = Наступна пропозиція
+salvage-expedition-window-next = Нові через:
 
 salvage-expedition-difficulty-Moderate = Помірна
 salvage-expedition-difficulty-Hazardous = Небезпечна
@@ -41,10 +41,10 @@ salvage-light-mod-night = Ніч
 salvage-temperature-mod-room-temperature = Кімнатна температура
 salvage-temperature-mod-hot = Гарячо
 salvage-temperature-mod-high-temperature = Дуже гарячо
-salvage-temperature-mod-extreme-heat = Екстримально гарячо
+salvage-temperature-mod-extreme-heat = Екстремально гарячо
 salvage-temperature-mod-cold = Прохолодно
 salvage-temperature-mod-low-temperature = Холодно
-salvage-temperature-mod-extreme-cold = Екстримально гарячо
+salvage-temperature-mod-extreme-cold = Екстремально холодно
 
 salvage-air-mod-no-atmosphere = Атмосфера відсутня
 salvage-air-mod-breathable-atmosphere = Атмосфера придатна для дихання

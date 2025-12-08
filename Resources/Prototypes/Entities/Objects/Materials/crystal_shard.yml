@@ -3,7 +3,7 @@
   parent: BaseItem
   id: ShardCrystalBase
   name: кристалевий уламок
-  description:  Маленький шматок кристалу.
+  description: Маленький шматок кристалу.
   components:
   - type: Sharp
   - type: Execution
@@ -75,7 +75,7 @@
 
 - type: entity
   parent: ShardCrystalBase
-  name: yellow crystal shard
+  name: уламок жовтого кристалу
   id: ShardCrystalYellow
   components:
   - type: Sprite
@@ -107,7 +107,7 @@
 
 - type: entity
   parent: ShardCrystalBase
-  name: black crystal shard
+  name: уламок чорного кристалу
   id: ShardCrystalBlack
   components:
   - type: Sprite

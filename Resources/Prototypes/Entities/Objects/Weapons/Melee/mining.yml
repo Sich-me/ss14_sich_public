@@ -2,7 +2,7 @@
   name: кайло
   parent: BaseItem
   id: Pickaxe
-  description: Зазубрений до досконалості, щоб втикати його в скелі.
+  description: Зазубрено до досконалості, щоб втикати його в скелі.
   components:
   - type: Tag
     tags:
@@ -41,10 +41,10 @@
       Wood: 100
 
 - type: entity
-  name: гірничий бур
+  name: бур
   parent: BaseItem
   id: MiningDrill
-  description: Потужний інструмент для швидкого буріння каменів.
+  description: Потужний інструмент для швидкого буріння каменюк.
   components:
   - type: Item
     storedRotation: -90
@@ -68,10 +68,10 @@
         Structural: 15
 
 - type: entity
-  name: бур з алмазним наконечником
+  name: бур з діамантовим вістрям
   parent: MiningDrill
   id: MiningDrillDiamond
-  description: Значно ефективніший гірничий бур з алмазним наконечником.
+  description: Покращена версія звичайного бура. Блищить!
   components:
   - type: Sprite
     sprite: Objects/Tools/handdrilldiamond.rsi
