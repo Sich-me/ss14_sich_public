@@ -1,8 +1,8 @@
 - type: entity
   id: BaseXenoArtifact
   parent: BaseMob # we use this since it can technically get inhabited
-  name: artifact
-  description: A strange artifact from time unknown. Looks like a good time.
+  name: артефакт
+  description: Дивний артефакт невідомого походження, епохи та часу. Здається, він бачив багато всього.
   abstract: true
   noSpawn: true
   components:
@@ -53,8 +53,8 @@
 - type: entity
   parent: BaseAction
   id: ActionArtifactActivate
-  name: Activate Artifact
-  description: Activate yourself, causing chaos to those near you.
+  name: Активувати Артефакт
+  description: Активуйте самого себе, спричиняючи хаос навколо.
   components:
   - type: Action
     icon:

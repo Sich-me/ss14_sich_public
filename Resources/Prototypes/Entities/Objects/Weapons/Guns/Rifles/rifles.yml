@@ -289,10 +289,10 @@
   - type: Appearance
 
 - type: entity
-  name: Foam Force Astro Ace
+  name: Сила Паралону "Зоряний Ас"
   parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponRifleFoam
-  description: A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
+  description: Високоякісна гвинтівка, яка стриляє паралоном. Її пластик видається міцним, а механізми надійними.
   components:
   - type: Sprite
     sprite: Objects/Fun/Foam/foam_rifle.rsi

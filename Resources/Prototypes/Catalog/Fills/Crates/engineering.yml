@@ -1,8 +1,8 @@
 - type: entity
   id: CrateEngineeringGear
   parent: CrateEngineering
-  name: engineering gear crate
-  description: Various engineering gear parts.
+  name: ящик з інженерним спорядженням
+  description: Містить у собі різноманітні частини одягу інженерів. Не забудь свій жилет та каску!
   components:
   - type: StorageFill
     contents:
@@ -22,8 +22,8 @@
 - type: entity
   id: CrateEngineeringToolbox
   parent: CrateEngineering
-  name: toolbox crate
-  description: Two mechanical and two electrical toolboxes.
+  name: ящик з ящиками з інструментами
+  description: Містить у собі 2 ящика з інструментами механіка та 2 ящика з інструментами електрика. Потужно.
   components:
   - type: StorageFill
     contents:
@@ -46,8 +46,8 @@
 - type: entity
   id: CrateEngineeringCableLV
   parent: CrateElectrical
-  name: LV cable crate
-  description: 3 coils of LV cables.
+  name: ящик з кабелями НН
+  description: Містить у собі 3 мотка кабелів низької напруги.
   components:
   - type: StorageFill
     contents:
@@ -57,8 +57,8 @@
 - type: entity
   id: CrateEngineeringCableMV
   parent: CrateElectrical
-  name: MV cable crate
-  description: 3 coils of MV cables.
+  name: ящик з кабелями СН
+  description: Містить у собі 3 мотка кабелів середньої напруги.
   components:
   - type: StorageFill
     contents:
@@ -68,8 +68,8 @@
 - type: entity
   id: CrateEngineeringCableHV
   parent: CrateElectrical
-  name: HV cable crate
-  description: 3 coils of HV cables.
+  name: ящик з кабелями ВН
+  description: Містить у собі 3 мотка кабелів високої напруги.
   components:
   - type: StorageFill
     contents:
@@ -79,8 +79,8 @@
 - type: entity
   id: CrateEngineeringFoamGrenade
   parent: CrateEngineeringSecure
-  name: sealant grenade crate
-  description: 5 metal foam sealant grenades.
+  name: ящик з герметиковими гранатами
+  description: Містить у собі 5 гранат з металевою піною.
   components:
   - type: StorageFill
     contents:
@@ -90,8 +90,8 @@
 - type: entity
   id: CrateEngineeringCableBulk
   parent: CrateElectrical
-  name: bulk cable crate
-  description: 2 coils each for every cable type.
+  name: оптовий ящик з кабелями
+  description: Містить у собі по 2 мотка кожного типу кабеля.
   components:
   - type: StorageFill
     contents:
@@ -105,8 +105,8 @@
 - type: entity
   id: CrateEngineeringElectricalSupplies
   parent: CrateElectrical
-  name: electrical supplies crate
-  description: NT is not responsible for any workplace infighting relating to the insulated gloves included within these crates.
+  name: ящик з спорядженням електрика
+  description: Компанія Нанотрейзен не несе відповідальності за будь-які конфлікти з іншими членами екіпажу, пов'язані з ізольованими рукавичками, що входять до цього ящику.
   components:
   - type: StorageFill
     contents:
@@ -118,8 +118,8 @@
 - type: entity
   id: CrateEngineeringStationBeaconBundle
   parent: CratePlastic
-  name: station beacon bundle
-  description: A crate containing 5 station beacon assemblies for modifying the station map.
+  name: комплект маяків станції
+  description: Містить у собі 5 флетпаків маяків станції для додавання нових точок на мапу станції.
   components:
   - type: StorageFill
     contents:
@@ -129,8 +129,8 @@
 - type: entity
   id: CrateEngineeringJetpack
   parent: CrateGenericSteel
-  name: jetpack crate
-  description: Two jetpacks for those who don't know how to use fire extinguishers.
+  name: ящик з реактивними ранцями
+  description: Містить у собі 2 реактивних ранця для тих, хто не вміє користуватися вогнегасниками.
   components:
   - type: StorageFill
     contents:
@@ -140,8 +140,8 @@
 - type: entity
   id: CrateEngineeringMiniJetpack
   parent: CrateGenericSteel
-  name: mini jetpack crate
-  description: Two mini jetpacks for those who want an extra challenge.
+  name: ящик з міні реактивними ранцями
+  description: Містить у собі 2 міні реактивних ранця для тих, хто не вміє користуватися вогнегасником, а також хоче більше труднощів.
   components:
   - type: StorageFill
     contents:
@@ -151,8 +151,8 @@
 - type: entity
   id: CrateAirlockKit
   parent: CrateEngineering
-  name: airlock kit
-  description: A kit for building 6 airlocks, doesn't include tools.
+  name: комплект для будівництва шлюзів
+  description: Комплект для будівництва 6 шлюзів, інструменти в комплект не входять.
   components:
   - type: StorageFill
     contents:
@@ -164,8 +164,8 @@
 - type: entity
   id: CrateEvaKit
   parent: CrateCommandSecure
-  name: EVA kit
-  description: A set consisting of two prestigious EVA suits and helmets.
+  name: комплект ЄВА
+  description: Комплект, що складається з двох прекрасних костюмів з пінополіуретану та шоломів для них. Газові балони в комплетк не входять.
   components:
   - type: StorageFill
     contents:
@@ -177,8 +177,8 @@
 - type: entity
   id: CrateRCDAmmo
   parent: CrateEngineering
-  name: compressed matter crate
-  description: Contains three compressed matter cartridges.
+  name: ящик з стиснутою речовиною
+  description: Містить у собі 3 картриджі зі стиснутою речовиною. Використовується ПШБ.
   components:
   - type: StorageFill
     contents:
@@ -188,8 +188,8 @@
 - type: entity
   id: CrateRCD
   parent: CrateEngineeringSecure
-  name: RCD crate
-  description: A crate containing a single rapid construction device.
+  name: ящик з ПШБ
+  description: Містить у собі один Пристрій Швидкого Будівництва. Деякі кличуть цю штуковину РСД.
   components:
   - type: StorageFill
     contents:
@@ -198,8 +198,8 @@
 - type: entity
   id: CrateParticleDecelerators
   parent: CrateEngineeringSecure
-  name: particle decelerators crate
-  description: A crate containing 3 Particle Decelerators.
+  name: ящик з сповільнювачами часток
+  description: Містить у собі 3 Сповільнювача Часток. Не стриляйте їми в інших членів екіпажу!
   components:
   - type: StorageFill
     contents:
@@ -209,8 +209,8 @@
 - type: entity
   id: CrateEngineeringSpaceHeater
   parent: CrateEngineering
-  name: space heater crate
-  description: Contains a space heater for climate control.
+  name: ящик з космічним обігрівачем
+  description: Містить у собі космічний обігрівач для контролю клімату станції.
   components:
   - type: StorageFill
     contents:
@@ -236,8 +236,8 @@
 - type: entity
   id: CrateTechBoardRandom
   parent: ToteBase
-  name: surplus boards
-  description: Surplus boards from somewhere.
+  name: ящик з різноманітними платами
+  description: Різномнітні плати, біс зна звідки вони.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -249,8 +249,8 @@
 - type: entity
   id: CrateAirGrenade
   parent: CrateEngineering
-  name: air grenade crate
-  description: A crate containing 3 air grenades.
+  name: ящик з повітряними гранатами
+  description: Містить у собі 3 повітряні гранати. Сподіваємося, ви їх замовляйте чисто для тестів.
   components:
   - type: StorageFill
     contents:

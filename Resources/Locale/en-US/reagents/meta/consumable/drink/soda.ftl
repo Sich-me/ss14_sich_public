@@ -46,7 +46,7 @@ reagent-desc-space-mountain-wind = Дме крізь вас, як космічн
 reagent-name-space-up = Роз-Герм
 reagent-desc-space-up = На смак як пробоїна корпусу, тільки в роті.
 
-reagent-name-starkist = старкист
+reagent-name-starkist = СтарКіст
 reagent-desc-starkist = Солодкий безалкогольний напій зі смаком апельсина.
 
 reagent-name-fourteen-loko = Fourteen Loko

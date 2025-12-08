@@ -177,8 +177,8 @@
 - type: entity
   parent: ScatteringGrenadeBase
   id: GrenadeFoamDart
-  name: foam dart grenade
-  description: Releases a bothersome spray of foam darts that cause severe welching.
+  name: паралоново-дротикова граната
+  description: Випускає купу малих надокучливих паралонових дротиків. Сподіваємося вони не застрягнуть у вас у оці!
   components:
   - type: Sprite
     sprite: Objects/Fun/Foam/foam_grenade.rsi

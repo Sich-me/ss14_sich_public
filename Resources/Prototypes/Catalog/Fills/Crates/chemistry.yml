@@ -68,8 +68,8 @@
 - type: entity
   id: CratePlantBGone
   parent: CrateGenericSteel
-  name: оптовий ящик з Plant-B-Gone
-  description: From Monstano. "Unwanted Weeds, Meet Your Celestial Roundup!"
+  name: оптовий ящик з Трава-До-Біса
+  description: Від УкраВіт™. "Небажані бур'яни? Пошліть їх до біса!"
   components:
     - type: StorageFill
       contents:
