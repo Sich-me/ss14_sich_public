@@ -150,7 +150,7 @@
   parent: CrateGenericSteel
   id: CrateFulton
   name: ящик з фултонами
-  description: Містить у собі маяк футлонів та 8 фултонів.
+  description: Містить у собі маяк футлонів та 8 пачок фултонів.
   components:
   - type: EntityTableContainerFill
     containers:

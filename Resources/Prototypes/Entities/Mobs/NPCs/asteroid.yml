@@ -304,7 +304,7 @@
 - type: entity
   id: FoodHivelordRemains
   parent: FoodBase
-  name: залишки володаря рою
+  name: рештки володаря рою
   description: Все, що залишилося від рою, здається, це те, що дозволяє йому відламувати від себе шматки, не завдаючи собі болю... Його цілющі властивості скоро стануть інертними, якщо не використовувати їх швидко. Намагайтеся не думати про те, що ви їсте.
   components:
   - type: SolutionContainerManager
@@ -337,7 +337,7 @@
 - type: entity
   id: FoodHivelordRemainsInert
   parent: BaseItem
-  name: інертні залишки рою
+  name: інертні рештки рою
   description: Все, що залишилося від володаря рою... Тепер все дійсно втрачено.
   components:
   - type: Sprite
