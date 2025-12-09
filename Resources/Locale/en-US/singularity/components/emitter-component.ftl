@@ -11,5 +11,5 @@ comp-emitter-turned-off = {CAPITALIZE($target)} вимкнувся.
 # Shows if the user attempts to activate the emitter while it's un-anchored.
 comp-emitter-not-anchored = {CAPITALIZE($target)} не прикріплений до підлоги!
 
-emitter-component-current-type = Поточний вибраний тип - це: {$type}.
+emitter-component-current-type = Поточний вибраний тип - це: [color=yellow]{$type}[/color].
 emitter-component-type-set = Тип встановлений на: {$type}

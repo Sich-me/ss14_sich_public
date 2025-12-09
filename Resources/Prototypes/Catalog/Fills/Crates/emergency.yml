@@ -1,66 +1,74 @@
 - type: entity
-  id: CrateEmergencyExplosive
   parent: CrateSecgear
+  id: CrateEmergencyExplosive
   name: ящик з комплектом сапера
-  description: Науковці збожеволіли? Щось вже пищить прямо за шлюзом вашого відділу? Купуйте зараз і станьте героєм, якого не заслужила, але потребує ця станція! (час в комплект не входить)
+  description: Науковці знову збожеволіли? Щось вже пищить прямо за шлюзом вашого відділу? Купуйте зараз і станьте героєм, якого не заслужила, але потребує ця станція! (час в комплект не входить)
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingHeadHelmetBombSuit
-      - id: ClothingMaskGas
-      - id: Screwdriver
-      - id: Wirecutter
-      - id: Multitool
-      - id: ClothingOuterSuitBomb
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingHeadHelmetBombSuit
+        - id: ClothingMaskGas
+        - id: Screwdriver
+        - id: Wirecutter
+        - id: Multitool
+        - id: ClothingOuterSuitBomb
 
 - type: entity
-  id: CrateEmergencyFire
   parent: CrateGenericSteel
+  id: CrateEmergencyFire
   name: ящик з пожежним обладнанням
   description: Тільки ти можеш запобігти пожежам на станції. Використовуй ці два пожежних костюма, протигази, ліхтарики, велькі кисневі балони, вогнегасники та каски! Врятуй всіх пухнастих членів екіпажу.
   components:
-  - type: StorageFill
-    contents:
-      - id: FlashlightLantern
-        amount: 2
-      - id: FireExtinguisher
-        amount: 2
-      - id: ClothingHeadHatHardhatRed
-        amount: 2
-      - id: ClothingMaskGas
-        amount: 2
-      - id: ClothingOuterSuitFire
-        amount: 2
-      - id: OxygenTankFilled
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FlashlightLantern
+          amount: 2
+        - id: FireExtinguisher
+          amount: 2
+        - id: ClothingHeadHatHardhatRed
+          amount: 2
+        - id: ClothingMaskGas
+          amount: 2
+        - id: ClothingOuterSuitFire
+          amount: 2
+        - id: OxygenTankFilled
+          amount: 2
 
 - type: entity
-  id: CrateEmergencyInternals
   parent: CrateInternals
+  id: CrateEmergencyInternals
   name: ящик з дихальним обладнанням
   description: Опануйте свою життєву енергію та контролюйте дихання за допомогою трьох дихальних масок, аварійних скафандрів та великих газових балонів. В комплекті присутній як азот, так й кисень.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingMaskGas
-        amount: 3
-      - id: ClothingMaskBreath
-        amount: 3
-      - id: OxygenTankFilled
-        amount: 3
-      - id: NitrogenTankFilled
-        amount: 3
-      - id: ClothingOuterSuitEmergency
-        amount: 3
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingMaskGas
+          amount: 3
+        - id: ClothingMaskBreath
+          amount: 3
+        - id: OxygenTankFilled
+          amount: 3
+        - id: NitrogenTankFilled
+          amount: 3
+        - id: ClothingOuterSuitEmergency
+          amount: 3
 
 - type: entity
-  id: CrateEmergencyInternalsLarge
   parent: CrateInternals
+  id: CrateEmergencyInternalsLarge
   name: ящик з дихальним обладнанням (великий)
   description: Опануйте ще більше своєї життєвої енергії та контролюйте дихання за допомогою шістьох дихальних масок, аварійних скафандрів та великих газових балонів. В комплекті присутній як азот, так й кисень.
   components:
-    - type: StorageFill
-      contents:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
         - id: ClothingMaskGas
           amount: 6
         - id: ClothingMaskBreath
@@ -73,57 +81,63 @@
           amount: 6
 
 - type: entity
-  id: CrateNitrogenInternals
   parent: CrateInternals
-  name: ящик з дихальним обладнанням (азот)
+  id: CrateNitrogenInternals
+  name: ящик з дихальним обладнанням (азотний)
   description: Містить чотири дихальні маски та чотири великі азотні балони. Призначений для слаймолюдів та воксів.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingMaskGas
-        amount: 2
-      - id: ClothingMaskBreath
-        amount: 2
-      - id: NitrogenTankFilled
-        amount: 4
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingMaskGas
+          amount: 2
+        - id: ClothingMaskBreath
+          amount: 2
+        - id: NitrogenTankFilled
+          amount: 4
 
 - type: entity
-  id: CrateEmergencyRadiation
   parent: CrateRadiation
+  id: CrateEmergencyRadiation
   name: ящик з антирадіаційним захистом
   description: Переживіть ядерний апокаліпсис та сингулярність за склом з двома комплектами радіаційних костюмів. Кожен комплект містить костюм з вбудованим шоломом та лічильник Гейгера. Ми навіть додамо пляшку горілки та кілька чарок, враховуючи тривалість життя тих, хто це замовить.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterSuitRad
-        amount: 2
-      - id: GeigerCounter
-        amount: 2
-      - id: DrinkVodkaBottleFull
-      - id: DrinkShotGlass
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingOuterSuitRad
+          amount: 2
+        - id: GeigerCounter
+          amount: 2
+        - id: DrinkVodkaBottleFull
+        - id: DrinkShotGlass
+          amount: 2
 
 - type: entity
-  id: CrateEmergencyInflatablewall
   parent: CratePlastic
+  id: CrateEmergencyInflatablewall
   name: ящик з надувними стінами
   description: Два комплекти надувних стін та стільки ж комплектів надувних дверей на випадок, коли металеві стіни станцій більше не захочуть утримувати атмосферу.
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxInflatable
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BoxInflatable
 
 - type: entity
-  id: CrateGenericBiosuit
   parent: CratePlastic
+  id: CrateGenericBiosuit
   name: екстрений ящик з костюмами біозахисту
   description: Містить у собі 2 костюми біологічного захисту, щоб жодна хвороба чи калюжа хімікатів не відволікала вас від того, що ви там робите.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterBioGeneral
-        amount: 2
-      - id: ClothingHeadHatHoodBioGeneral
-        amount: 2
-      - id: ClothingMaskGas
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: FillBiohazardGearGeneric
+          rolls: 2
+        - id: ClothingMaskGas
+          amount: 2

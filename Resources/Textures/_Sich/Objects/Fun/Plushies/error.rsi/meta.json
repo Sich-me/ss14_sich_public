@@ -8,24 +8,24 @@
   },
   "states": [
     {
-      "name": "errorplushie_off"
+      "name": "icon_off"
     },
   {
-      "name": "errorplushie_on",
+      "name": "icon_on",
       "delays": [
         [
           0.2,
           0.2,
-      0.2
+          0.2
         ]
       ]
     },
     {
-       "name": "errorplushie-inhand-left",
+       "name": "inhand-left",
        "directions": 4
     },
     {
-       "name": "errorplushie-inhand-right",
+       "name": "inhand-right",
        "directions": 4
   }
   ]

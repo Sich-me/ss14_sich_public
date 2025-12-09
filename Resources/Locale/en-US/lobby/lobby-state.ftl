@@ -14,6 +14,10 @@ lobby-state-song-text = Грає: [color=white]{$songTitle}[/color] by [color=wh
 lobby-state-song-no-song-text = Не грає жодної пісні.
 lobby-state-song-unknown-title = [color=dimgray]Невідома назва[/color]
 lobby-state-song-unknown-artist = [color=dimgray]Невідомий виконавець[/color]
+lobby-state-background-text = Арт у меню: [color=white]{$backgroundTitle}[/color] від [color=white]{$backgroundArtist}[/color]
+lobby-state-background-no-background-text = Арт меню не завантажено.
+lobby-state-background-unknown-title = [color=dimgray]Невідома назва[/color]
+lobby-state-background-unknown-artist = [color=dimgray]Невідомий художник[/color]
 lobby-state-playtime-comment-normal =
     Ви провели {$hours} {$hours ->
     [1]годину

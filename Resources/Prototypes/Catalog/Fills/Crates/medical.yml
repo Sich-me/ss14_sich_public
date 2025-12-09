@@ -1,173 +1,191 @@
 - type: entity
-  id: CrateMedicalSupplies
   parent: CrateMedical
+  id: CrateMedicalSupplies
   name: ящик з медичними розхідниками
   description: Ящик з базовими ліками. Містить у собі пару аптечок першої допомоги, бинти, пакети крові та стерильні рукавички з масками.
   components:
-  - type: StorageFill
-    contents:
-      - id: MedkitFilled
-        amount: 2
-      - id: Gauze
-        amount: 2
-      - id: Bloodpack
-        amount: 2
-      - id: BoxLatexGloves
-      - id: BoxSterileMask
-      - id: BoxMouthSwab
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MedkitFilled
+          amount: 2
+        - id: Gauze
+          amount: 2
+        - id: Bloodpack
+          amount: 2
+        - id: BoxLatexGloves
+        - id: BoxSterileMask
+        - id: BoxMouthSwab
 
 - type: entity
-  id: CrateChemistrySupplies
   parent: CrateMedical
+  id: CrateChemistrySupplies
   name: ящик з хімічним обладнанням
   description: Ящик з базовим хім. обладнанням. Містить у собі колби, пляшечки шприци, баночки для пігулок та піпетки.
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxSyringe
-      - id: BoxBeaker
-      - id: BoxPillCanister
-      - id: Dropper
-        amount: 2
-      - id: BoxBottle
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxSyringe
+        - id: BoxBeaker
+        - id: BoxPillCanister
+        - id: Dropper
+          amount: 2
+        - id: BoxBottle
+          amount: 2
 
 - type: entity
-  id: CrateChemistryVials
   parent: CrateMedical
+  id: CrateChemistryVials
   name: ящик з флаконами
   description: Ящик, який містить у собі флакони.
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxVial
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BoxVial
 
 - type: entity
-  id: CrateMindShieldImplants
   parent: CrateMedical
+  id: CrateMindShieldImplants
   name: ящик з імплантами захисту розуму
   description: Містить у собі 3 імпланти захисту розуму.
   components:
-  - type: StorageFill
-    contents:
-      - id: MindShieldImplanter
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MindShieldImplanter
         amount: 3
 
 - type: entity
-  id: CrateMedicalSurgery
   parent: CrateSurgery
+  id: CrateMedicalSurgery
   name: ящик з хірургічним обладнанням
   description: Містить у собі базове хірургічне обладнання. Все необхідне для проведення операцій!
   components:
-  - type: StorageFill
-    contents:
-      - id: Scalpel
-      - id: Retractor
-      - id: Cautery
-      - id: Drill
-      - id: Saw
-      - id: Hemostat
-      - id: ClothingMaskSterile
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: Scalpel
+        - id: Retractor
+        - id: Cautery
+        - id: Drill
+        - id: Saw
+        - id: Hemostat
+        - id: ClothingMaskSterile
 
 - type: entity
-  id: CrateMedicalScrubs
   parent: CrateMedical
+  id: CrateMedicalScrubs
   name: ящик з одягом для медиків
   description: Містить у собі комплект різноманітного медичного одягу.
   components:
-  - type: StorageFill
-    contents:
-      - id: UniformScrubsColorGreen
-      - id: UniformScrubsColorPurple
-      - id: UniformScrubsColorBlue
-      - id: ClothingHeadHatSurgcapBlue
-      - id: ClothingHeadHatSurgcapPurple
-      - id: ClothingHeadHatSurgcapGreen
-      - id: ClothingMaskSterile
-        amount: 3
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: UniformScrubsColorGreen
+        - id: UniformScrubsColorPurple
+        - id: UniformScrubsColorBlue
+        - id: ClothingHeadHatSurgcapBlue
+        - id: ClothingHeadHatSurgcapPurple
+        - id: ClothingHeadHatSurgcapGreen
+        - id: ClothingMaskSterile
+          amount: 3
 
 - type: entity
-  id: CrateEmergencyBurnKit
   parent: CrateMedical
+  id: CrateEmergencyBurnKit
   name: екстрений комплект з аптечкою від опіків
   description: Ящик з аптечкою від опіків. Пече...
   components:
-  - type: StorageFill
-    contents:
-    - id: MedkitBurnFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MedkitBurnFilled
 
 - type: entity
-  id: CrateEmergencyToxinKit
   parent: CrateMedical
+  id: CrateEmergencyToxinKit
   name: екстрений комплект з аптечкою від отруєння
   description: Ящик з аптечкою від отруєння. Пити треба було менше.
   components:
-  - type: StorageFill
-    contents:
-    - id: MedkitToxinFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MedkitToxinFilled
 
 - type: entity
+  parent: CrateMedical
   id: CrateEmergencyO2Kit
-  parent: CrateMedical
   name: екстрений комплект з аптечкою від нестачі кисню
-  description: Ящик з аптечкою від нестачі кисню. Якщо з вас витікає червона рідина - це погано.
+  description: Ящик з аптечкою від нестачі кисню. Якщо з вас витікає червона, синя чи зелена рідина – це погано.
   components:
-  - type: StorageFill
-    contents:
-    - id: MedkitOxygenFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MedkitOxygenFilled
 
 - type: entity
+  parent: CrateMedical
   id: CrateEmergencyBruteKit
-  parent: CrateMedical
   name: екстрений комплект з аптечкою від механічних травм
-  description: Ящик з аптечкою від механічних травм. Не бійтеся впасти - бійтеся не встати.
+  description: Ящик з аптечкою від механічних травм. Не бійтеся впасти – бійтеся не встати.
   components:
-  - type: StorageFill
-    contents:
-    - id: MedkitBruteFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MedkitBruteFilled
 
 - type: entity
-  id: CrateEmergencyAdvancedKit
   parent: CrateMedical
+  id: CrateEmergencyAdvancedKit
   name: екстрений комплект з просунутою аптечкою
   description: Ящик з просунутою аптечкою. Для складніших випадків.
   components:
-  - type: StorageFill
-    contents:
-    - id: MedkitAdvancedFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MedkitAdvancedFilled
 
 - type: entity
+  parent: CrateMedical
   id: CrateEmergencyRadiationKit
-  parent: CrateMedical
   name: екстрений комплект з протирадіаційною аптечкою
-  description: Ящик з протирадіаційною аптечкою. Металевий присмак та почервоніння шкіри - це не норма.
+  description: Ящик з протирадіаційною аптечкою. Металевий присмак та почервоніння шкіри – це не норма.
   components:
-  - type: StorageFill
-    contents:
-    - id: MedkitRadiationFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MedkitRadiationFilled
 
 - type: entity
-  id: CrateBodyBags
   parent: CrateMedical
+  id: CrateBodyBags
   name: ящик з мішками для тіл
   description: Містить у собі 10 мішків для тіл. Не будемо питати, нащо вам це.
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxBodyBag
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BoxBodyBag
         amount: 2
 
 - type: entity
-  id: CrateVirologyBiosuit
   parent: CrateMedicalSecure
+  id: CrateVirologyBiosuit
   name: ящик з костюмами біозахисту вірусологів
   description: Містить у собі 2 костюми біологічного захисту найкращої модифікації разом з стерильними масками, щоб жодна хвороба не відволікала вас від лікування екіпажу. Потребує доступ Медичного для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterBioVirology
-        amount: 2
-      - id: ClothingHeadHatHoodBioVirology
-        amount: 2
-      - id: ClothingMaskSterile
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: FillBiohazardGearVirology
+          rolls: 2
+        - id: ClothingMaskSterile
+          amount: 2

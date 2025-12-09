@@ -1,32 +1,32 @@
 - type: entity
-  id: CrateSyndicateSurplusBundle
   parent: [ CrateSyndicate, StorePresetUplink, BaseSyndicateContraband ]
-  name: ящик поставок Синдикату
-  description: Містить у собі випадкове спорядження Синдикату сумарною вартістю 50 телекристалів. Це може бути, як непотрібний мотлох, так і справді хороші речі. ГЕЙМБЛІІІІІН!!!
+  id: CrateSyndicateSurplusBundle
+  name: ящик надлишків Синдикату
+  description: Містить у собі випадкове спорядження Синдикату сумарною вартістю 50 телекристалів. Схоже воно не знадобилося минулом користувачам. Це може бути, як непотрібний мотлох, так і справді хороші речі. ГЕЙМБЛІІІІІН!!!
   components:
     - type: SurplusBundle
       totalPrice: 50
 
 - type: entity
-  id: CrateCybersunJuggernautBundle
-  suffix: Filled
   parent: CrateSyndicate
+  id: CrateCybersunJuggernautBundle
   name: набір джагернаута Кіберсану
+  suffix: Filled
   description: Містить усе, крім великої рушниці, для влаштування масованої різні.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterHardsuitJuggernaut
-      - id: ClothingMaskGasSyndicate
-      - id: ClothingHandsGlovesCombat
-      - id: DoubleEmergencyOxygenTankFilled
-      - id: DoubleEmergencyNitrogenTankFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingOuterHardsuitJuggernaut
+        - !type:NestedSelector
+          tableId: SyndicateHardsuitExtrasEntityTable
 
 - type: entity
-  id: CrateSyndicateSuperSurplusBundle
   parent: [ CrateSyndicate, StorePresetUplink, BaseSyndicateContraband ]
-  name: ящик супер поставок Синдикату
-  description: Містить у собі випадкове спорядження Синдикату сумарною вартістю 125 телекристалів. Це може бути, як непотрібний мотлох, так і справді хороші речі. МОР ГЕЙМБЛІІІІІН!!!
+  id: CrateSyndicateSuperSurplusBundle
+  name: супер ящик надлишків Синдикату
+  description: Містить у собі випадкове спорядження Синдикату сумарною вартістю 125 телекристалів. Схоже воно не знадобилося минулом користувачам. Це може бути, як непотрібний мотлох, так і справді хороші речі. МОР ГЕЙМБЛІІІІІН!!!
   components:
     - type: SurplusBundle
       totalPrice: 125

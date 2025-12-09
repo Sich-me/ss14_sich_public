@@ -228,6 +228,11 @@ ui-options-function-editor-copy-object = Копіювати
 ui-options-function-show-debug-console = Відкрити консоль
 ui-options-function-show-debug-monitors = Показати інформацію налагодження
 ui-options-function-inspect-entity = Вивчити сутність
+ui-options-function-inspect-entity-tooltip = Відкриває вікно ViewVariables для сутності, над якою наразі знаходиться ваш курсор.
+ui-options-function-inspect-server-component = Інспектувати Серверний Компонент
+ui-options-function-inspect-server-component-tooltip = Відкриває вікно ViewVariables із серверним компонентом, встановленим командою "quickinspect", для сутності, над якою наразі знаходиться ваш курсор.
+ui-options-function-inspect-client-component = Інспектувати Клієнтський Компонент
+ui-options-function-inspect-client-component-tooltip = Відкриває вікно ViewVariables із клієнтським компонентом, встановленим командою "quickinspect", для сутності, над якою наразі знаходиться ваш курсор.
 ui-options-function-hide-ui = Приховати інтерфейс
 
 ui-options-function-hotbar1 = Hotbar slot 1

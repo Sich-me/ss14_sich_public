@@ -1,301 +1,344 @@
 - type: entity
-  id: CrateServiceJanitorialSupplies
   parent: CratePlastic
+  id: CrateServiceJanitorialSupplies
   name: ящик з прибиральницьким приладдям
   description: Боріться з брудом та сміттям за допомогою набору "Базові Засоби Прибиральника Нанотрейзен™"! Містить три відра, знаки "мокра підлоги" та чинади. Також є швабра, спрей з очищувачем, дротяна щітка та сміттєвий пакет. "НЕ ХОДИТИ ПО ПОМИТОМУ!!!"
   components:
-  - type: StorageFill
-    contents:
-      - id: MopItem
-      - id: MopBucketCubeWrapped
-      - id: Bucket
-        amount: 3
-      - id: WetFloorSign
-        amount: 2
-      - id: Soap
-      - id: SprayBottleSpaceCleaner
-        amount: 2
-      - id: TrashBag
-        amount: 2
-      - id: Plunger
-        amount: 2
-      - id: BoxCleanerGrenades
-      - id: WireBrush
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MopItem
+        - id: MopBucketCubeWrapped
+        - id: Bucket
+          amount: 3
+        - id: WetFloorSign
+          amount: 2
+        - id: Soap
+        - id: SprayBottleSpaceCleaner
+          amount: 2
+        - id: TrashBag
+          amount: 2
+        - id: Plunger
+          amount: 2
+        - id: BoxCleanerGrenades
+        - id: WireBrush
+          amount: 2
 
 - type: entity
-  id: CrateServiceCleanerGrenades
   parent: CratePlastic
+  id: CrateServiceCleanerGrenades
   name: оптовий ящик з чинадами
   description: Містить у собі дві коробки чинад (чисто-гранати), для глибоко в'їдених плям. "Це вже якийсь прибиральницький терор."
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxCleanerGrenades
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BoxCleanerGrenades
         amount: 2
 
 - type: entity
-  id: CrateServiceReplacementLights
   parent: CrateGenericSteel
+  id: CrateServiceReplacementLights
   name: ящик з лампочками
   description: Нехай світло штучної Сатії осяє цю станцію! Або, принаймні, світло дванадцяти трубчасти ламп та стількох ж лампочок. Не давайте це ніанам, не впевнившись, що вони емоційно стабільні.
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxLighttube
-      - id: BoxLightbulb
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxLighttube
+        - id: BoxLightbulb
 
 - type: entity
-  id: CrateServiceHolidayLights
   parent: CrateGenericSteel
+  id: CrateServiceColorfulLights
+  name: ящик з різнокольоровими лампочками
+  description: Це не вечірка, поки на ній ще щось видно, а вуха не болять. Не давайте це різнокольоровим ніанам, не впевнившись, що вони емоційно стабільні.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxLightbulbColorfulMixed
+        - id: BoxLighttubeColorfulMixed
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateServiceHolidayLights
   name: ящик з святковими лампочками
   description: "\"Свято наближається - Свято наближається!\" Прикрасьте станцію комбінацією червоно-зеленого світла спеціально напередодні свята! Не давайте це святковим ніанам, не впевнившись, що вони емоційно стабільні."
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxLighttubeHoliday
-      - id: BoxLighttubeHoliday
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BoxLighttubeHoliday
+        amount: 2
 
 - type: entity
-  id: CrateMousetrapBoxes
   parent: CrateGenericSteel
+  id: CrateMousetrapBoxes
   name: ящик з мишоловками
   description: Мишоловки, на випадок, коли навала пацюків атакує сервіс. Використовуйте економно... Або ні.
   components:
-    - type: StorageFill
-      contents:
-        - id: BoxMousetrap
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BoxMousetrap
 
 - type: entity
-  id: CrateServiceSmokeables
   parent: CrateGenericSteel
-  name: ящик з курильним обладнанням
+  id: CrateServiceSmokeables
+  name: ящик з куривом
   description: Втомилися від швидкої смерті на станції? Замовте цей ящик й пришвидшити процес! "Я б пройшов милю заради цигарки." Заборонено продаж особам молодшим за 18 років, а також вкрай не рекомендується до вживання вагітним жінкам, людям з серцевими захворюваннями, астмою або будь-якими іншими респіраторними захворюваннями.
   components:
-  - type: StorageFill
-    contents:
-      - id: CigCartonGreen
-        prob: 0.50
-        orGroup: CigCarton1
-      - id: CigCartonRed
-        orGroup: CigCarton1
-      - id: CigCartonBlue
-        prob: 0.50
-        orGroup: CigCarton2
-      - id: CigCartonBlack
-        orGroup: CigCarton2
-      - id: CigarGoldCase
-        prob: 0.05
-        orGroup: Cigars
-      - id: CigarCase
-        orGroup: Cigars
-      - id: Matchbox
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:GroupSelector
+          children:
+          - id: CigCartonGreen
+            weight: 0.50
+          - id: CigCartonRed
+        - !type:GroupSelector
+          children:
+          - id: CigCartonBlue
+            weight: 0.50
+          - id: CigCartonBlack
+        - !type:GroupSelector
+          children:
+          - id: CigarGoldCase
+            weight: 0.05
+          - id: CigarCase
+        - id: Matchbox
+          amount: 2
 
 - type: entity
-  id: CrateServiceTheatre
   parent: CrateGenericSteel
+  id: CrateServiceTheatre
   name: ящик з театральним приладдям
   description: "Містить плащ молі, ножиці перукаря, форму покоївки, атрибути клоуна та міма, а також інші штуки для виступу. Пам'ятайте: \"Весь світ - це театр, а люди в ньому - актори.\""
   components:
-  - type: StorageFill
-    contents:
-    - id: ClothingUniformJumpskirtPerformer
-    - id: ClothingShoesBootsPerformer
-    - id: ClothingHeadPerformerWig
-    - id: ClothingOuterSuitMonkey
-    - id: ClothingHeadHatAnimalMonkey
-    - id: ClothingNeckCloakMoth
-    - id: ClothingMaskClown
-    - id: ClothingMaskMime
-    - id: ClothingShoesClown
-    - id: ClothingUniformJumpskirtJanimaid
-    - id: ClothingNeckCloakVoid
-    - id: RevolverCapGun
-    - id: BarberScissors
-    - id: ClothingUniformJumpskirtOldDress
-    - id: BikeHorn
-    - id: ClownRecorder
-    - id: ClothingBeltSuspendersRed
-    - id: ClothingBeltSuspendersBlack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingUniformJumpskirtPerformer
+        - id: ClothingShoesBootsPerformer
+        - id: ClothingHeadPerformerWig
+        - id: ClothingOuterSuitMonkey
+        - id: ClothingHeadHatAnimalMonkey
+        - id: ClothingNeckCloakMoth
+        - id: ClothingMaskClown
+        - id: ClothingMaskMime
+        - id: ClothingShoesClown
+        - id: ClothingUniformJumpskirtJanimaid
+        - id: ClothingNeckCloakVoid
+        - id: RevolverCapGun
+        - id: BarberScissors
+        - id: ClothingUniformJumpskirtOldDress
+        - id: BikeHorn
+        - id: ClownRecorder
+        - id: ClothingBeltSuspendersRed
+        - id: ClothingBeltSuspendersBlack
 
 - type: entity
-  id: CrateServiceCustomSmokable
   parent: CrateGenericSteel
-  name: ящик з курильним обладнанням "Зроби це сам"
+  id: CrateServiceCustomSmokable
+  name: ящик з куривом "Зроби це сам"
   description: Хочете проявити трохи креативності з тим, що ви використовуєте, щоб знищити свої легені? Тоді цей ящик для вас! У ньому є все необхідне, щоб крутити цигарки самостійно. Заборонено продаж особам молодшим за 18 років, а також вкрай не рекомендується до вживання вагітним жінкам, людям з серцевими захворюваннями, астмою або будь-якими іншими респіраторними захворюваннями.
   components:
-  - type: StorageFill
-    contents:
-    - id: PackPaperRolling
-    - id: CigaretteFilter
-      amount: 8
-    - id: GroundTobacco
-      amount: 4
-    - id: SmokingPipe
-    - id: Matchbox
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: PackPaperRolling
+        - id: CigaretteFilter
+          amount: 8
+        - id: GroundTobacco
+          amount: 4
+        - id: SmokingPipe
+        - id: Matchbox
 
 - type: entity
-  id: CrateServiceBureaucracy
   parent: CrateGenericSteel
+  id: CrateServiceBureaucracy
   name: ящик з бюрократією
   description: Кілька стопок паперу, кілька ручок, папочок, коробочок, етекитувальник, знак brb та прекрасна офісна іграшка. Чого ще бажати справжньому офісному клерку?
   components:
-  - type: StorageFill
-    contents:
-    - id: Paper
-      amount: 12
-    - id: PaperOffice
-      amount: 6
-    - id: Pen
-      amount: 2
-    - id: BoxFolderClipboardEmpty
-      amount: 2
-    - id: HandLabeler
-    - id: BoxFolderBlueEmpty
-    - id: BoxFolderRedEmpty
-    - id: BoxFolderYellowEmpty
-    - id: NewtonCradle
-    - id: BoxEnvelope
-    - id: BrbSign
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: Paper
+          amount: 12
+        - id: PaperOffice
+          amount: 6
+        - id: Pen
+          amount: 2
+        - id: BoxFolderClipboardEmpty
+          amount: 2
+        - id: HandLabeler
+        - id: BoxFolderBlueEmpty
+        - id: BoxFolderRedEmpty
+        - id: BoxFolderYellowEmpty
+        - id: NewtonCradle
+        - id: BoxEnvelope
+        - id: BrbSign
 
 - type: entity
-  id: CrateServiceFaxMachine
   parent: CrateGenericSteel
+  id: CrateServiceFaxMachine
   name: ящик з факсом
   description: Факс і викрутка. Друге, щоб дати першому ім'я. Чому просто не змусити заповнити форму на надання назви, яку оброблять протягом 5 робочих днів?
   components:
-  - type: StorageFill
-    contents:
-    - id: Screwdriver
-    - id: FaxMachineFlatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: Screwdriver
+        - id: FaxMachineFlatpack
 
 - type: entity
-  id: CrateServicePersonnel
   parent: CrateCommandSecure
+  id: CrateServicePersonnel
   name: ящик з ідентифікаційним обладнанням
   description: Містить у собі коробки з чистими ID-картками та КПК. Де ви знайшли стільки осіб без посвідчень особи?..
   components:
-  - type: StorageFill
-    contents:
-    - id: BoxPDA
-    - id: BoxID
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxPDA
+        - id: BoxID
 
 - type: entity
-  id: CrateServiceBooks
   parent: CrateGenericSteel
+  id: CrateServiceBooks
   name: ящик з книгами
   description: Містить 10 порожніх книг з випадковими обкладинками. Ідеально підходить для ведення щоденників або створення власних шедеврів літератури.
   components:
-    - type: StorageFill
-      contents:
-        - id: BookRandom
-          amount: 10
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BookRandom
+        amount: 10
 
 - type: entity
-  id: CrateServiceGuidebooks
   parent: CrateGenericSteel
+  id: CrateServiceGuidebooks
   name: ящик з посібниками
   description: Містить у собі всі офіційно одобрені Нанотрейзен посібники. Час дізнатися щось нове та (можливо) корисне!
   components:
-    - type: StorageFill
-      contents:
-      - id: BookSpaceEncyclopedia
-      - id: BookTheBookOfControl
-      - id: BookBartendersManual
-      - id: BookHowToCookForFortySpaceman
-      - id: BookLeafLoversSecret
-      - id: BookEngineersHandbook
-      - id: BookScientistsGuidebook
-      - id: BookSecurity
-      - id: BookHowToKeepStationClean
-      - id: BookHowToRockAndStone
-      - id: BookMedicalReferenceBook
-      - id: BookHowToSurvive
-      - id: BookChemicalCompendium
-      - id: BookSpaceLaw
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BookSpaceEncyclopedia
+        - id: BookTheBookOfControl
+        - id: BookBartendersManual
+        - id: BookHowToCookForFortySpaceman
+        - id: BookLeafLoversSecret
+        - id: BookEngineersHandbook
+        - id: BookScientistsGuidebook
+        - id: BookSecurity
+        - id: BookHowToKeepStationClean
+        - id: BookHowToRockAndStone
+        - id: BookMedicalReferenceBook
+        - id: BookHowToSurvive
+        - id: BookChemicalCompendium
+        - id: BookSpaceLaw
 
 - type: entity
-  id: CrateServiceSodaDispenser
   parent: CrateFreezer
+  id: CrateServiceSodaDispenser
   name: ящик з поповненням для дозатора газованки
   description: Містить у собі повний комплект напоїв для дозаторів газованої води. Ви випили все початкове? Час замінити!
   components:
-    - type: StorageFill
-      contents:
-      - id: DrinkCoffeeJug
-      - id: DrinkColaBottleFull
-      - id: DrinkCreamCartonXL
-      - id: DrinkDrGibbJug
-      - id: DrinkEnergyDrinkJug
-      - id: DrinkGreenTeaJug
-      - id: DrinkIceJug
-      - id: DrinkJuiceLimeCartonXL
-      - id: DrinkJuiceOrangeCartonXL
-      - id: DrinkLemonLimeJug
-      - id: DrinkRootBeerJug
-      - id: DrinkSodaWaterBottleFull
-      - id: DrinkSpaceMountainWindBottleFull
-      - id: DrinkSpaceUpBottleFull
-      - id: DrinkSugarJug
-      - id: DrinkTeaJug
-      - id: DrinkTonicWaterBottleFull
-      - id: DrinkWaterMelonJuiceJug
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: DrinkCoffeeJug
+        - id: DrinkColaBottleFull
+        - id: DrinkCreamCartonXL
+        - id: DrinkDrGibbJug
+        - id: DrinkEnergyDrinkJug
+        - id: DrinkGreenTeaJug
+        - id: DrinkIceJug
+        - id: DrinkJuiceLimeCartonXL
+        - id: DrinkJuiceOrangeCartonXL
+        - id: DrinkLemonLimeJug
+        - id: DrinkRootBeerJug
+        - id: DrinkSodaWaterBottleFull
+        - id: DrinkSpaceMountainWindBottleFull
+        - id: DrinkSpaceUpBottleFull
+        - id: DrinkSugarJug
+        - id: DrinkTeaJug
+        - id: DrinkTonicWaterBottleFull
+        - id: DrinkWaterMelonJuiceJug
 
 - type: entity
-  id: CrateServiceBoozeDispenser
   parent: CrateFreezer
+  id: CrateServiceBoozeDispenser
   name: ящик з поповненням для дозатора алкоголю
   description: Містить у собі повний комплект напоїв для дозаторів алкоголю. Ви випили все початкове? (Досить пити) Час замінити!
   components:
-    - type: StorageFill
-      contents:
-      - id: DrinkAleBottleFullGrowler
-      - id: DrinkBeerGrowler
-      - id: DrinkCoffeeLiqueurBottleFull
-      - id: DrinkCognacBottleFull
-      - id: DrinkGinBottleFull
-      - id: DrinkMeadJug
-      - id: DrinkRumBottleFull
-      - id: DrinkTequilaBottleFull
-      - id: DrinkVermouthBottleFull
-      - id: DrinkVodkaBottleFull
-      - id: DrinkWhiskeyBottleFull
-      - id: DrinkWineBottleFull
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: DrinkAleBottleFullGrowler
+        - id: DrinkBeerGrowler
+        - id: DrinkCoffeeLiqueurBottleFull
+        - id: DrinkCognacBottleFull
+        - id: DrinkGinBottleFull
+        - id: DrinkMeadJug
+        - id: DrinkRumBottleFull
+        - id: DrinkTequilaBottleFull
+        - id: DrinkVermouthBottleFull
+        - id: DrinkVodkaBottleFull
+        - id: DrinkWhiskeyBottleFull
+        - id: DrinkWineBottleFull
 
 - type: entity
-  id: CrateServiceBox
   parent: CratePlastic
+  id: CrateServiceBox
   name: ящик з коробками
   description: Містить у собі 6 порожніх багатоцільових коробок.
   components:
-    - type: StorageFill
-      contents:
-        - id: BoxCardboard
-          amount: 6
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BoxCardboard
+        amount: 6
 
 - type: entity
-  id: CrateJanitorBiosuit
   parent: CratePlastic
+  id: CrateJanitorBiosuit
   name: ящик з костюмами біозахисту прибиральників
   description: Містить у собі 2 костюми біологічного захисту, щоб жодна хвороба чи калюжа кислоти не заваодила прибиранню станції.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterBioJanitor
-        amount: 2
-      - id: ClothingHeadHatHoodBioJanitor
-        amount: 2
-      - id: ClothingMaskSterile
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: FillBiohazardGearJanitor
+          rolls: 2
+        - id: ClothingMaskSterile
+          amount: 2
 
 - type: entity
+  parent: CrateTrashCart
   id: CrateTrashCartFilled
   suffix: Filled
-  parent: CrateTrashCart
   components:
-    - type: StorageFill
-      contents:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
           # Creatures
         - id: MobCockroach
           prob: 0.05
@@ -365,25 +408,16 @@
           prob: 0.1
 
 - type: entity
-  id: CrateCandles
   parent: CrateGenericSteel
+  id: CrateCandles
   name: ящик з свічками
   description: Містить 4 коробки свічок - 2 з великими та 2 з маленькими. Для створення атмосфери чи чогось такого. Пам'ятайте, вогонь гарячий.
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxCandle
-        amount: 2
-      - id: BoxCandleSmall
-        amount: 2
-
-- type: entity
-  parent: CrateGenericSteel
-  id: CrateServiceColorfulLights
-  name: ящик з різнокольоровими лампочками
-  description: Це не вечірка, поки на ній ще щось видно, а вуха не болять. Не давайте це різнокольоровим ніанам, не впевнившись, що вони емоційно стабільні.
-  components:
-  - type: StorageFill
-    contents:
-    - id: BoxLightbulbColorfulMixed
-    - id: BoxLighttubeColorfulMixed
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxCandle
+          amount: 2
+        - id: BoxCandleSmall
+          amount: 2

@@ -1,5 +1,13 @@
 - type: entity
   parent: ClothingNeckBase
+  id: ClothingNeckTieBase
+  abstract: true
+  components:
+  - type: Item
+    storedRotation: -45
+
+- type: entity
+  parent: ClothingNeckTieBase
   id: ClothingNeckTieRed
   name: червона краватка
   description: Червона краватка із застібкою з неошовку.
@@ -16,7 +24,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingNeckBase
+  parent: ClothingNeckTieBase
   id: ClothingNeckTieDet
   name: краватка детектива
   description: Вільно зав’язана краватка – ідеальний аксесуар для втомленого детектива.
@@ -27,7 +35,7 @@
     sprite: Clothing/Neck/Ties/dettie.rsi
     
 - type: entity
-  parent: ClothingNeckBase
+  parent: ClothingNeckTieBase
   id: ClothingNeckTieSci
   name: краватка вченого
   description: Чому ми всі повинні носити ці безглузді краватки?

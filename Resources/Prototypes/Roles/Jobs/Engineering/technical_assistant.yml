@@ -6,10 +6,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 1h
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 5h
-      inverted: true # stop playing intern if you're good at engineering!
+#    - !type:DepartmentTimeRequirement - під коментарем, бо зміна білду Січі
+#      department: Engineering
+#      time: 5h
+#      inverted: true # stop playing intern if you're good at engineering! (ні?)
     - !type:SpeciesRequirement
       inverted: true
       species:

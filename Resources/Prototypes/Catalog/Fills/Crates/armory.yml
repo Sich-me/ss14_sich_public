@@ -1,38 +1,43 @@
 - type: entity
-  id: CrateArmorySMG
   parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateArmorySMG
   name: ящик з пістолетами-кулеметами
   description: Містить у собі два пістолета-кулемета разом з чотирма магазинами. Потребує доступ Зброярні для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: WeaponSubMachineGunWt550
-        amount: 2
-      - id: MagazinePistolSubMachineGunTopMounted
-        amount: 4
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: WeaponSubMachineGunWt550
+          amount: 2
+        - id: MagazinePistolSubMachineGunTopMounted
+          amount: 4
 
 - type: entity
-  id: CrateArmoryShotgun
   parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateArmoryShotgun
   name: ящик з дробовиками
   description: Для випадків, коли свинець стає аргументом. Містить у собі два бойових дробовика Енфорсер разом з набоями для них. Потребує доступ Зброярні для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: WeaponShotgunEnforcer
-        amount: 2
-      - id: BoxLethalshot
-        amount: 4
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: WeaponShotgunEnforcer
+          amount: 2
+        - id: BoxLethalshot
+          amount: 4
 
 - type: entity
-  id: CrateTrackingImplants
   parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateTrackingImplants
   name: ящик з імплантами відстеження
   description: Містить у собі п'ять імплантатів відстеження. Добре підходить для звільнених в'язнів, членів командування чи працівників СБ за якими потрібен нагляд. Потребує доступ Зброярні для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: TrackingImplanter
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: TrackingImplanter
         amount: 5
 
 - type: entity
@@ -41,63 +46,71 @@
   name: ящик з тренувальними бомбами
   description: Містить у собі три тренувальні бомби малої потужності для навчання працівників СБ знешкодженню та безпечній утилізації вибухівки. Вибухозахисний костюм не входить до комплекту. Потребує доступ Зброярні для відкриття.
   components:
-  - type: StorageFill
-    contents:
-    - id: TrainingBomb
-      amount: 3
-
-- type: entity
-  id: CrateArmoryLaser
-  parent: [ CrateWeaponSecure, BaseSecurityContraband ]
-  name: ящик з лазерними гвинтівками
-  description: Містить у собі три стандартні лазерні гвинтівки. Потребує доступ Зброярні для відкриття.
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponLaserCarbine
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: TrainingBomb
         amount: 3
 
 - type: entity
-  id: CrateArmoryPistols
   parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateArmoryLaser
+  name: ящик з лазерними гвинтівками
+  description: Містить у собі три стандартні лазерні гвинтівки. Потребує доступ Зброярні для відкриття.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: WeaponLaserCarbine
+        amount: 3
+
+- type: entity
+  parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateArmoryPistols
   name: ящик з пістолетами
   description: Містить у собі два стандартні пістолети Нанотрейзен разом з чотирма магазинами. Потребує доступ Зброярні для відкриття.
   components:
-  - type: StorageFill
-    contents:
-    - id: WeaponPistolMk58
-      amount: 2
-    - id: MagazinePistol
-      amount: 4
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: WeaponPistolMk58
+          amount: 2
+        - id: MagazinePistol
+          amount: 4
 
 - type: entity
-  id: CrateSecurityRiot
   parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateSecurityRiot
   name: ящик з протибунтовим спорядженням
   description: Містить два комплекти протиударної броні, шоломи, щити та дробовики Енфорсер, заряджених гумою. Додаткові набої в комплекті. Потребує доступ Зброярні для відкриття.
   components:
-  - type: StorageFill
-    contents:
-    - id: ClothingOuterArmorRiot
-      amount: 2
-    - id: ClothingHeadHelmetRiot
-      amount: 2
-    - id: WeaponShotgunEnforcerRubber
-      amount: 2
-    - id: BoxBeanbag
-      amount: 2
-    - id: RiotShield
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingOuterArmorRiot
+          amount: 2
+        - id: ClothingHeadHelmetRiot
+          amount: 2
+        - id: WeaponShotgunEnforcerRubber
+          amount: 2
+        - id: BoxBeanbag
+          amount: 2
+        - id: RiotShield
+          amount: 2
 
 - type: entity
-  id: CrateArmoryRifle
   parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateArmoryRifle
   name: ящик з гвинтівками
   description: Містить у собі дві потужні штурмові гвинтівки разом з чотирма магазинами. Потребує доступ Зброярні для відкриття.
   components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleLecter
-      amount: 2
-    - id: MagazineRifle
-      amount: 4
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: WeaponRifleLecter
+          amount: 2
+        - id: MagazineRifle
+          amount: 4

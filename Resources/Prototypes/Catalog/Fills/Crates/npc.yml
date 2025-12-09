@@ -1,271 +1,286 @@
 - type: entity
-  id: CrateNPCBee
   parent: CrateLivestock
+  id: CrateNPCBee
   name: контейнер з бджолами
   description: "Контейнер, який містить у собі рій з 8 бджіл. Як казала одна відома особистість: \"Бджоли - не кролі.\" Бжжж!"
   components:
-  - type: StorageFill
-    contents:
-      - id: MobBee
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobBee
         amount: 8
 
 - type: entity
-  id: CrateNPCButterflies
   parent: CrateLivestock
+  id: CrateNPCButterflies
   name: контейнер з метеликами
   description: Контейнер, який містить у собі рій з 5 метеликів. *звуки метеликів*
   components:
-  - type: StorageFill
-    contents:
-      - id: MobButterfly
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobButterfly
         amount: 5
 
 - type: entity
-  id: CrateNPCCat
   parent: CrateLivestock
+  id: CrateNPCCat
   name: контейнер з котом
   description: Контейнер, який містить у собі одинокого кота. Няв.
   components:
-  - type: StorageFill
-    contents:
-      - id: MobCat
-        prob: 1
-        orGroup: MobCat
-      - id: MobCatCalico
-        prob: 1
-        orGroup: MobCat
-      - id: MobCatCaracal
-        prob: 0.5
-        orGroup: MobCat
-      - id: MobCatKitten
-        prob: 0.25
-        orGroup: MobCat
-      - id: MobBingus
-        prob: 0.005
-        orGroup: MobCat
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:GroupSelector
+        children:
+        - id: MobCat
+        - id: MobCatCalico
+        - id: MobCatCaracal
+          weight: 0.5
+        - id: MobCatKitten
+          weight: 0.25
+        - id: MobBingus
+          weight: 0.005
 
 - type: entity
-  id: CrateNPCChicken
   parent: CrateLivestock
+  id: CrateNPCChicken
   name: контейнер з курями
   description: Контейнер, який містить у собі 4 дорослих куриці. Кудах?
   components:
-  - type: StorageFill
-    contents:
-      - id: MobChicken
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobChicken
         amount: 4
 
 - type: entity
-  id: CrateNPCCrab
   parent: CrateLivestock
+  id: CrateNPCCrab
   name: контейнер з крабами
   description: Контейнер, який містить у собі 3 здорових краба. Клац?
   components:
-  - type: StorageFill
-    contents:
-      - id: MobCrab
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobCrab
         amount: 3
 
 - type: entity
-  id: CrateNPCDuck
   parent: CrateLivestock
+  id: CrateNPCDuck
   name: контейнер з качками
   description: Контейнер, який містить у собі 6 дорослих качок. Кря-кря.
   components:
-  - type: StorageFill
-    contents:
-      - id: MobDuckMallard
-        amount: 1
-      - id: MobDuckBrown
-        amount: 1
-      - id: MobDuckWhite
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MobDuckMallard
+        - id: MobDuckBrown
+        - id: MobDuckWhite
+          amount: 2
 
 - type: entity
-  id: CrateNPCCorgi
   parent: CrateLivestock
+  id: CrateNPCCorgi
   name: контейнер з коргі
   description: Контейнер, який містить у собі одинокого коргі. Гав.
   components:
-  - type: StorageFill
-    contents:
-      - id: MobCorgi
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobCorgi
 
 - type: entity
-  id: CrateNPCPuppyCorgi
   parent: CrateLivestock
+  id: CrateNPCPuppyCorgi
   name: контейнер з цуценям коргі
   description: Контейнер, який містить у собі одинокого цуценя коргі, яка милотаааа. Тяф.
   components:
-  - type: StorageFill
-    contents:
-    - id: MobCorgiPuppy
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobCorgiPuppy
 
 - type: entity
-  id: CrateNPCCow
   parent: CrateLivestock
+  id: CrateNPCCow
   name: контейнер з коровою
   description: Контейнер, який містить у собі одиноку корову. Мууу.
   components:
-  - type: StorageFill
-    contents:
-      - id: MobCow
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobCow
 
 - type: entity
+  parent: CrateLivestock
   id: CrateNPCGoat
-  parent: CrateLivestock
-  name: контейнер з козлом
-  description: Контейнер, який містить у собі одинокого козу. Меее.
+  name: контейнер з козою
+  description: Контейнер, який містить у собі одиноку козу. Меее.
   components:
-  - type: StorageFill
-    contents:
-      - id: MobGoat
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobGoat
 
 - type: entity
-  id: CrateNPCGoose
   parent: CrateLivestock
+  id: CrateNPCGoose
   name: контейнер з гусаками
   description: Контейнер, який містить у собі двох гусаків. Га-га.
   components:
-  - type: StorageFill
-    contents:
-      - id: MobGoose
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobGoose
         amount: 2
 
 - type: entity
-  id: CrateNPCGorilla
   parent: CrateLivestock
+  id: CrateNPCGorilla
   name: контейнер з горилою
   description: Контейнер, який містить у собі одиноку горилу. Уга-буга-уга!
   components:
-  - type: StorageFill
-    contents:
-      - id: MobGorilla
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobGorilla
 
 - type: entity
-  id: CrateNPCMonkeyCube
   parent: CrateGenericSteel
+  id: CrateNPCMonkeyCube
   name: ящик з мавп'ячими кубами
   description: Ящик, який містить у собі одну коробку з мавп'ячими кубами. АААААА!
   components:
-  - type: StorageFill
-    contents:
-      - id: MonkeyCubeBox
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MonkeyCubeBox
 
 - type: entity
-  id: CrateNPCKoboldCube
   parent: CrateGenericSteel
+  id: CrateNPCKoboldCube
   name: ящик з кобольдовими кубами
   description: Ящик, який містить у собі одну коробку з кобольдовими кубами. *звуки кобольдів*
   components:
-  - type: StorageFill
-    contents:
-      - id: KoboldCubeBox
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: KoboldCubeBox
 
 - type: entity
-  id: CrateNPCMouse
   parent: CrateLivestock
+  id: CrateNPCMouse
   name: контейнер з мишами
   description: Контейнер, який містить у собі 5 прекрасних та соковитих мишей. Піі!
   components:
-  - type: StorageFill
-    contents:
-      - id: MobMouse
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobMouse
         amount: 5
 
 - type: entity
-  id: CrateNPCParrot
   parent: CrateLivestock
+  id: CrateNPCParrot
   name: контейнер з папугою
   description: Контейнер, який містить у собі 3 папуги. Раааах!
   components:
-  - type: StorageFill
-    contents:
-      - id: MobParrot
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobParrot
         amount: 3
 
 - type: entity
-  id: CrateNPCPenguin
   parent: CrateLivestock
+  id: CrateNPCPenguin
   name: контейнер з пінгвінами
   description: Контейнер, який містить у собі 2 пінгвіна. *звуки пінгвінів*
   components:
-  - type: StorageFill
-    contents:
-      - id: MobPenguin
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobPenguin
         amount: 2
 
 - type: entity
-  id: CrateNPCPig
   parent: CrateLivestock
+  id: CrateNPCPig
   name: контейнер з свинею
   description: Контейнер, який містить у собі одиноку свиню. Хрю-хрю.
   components:
-  - type: StorageFill
-    contents:
-      - id: MobPig
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobPig
 
 - type: entity
-  id: CrateNPCSnake
   parent: CrateLivestock
+  id: CrateNPCSnake
   name: контейнер зі зміями
   description:  Контейнер, який містить у собі 3 змії. Хссс.
   components:
-  - type: StorageFill
-    contents:
-      - id: MobSnake
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobSnake
         amount: 3
 
 - type: entity
-  id: CrateNPCHamster
   parent: CrateRodentCage
+  id: CrateNPCHamster
   suffix: Filled
   components:
-    - type: StorageFill
-      contents:
-        - id: MobHamster
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobHamster
 
 - type: entity
-  id: CrateNPCHamlet
   parent: CrateRodentCage
+  id: CrateNPCHamlet
   suffix: Hamlet
   components:
-    - type: StorageFill
-      contents:
-        - id: MobHamsterHamlet
-          prob: 1
-          orGroup: MobHamsterHamlet
-        - id: MobHamsterHamletSlippery
-          prob: 0.001
-          orGroup: MobHamsterHamlet
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:GroupSelector
+        children:
+          - id: MobHamsterHamlet
+          - id: MobHamsterHamletSlippery
+            weight: 0.001
 
 - type: entity
-  id: CrateNPCLizard
   parent: CrateLivestock
+  id: CrateNPCLizard
   name: контейнер з ящіркою
   description:  Контейнер, який містить у собі одиноку ящірку. Хссса!
   components:
-    - type: StorageFill
-      contents:
-        - id: MobLizard
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobLizard
 
 - type: entity
-  id: CrateNPCKangaroo
   parent: CrateLivestock
+  id: CrateNPCKangaroo
   name: контейнер з кенгуру
   description:  Контейнер, який містить у собі одинокого кенгуру. *звуки кенгуру*
   components:
-  - type: StorageFill
-    contents:
-      - id: MobKangaroo
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobKangaroo
 
 - type: entity
-  id: CrateNPCMothroach
   parent: CrateLivestock
+  id: CrateNPCMothroach
   name: контейнер з тарганомолями
   description:  Контейнер, який містить у собі 4 тарганомолі. *Пищить!*
   components:
-  - type: StorageFill
-    contents:
-      - id: MobMothroach
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MobMothroach
         amount: 4

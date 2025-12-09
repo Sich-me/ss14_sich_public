@@ -4,10 +4,10 @@
   description: job-description-intern
   playTimeTracker: JobMedicalIntern
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 5h
-      inverted: true # stop playing intern if you're good at med!
+#    - !type:DepartmentTimeRequirement - під коментарем, бо зміна білду Січі
+#      department: Medical
+#      time: 5h
+#      inverted: true # stop playing intern if you're good at med! (ні?)
     - !type:SpeciesRequirement
       inverted: true
       species:

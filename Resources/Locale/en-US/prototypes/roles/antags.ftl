@@ -41,3 +41,9 @@ roles-antag-thief-objective = Додайте деяку власність NT д
 
 roles-antag-dragon-name = Космічний Дракон
 roles-antag-dragon-objective = Створіть армію коропів, щоб захопити цей квадрант.
+
+roles-antag-mothership-core-name = Ядро Ксеноборгів
+roles-antag-mothership-core-objective = Використовуйте своїх ксеноборгів, щоб створити ще більше ксеноборгів.
+
+roles-antag-xenoborg-name = Ксеноборг
+roles-antag-xenoborg-objective = Допоможіть материнському кораблю створити більше ксеноборгів.

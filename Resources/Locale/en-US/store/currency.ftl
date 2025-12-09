@@ -11,3 +11,4 @@ store-currency-display-telecrystal = ТК
 store-currency-display-stolen-essence = Поглинені душі
 store-currency-display-silicon-memory = "Пам'ять"
 store-currency-display-wizcoin = Wiz€oin™
+store-currency-display-dna = DNA

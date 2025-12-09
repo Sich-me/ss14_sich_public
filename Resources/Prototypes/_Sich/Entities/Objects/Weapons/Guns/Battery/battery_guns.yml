@@ -21,6 +21,6 @@
     availableModes:
     - SemiAuto
     - FullAuto
-  - type: HitscanBatteryAmmoProvider
+  - type: BatteryAmmoProvider
     proto: RedLaser
     fireCost: 62.5

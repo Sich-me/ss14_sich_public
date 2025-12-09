@@ -1,129 +1,142 @@
 - type: entity
-  id: CrateMaterialGlass
   parent: CrateGenericSteel
+  id: CrateMaterialGlass
   name: ящик з листами скла
   description: 90 листів скла, складено з обережістю. ОБЕРЕЖНО, КРИХКЕ!
   components:
-  - type: StorageFill
-    contents:
-      - id: SheetGlass
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SheetGlass
         amount: 3
 
 - type: entity
-  id: CrateMaterialSteel
   parent: CrateGenericSteel
+  id: CrateMaterialSteel
   name: ящик з листами сталі
   description: 90 листів сталі, складено з необережністю. Обережно, щоб воно не зламало вас.
   components:
-  - type: StorageFill
-    contents:
-      - id: SheetSteel
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SheetSteel
         amount: 3
 
 - type: entity
-  id: CrateMaterialTextiles
   parent: CrateGenericSteel
+  id: CrateMaterialTextiles
   name: ящик з текстилем
   description: 60 шматків тканини та 30 міцних волокон. Мрія молі.
   components:
-  - type: StorageFill
-    contents:
-      - id: MaterialCloth
-        amount: 2
-      - id: MaterialDurathread
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MaterialCloth
+          amount: 2
+        - id: MaterialDurathread
 
 - type: entity
-  id: CrateMaterialPlastic
   parent: CrateGenericSteel
+  id: CrateMaterialPlastic
   name: ящик з листами пластику
   description: 90 листів пластику. Не їсти.
   components:
-  - type: StorageFill
-    contents:
-      - id: SheetPlastic
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SheetPlastic
         amount: 3
 
 - type: entity
-  id: CrateMaterialWood
   parent: CrateGenericSteel
+  id: CrateMaterialWood
   name: ящик з деревиною
-  description: Купка дерев'яних дошок. Нащо вам деревина в космосі?
+  description: Купа дерев'яних дошок. Нащо вам деревина в космосі?
   components:
-  - type: StorageFill
-    contents:
-      - id: MaterialWoodPlank
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MaterialWoodPlank
 
 - type: entity
-  id: CrateMaterialBrass
   parent: CrateGenericSteel
+  id: CrateMaterialBrass
   name: ящик з листами латуні
   description: 90 листів латуні. Ретро-стиль – ваш вибір, чи не так?
   components:
-  - type: StorageFill
-    contents:
-      - id: SheetBrass
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SheetBrass
         amount: 3
 
 - type: entity
+  parent: CrateGenericSteel
   id: CrateMaterialPlasteel
-  parent: CrateGenericSteel
   name: ящик з листами пласталі
-  description: 30 листів пласталі, як залізо, але краще та дорожче.
+  description: 30 листів пласталі, як залізо, але краще та сильно дорожче.
   components:
-  - type: StorageFill
-    contents:
-      - id: SheetPlasteel
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SheetPlasteel
 
 - type: entity
-  id: CrateMaterialPlasma
   parent: CratePlasma
+  id: CrateMaterialPlasma
   name: ящик з твердою плазмою
-  description: 30 листів твердої плазми. Безпечне, поки залишається у своїй початковій формі.
+  description: 30 листів твердої плазми. Безпечна, поки залишається у своїй початковій формі.
   components:
-  - type: StorageFill
-    contents:
-      - id: SheetPlasma
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SheetPlasma
 
 - type: entity
-  id: CrateMaterialGold
   parent: CrateGenericSteel
+  id: CrateMaterialGold
   name: ящик з золотом
   description: 30 злитків золота. Багатство чекає на вас.
   components:
-  - type: StorageFill
-    contents:
-    - id: IngotGold
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: IngotGold
 
 - type: entity
-  id: CrateMaterialSilver
   parent: CrateGenericSteel
+  id: CrateMaterialSilver
   name: ящик з сріблом
   description: 30 злитків срібла. Менше багатство чекає на вас
   components:
-  - type: StorageFill
-    contents:
-    - id: IngotSilver
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: IngotSilver
 
 - type: entity
-  id: CrateMaterialCardboard
   parent: CrateGenericSteel
+  id: CrateMaterialCardboard
   name: ящик з картоном
-  description: 90 шматків картону. Дешево та дуже мультизадачно.
+  description: 90 шматків картону. Дешево та дуже багатозадачно.
   components:
-  - type: StorageFill
-    contents:
-      - id: MaterialCardboard
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: MaterialCardboard
         amount: 3
 
 - type: entity
-  id: CrateMaterialPaper
   parent: CrateGenericSteel
+  id: CrateMaterialPaper
   name: ящик з папером
   description: 90 листів паперу. Набагато грубіше за папір для письма.
   components:
-  - type: StorageFill
-    contents:
-      - id: SheetPaper
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SheetPaper
         amount: 3
 
 - type: entityTable
@@ -158,8 +171,8 @@
       - id: IngotSilver1
 
 - type: entity
-  id: CrateMaterialRandom
   parent: CrateGenericSteel
+  id: CrateMaterialRandom
   name: ящик з надлишковими матеріалами
   description: Матеріали невідомого походження. Наче, по якості нормальні.
   components:
@@ -171,49 +184,53 @@
           range: 2, 4
 
 - type: entity
-  id: CrateMaterialSilo
   parent: CrateGenericSteel
+  id: CrateMaterialSilo
   name: ящик з комплектом для силосу
   description: Містить у собі все необхідне для побудови силосу у вашому відділі.
   components:
-  - type: StorageFill
-    contents:
-    - id: MaterialSiloMachineCircuitboard
-    - id: SheetSteel1
-      amount: 5
-    - id: MicroManipulatorStockPart
-      amount: 4
-    - id: CableApcStack1
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MaterialSiloMachineCircuitboard
+        - id: SheetSteel1
+          amount: 5
+        - id: MicroManipulatorStockPart
+          amount: 4
+        - id: CableApcStack1
+          amount: 2
 
 - type: entity
-  id: CrateMaterialBasicResource
   parent: CrateGenericSteel
+  id: CrateMaterialBasicResource
   name: ящик з листами базових матеріалів
-  description: 39 листів сталі, скла та пластику. Всього та потроху.
+  description: По 30 листів сталі, скла та пластику. Всього та потроху.
   components:
-  - type: StorageFill
-    contents:
-    - id: SheetSteel
-    - id: SheetGlass
-    - id: SheetPlastic
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: SheetSteel
+        - id: SheetGlass
+        - id: SheetPlastic
 
 #- type: entity
+#  parent: CrateGenericSteel
 #  id: CrateMaterialHFuelTank
 #  name: fueltank crate
-#  parent: CrateGenericSteel
 #  components:
-#  - type: StorageFill
-#    contents:
-#      - id: WeldingFuelTank
-#        amount: 1
+#  - type: EntityTableContainerFill
+#    containers:
+#      entity_storage:
+#        id: WeldingFuelTank
 
 #- type: entity
+#  parent: CrateGenericSteel
 #  id: CrateMaterialHWaterTank
 #  name: watertank crate
-#  parent: CrateGenericSteel
 #  components:
-#  - type: StorageFill
-#    contents:
-#      - id: WaterTankFull
-#        amount: 1
+#  - type: EntityTableContainerFill
+#    containers:
+#      entity_storage:
+#        id: WaterTankFull

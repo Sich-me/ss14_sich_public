@@ -1,173 +1,190 @@
 # AME
 
 - type: entity
-  id: CrateEngineeringAMEShielding
   parent: CrateEngineeringSecure
+  id: CrateEngineeringAMEShielding
   name: ящик з флетпаками антиматеріального двигуна
   description: 9 флетпаків для створення нового АМД чи розширення вже існуючого.
   components:
-  - type: StorageFill
-    contents:
-      - id: AmePartFlatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: AmePartFlatpack
         amount: 9
 
 - type: entity
-  id: CrateEngineeringAMEJar
   parent: CrateEngineeringSecure
+  id: CrateEngineeringAMEJar
   name: ящик з балонами антиматерії
   description: 3 балони з антиматерією для заправки антиматеріального двигуна.
   components:
-  - type: StorageFill
-    contents:
-      - id: AmeJar
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: AmeJar
         amount: 3
 
 - type: entity
-  id: CrateEngineeringAMEControl
   parent: CrateEngineeringSecure
+  id: CrateEngineeringAMEControl
   name: ящик з контролером антиматеріального двигуна
   description: Блок керування антиматеріального двигуна.
   components:
-  - type: StorageFill
-    contents:
-      - id: AmeControllerUnanchored
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: AmeControllerUnanchored
 
 # Singularity
 
 - type: entity
-  id: CrateEngineeringSingularityEmitter
   parent: CrateEngineeringSecure
+  id: CrateEngineeringSingularityEmitter
   name: ящик з випромінювачем
   description: Містить у собі флетпак випромінювача. Найкраще для підтримки поля утримання чогось справді небезпечного.
   components:
-  - type: StorageFill
-    contents:
-      - id: EmitterFlatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: EmitterFlatpack
 
 - type: entity
-  id: CrateEngineeringSingularityCollector
   parent: CrateEngineeringSecure
+  id: CrateEngineeringSingularityCollector
   name: ящик з колектором радиації
   description: Містить у собі флетпак колектора радиації. Найкраще для отримання енергії з чогось радіоактивного. Балон з плазмою входить у комплект.
   components:
-  - type: StorageFill
-    contents:
-      - id: RadiationCollectorFlatpack
-      - id: PlasmaTankFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: RadiationCollectorFlatpack
+        - id: PlasmaTankFilled
 
 - type: entity
-  id: CrateEngineeringSingularityContainment
   parent: CrateEngineeringSecure
+  id: CrateEngineeringSingularityContainment
   name: ящик з генератором утримуючого поля
   description: Містить у собі флетпак генератора утримаючого поля. Найкраще для створення поля утримання чогось справді небезпечного.
   components:
-  - type: StorageFill
-    contents:
-      - id: ContainmentFieldGeneratorFlatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: ContainmentFieldGeneratorFlatpack
 
 - type: entity
-  id: CrateEngineeringSingularityGenerator
   parent: CrateEngineeringSecure
+  id: CrateEngineeringSingularityGenerator
   name: ящик з генератором сингулярності
   description: Містить у собі флетпак генератора сингулярності. Найкраще для створення справді небезпечного.
   components:
-  - type: StorageFill
-    contents:
-      - id: SingularityGeneratorFlatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SingularityGeneratorFlatpack
 
 # Particle Accelerator
 
 - type: entity
-  id: CrateEngineeringParticleAccelerator
   parent: CrateEngineeringSecure
+  id: CrateEngineeringParticleAccelerator
   name: ящик з комплектом плат для ПЧ
   description: Складно зібрати та налаштувати, але корисно, що всратися. Містить повний комплект плат для створення прискорювача часток. Інщі компоненти в комплект не входять.
   components:
-  - type: StorageFill
-    contents:
-      - id: MachineParticleAcceleratorEndCapCircuitboard
-      - id: MachineParticleAcceleratorEmitterStarboardCircuitboard
-      - id: MachineParticleAcceleratorEmitterForeCircuitboard
-      - id: MachineParticleAcceleratorEmitterPortCircuitboard
-      - id: MachineParticleAcceleratorFuelChamberCircuitboard
-      - id: MachineParticleAcceleratorPowerBoxCircuitboard
-      - id: ParticleAcceleratorComputerCircuitboard
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MachineParticleAcceleratorEndCapCircuitboard
+        - id: MachineParticleAcceleratorEmitterStarboardCircuitboard
+        - id: MachineParticleAcceleratorEmitterForeCircuitboard
+        - id: MachineParticleAcceleratorEmitterPortCircuitboard
+        - id: MachineParticleAcceleratorFuelChamberCircuitboard
+        - id: MachineParticleAcceleratorPowerBoxCircuitboard
+        - id: ParticleAcceleratorComputerCircuitboard
 
 # Non-functional for some reason
 
 #- type: entity
+#  parent: CrateEngineeringSecure
 #  id: CrateEngineeringSingularity
 #  name:  singularity crate
 #  description:  "Prank the station!"
-#  parent: CrateEngineeringSecure
 #  components:
-#  - type: StorageFill
-#    contents:
-#      - id: Singularity
-#        amount: 1
+#  - type: EntityTableContainerFill
+#    containers:
+#      entity_storage:
+#        id: Singularity
 
 - type: entity
-  id: CrateEngineeringGenerator
   parent: CrateEngineering
+  id: CrateEngineeringGenerator
   name: ящик з генератором
   suffix: DEBUG
   components:
-  - type: StorageFill
-    contents:
-      - id: DebugGenerator # TODO change to flatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: DebugGenerator # TODO change to flatpack
 
 - type: entity
-  id: CrateEngineeringSolar
   parent: CrateEngineering
   name: ящик з сонячними панелями
   description: Комплект з флетпаками сонячних панелей та склом. Все необхідне, щоб збудувати власну міні-сонячну електростанцію.
   components:
-  - type: StorageFill
-    contents:
-      - id: SolarAssemblyFlatpack
-        amount: 10
-      - id: SheetGlass10
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: SolarAssemblyFlatpack
+          amount: 10
+        - id: SheetGlass10
+          amount: 2
 
 - type: entity
-  id: CrateEngineeringShuttle
   parent: CrateEngineeringSecure
+  id: CrateEngineeringShuttle
   name: ящик для заживлення шатла
   description: Ящик, що містить усе необхідне для проведення електрики на ваш шатл.
   components:
-  - type: StorageFill
-    contents:
-      - id: WallmountSubstationElectronics
-      - id: WallmountGeneratorAPUElectronics
-      - id: HandheldGPSBasic
-      - id: InflatableDoorStack1
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: WallmountSubstationElectronics
+        - id: WallmountGeneratorAPUElectronics
+        - id: HandheldGPSBasic
+        - id: InflatableDoorStack1
 
 - type: entity
-  id: CrateEngineeringTeslaGenerator
   parent: CrateEngineeringSecure
+  id: CrateEngineeringTeslaGenerator
   name: ящик з генератором тесли
   description:  Містить у собі флетпак генератора тесли. Найкраще для створення справді небезпечного та яскравого. Хай Сатія вас береже.
   components:
-  - type: StorageFill
-    contents:
-      - id: TeslaGeneratorFlatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: TeslaGeneratorFlatpack
 
 - type: entity
-  id: CrateEngineeringTeslaCoil
   parent: CrateEngineeringSecure
+  id: CrateEngineeringTeslaCoil
   name: ящик з котушкою тесли
   description: Містить у собі флетпак котушки тесли. Допоможе вам використовувати силу ПОТУЖНОГО ІСКРОВОГО РОЗРЯДУ (молнії)!
   components:
-  - type: StorageFill
-    contents:
-      - id: TeslaCoilFlatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: TeslaCoilFlatpack
 
 - type: entity
-  id: CrateEngineeringTeslaGroundingRod
   parent: CrateEngineeringSecure
+  id: CrateEngineeringTeslaGroundingRod
   name: ящик з стрижнем заземлення тесли
-  description: Містить у собі флетпак заземлючого стрижня. Найкраще для стримання молній.
+  description: Містить у собі флетпак заземлючого стрижня. Найкраще, для стримання молній.
   components:
-  - type: StorageFill
-    contents:
-      - id: TeslaGroundingRodFlatpack
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: TeslaGroundingRodFlatpack

@@ -1,210 +1,224 @@
 - type: entity
-  id: CrateFoodPizza
   parent: CratePlastic
+  id: CrateFoodPizza
   name: екстрена доставка піци
   description: Допоможіть подолати голод на станції, роздавши піцу недофінансованим відділам! У комплект входить 4 піци, одна з яких гарантована спілкою з захисту прав Ніан.
   components:
-  - type: StorageFill
-    contents:
-    - id: FoodBoxPizzaFilled
-      amount: 3
-    - id: FoodBoxPizzaCotton
-    - id: LidSalami
-      prob: 0.01
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FoodBoxPizzaFilled
+          amount: 3
+        - id: FoodBoxPizzaCotton
+        - id: LidSalami
+          prob: 0.01
 
 - type: entity
-  id: CrateFoodMRE
   parent: CratePlastic
+  id: CrateFoodMRE
   name: ящик з сухпаєм
   description: Їжа у стилі військових, здатна нагодувати цілий відділ. Не дивіться на термін придатності.
   components:
-  - type: StorageFill
-    contents:
-    - id: BoxMRE
-      amount: 6
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: BoxMRE
+        amount: 6
 
 - type: entity
-  id: CrateFoodCooking
   parent: CrateFreezer
+  id: CrateFoodCooking
   name: ящик з інгредієнтами для кухні
   description: Додаткові інгредієнти для кухні, на випадок відсутності ботаніків.
   components:
-  - type: StorageFill
-    contents:
-    - id: ReagentContainerFlour
-      amount: 3
-    - id: ReagentContainerRice
-      amount: 3
-    - id: FoodBoxCloth
-      amount: 1
-    - id: DrinkMilkCarton
-      amount: 4
-    - id: DrinkSoyMilkCarton
-      amount: 2
-    - id: ReagentContainerSugar
-      amount: 2
-    - id: FoodCondimentPacketSalt
-      amount: 3
-    - id: FoodCondimentBottleEnzyme
-      amount: 2
-    - id: FoodContainerEgg
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ReagentContainerFlour
+          amount: 3
+        - id: ReagentContainerRice
+          amount: 3
+        - id: FoodBoxCloth
+        - id: DrinkMilkCarton
+          amount: 4
+        - id: DrinkSoyMilkCarton
+          amount: 2
+        - id: ReagentContainerSugar
+          amount: 2
+        - id: FoodCondimentPacketSalt
+          amount: 3
+        - id: FoodCondimentBottleEnzyme
+          amount: 2
+        - id: FoodContainerEgg
+          amount: 2
 
 - type: entity
-  id: CrateFoodDinnerware
   parent: CratePlastic
+  id: CrateFoodDinnerware
   name: ящик з столовим приладдям
   description: Додаткове столове приладдя, на випадок, якщо клоун знову залишився без нагляду на кухні.
   components:
-  - type: StorageFill
-    contents:
-    - id: FoodBowlBig
-      amount: 4
-    - id: FoodPlate
-      amount: 4
-    - id: FoodPlateSmall
-      amount: 4
-    - id: FoodKebabSkewer
-      amount: 4
-    - id: KitchenKnife
-      amount: 1
-    - id: DrinkGlass
-      amount: 4
-    - id: FoodPlateMuffinTin
-      amount: 4
-    - id: FoodPlateTin
-      amount: 4
-    - id: BoxUtensil
-      amount: 1
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FoodBowlBig
+          amount: 4
+        - id: FoodPlate
+          amount: 4
+        - id: FoodPlateSmall
+          amount: 4
+        - id: FoodKebabSkewer
+          amount: 4
+        - id: KitchenKnife
+        - id: DrinkGlass
+          amount: 4
+        - id: FoodPlateMuffinTin
+          amount: 4
+        - id: FoodPlateTin
+          amount: 4
+        - id: BoxUtensil
 
 - type: entity
-  id: CrateFoodBarSupply
   parent: CrateFreezer
+  id: CrateFoodBarSupply
   name: ящик з барним приладдям
   description: Додаткове барне приладдя, на випадок, якщо клоун знову залишився без нагляду у барі.
   components:
-  - type: StorageFill
-    contents:
-    - id: DrinkGlass
-      amount: 5
-    - id: DrinkShotGlass
-      amount: 5
-    - id: DrinkShaker
-      amount: 2
-    - id: DrinkOrangeJuice
-      amount: 2
-    - id: DrinkLimeJuice
-      amount: 2
-    - id: DrinkTomatoJuice
-      amount: 2
-    - id: DrinkWaterBottleFull
-      amount: 2
-    - id: DrinkSodaWaterCan
-      amount: 2
-    - id: DrinkCreamCarton
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: DrinkGlass
+          amount: 5
+        - id: DrinkShotGlass
+          amount: 5
+        - id: DrinkShaker
+          amount: 2
+        - id: DrinkOrangeJuice
+          amount: 2
+        - id: DrinkLimeJuice
+          amount: 2
+        - id: DrinkTomatoJuice
+          amount: 2
+        - id: DrinkWaterBottleFull
+          amount: 2
+        - id: DrinkSodaWaterCan
+          amount: 2
+        - id: DrinkCreamCarton
+          amount: 2
 
 - type: entity
-  id: CrateFoodSoftdrinks
   parent: CrateFreezer
+  id: CrateFoodSoftdrinks
   name: ящик з безалкогольними напоями
   description: Різноманітні газовані напої для доповнення невеликої вечірки, без необхідності спорожняти автомати з газованкою. У комплекті 16 жестянок.
   components:
-  - type: StorageFill
-    contents:
-    - id: DrinkColaCan
-      amount: 4
-    - id: DrinkGrapeCan
-      amount: 2
-    - id: DrinkRootBeerCan
-      amount: 2
-    - id: DrinkIcedTeaCan
-      amount: 2
-    - id: DrinkLemonLimeCan
-      amount: 2
-    - id: DrinkLemonLimeCranberryCan
-      amount: 2
-    - id: DrinkFourteenLokoCan
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: DrinkColaCan
+          amount: 4
+        - id: DrinkGrapeCan
+          amount: 2
+        - id: DrinkRootBeerCan
+          amount: 2
+        - id: DrinkIcedTeaCan
+          amount: 2
+        - id: DrinkLemonLimeCan
+          amount: 2
+        - id: DrinkLemonLimeCranberryCan
+          amount: 2
+        - id: DrinkFourteenLokoCan
+          amount: 2
 
 - type: entity
-  id: CrateFoodGetMore
   parent: CrateFreezer
+  id: CrateFoodGetMore
   name: ящик з комплектом ВипікайБільше
   description: Фірмові закуски та кондитерське приладдя ВипікайБільше для креативного шеф-кухаря, і все це без необхідності спорожняти машини Донк Корп вашої станції!
   components:
-  - type: StorageFill
-    contents:
-    - id: FoodSnackRaisins
-      amount: 4
-    - id: FoodSnackChocolate
-      amount: 6
-    - id: FoodSnackPistachios
-      amount: 4
-    - id: ReagentContainerFlour
-      amount: 3
-    - id: ReagentContainerSugar
-      amount: 2
-    - id: FoodCondimentPacketSalt
-      amount: 3
-    - id: DrinkMilkCarton
-      amount: 2
-    - id: FoodContainerEgg
-      amount: 2
-    - id: FoodBoxCloth
-      amount: 1
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FoodSnackRaisins
+          amount: 4
+        - id: FoodSnackChocolate
+          amount: 6
+        - id: FoodSnackPistachios
+          amount: 4
+        - id: ReagentContainerFlour
+          amount: 3
+        - id: ReagentContainerSugar
+          amount: 2
+        - id: FoodCondimentPacketSalt
+          amount: 3
+        - id: DrinkMilkCarton
+          amount: 2
+        - id: FoodContainerEgg
+          amount: 2
+        - id: FoodBoxCloth
 
 - type: entity
-  id: CrateFoodIceCream
   parent: CrateFreezer
+  id: CrateFoodIceCream
   name: доставка морозива
   description: Асортимент морозива для будь-якої нагоди! У комплекті 16 заморожених ласощів.
   components:
-  - type: StorageFill
-    contents:
-    - id: FoodFrozenSandwich
-      amount: 3
-    - id: FoodFrozenSandwichStrawberry
-      amount: 2
-    - id: FoodFrozenPopsicleOrange
-      amount: 2
-    - id: FoodFrozenPopsicleBerry
-      amount: 2
-    - id: FoodFrozenPopsicleJumbo
-      amount: 3
-    - id: FoodFrozenCornuto
-      amount: 2
-    - id: FoodFrozenSundae
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FoodFrozenSandwich
+          amount: 3
+        - id: FoodFrozenSandwichStrawberry
+          amount: 2
+        - id: FoodFrozenPopsicleOrange
+          amount: 2
+        - id: FoodFrozenPopsicleBerry
+          amount: 2
+        - id: FoodFrozenPopsicleJumbo
+          amount: 3
+        - id: FoodFrozenCornuto
+          amount: 2
+        - id: FoodFrozenSundae
+          amount: 2
 
 - type: entity
-  id: CrateFoodSnowcone
   parent: CrateFreezer
+  id: CrateFoodSnowcone
   name: доставка сніжків
   description: Холодильник, наповнений освіжаючими сніговими ріжками, для працьовитої або навіть лінивої команди! У комплекті 16 снігових ріжків.
   components:
-  - type: StorageFill
-    contents:
-    - id: FoodFrozenSnowconeBase
-      amount: 3
-    - id: FoodFrozenSnowconeBerry
-      amount: 3
-    - id: FoodFrozenSnowconeFruit
-      amount: 3
-    - id: FoodFrozenSnowconeRainbow
-      amount: 3
-    - id: FoodFrozenSnowconeClown
-      amount: 2
-    - id: FoodFrozenSnowconeMime
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FoodFrozenSnowconeBase
+          amount: 3
+        - id: FoodFrozenSnowconeBerry
+          amount: 3
+        - id: FoodFrozenSnowconeFruit
+          amount: 3
+        - id: FoodFrozenSnowconeRainbow
+          amount: 3
+        - id: FoodFrozenSnowconeClown
+          amount: 2
+        - id: FoodFrozenSnowconeMime
+          amount: 2
 
 - type: entity
-  id: CrateFoodHappyHonkBigBite
   parent: CratePlastic
+  id: CrateFoodHappyHonkBigBite
   name: доставка обідів Хепі Гонк
   description: Два повноцінних обіда серії Хепі Гонк "Великий Укус". Картопля фрі з сиром, пляшка Космічної Коли, шматочок яблучного пирога та іграшка в комплекті!
   components:
-  - type: StorageFill
-    contents:
-    - id: FoodMealHappyHonkBigBite
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: FoodMealHappyHonkBigBite
+        amount: 2

@@ -1,97 +1,108 @@
 - type: entity
-  id: CrateSecurityArmor
   parent: CrateSecgear
+  id: CrateSecurityArmor
   name: ящик з бронею
   description: Містить у собі 3 куленепробивних бронежилета. Потребує доступ Безпеки для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterArmorBulletproof
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: ClothingOuterArmorBulletproof
         amount: 3
 
 - type: entity
-  id: CrateSecurityHelmet
   parent: CrateSecgear
+  id: CrateSecurityHelmet
   name: ящик з шоломами
   description: Містить у собі три стандартні каски для голови. Можливо, вони врятують вам життя. Потребує доступ Безпеки для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingHeadHelmetBasic
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: ClothingHeadHelmetBasic
         amount: 3
 
 - type: entity
-  id: CrateSecurityNonlethal
   parent: CrateSecgear
+  id: CrateSecurityNonlethal
   name: ящик з нелетальними засобами
   description: Містить у собі мікс з знешкоджувачів, дубинок з електрошокером та спалахів. Змусьте ж всіх слідувати закону! Потребує доступ Безпеки для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: WeaponDisabler
-        amount: 3
-      - id: Stunbaton
-        amount: 3
-      - id: BoxFlashbang
-      - id: Flash
-        amount: 3
-#      - Pepperspray
-#      - GrenadeTeargas
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: WeaponDisabler
+          amount: 3
+        - id: Stunbaton
+          amount: 3
+        - id: BoxFlashbang
+        - id: Flash
+          amount: 3
+#        - Pepperspray
+#        - GrenadeTeargas
 
 - type: entity
-  id: CrateSecuritySupplies
   parent: CrateSecgear
+  id: CrateSecuritySupplies
   name: ящик з обладнанням безпеки
   description: Містить у собі різні речі для служби безпеки станції, такі як кайданки та службові ПД. Потребує доступ Безпеки для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxHandcuff
-      - id: BoxSechud
-#      - SecBelt
-#      - SecGasmask
-#      - SpacelawBook
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxHandcuff
+        - id: BoxSechud
+#        - SecBelt
+#        - SecGasmask
+#        - SpacelawBook
 
 - type: entity
-  id: CrateRestraints
   parent: CrateSecgear
+  id: CrateRestraints
   name: ящик з засобами для утримання
   description: Містить у собі по дві коробки з кайданками та застібками-блискавками. Потребує доступ Безпеки для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: BoxHandcuff
-        amount: 2
-      - id: BoxZiptie
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxHandcuff
+          amount: 2
+        - id: BoxZiptie
+          amount: 2
 
 - type: entity
-  id: CrateSecurityBiosuit
   parent: CrateSecgear
+  id: CrateSecurityBiosuit
   name: ящик з костюмами біозахисту охорони
   description: Містить у собі 2 костюми біологічного захисту, щоб жодна хвороба не відволікала вас від виконання ваших обов'язків. Потребує доступ Безпеки для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterBioSecurity
-        amount: 2
-      - id: ClothingHeadHatHoodBioSecurity
-        amount: 2
-      - id: ClothingMaskSterile
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: FillBiohazardGearSecurity
+          rolls: 2
+        - id: ClothingMaskSterile
+          amount: 2
 
 - type: entity
+  parent: CrateSecgear
   id: CrateSecurityTrackingMindshieldImplants
   name: ящик з імплантами
   description: Містить у собі 4 імпланти відстеження та 4 імпланти захисту розуму. Потребує доступ Безпеки для відкриття.
-  parent: CrateSecgear
   components:
-  - type: StorageFill
-    contents:
-      - id: MindShieldImplanter
-        amount: 4
-      - id: TrackingImplanter
-        amount: 4
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MindShieldImplanter
+          amount: 4
+        - id: TrackingImplanter
+          amount: 4
 
 - type: entity
   parent: CrateSecgear
@@ -99,13 +110,12 @@
   name: ящик з нелетальними кидальними засобами
   description: Містить у собі по одній коробці з світлошумовими, стінгерами й сльозогінними гранатами, та чотирма болами. Потрібен доступ Безпеки для відкриття.
   components:
-  - type: StorageFill
-    contents:
-    - id: BoxFlashbang
-      amount: 1
-    - id: BoxStinger
-      amount: 1
-    - id: BoxTearGas
-      amount: 1
-    - id: Bola # replace with 4 e-bolas when added
-      amount: 4
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxFlashbang
+        - id: BoxStinger
+        - id: BoxTearGas
+        - id: Bola # replace with 4 e-bolas when added
+          amount: 4

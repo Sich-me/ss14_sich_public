@@ -1,43 +1,47 @@
 - type: entity
-  id: CrateScienceBiosuit
   parent: CrateScienceSecure
+  id: CrateScienceBiosuit
   name: ящик з костюмами біозахисту вчених
   description: Містить 2 костюми біологічного захисту, щоб жодна хвороба чи калюжа кислоти не відволікала вас від НАУКИ. Потребує доступ НВ для відкриття.
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterBioScientist
-        amount: 2
-      - id: ClothingHeadHatHoodBioScientist
-        amount: 2
-      - id: ClothingMaskSterile
-        amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: FillBiohazardGearScience
+          rolls: 2
+        - id: ClothingMaskSterile
+          amount: 2
 
 - type: entity
-  id: CrateCrewMonitoring
   parent: CrateScienceSecure
+  id: CrateCrewMonitoring
   name: ящик з обладнанням для моніторингу екіпажу
   description: Містить у собі флетпак сервера моніторингу екіпажу та кілька комп'ютерів моніторингу екіпажу. Потребує доступ НВ для відкриття.
   components:
-  - type: StorageFill
-    contents:
-    - id: CrewMonitoringServerFlatpack
-    - id: CrewMonitoringComputerFlatpack
-      amount: 3
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: CrewMonitoringServerFlatpack
+        - id: CrewMonitoringComputerFlatpack
+          amount: 3
 
 - type: entity
-  id: CrateStationAiCore
   parent: CrateScienceSecure
+  id: CrateStationAiCore
   name: ящик з ядром станційного ШІ
   description: Містить у собі компоненти для побудови ядра ШІ станції. Позитронний мозок не входить до комплекту. Потребує доступ НВ для відкриття.
   components:
-  - type: StorageFill
-    contents:
-    - id: StationAiCoreElectronics
-    - id: Intellicard
-    - id: SheetPlasteel1
-      amount: 4
-    - id: CableApcStack1
-      amount: 1
-    - id: SheetRGlass1
-      amount: 2
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: StationAiCoreElectronics
+        - id: Intellicard
+        - id: SheetPlasteel1
+          amount: 4
+        - id: CableApcStack1
+        - id: SheetRGlass1
+          amount: 2
