@@ -129,6 +129,7 @@
 
 - type: entity
   parent: CrateEngineering
+  id: CrateEngineeringSolar
   name: ящик з сонячними панелями
   description: Комплект з флетпаками сонячних панелей та склом. Все необхідне, щоб збудувати власну міні-сонячну електростанцію.
   components:

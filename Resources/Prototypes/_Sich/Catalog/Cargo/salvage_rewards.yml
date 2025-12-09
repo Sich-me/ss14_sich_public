@@ -3,7 +3,7 @@
   id: SichCargoPKAUpgradeKits
   icon:
     sprite: Objects/Tools/upgrade.rsi
-    state: base
+    state: display
   product: SichCratePKAUpgradeKits
   cost: 6000
   category: cargoproduct-category-name-cargo
