@@ -355,7 +355,7 @@
 - type: entity
   parent: BasePlushie
   id: SichPlushieDragon
-  name: Плюшевий дракон
+  name: плюшевий дракон
   description: Лиха гарнюня, що не проти обіймів
   components:
   - type: Sprite
@@ -365,7 +365,7 @@
 - type: entity
   parent: BasePlushie
   id: SichPlushieZirka
-  name: Плюшева Зірка
+  name: плюшева Зірка
   description: Любить Мірку, бзззз!
   components:
   - type: Sprite
@@ -398,7 +398,7 @@
 - type: entity
   parent: BasePlushie
   id: SichPlushieZegl
-  name: Плюшевий Зегл
+  name: плюшевий Зегл
   description: На дотик слизька, як розподіл бюджету.
   components:
   - type: Sprite
@@ -408,7 +408,7 @@
 - type: entity
   parent: BasePlushie
   id: SichPlushieTayar
-  name: Плюшевий таяран
+  name: плюшевий таяран
   description: На етикетці написано; 0% котячої шерсті, 0% вошей, 100% милості
   components:
   - type: Sprite
