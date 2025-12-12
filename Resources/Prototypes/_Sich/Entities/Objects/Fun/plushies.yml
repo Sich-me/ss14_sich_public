@@ -351,7 +351,6 @@
           Quantity: 5
 
 #Іграшки від Хітароко
-
 - type: entity
   parent: BasePlushie
   id: SichPlushieDragon
