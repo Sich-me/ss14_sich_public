@@ -3,7 +3,7 @@
   parent: BaseItem
   id: SheetGlassBase
   name: скло
-  description: Прозорий лист скла, його часто використовується на станції та не тільки в різних сферах.
+  description: Прозорий лист скла, його часто використовується на станції та у багатьох інших місцях та сферах.
   components:
   - type: Sprite
     sprite: Objects/Materials/Sheets/glass.rsi

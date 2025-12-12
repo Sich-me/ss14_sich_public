@@ -151,7 +151,7 @@
   parent: BaseScrap
   id: ScrapAirlock2
   name: лампа шлюзу
-  description: Так йому й треба йому за те, що весь час блимав червоним кольором.
+  description: Так йому й треба за те, що весь час блимав червоним кольором.
   components:
   - type: Sprite
     layers:
@@ -456,8 +456,8 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorPlasmaLeaking
-  name: протикаючий генератор типу P.A.C.M.A.N.
-  description: Виглядаючий старим генератор P.A.C.M.A.N., схоже його резервуар для плазми почав протікати.
+  name: протікаючий генератор типу P.A.C.M.A.N.
+  description: На вигляд старий генератор P.A.C.M.A.N., схоже його резервуар для плазми почав протікати.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -475,7 +475,7 @@
   parent: BaseScrapLarge
   id: ScrapGeneratorPlasma
   name: старий генератор типу P.A.C.M.A.N.
-  description: Виглядаючий старим генератор P.A.C.M.A.N., він у дуже поганому стані та схоже давно не здатен працювати.
+  description: На вигляд старий генератор P.A.C.M.A.N., він у дуже поганому стані та схоже давно не здатен працювати.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -490,8 +490,8 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorUraniumLeaking
-  name: протикаючий генератор типу S.U.P.E.R.P.A.C.M.A.N.
-  description:  Виглядаючий старим генератор S.U.P.E.R.P.A.C.M.A.N., схоже він пережив щось жахливе. З нього капає рідкий уран.
+  name: протікаючий генератор типу S.U.P.E.R.P.A.C.M.A.N.
+  description: На вигляд старий генератор S.U.P.E.R.P.A.C.M.A.N., схоже він пережив щось жахливе. З нього капає рідкий уран.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -520,7 +520,7 @@
   parent: BaseScrapLarge
   id: ScrapGeneratorUranium
   name: знищений генератор типу S.U.P.E.R.P.A.C.M.A.N.
-  description: Генератор S.U.P.E.R.P.A.C.M.A.N., який пережив щось жахливе. Наврядч він вже буде працювати...
+  description: Генератор S.U.P.E.R.P.A.C.M.A.N., який пережив щось жахливе. Наврядчи він вже буде працювати...
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -558,7 +558,7 @@
   parent: BaseScrap
   id: ScrapGeneratorFuelTank
   name: паливний бак
-  description: Паливний баг від генератора S.U.P.E.R.P.A.C.M.A.N. Датчик на ньому показує, що пального не залишилось.
+  description: Паливний бак від генератора S.U.P.E.R.P.A.C.M.A.N. Датчик на ньому показує, що пального не залишилось.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi

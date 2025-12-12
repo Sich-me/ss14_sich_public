@@ -135,7 +135,7 @@
   parent: BaseLightbulb
   name: лед лампочка
   id: LedLightBulb
-  description: Енергоефективна лампочка. Така ж груша. ТАК САМО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: Енергоефективна лампочка. Така ж груша. НЕ ПРОБУЙТЕ СУЧАСНО ЗАПХАТИ ЇЇ СОБІ В РОТА!
   components:
   - type: LightBulb
     bulb: Bulb
@@ -154,7 +154,7 @@
   parent: BaseLightbulb
   name: лампочка тьмяного світла
   id: DimLightBulb
-  description: Темна лампочка для створення спеціальної гнітучої атмосфери тех. приміщень. ТАК САМО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: Темна лампочка для створення спеціальної гнітучої атмосфери тех. приміщень. НЕ ПРОБУЙТЕ В ТЕМНУ ЗАПХАТИ ЇЇ СОБІ В РОТА!
   components:
   - type: LightBulb
     bulb: Bulb
@@ -171,7 +171,7 @@
   parent: BaseLightbulb
   name: лампочка теплого світла
   id: WarmLightBulb
-  description: Тепла лампочка для створення затишної атмосфери. ТАК САМО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: Тепла лампочка для створення затишної атмосфери. НЕ ПРОБУЙТЕ АТМОСФЕРНО ЗАПХАТИ ЇЇ СОБІ В РОТА!
   components:
   - type: LightBulb
     bulb: Bulb
@@ -188,7 +188,7 @@
   parent: LightBulb
   name: стара лампочка розжарювання
   id: LightBulbOld
-  description: Лампочка в агонії. ТАК САМО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: Лампочка в агонії. НЕ ПРОБУЙТЕ ПО СТАРИНЦІ ЗАПХАТИ ЇЇ СОБІ В РОТА!
   components:
   - type: LightBulb
     bulb: Bulb
@@ -202,7 +202,7 @@
   parent: BaseLightbulb
   name: лампочка розжарювання
   id: LightBulbBroken
-  description: Лампочка. По формі вже не груша. ВСЕ ЩЕ НЕ СУЙТЕ ЇЇ ДО РОТА!
+  description: Лампочка. По формі вже не груша. ВСЕОДНО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
   components:
   - type: LightBulb
     startingState: Broken
@@ -212,7 +212,7 @@
   parent: BaseLightbulb
   name: службова лампочка
   id: ServiceLightBulb
-  description: Зелена лампочка низької яскравості, що використовується для систем оповіщення про необхідність прибирання. ТАК САМО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: Зелена лампочка низької яскравості, що використовується для систем оповіщення про необхідність прибирання. НЕ ПРОБУЙТЕ ПО ПРИБИРАЛЬНИЦЬКІ ЗАПХАТИ ЇЇ СОБІ В РОТА!
   components:
   - type: LightBulb
     bulb: Bulb
@@ -229,7 +229,7 @@
   parent: BaseLightTube
   name: люмінесцентна трубчаста лампа
   id: LightTube
-  description: Лампа. Ця по формі нагадує трубку. Не пхайте її нікуди, будь ласка...
+  description: Лампа. Ця по формі нагадує трубку. Може містити у собі ртуть, будьте обережні.
   components:
   - type: LightBulb
     color: "#FFE4CE" # 5000K color temp
@@ -242,7 +242,7 @@
   parent: LightTube
   name: стара люмінесцента трубчаста лампа
   id: LightTubeOld
-  description: Лампа в агонії.
+  description: Лампа в агонії. Може містити у собі стару ртуть, будьте обережні.
   components:
   - type: LightBulb
     color: "#FFDABB" # old fluorescents are yellower-4500K temp
@@ -256,7 +256,7 @@
   parent: BaseLightTube
   name: люмінесцентна трубчаста лампа
   id: LightTubeBroken
-  description: Лампа. Вона бачила кращі часи. Все ще не пхайте.
+  description: Лампа. Вона бачила кращі часи. Все ще може містити у собі ртуть, будьте обережні.
   components:
   - type: LightBulb
     startingState: Broken
@@ -264,7 +264,7 @@
 - type: entity
   parent: BaseLightTube
   name: лед трубчаста лампа
-  description: Енергоефективна лампа. Така ж трубка. Так само не пхайте її нікуди...
+  description: Енергоефективна лампа. Така ж трубка. Наврядч містить у собі ртуть.
   id: LedLightTube
   components:
   - type: LightBulb
@@ -278,7 +278,7 @@
 - type: entity
   parent: BaseLightTube
   name: трубчаста лампа зовнішнього освітлення
-  description: Потужна лампа для глибин космосу. Зазвичай використовується ззовні космічних станцій чи шатлів. Може містити ртуть. Так само не пхайте її нікуди...
+  description: Потужна лампа для глибин космосу. Зазвичай використовується ззовні космічних станцій чи шатлів. Може містити багато ртуті, будьте дуже обережні.
   id: ExteriorLightTube
   components:
   - type: LightBulb
@@ -292,7 +292,7 @@
 - type: entity
   parent: BaseLightTube
   name: натрієва трубчаста лампа
-  description: Потужна лампа для глибин космосу. Атмосферненько. Солона. Так само не пхайте її нікуди...
+  description: Потужна лампа для глибин космосу. Атмосферненько. Солона. Може містити у собі ртуть з сіллю, будьте обережні.
   id: SodiumLightTube
   components:
   - type: LightBulb
@@ -306,7 +306,7 @@
 - type: entity
   parent: BaseLightTube
   name: кришталева трубчаста лампа
-  description: Потужна лампа, яка має всередині невеликий кольоровий кристал. Красиве. Так само не пхайте її нікуди...
+  description: Потужна лампа, яка має всередині невеликий кольоровий кристал. Красиве. Може містити у собі ртуть з кристалами, будьте обережні.
   id: BaseLightTubeCrystal
   abstract: true
   components:
@@ -395,7 +395,7 @@
 - type: entity
   parent: BaseLightTubeCrystal
   name: чорна кришталева трубчаста лампа
-  description: Потужна лампа, яка має всередині невеликий кольоровий кристал. Саме ця не дуже яскрава. Так само не пхайте її нікуди...
+  description: Потужна лампа, яка має всередині невеликий кольоровий кристал. Саме ця не дуже яскрава. Може містити у собі ртуть з кристалами, будьте обережні.
   id: LightTubeCrystalBlack
   components:
   - type: LightBulb
@@ -444,7 +444,7 @@
 - type: entity
   parent: BaseLightbulb
   name: кришталева лампочка
-  description: Потужна лампочка, яка має всередині невеликий кольоровий кристал. Маленьке, але все ще красиве. ТАК САМО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: Потужна лампочка, яка має всередині невеликий кольоровий кристал. Маленьке, але все ще красиве. НЕ ПРОБУЙТЕ РІЗНОКОЛЬОРОВО ЗАПХАТИ ЇЇ СОБІ В РОТА!
   id: BaseLightbulbCrystal
   abstract: true
   components:
@@ -535,7 +535,7 @@
 - type: entity
   parent: BaseLightbulbCrystal
   name: чорна кришталева лампочка
-  description: Потужна лампочка, яка має всередині невеликий кольоровий кристал. Саме ця не дуже яскрава й мала. ТАК САМО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: Потужна лампочка, яка має всередині невеликий кольоровий кристал. Саме ця не дуже яскрава й мала. НЕ ПРОБУЙТЕ В ТИХУ ЗАПХАТИ ЇЇ СОБІ В РОТА!
   id: LightBulbCrystalBlack
   components:
   - type: LightBulb

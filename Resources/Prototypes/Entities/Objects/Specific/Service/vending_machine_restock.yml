@@ -350,7 +350,7 @@
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockSecTech
   name: поповнення для автомату БезпекаТех
-  description: "Обережно, комуністи – прибуло підкріплення! На звороті написано: \"ЛИШЕ ДЛЯ СПІВРОБІТНИКІВ СЛУЖБИ БЕЗПЕКИ.\""
+  description: "Обережно, комуністи, прибуло підкріплення! На звороті написано: \"ЛИШЕ ДЛЯ СПІВРОБІТНИКІВ СЛУЖБИ БЕЗПЕКИ.\""
   components:
   - type: VendingMachineRestock
     canRestock:

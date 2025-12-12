@@ -11,7 +11,7 @@ petting-success-carp = {$target} отримує ваші пестощі по с�
 petting-success-cat = {$target} отримує ваші пестощі по своїй милій та пухнастій голівці.
 petting-success-corrupted-corgi = {$target} гордиливо отримує ваші пестощі по своїй проклятій голівонці.
 petting-success-crab = {$target} отримує ваші пестощі по своїй твердій голові.
-petting-success-dehydrated-carp = Ви пестите {$target} по його висушеній маленькій голові. {$target} схоже тепер тебе любить!
+petting-success-dehydrated-carp = Ви пестите {$target} по його висушеній маленькій голові. {CAPITALIZE($target)} схоже тепер тебе любить!
 petting-success-dog = {$target} отримує ваші пестощі по своїй м'якій та пухнастій голові.
 petting-success-frog = {$target} отримує ваші пестощі по своїй слизькій голівці.
 petting-success-goat = {$target} отримує ваші пестощі по своїй рогатій пухнастій голові.
@@ -89,7 +89,7 @@ petting-failure-syndicate-cyborg = Ви простягаєте руку, щоб 
 petting-failure-derelict-cyborg = Ви простягаєте руку, щоб попестити {$target}, але його іржавілий та пошарпаний корпус змушує вас задуматися.
 petting-failure-station-ai = Ви простягаєте руку, щоб попестити {$target}, але {$target} відбиває вашу руку.
 
-petting-success-station-ai-others = {$user} пестить {$target} по його холодному та квадратному монітору.
+petting-success-station-ai-others = {CAPITALIZE($target)} пестить {$target} по його холодному та квадратному монітору.
 
 ## Rattling fences
 
@@ -98,8 +98,8 @@ fence-rattle-success = *брязкає*
 ## Hugging players
 
 hugging-success-generic = {$target} тане у ваших обіймах.
-hugging-success-generic-others = {$user} обіймає {$target}.
-hugging-success-generic-target = {$user} обіймає вас.
+hugging-success-generic-others = {CAPITALIZE($target)} обіймає {$target}.
+hugging-success-generic-target = {CAPITALIZE($target)} обіймає вас.
 
 ## Other
 

@@ -156,7 +156,7 @@
   id: NitrogenTankFilled
   parent: NitrogenTank
   suffix: Filled
-  name: азотний балон
+  name: балон з азотом
   components:
   - type: GasTank
     air:

@@ -29,7 +29,7 @@ salvage-expedition-reward-description = Нагорода за виконання
 
 # Salvage biome mod
 salvage-biome-mod-caves = Печери
-salvage-biome-mod-grasslands = Пасовища
+salvage-biome-mod-grasslands = Луги
 salvage-biome-mod-snow = Сніжні степи
 salvage-biome-mod-lava = Лавовий біом
 
