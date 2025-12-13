@@ -3,7 +3,7 @@
 ## Petting animals
 
 petting-success-generic = {$target} отримує ваші пестощі по своїй голові.
-petting-success-soft-floofy = {$target} отримує ваші пестощі по своїй м'якій пухнастій голові.
+petting-success-soft-floofy = {$target} отримує ваші пестощі по своїй м'якій та пухнастій голові.
 
 petting-success-bingus = {$target} отримує ваші пестощі по своїй зморшкуватій голівці.
 petting-success-bird = {$target} отримує ваші пестощі по своїй милій пір'ястій голові.
@@ -22,17 +22,17 @@ petting-success-pig = {$target} отримує ваші пестощі по св
 petting-success-raccoon = {$target} отримує ваші пестощі по своїй сміттєядній маленькій голові.
 petting-success-reptile = {$target} отримує ваші пестощі по своїй лускатій голівці.
 petting-success-sloth = {$target} отримує ваші пестощі по своїй голові, що повільно рухається.
-petting-success-space-cat = {$target} отримує ваші пестощі по своїй скляному куполу.
+petting-success-space-cat = {$target} отримує ваші пестощі по своєму скляному куполу.
 petting-success-tarantula = {$target} отримує ваші пестощі по своїй хітиновій голівці.
 petting-success-holo = {$target} отримує ваші пестощі по своїй металево-голографічній та шипастій голові.
 petting-success-dragon = Ухиляючись від зубів, пазурів та вогню – ви пестите {$target} по його масивній лускатій голові.
-petting-success-hamster = {$target} отримує ваші пестощі по своїй м'якій пухнастій голові.
-petting-success-bear = Ви неохоче пестите {$target} по його містичній-волохатій голові.
+petting-success-hamster = {$target} отримує ваші пестощі по своїй м'якій та пухнастій голові.
+petting-success-bear = Ви неохоче пестите {$target} по його містично-волохатій голові.
 petting-success-slimes = {$target} отримує ваші пестощі по своїй слизькій голівці?..
 petting-success-snake = {$target} отримує ваші пестощі по своїй лускатій та великій голові.
 petting-success-monkey = {$target} отримує ваші пестощі по своїй пустотливій голівці.
 petting-success-nymph = Ви гладите {$target} по її(?) дерев’яній голівці.
-petting-success-scurret = Ви гладите {$target} по його/її унікальній голові.
+petting-success-scurret = Ви гладите {$target} по його/її вавальній голові.
 
 petting-failure-generic = Ви тягнетесь, аби попестити {$target}, але {$target} не виглядає зацікавлено.
 
@@ -45,10 +45,10 @@ petting-failure-goat = Ви прагнете погладити {$target}, ал�
 petting-failure-goose = Ви простягаєте руку, щоб погладити {$target}, але воно занадто жахливе!
 petting-failure-possum = Ви простягаєте руку, щоб погладити {$target}, але вас зустрічають шипінням і гарчанням!
 petting-failure-pig = Ви простягаєте руку, щоб погладити {$target}, але вас зустрічають роздратованим хрюмом і вереском!
-petting-failure-raccoon = Ви простягаєте руку, щоб погладити {$target}, але {$target} зайнято єнотуванням
+petting-failure-raccoon = Ви простягаєте руку, щоб погладити {$target}, але {$target} зайнято єнотуванням.
 petting-failure-sloth = Ви простягаєте руку, щоб погладити {$target}, але {$target} якимось чином ухиляється із надвисокою швидкістю!
 petting-failure-holo = Ви простягаєте руку, щоб погладити {$target}, але шипи ледь не проколюють вашу руку!
-petting-failure-dragon = Ви піднімаєте руку, але, як {$target} ричить – ви вирішуєте, що життя вам дороге.
+petting-failure-dragon = Ви піднімаєте руку, але, як {$target} ричить – ви вирішуєте, що життя вам дорожче.
 petting-failure-hamster = Ви простягаєте руку, щоб погладити {$target}, але {$target} пробує вкусити вас за палець і тільки ваші швидкі рефлекси рятують від майже смертельної травми.
 petting-failure-bear = Ви простягаєте руку, щоб погладити {$target}, але {$target} гарчить, що змушує вас подумати в друге.
 petting-failure-monkey = Ви простягаєте руку, щоб погладити {$target}, але {$target} майже кусає вас за палець!
@@ -78,7 +78,7 @@ petting-failure-honkbot = Ви простягаєте руку, щоб попе�
 petting-failure-cleanbot = Ви простягаєте руку, щоб попестити {$target}, але {$target} зайнятий прибиранням!
 petting-failure-mimebot = Ви простягаєте руку, щоб попестити {$target}, але {$target} зайнятий мімуванням!
 petting-failure-medibot = Ви простягаєте руку, щоб попестити {$target}, але його голка ледь не протикає вам руку!
-petting-failure-firebot = Ви простягаєте руку, щоб попестити {$target}, але {$target} пшикає вам в обличчя, перед тим, як ви змогли наблизитися!
+petting-failure-firebot = Ви простягаєте руку, щоб попестити {$target}, але {$target} пшикає водою вам в обличчя, перед тим, як ви змогли наблизитися!
 petting-failure-generic-cyborg = Ви простягаєте руку, щоб попестити {$target}, але {$target} зайнятий цитуванням власних законів!
 petting-failure-salvage-cyborg = Ви простягаєте руку, щоб попестити {$target}, але {$target} зайнятий копанням!
 petting-failure-engineer-cyborg = Ви простягаєте руку, щоб попестити {$target}, але {$target} зайнятий ремонтом!
@@ -98,8 +98,8 @@ fence-rattle-success = *брязкає*
 ## Hugging players
 
 hugging-success-generic = {$target} тане у ваших обіймах.
-hugging-success-generic-others = {CAPITALIZE($target)} обіймає {$target}.
-hugging-success-generic-target = {CAPITALIZE($target)} обіймає вас.
+hugging-success-generic-others = {CAPITALIZE($user)} обіймає {$target}.
+hugging-success-generic-target = {CAPITALIZE($user)} обіймає вас.
 
 ## Other
 
