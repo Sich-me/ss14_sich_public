@@ -32,7 +32,7 @@
   parent: CrayonInedible
   id: Crayon
   name: крейда
-  description: A colourful crayon. Looks tasty. Mmmm...
+  description: Кольорова крейда. Виглядає смачно. Мммммм...
   components:
   - type: Sprite
     sprite: Objects/Fun/crayons.rsi
