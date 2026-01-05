@@ -30,3 +30,11 @@
         path: /Audio/Weapons/soup.ogg
         params:
           volume: 2
+    - type: Sprite
+      sprite: _Sich/Objects/Weapons/Guns/Launchers/poltergeist_throw_force.rsi
+      layers:
+        - state: base
+        - state: base-unshaded
+          map: [ "unshaded" ]
+          shader: unshaded
+          visible: false
