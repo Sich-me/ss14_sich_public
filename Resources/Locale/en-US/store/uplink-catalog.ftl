@@ -231,10 +231,6 @@ uplink-radio-implanter-desc = Імплантує радіо Синдикату, 
 uplink-observation-kit-name = Набір для спостереження
 uplink-observation-kit-desc = Включає плату монітора камер спостереження та худ охорони, замаскований під сонцезахисні окуляри.
 
-# Bundles
-uplink-observation-kit-name = Observation Kit
-uplink-observation-kit-desc = Includes surveillance camera monitor board and security hud disguised as sunglasses.
-
 uplink-emp-kit-name = Комплект електричного дестабілізатора
 uplink-emp-kit-desc = Остаточний засіб проти енергетичної зброї: знешкоджує знешкоджувачі, станить станбатони, розряджає лазери! У комплекті 3 ЕМІ-гранати та ЕМІ-імплант. Примітка: не впливає на звичайну вогнепальну зброю.
 
