@@ -1,8 +1,8 @@
 - type: entity
   parent: CratePirate
   id: CrateCargoLuxuryHardsuit
-  name: luxury mining hardsuit crate
-  description: Finally, a hardsuit Quartermasters could call their own. Centcomm has heard you, now stop asking.
+  name: ящик з розкішним шахтарським скафандром
+  description: "\"Дорого-багато.\" Нарешті, Квартирмейстери мають щось, що вони можуть назвати власним скафандром. ЦК вас почули, а тепер перестаньте питати."
   components:
   - type: EntityTableContainerFill
     containers:
@@ -12,8 +12,8 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateCargoParcelWrap
-  name: parcel wrap crate
-  description: All your parcel wrapping needs in one crate, containing three rolls of parcel wrap.
+  name: ящик з пакувальним папером
+  description: Все, що потрібно для пакування посилок в одному ящику. Містить у собі три рулони пакувального паперу.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -24,8 +24,8 @@
 - type: entity
   parent: CratePrivateSecure
   id: CrateCargoGambling
-  name: the grand lottery $$$
-  description: A box containing treasure beyond your greatest imaginations!
+  name: найвеличніша та найпотужніша лотерея ₴₴₴
+  description: ГЕЙМБЛІІІІІН!!! Скринька зі скарбами, що перевершують ваші найсміливіші уявлення!
   components:
   - type: EntityTableContainerFill
     containers:

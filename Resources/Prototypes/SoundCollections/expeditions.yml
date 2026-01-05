@@ -2,4 +2,4 @@
   id: ExpeditionEnd
   files:
   - /Audio/Expedition/tension_session.ogg
-  - /Audio/Expedition/deadline.ogg
+#  - /Audio/Expedition/deadline.ogg - прибрано білдом Січі, бо русняве

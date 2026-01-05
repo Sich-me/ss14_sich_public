@@ -1,6 +1,6 @@
 - type: entity
-  name: explosive grenade
-  description: Grenade that creates a small but devastating explosion.
+  name: вибухова граната
+  description: Граната, що створює невеликий, але руйнівний та небезпечний вибух.
   parent: [VolatileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
   id: ExGrenade
   components:
@@ -23,7 +23,7 @@
 
 - type: entity
   name: світлошумова граната
-  description: МОЇ ОЧІ, МОЇ ВУХА!!
+  description: ПФІІІІІІІІІІУ! МОЇ ОЧІ, МОЇ ВУХА!! 
   parent: [ FragileGrenadeBase, GrenadeBase, BaseSecurityContraband ]
   id: GrenadeFlashBang
   components:
@@ -78,7 +78,7 @@
 #Ideally, there should be a weak radius around the bomb outside of its gibbing / spacing range capable of dealing fair damage to players / structures.
 - type: entity
   name: міні-бомба синдикату
-  description: Вироблена синдикатом вибухівка, що використовується для руйнування та поширення хаосу.
+  description: Вироблена синдикатом вибухівка, гарна для пробиття обшивки станції чи знищення чогось не великого, але важливого.
   parent: [VolatileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
   id: SyndieMiniBomb
   components:
@@ -136,8 +136,8 @@
 - type: entity
   parent: [ FragileGrenadeBase, GrenadeBase, BaseSyndicateContraband ]
   id: SingularityGrenade
-  name: Граната сингулярності
-  description: Граната, що імітує розгін сингулярності, створює потужну гравітаційну свердловину.
+  name: граната сингулярності
+  description: Граната, що імітує сингулярність. Створює потужну гравітаційну аномалію на короткий проміжок часу, притягуючи все й всіх до себе.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/singularitygrenade.rsi
@@ -206,7 +206,7 @@
 
 - type: entity
   name: граната білої діри
-  description: Граната, яка на деякий час відштовхує все навколо.
+  description: Протилежність гранаті чорної діри, імітує, відповідно, білу діру. Створює потужну гравітаційну аномалію на короткий проміжок часу, відштовхуючи все й всіх від себе.
   parent: SingularityGrenade
   id: WhiteholeGrenade
   components:
@@ -265,8 +265,8 @@
     price: 1000
 
 - type: entity
-  name: ядерний варіант
-  description: Будь ласка, не кидайте її, подумайте про дітей.
+  name: ядерна граната
+  description: Будь ласка, не кидайте її! Подумайте про дітей!!!
   parent: GrenadeBase
   id: NuclearGrenade
   components:
@@ -299,7 +299,7 @@
 
 - type: entity
   name: модульна граната
-  description: Корпус від гранати. Потрібен пусковий механізм та заряд.
+  description: Корпус від гранати. Для її роботоспособності також потрібен пусковий механізм та заряд.
   parent: BaseItem
   id: ModularGrenade
   components:
@@ -346,8 +346,8 @@
     price: 75
 
 - type: entity
-  name: граната ЕМІ
-  description: Граната, призначена для виведення з ладу електронних систем.
+  name: ЕМІ граната
+  description: Граната електрично-магнітого імпульсу, призначена для виведення з ладу електронних систем та пристроїв.
   parent: [FragileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
   id: EmpGrenade
   components:
@@ -369,8 +369,8 @@
     price: 666 # 2000 for 3, I love fractions
 
 - type: entity
-  name: свята ручна граната
-  description: Господи, благослови цю Твою ручну гранату, щоб нею Ти міг рознести Твоїх ворогів на дрібні шматочки, у Твоїй милості.
+  name: свята граната
+  description: Господи, благослови цю ручну гранату, щоб рознесені були нею вороги твої на шматочки малі, во славу Тебе та дітей твоїх. Амінь!
   parent: [GrenadeBase, BaseSyndicateContraband]
   id: HolyHandGrenade
   components:
@@ -401,7 +401,7 @@
 
 - type: entity
   name: фальшива граната
-  description: Повноцінна граната без будь-яких вибухів.
+  description: Повноціна граната, за виключенням того, що не вибухає.
   parent: GrenadeBase
   id: GrenadeDummy
   components:
@@ -428,7 +428,7 @@
 
 - type: entity
   name: підступна бомба синдикату 
-  description: Вибухівка, виготовлена синдикатом, була чудовим відволікаючим маневром.
+  description: Вибухівка, виготовлена синдикатом, буде чудовим відволікаючим маневром.
   parent: [GrenadeDummy, BaseSyndicateContraband]
   id: SyndieTrickyBomb
   components:

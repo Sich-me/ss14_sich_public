@@ -169,8 +169,8 @@
 - type: entity
   parent: BaseFlatpack
   id: TeslaGroundingRodFlatpack
-  name: флетпак заземлюючого стержня
-  description: Флетпак для конструювання заземлюючого стержня. Використайте мультитул.
+  name: флетпак заземлюючого стрижня
+  description: Флетпак для конструювання заземлюючого стрижня. Використайте мультитул.
   components:
   - type: Flatpack
     entity: TeslaGroundingRod

@@ -1,6 +1,5 @@
 - type: cargoProduct
   id: ArmorySmg
-  name: Зброя SMG
   icon:
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
     state: icon
@@ -11,7 +10,6 @@
 
 - type: cargoProduct
   id: ArmoryShotgun
-  name: Дробовики
   icon:
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
     state: icon
@@ -32,7 +30,6 @@
 
 - type: cargoProduct
   id: TrackingImplant
-  name: Імпланти геолокації
   icon:
     sprite: Objects/Specific/Medical/implanter.rsi
     state: implanter0
@@ -53,7 +50,6 @@
 
 - type: cargoProduct
   id: ArmoryLaser
-  name: Лазерна зброя
   icon:
     sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
     state: icon

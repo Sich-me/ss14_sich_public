@@ -2,7 +2,7 @@
   name: лазерна гвинтівка "Фалькон"
   parent: BaseWeaponBattery
   id: SichWeaponLaserCarbineFalconBlackwater
-  description: Лазерна гвинтівка виробництва Блеквотер, що має функцію автоматичного режиму стрільби.
+  description: Лазерна гвинтівка виробництва Блеквотер. Має автоматичний режим вогню, а також ідеальну точність навіть при стрільбі від стегна.
   components:
   - type: Sprite
     sprite: _Sich/Objects/Weapons/Guns/Battery/falcon.rsi

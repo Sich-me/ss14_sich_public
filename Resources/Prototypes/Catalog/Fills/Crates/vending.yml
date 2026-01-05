@@ -1,8 +1,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockBoozeFilled
-  name: Booze-O-Mat restock crate
-  description: Contains a restock box for the Booze-O-Mat.
+  name: ящик поповнення Бухло-ооо-Мат
+  description: Містить у собі коробку поповнення для автоматів серії Бухло-ооо-Мат.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -12,8 +12,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockChefvendFilled
-  name: ChefVend restock crate
-  description: Contains a restock box for the ChefVend.
+  name: ящик поповнення Шеф-КухМат
+  description: Містить у собі коробку поповнення для автоматів серії Шеф-КухМат.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -23,8 +23,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockClothesFilled
-  name: clothing restock crate
-  description: Contains a restock box for the clothes vending machines.
+  name: ящик поповнення автоматів з одягом
+  description: Містить у собі коробку поповнення для автоматів серії автоматів з одягом.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -34,8 +34,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockAutoDrobeFilled
-  name: AutoDrobe restock crate
-  description: Contains a restock box for the AutoDrobe.
+  name: ящик поповнення ТеатрМат
+  description: Містить у собі коробку поповнення для автоматів серії ТеатрМат.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -45,8 +45,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockCondimentStationFilled
-  name: condiment station restock crate
-  description: Contains a restock box for the condiment station.
+  name: ящик поповнення станції спецій
+  description: Містить у собі коробку поповнення для автоматів серії станції спецій.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -56,8 +56,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockDinnerwareFilled
-  name: Plasteel Chef restock crate
-  description: Contains a restock box for the Plasteel Chef vending machine.
+  name: ящик поповнення Пласталевий Шеф
+  description: Містить у собі коробку поповнення для автоматів серії Пласталевий Шеф.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -67,8 +67,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateVendingMachineRestockEngineeringFilled
-  name: EngiVend restock crate
-  description: Contains a restock box for the EngiVend. Also supports the YouTool.
+  name: ящик поповнення ІнжМат
+  description: Містить у собі коробку поповнення для автоматів серії ІнжМат. Також підтримує ТвійІнструмент..
   components:
   - type: EntityTableContainerFill
     containers:
@@ -78,8 +78,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockGamesFilled
-  name: Good Clean Fun restock crate
-  description: Contains a restock box for the Good Clean Fun vending machine.
+  name: ящик поповнення Безпечне Задоволення
+  description: Містить у собі коробку поповнення для автоматів серії Безпечне Задоволення.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -89,8 +89,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockHotDrinksFilled
-  name: Solar's Best restock crate
-  description: Contains two restock boxes for Solar's Best Hot Drinks vending machine.
+  name: ящик поповнення Найкращі Гарячі Напої Галактики
+  description: Містить у собі 2 коробки поповнення для автоматів серії Найкращі Гарячі Напої Галактики.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -101,8 +101,8 @@
 - type: entity
   parent: CrateMedicalSecure
   id: CrateVendingMachineRestockMedicalFilled
-  name: NanoMed restock crate
-  description: Contains a restock box, compatible with the NanoMed and NanoMedPlus.
+  name: ящик поповнення Наномед
+  description: Містить у собі коробку поповнення для автоматів серій НаноМед та НаноМед Плюс.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -112,8 +112,8 @@
 - type: entity
   parent: CrateMedicalSecure
   id: CrateVendingMachineRestockChemVendFilled
-  name: ChemVend restock crate
-  description: Contains a restock box for the ChemVend.
+  name: ящик поповнення ХімМат
+  description: Містить у собі коробку поповнення для автоматів серії ХімМат.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -123,8 +123,8 @@
 - type: entity
   parent: CrateHydroSecure
   id: CrateVendingMachineRestockNutriMaxFilled
-  name: NutriMax restock crate
-  description: Contains a restock box for the NutriMax vending machine.
+  name: ящик поповнення МаксПожива
+  description: Містить у собі коробку поповнення для автоматів серії МаксПожива.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -134,8 +134,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockPTechFilled
-  name: PTech restock crate
-  description: Contains a restock box for the PTech bureaucracy dispenser.
+  name: ящик поповнення ПерсТех
+  description: Містить у собі коробку поповнення для автоматів серії бюрократії ПерсТех.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -145,8 +145,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockRobustSoftdrinksFilled
-  name: beverage vendor restock crate
-  description: Contains restock boxes for beverage vending machines.
+  name: ящик поповнення автоматів з напоями
+  description: Містить у собі 2 коробки для поповнення автоматів з напоями (безалкогольними).
   components:
   - type: EntityTableContainerFill
     containers:
@@ -157,8 +157,8 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateVendingMachineRestockSalvageEquipmentFilled
-  name: Salvage restock crate
-  description: Contains a restock box for the salvage vendor.
+  name: ящик поповнення ШахтМат
+  description: Містить у собі коробку поповнення для автоматів серії ШахтМат.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -168,8 +168,8 @@
 - type: entity
   parent: CrateSecgear
   id: CrateVendingMachineRestockSecTechFilled
-  name: SecTech restock crate
-  description: Contains a restock box for the SecTech vending machine.
+  name: ящик поповнення БезпекаТех
+  description: Містить у собі коробку поповнення для автоматів серії БезпекаТех.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -179,8 +179,8 @@
 - type: entity
   parent: CrateHydroSecure
   id: CrateVendingMachineRestockSeedsFilled
-  name: MegaSeed restock crate
-  description: Contains a restock box for the MegaSeed vending machine.
+  name: ящик поповнення МегаСінь
+  description: Містить у собі коробку поповнення для автоматів серії МегаСінь.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -190,8 +190,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockSmokesFilled
-  name: ShadyCigs restock crate
-  description: Contains two restock boxes for the ShadyCigs vending machine.
+  name: ящик поповнення ДимніЦигари
+  description: Містить у собі 2 коробки поповнення для автоматів серії ДимніЦигари Делюкс.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -202,8 +202,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockVendomatFilled
-  name: Vendomat restock crate
-  description: Contains a restock box for a Vendomat vending machine.
+  name: ящик поповнення ОбладВенд
+  description: Містить у собі коробку поповнення для автоматів серії ОбладВенд.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -213,8 +213,8 @@
 - type: entity
   parent: CrateScienceSecure
   id: CrateVendingMachineRestockRoboticsFilled
-  name: Robotech Deluxe restock crate
-  description: Contains a restock box for a Robotech Deluxe vending machine.
+  name: ящик поповнення РобоТех Делюкс
+  description: Містить у собі коробку поповнення для автоматів серії РобоТех Делюкс.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -224,8 +224,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockTankDispenserFilled
-  name: tank dispenser restock crate
-  description: Contains a restock box for an Engineering or Atmospherics tank dispenser.
+  name: ящик поповнення диспенсера газових балонів
+  description: Містить у собі коробку поповнення для звичайних та інженерний диспенсорів газових балонів.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -235,8 +235,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockHappyHonkFilled
-  name: Happy Honk restock crate
-  description: Contains a restock box for a happy honk dispenser.
+  name: ящик поповнення Хепі Гонку
+  description: Містить у собі 2 коробки поповнення для автоматів серії Хепі Гонку.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -247,8 +247,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockGetmoreChocolateCorpFilled
-  name: Getmore Chocolate Corp restock crate
-  description: Contains a restock box for a Getmore Chocolate Corp dispenser.
+  name: ящик поповнення Вафл Корп
+  description: Містить у собі 2 коробки поповнення для автоматів серії Вафл Корп.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -259,8 +259,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockChangFilled
-  name: Chang restock crate
-  description: Contains a restock box for a Mr. Chang dispenser.
+  name: ящик поповнення Містера Чанга
+  description: Містить у собі 2 коробки поповнення для автоматів серії Містера Чанга.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -271,8 +271,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockDiscountDansFilled
-  name: Discount Dans restock crate
-  description: Contains a restock box for a Discount Dan's dispenser.
+  name: ящик поповнення Закуски Дена
+  description: Містить у собі 2 коробки поповнення для автоматів серії Закуски Дена.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -283,8 +283,8 @@
 - type: entity
   parent: CratePlastic
   id: CrateVendingMachineRestockDonutFilled
-  name: Donut restock crate
-  description: Contains a restock box for a Monkin' Donuts dispenser.
+  name: ящик поповнення Пончики Донк Корп
+  description: Містить у собі 2 коробки поповнення для автоматів серії Пончики Донк Корп.
   components:
   - type: EntityTableContainerFill
     containers:

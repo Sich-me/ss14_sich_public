@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/760f0be7af33a31f5a08a3291864e91539d0ebb7",
+  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/760f0be7af33a31f5a08a3291864e91539d0ebb7 or made by pyrizhok_333x2 (discord)",
   "size": {
     "x": 32,
     "y": 32
@@ -13,6 +13,16 @@
     {
       "name": "equipped-OUTERCLOTHING",
       "directions": 4
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-reptilian",
+      "directions": 4,
+      "_comment": "made by pyrizhok_333x2" 
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-vox",
+      "directions": 4,
+      "_comment": "made by pyrizhok_333x2" 
     },
     {
       "name": "inhand-left",
