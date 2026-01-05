@@ -37,8 +37,8 @@
 - type: entity
   parent: [BaseTraitorObjective, BaseLivingObjective]
   id: EscapeShuttleObjective
-  name: Втеча до centcom живим та незв'язаним.
-  description: Один з наших прихованих агентів проведе з вами інструктаж, коли ви прибудете. Не з'являйтеся в наручниках.
+  name: Евакуюйтеся на ЦентКом живим та без кайданків на борту евакуаційного шатла.
+  description: Один із наших секретних агентів проведе з вами дебрифінг по прибуттю. Не з'являйтеся в кайданках.
   components:
   - type: Objective
     difficulty: 1.3

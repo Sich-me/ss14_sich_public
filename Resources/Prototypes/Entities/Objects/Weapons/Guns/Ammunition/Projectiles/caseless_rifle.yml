@@ -1,8 +1,8 @@
 - type: entity
-  id: BulletCaselessRifle
-  name: куля (.25 безгільзовий)
   parent: BaseBullet
+  id: BulletCaselessRifle
   categories: [ HideSpawnMenu ]
+  name: bullet (.25 caseless)
   components:
   - type: Projectile
     damage:
@@ -10,10 +10,10 @@
         Piercing: 19
 
 - type: entity
-  id: BulletCaselessRiflePractice
-  name: куля (.25 безгільзовий тренувальний)
   parent: BaseBulletPractice
+  id: BulletCaselessRiflePractice
   categories: [ HideSpawnMenu ]
+  name: bullet (.25 caseless practice)
   components:
   - type: Projectile
     damage:

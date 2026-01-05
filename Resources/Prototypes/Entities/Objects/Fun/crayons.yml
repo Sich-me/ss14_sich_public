@@ -299,6 +299,8 @@
   - type: Item
     sprite: _Sich/Objects/Fun/crayons.rsi #Sich
     size: Small
+    shape:
+    - 0,0,1,1
     heldPrefix: box
   - type: EntityTableContainerFill
     containers:

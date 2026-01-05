@@ -1,4 +1,4 @@
-﻿# Tool closet
+# Tool closet
 - type: entity
   id: ClosetTool
   name: шафа для інструментів 
@@ -164,9 +164,9 @@
 # Syndicate
 - type: entity
   id: LockerSyndicate
-  name: шафа для зброї
+  name: blood-red closet
   parent: ClosetSteelBase
-  description: Це сховище для речей.
+  description: It's a storage unit with a blood-red design.
   components:
   - type: Appearance
   - type: EntityStorageVisuals

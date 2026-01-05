@@ -35,6 +35,9 @@ uplink-gloves-north-star-desc = Пара рукавичок, які суттєв
 uplink-gloves-knuckleduster-name = Syndicate Knuckle Dusters
 uplink-gloves-knuckleduster-desc = A pair of plastitanium knuckle dusters that let you punch hard enough to break the captains jaw into pieces.
 
+uplink-hushpup-name = Хушпуп
+uplink-hushpup-desc = Потужний дробовик із глушником та невеликою місткістю магазину. Поставляється із запасною коробкою картечі. Використовує набої .50 калібру для дробовика.
+
 # Explosives
 uplink-explosive-grenade-name = Розривна граната
 uplink-explosive-grenade-desc = Проста граната із запалом три з половиною секунди, призначена для враження особового складу. Спричиняє мінімальні пошкодження корпусу станції.
@@ -172,9 +175,6 @@ uplink-binary-translator-key-desc = Дозволяє підключатися д
 uplink-hypopen-name = Гіпопен
 uplink-hypopen-desc = Хімічний гіпоспрей, замаскований під ручку, здатний миттєво вводити до 10 одиниць реагентів. Постачається пустим.
 
-uplink-voice-mask-name = Голосова маска
-uplink-voice-mask-desc = Протигаз, який дозволяє підлаштувати свій голос під того, кого тільки вигадаєш. Також використовується передова технологія хамелеон.
-
 uplink-clothing-eyes-hud-syndicate-name = Візор синдикату
 uplink-clothing-eyes-hud-syndicate-desc = Професійний хед-ап дисплей синдикату, призначений для кращого виявлення гуманоїдів і їх подальшого усунення.
 
@@ -227,9 +227,13 @@ uplink-micro-bomb-implanter-desc = Вибух при смерті або руч�
 uplink-radio-implanter-name = Радіоімплантатор
 uplink-radio-implanter-desc = Імплантує радіо Синдикату, що дозволяє таємне спілкування без гарнітури.
 
-# Набори
+# Bundles
 uplink-observation-kit-name = Набір для спостереження
 uplink-observation-kit-desc = Включає плату монітора камер спостереження та худ охорони, замаскований під сонцезахисні окуляри.
+
+# Bundles
+uplink-observation-kit-name = Observation Kit
+uplink-observation-kit-desc = Includes surveillance camera monitor board and security hud disguised as sunglasses.
 
 uplink-emp-kit-name = Комплект електричного дестабілізатора
 uplink-emp-kit-desc = Остаточний засіб проти енергетичної зброї: знешкоджує знешкоджувачі, станить станбатони, розряджає лазери! У комплекті 3 ЕМІ-гранати та ЕМІ-імплант. Примітка: не впливає на звичайну вогнепальну зброю.
@@ -281,7 +285,7 @@ uplink-toolbox-name = Ящик інструментів
 uplink-toolbox-desc = Повний комлпект інструментів для механічно обізнаного зрадника. Включає пару ізольованих бойових рукавичок і протигаз синдикату.
 
 uplink-syndicate-jaws-of-life-name = Щелепи життя
-uplink-syndicate-jaws-of-life-desc = Комбінує лом і кусачки. Корисно для проникнення на станцію або її відділи.
+uplink-syndicate-jaws-of-life-desc = Комбінований інструмент для підважування та різання. Корисний для проникнення на станцію або в її відділи. Може відчиняти навіть заболтовані двері!
 
 uplink-duffel-surgery-name = Сумка хірургічних інструментів
 uplink-duffel-surgery-desc = Велика сумка, що містить повний набір хірургічних інструментів.
@@ -404,10 +408,10 @@ uplink-nocturine-chemistry-bottle-name = Пляшка Ноктурину
 uplink-nocturine-chemistry-bottle-desc = Хімічна речовина, через яку вашій цілі дуже важко встати.
 
 uplink-stimpack-name = Гіперзиновий інжектор
-uplink-stimpack-desc = Легендарна хімічна речовина, вироблена компанією Донк.Ко. для синдикату. Введення цього засобу збільшить вашу швидкість бігу та дозволить швидше відновлюватися після оглушення протягом 30 секунд.
+uplink-stimpack-desc = Легендарна хімічна суміш, вироблена Donk Co. для Синдикату. Ін'єкція цього препарату підвищить вашу швидкість бігу та дозволить швидше оговтуватися від приголомшення протягом 60 секунд.
 
 uplink-stimkit-name = Набір іжекторів Гіперзину
-uplink-stimkit-desc = Медичний набір, що містить 6 мікроін’єкторів гіперзину, кожен з яких вводить вам достатньо гіперзину на 15 секунд.
+upuplink-stimkit-desc = Аптечка, що містить 6 мікроін'єкторів гіперзину. Кожен з них впорскує достатню кількість речовини, щоб ефект тривав протягом 30 секунд.
 
 uplink-syndicate-segway-crate-name = Сігвей синдикату
 uplink-syndicate-segway-crate-desc = Будь ворогом корпорації, зі стилем!
