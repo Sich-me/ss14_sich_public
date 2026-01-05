@@ -230,7 +230,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialWoodPlank
-  name: дерево
+  name: деревина
   suffix: Повний
   components:
   - type: Material
@@ -362,7 +362,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialDiamond
-  name: оброблений діамант
+  name: діамант
   suffix: Повний
   components:
   - type: Stack
@@ -642,7 +642,7 @@
   parent: MaterialBase
   id: MaterialToothSpaceCarp
   name: ікла космічного коропа
-  description: Доволі маленькі, але досить неприємні. Найбільше вони подобаються, коли не занурюються в тебе.
+  description: Доволі маленькі, але досить неприємні. Найбільше вони вам подобаються, коли не впиваються у вас.
   suffix: Повний
   components:
   - type: Sprite
@@ -679,8 +679,8 @@
 - type: entity
   parent: [ MaterialBase, BaseKnife ]
   id: MaterialToothSharkminnow
-  name: ікла акули-красуні
-  description: Виглядає гострим. Досить гострий, щоб відрізати комусь руку. Трясця, який великий..
+  name: ікла акулячого малька
+  description: Виглядає гострим. Достатньо гострим, щоб відрізати комусь руку. Трясця, який ж він великий..
   suffix: Повний
   components:
   - type: MeleeWeapon
@@ -780,7 +780,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialGoliathHide
-  name: пластини зі шкури голіафа
+  name: пластини з шкури голіафа
   description: Шматки скелястої шкури Голіафа, вони можуть зробити ваш костюм трохи стійкішим до атак місцевої фауни.
   suffix: Повний
   components:

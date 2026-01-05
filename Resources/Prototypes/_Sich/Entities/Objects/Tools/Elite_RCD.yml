@@ -1,0 +1,47 @@
+- type: entity
+  id: RCDElite
+  parent: [RCD, BaseGrandTheftContraband]
+  name: елітний ПШБ
+  description: Елітний ПШБ, який видають професіональним інженерам. Оснащенний гарним ліхтарем на міні РТГ, який може працювати найближчі 100 років. Також має розширенний запас зарядів та нові схеми!
+  components:
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    color: "#b9ffbc"
+    enabled: false
+    radius: 4.5
+  - type: Sprite
+    sprite: _Sich/Objects/Tools/ellite_rcd.rsi
+  - type: Clothing
+    sprite: _Sich/Objects/Tools/ellite_rcd.rsi
+  - type: LimitedCharges
+    maxCharges: 40
+  - type: StealTarget
+    stealGroup: RCDElite
+  - type: RCD
+    availablePrototypes:
+    - AirlockCommand
+    - AirlockGlassCommand
+    - HighSecDoor
+    - BlastDoor
+    - ShuttersNormal
+    - ShuttersWindow
+    - WallSolid
+    - FloorSteel
+    - Plating
+    - Catwalk
+    - Grille
+    - Window
+    - WindowDirectional
+    - WindowReinforcedDirectional
+    - ReinforcedWindow
+    - Airlock
+    - AirlockGlass
+    - Firelock
+    - TubeLight
+    - BulbLight
+    - LVCable
+    - MVCable
+    - HVCable
+    - CableTerminal
+    - Deconstruct
+  

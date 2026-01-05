@@ -4,7 +4,7 @@
     sprite: _Sich/Objects/Weapons/Guns/Rifles/trickster.rsi
     state: icon
   product: SichCrateArmoryRifleTricksterBlackwater
-  cost: 8000
+  cost: 10000
   category: cargoproduct-category-name-armory
   group: market
 
@@ -14,7 +14,6 @@
     sprite: _Sich/Objects/Weapons/Guns/Battery/falcon.rsi
     state: icon
   product: SichCrateArmoryLaserFalconBlackwater
-  cost: 5000
+  cost: 6000
   category: cargoproduct-category-name-armory
   group: market
-

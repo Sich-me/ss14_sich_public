@@ -1,11 +1,11 @@
-salvage-system-announcement-losing = Магніт більше не здатен утримувати уламки, які можна врятувати. Орієнтовний час до втрати: {$timeLeft} секунд.
-salvage-system-announcement-spawn-debris-disintegrated = Уламки розпалися під час орбітального перенесення.
-salvage-system-announcement-spawn-no-debris-available = Уламки не вдалося зібрати магнітом порятунку.
-salvage-system-announcement-arrived = Притягнуто уламок, який можна врятувати. Орієнтовний час утримання: {$timeLeft} секунд.
+salvage-system-announcement-losing = Магніт більше не здатен утримувати уламки. Орієнтовний час до втрати: {$timeLeft} секунд.
+salvage-system-announcement-spawn-debris-disintegrated = Уламки розпалися під час орбітального переміщення.
+salvage-system-announcement-spawn-no-debris-available = Магніт не зміг притягнути жодного уламка.
+salvage-system-announcement-arrived = Притягнуто уламок для видобутку. Орієнтовний час утримання: {$timeLeft} секунд.
 salvage-asteroid-name = Астероїд
 
-salvage-magnet-window-title = Магніт порятунку
-salvage-expedition-window-progression = Поступ
+salvage-magnet-window-title = Шахтарський магніт
+salvage-expedition-window-progression = Час
 
 salvage-magnet-resources = {$resource ->
     [OreIron] Залізо
@@ -32,11 +32,11 @@ salvage-magnet-resources-count = {$count ->
 }
 
 # Debris
-salvage-magnet-debris-ChunkDebris = Космічні уламки
+salvage-magnet-debris-ChunkDebris = Уламки з космосу
 
 # Asteroids
-dungeon-config-proto-BlobAsteroid = Скупчення астероїдів
-dungeon-config-proto-ClusterAsteroid = Скупчення астероїдів
+dungeon-config-proto-BlobAsteroid = Група астероїдів
+dungeon-config-proto-ClusterAsteroid = Кластер астероїдів
 dungeon-config-proto-SpindlyAsteroid = Спіральний астероїд
 dungeon-config-proto-SwissCheeseAsteroid = Уламки астероїдів
 

@@ -68,6 +68,8 @@
   name: пілот шатлу синдикату
   parent: MobSyndicateFootsoldier
   id: MobSyndicateFootsoldierPilot
+  components:
+  - type: Unrevivable #Додавання білду Січі.
 
 - type: entity
   parent: BaseMobHuman
@@ -88,6 +90,7 @@
         Blunt: 19
   - type: Inventory
     templateId: corpse
+  - type: Unrevivable #Додавання білду Січі.
 
 - type: entity
   parent: MobHuman
