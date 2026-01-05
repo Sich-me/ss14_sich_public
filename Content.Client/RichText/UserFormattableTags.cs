@@ -1,4 +1,4 @@
-﻿using Content.Client.UserInterface.RichText;
+using Content.Client.UserInterface.RichText;
 using Robust.Client.UserInterface.RichText;
 
 namespace Content.Client.RichText;
@@ -21,5 +21,6 @@ public static class UserFormattableTags
         typeof(HeadingTag),
         typeof(ItalicTag),
         typeof(MonoTag),
+        typeof(FontTag)
     ];
 }
