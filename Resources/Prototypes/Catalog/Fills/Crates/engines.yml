@@ -3,8 +3,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringAMEShielding
-  name: packaged antimatter reactor crate
-  description: 9 parts for the main body of an antimatter reactor, or for expanding an existing one.
+  name: ящик з флетпаками антиматеріального двигуна
+  description: 9 флетпаків для створення нового АМД чи розширення вже існуючого.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -15,8 +15,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringAMEJar
-  name: antimatter containment jar crate
-  description: 3 antimatter jars, for fuelling an antimatter reactor.
+  name: ящик з балонами антиматерії
+  description: 3 балони з антиматерією для заправки антиматеріального двигуна.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -27,8 +27,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringAMEControl
-  name: antimatter control unit crate
-  description: The control unit of an antimatter reactor.
+  name: ящик з контролером антиматеріального двигуна
+  description: Блок керування антиматеріального двигуна.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -40,8 +40,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringSingularityEmitter
-  name: emitter crate
-  description: An emitter, best used for singularity engines.
+  name: ящик з випромінювачем
+  description: Містить у собі флетпак випромінювача. Найкраще для підтримки поля утримання чогось справді небезпечного.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -51,8 +51,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringSingularityCollector
-  name: radiation collector crate
-  description: A radiation collector, best used for singularity engines. Plasma is included.
+  name: ящик з колектором радиації
+  description: Містить у собі флетпак колектора радиації. Найкраще для отримання енергії з чогось радіоактивного. Балон з плазмою входить у комплект.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -64,8 +64,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringSingularityContainment
-  name: containment field generator crate
-  description: A containment field generator, keeps the singulo in submission.
+  name: ящик з генератором утримуючого поля
+  description: Містить у собі флетпак генератора утримаючого поля. Найкраще для створення поля утримання чогось справді небезпечного.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -75,8 +75,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringSingularityGenerator
-  name: singularity generator crate
-  description: A singularity generator, the mother of the beast.
+  name: ящик з генератором сингулярності
+  description: Містить у собі флетпак генератора сингулярності. Найкраще для створення справді небезпечного.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -88,8 +88,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringParticleAccelerator
-  name: PA board crate
-  description: Complex to setup, but rewarding as fuck. Contains boards for all particle accelerator components.
+  name: ящик з комплектом плат для ПЧ
+  description: Складно зібрати та налаштувати, але корисно, що всратися. Містить повний комплект плат для створення прискорювача часток. Інщі компоненти в комплект не входять.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -119,7 +119,7 @@
 - type: entity
   parent: CrateEngineering
   id: CrateEngineeringGenerator
-  name:  generator crate
+  name: ящик з генератором
   suffix: DEBUG
   components:
   - type: EntityTableContainerFill
@@ -130,8 +130,8 @@
 - type: entity
   parent: CrateEngineering
   id: CrateEngineeringSolar
-  name: solar assembly crate
-  description: A kit with solar flatpacks and glass to construct ten solar panels.
+  name: ящик з сонячними панелями
+  description: Комплект з флетпаками сонячних панелей та склом. Все необхідне, щоб збудувати власну міні-сонячну електростанцію.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -145,8 +145,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringShuttle
-  name: shuttle powering crate
-  description: A crate containing all needs for shuttle powering.
+  name: ящик для заживлення шатла
+  description: Ящик, що містить усе необхідне для проведення електрики на ваш шатл.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -160,8 +160,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringTeslaGenerator
-  name: tesla generator crate
-  description: A tesla generator. God save you.
+  name: ящик з генератором тесли
+  description:  Містить у собі флетпак генератора тесли. Найкраще для створення справді небезпечного та яскравого. Хай Сатія вас береже.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -171,8 +171,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringTeslaCoil
-  name: tesla coil crate
-  description: Tesla coil. Attracts lightning and generates energy from it.
+  name: ящик з котушкою тесли
+  description: Містить у собі флетпак котушки тесли. Допоможе вам використовувати силу ПОТУЖНОГО ІСКРОВОГО РОЗРЯДУ (молнії)!
   components:
   - type: EntityTableContainerFill
     containers:
@@ -182,8 +182,8 @@
 - type: entity
   parent: CrateEngineeringSecure
   id: CrateEngineeringTeslaGroundingRod
-  name: tesla grounding rod crate
-  description: Grounding rod, best for lightning protection.
+  name: ящик з стрижнем заземлення тесли
+  description: Містить у собі флетпак заземлючого стрижня. Найкраще, для стримання молній.
   components:
   - type: EntityTableContainerFill
     containers:

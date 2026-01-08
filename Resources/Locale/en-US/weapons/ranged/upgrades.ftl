@@ -1,7 +1,7 @@
-upgradeable-gun-popup-already-present = Upgrade already installed!
-upgradeable-gun-popup-upgrade-limit = Max upgrades reached!
-gun-upgrade-popup-insert = Inserted {THE($upgrade)} into {THE($gun)}!
+upgradeable-gun-popup-already-present = Це покращення вже встановлено!
+upgradeable-gun-popup-upgrade-limit = Ліміт по кількості покращень досягнутно!
+gun-upgrade-popup-insert = ($upgrade) встановлено в ($gun)!
 
-gun-upgrade-examine-text-damage = This has upgraded [color=#ec9b2d][bold]damage.[/bold][/color]
-gun-upgrade-examine-text-range = This has upgraded [color=#2decec][bold]range.[/bold][/color]
-gun-upgrade-examine-text-reload = This has upgraded [color=#bbf134][bold]fire rate.[/bold][/color]
+gun-upgrade-examine-text-damage = Він має покращену [color=#ec9b2d][bold]шкоду[/bold][/color] болта.
+gun-upgrade-examine-text-range = Він має покращену [color=#2decec][bold]дальність польоту[/bold][/color] болта.
+gun-upgrade-examine-text-reload = Він має покращену [color=#bbf134][bold]скорострільність.[/bold][/color]

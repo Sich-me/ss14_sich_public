@@ -89,7 +89,7 @@
   id: Autolathe
   parent: BaseLatheLube
   name: автолат
-  description: Виготовляє базові вироби з металу та скла. Має можливість обробляти креслення для друку нових рецептів.
+  description: Виготовляє базове обладнання з базових матеріалів. Має можливість приймати креслення для друку нових рецептів.
   components:
   - type: Sprite
     sprite: Structures/Machines/autolathe.rsi
@@ -154,7 +154,7 @@
   id: AutolatheHyperConvection
   parent: [Autolathe, BaseHyperlathe]
   name: гіперконвекційний автолат
-  description: "Експериментальний автолат, який використовує силу екстремального тепла, щоб повільно створювати об'єкти більш економічно ефективно."
+  description: Експериментальна версія автолату, яка використовує силу екстремального тепла, щоб повільніше, але економічніше по матеріалах створювати ті ж самі речі.
   components:
   - type: Sprite
     sprite: Structures/Machines/autolathe_hypercon.rsi
@@ -165,7 +165,7 @@
   id: Protolathe
   parent: BaseLatheLube
   name: протолат
-  description: Перетворює сировину на передові продукти.
+  description: Виготовляє передове (та не тільки) обладнання з передових матеріалів.
   components:
   - type: Sprite
     sprite: Structures/Machines/protolathe.rsi
@@ -218,7 +218,7 @@
   id: ProtolatheHyperConvection
   parent: [Protolathe, BaseHyperlathe]
   name: гіперконвекційний протолат
-  description: A highly-experimental protolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+  description: Експериментальна версія протолату, яка використовує силу екстремального тепла, щоб повільніше, але економічніше по матеріалах створювати ті ж самі речі.
   components:
   - type: Sprite
     sprite: Structures/Machines/protolathe_hypercon.rsi
@@ -229,7 +229,7 @@
   id: CircuitImprinter
   parent: BaseLatheLube
   name: принтер плат
-  description: Друкує плати для машин.
+  description: Друкує плати для машин та комп'ютерів з консолями.
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter.rsi
@@ -275,7 +275,7 @@
   id: CircuitImprinterHyperConvection
   parent: [CircuitImprinter, BaseHyperlathe]
   name: гіперконвекційний принтер плат
-  description: Експериментальний принтер плат, який використовує силу екстремального тепла для повільного створення об'єктів з меншими витратами.
+  description: Експериментальна версія принтеру плат, яка використовує силу екстремального тепла, щоб повільніше, але економічніше по матеріалах створювати ті ж самі речі.
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter_hypercon.rsi
@@ -285,8 +285,8 @@
 - type: entity
   id: ExosuitFabricator
   parent: BaseLatheLube
-  name: exosuit fabricator
-  description: Creates parts for robotics and other mechanical needs.
+  name: фабрикатор екзокостюмів
+  description: Виготовляє деталі для робототехніки та інших механічних пристроїв.
   components:
   - type: Sprite
     sprite: Structures/Machines/exosuit_fabricator.rsi
@@ -321,8 +321,8 @@
 - type: entity
   id: Biofabricator
   parent: BaseLathe
-  name: біо-фабрикатор
-  description: Виробляє тваринні куби з біомаси.
+  name: біофабрикатор
+  description: Виробляє куби тварин з біомаси.
   components:
   - type: Sprite
     sprite: Structures/Machines/biofabricator.rsi
@@ -408,7 +408,7 @@
   id: AmmoTechFab
   parent: BaseLatheLube
   name: техфаб набоїв
-  description: Друкує мінімум набоїв, який може знадобитися будь-якій бюджетній армії чи збройовому складу. Нічого особливого.
+  description: Друкує всі основні типи амуніції, які можуть вам знадобитися для невеличкої армії чи власного складу боєприпасів. Нічого особливого.
   components:
     - type: Sprite
       sprite: Structures/Machines/techfab.rsi
@@ -440,8 +440,8 @@
 - type: entity
   id: MedicalTechFab
   parent: BaseLatheLube
-  name: медичний техфаб
-  description: Друкує обладнання для медичного відділу.
+  name: техфаб медичного відділу
+  description: Друкує обладнання для медиків.
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
@@ -481,7 +481,7 @@
   parent: BaseLathe
   id: UniformPrinter
   name: принтер уніформм
-  description: Друкує нову або замінну форму.
+  description: Друкує уніформу й не тільки! Не думали оновити свій гардероб?
   components:
   - type: Transform
     noRot: false
@@ -524,7 +524,7 @@
   id: Biogenerator
   parent: BaseLathe
   name: біогенератор
-  description: Перетворює рослини на біомасу, з якої можна виготовляти корисні речі.
+  description: Перетворює рослини на біомасу, з якої сам ж може зробити різне корисне.
   components:
   - type: Sprite
     sprite: Structures/Machines/biofabricator.rsi
@@ -570,8 +570,8 @@
 - type: entity
   parent: BaseLathe
   id: OreProcessor
-  name: перероблювач руди
-  description: Це виробляє листи та злитки з руди.
+  name: рудообробник
+  description: Перероблює необроблену руду в вже готові до використання матеріали у вигляді листів, злитків та не тільки.
   components:
     - type: Sprite
       sprite: Structures/Machines/ore_processor.rsi
@@ -603,8 +603,8 @@
 - type: entity
   parent: OreProcessor
   id: OreProcessorIndustrial
-  name: просунутий перероблювач руди
-  description: Переробник руди, спеціально розроблений для масового виробництва металів у промислових цілях.
+  name: промисловий рудообробник
+  description: Версія рудообробника, спеціально розроблена для масової переробки руди у промислових цілях.
   components:
   - type: Sprite
     sprite: Structures/Machines/ore_processor_industrial.rsi
@@ -622,7 +622,7 @@
   parent: BaseLathe
   id: Sheetifier
   name: лист-машина 2000
-  description: Дуже тонкий жарт англійською, проте затерто настільки, що вам не розібрати його.
+  description: Дуже тонкий жарт англійською, проте затерто настільки, що вам не розібрати його. Перероблює сировину в вже готові матеріали.
   components:
   - type: Sprite
     sprite: Structures/Machines/sheetifier.rsi
@@ -652,8 +652,8 @@
 - type: entity
   parent: BaseLathe
   id: CutterMachine
-  name: різчик плитки
-  description: Це різак. Він ріже. Додайте різноманітності підлозі вашої станції за допомогою приємних для ока візерунків! Не встромляйте пальці.
+  name: плиткоріз
+  description: Це різак. Він ріже. Додайте різноманітності підлозі вашої станції за допомогою приємних для ока візерунків! Не суйте пальці у нього.
   components:
   - type: Transform
     noRot: false

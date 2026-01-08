@@ -2,7 +2,7 @@
 # Although based on MobBaseAncestor, this species does not have a "developed" playable species it is an ancestor to.
 
 - type: entity
-  name: scurret
+  name: скуррет
   id: MobBaseScurret
   parent: MobBaseAncestor
   abstract: true
@@ -156,8 +156,8 @@
 # Spawnable scurrets have a random name and colour.
 
 - type: entity
-  name: scurret
-  description: Commonly known as Wawa, from the wetlands of Planet Wawa, these critters make up the bulk of Arnolds's Pizza's "loyal workforce".
+  name: скуррет
+  description: Ці істоти, широко відомі як "Вава", родом з водно-болотних угідь планети Вава, складають основну частину «відданої робочої сили» піцерії Арнольда.
   id: MobScurret
   parent: MobBaseScurret
   components:
@@ -185,7 +185,7 @@
 # feel free to hook them into random content.
 
 - type: entity
-  name: Emotional Support Scurret
+  name: Скуррет Емоційної Підтримки
   id: MobBaseEmotionalSupportScurret
   parent: MobBaseScurret
   abstract: true
@@ -207,7 +207,7 @@
 # Spawnable ESS have a ghost role, equipment, a random name and a random colour.
 
 - type: entity
-  name: Emotional Support Scurret
+  name: Скуррет Емоційної Підтримки
   id: MobEmotionalSupportScurret
   parent: [MobScurret, MobBaseEmotionalSupportScurret]
   description: Commonly known as Wawa, from the wetlands of Planet Wawa, these critters make up the bulk of Arnold's Pizza's "loyal workforce". This one is here as a temp.

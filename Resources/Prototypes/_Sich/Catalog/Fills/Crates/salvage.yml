@@ -1,0 +1,34 @@
+# Комплекти покращення ПКП (ПротоКінетичних прискорювачів)
+- type: entityTable
+  id: PKAUgradeKitsTable
+  table: !type:GroupSelector
+    children:
+    - id: PKAUpgradeDamage
+    - id: PKAUpgradeRange
+    - id: PKAUpgradeFireRate
+
+# Нагороди шахтарям
+- type: entity
+  parent: CrateGenericSteel
+  id: SichCratePKAUpgradeKits
+  name: ящик з покращеннями протокінетика
+  description: Містить у собі 4 комплекта покращення для протокінетичних прискорювачів. Використовується для покращення тих самих прискорювачів.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: PKAUgradeKitsTable
+        rolls: !type:ConstantNumberSelector
+          value: 4
+
+- type: entity
+  parent: CrateCommandSecure
+  id: SichCrateIHSHarduit
+  name: ящик з скафандром БАГ
+  description: Скафандр Безпеки АйронГамер, експерементальна модель відновлена з одного з покинутих складів закритого проєкта. Потребує доступ Шахтарів для відкриття
+  components:
+  - type: AccessReader
+    access: [["Salvage"]]
+  - type: StorageFill
+    contents:
+      - id: SichClothingOuterVoidsuitIHS

@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: BaseBlueprint
-  name: blueprint
-  description: A blueprint for some machine. It can be inserted into an autolathe.
+  name: креслення
+  description: Креслення якогось обладнання. Його можна вставити в автолат.
   abstract: true
   components:
   - type: Sprite
@@ -25,8 +25,8 @@
 - type: entity
   parent: BaseBlueprint
   id: BlueprintFulton
-  name: fulton blueprint
-  description: A blueprint with a schematic of a fulton. It can be inserted into an autolathe.
+  name: креслення фултона
+  description: Креслення з схематичним зображенням фултона та маяка для нього. Його можна вставити в автолат.
   components:
   - type: Blueprint
     providedRecipes:
@@ -36,8 +36,8 @@
 - type: entity
   parent: BaseBlueprint
   id: BlueprintSeismicCharge
-  name: seismic charge blueprint
-  description: A blueprint with a schematic of a seismic charge. It can be inserted into an autolathe.
+  name: креслення сейсмічного заряда
+  description: Креслення з схематичним зображенням сейсмічного заряда. Його можна вставити в автолат.
   components:
   - type: Blueprint
     providedRecipes:
@@ -46,8 +46,8 @@
 - type: entity
   parent: BaseBlueprint
   id: BlueprintDoubleEmergencyTank
-  name: double emergency tank blueprint
-  description: A blueprint with a schematic of a double emergency tank. It can be inserted into an autolathe.
+  name: креслення подвійного аварійного балона
+  description: Креслення з схематичним зображенням подвійного аварійного газового балона. Його можна вставити в автолат.
   components:
   - type: Blueprint
     providedRecipes:

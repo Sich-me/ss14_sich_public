@@ -1,0 +1,21 @@
+# Другий рівень
+- type: cargoProduct
+  id: SichCargoPKAUpgradeKits
+  icon:
+    sprite: Objects/Tools/upgrade.rsi
+    state: display
+  product: SichCratePKAUpgradeKits
+  cost: 6000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
+
+# Третій рівень
+- type: cargoProduct
+  id: SichCargoIHSHarduit
+  icon:
+    sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
+    state: icon-flash
+  product: SichCrateIHSHarduit
+  cost: 20000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward3

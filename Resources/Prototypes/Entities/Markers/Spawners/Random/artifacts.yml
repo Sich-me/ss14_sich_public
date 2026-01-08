@@ -1,6 +1,7 @@
 ﻿- type: entity
   id: RandomArtifactSpawner
-  name: random artifact spawner
+  name: випадковий артефакт
+  description: Один з ще не вивчених об'єктів космосу для потреб НВ! Будьте обережні, не вивченість також означає можливі дуже небезпечні реакції на оточення. # Sich
   parent: MarkerBase
   components:
     - type: Sprite
@@ -17,7 +18,7 @@
 
 - type: entity
   id: RandomArtifactSpawner20
-  name: random artifact spawner [20]
+  name: випадковий артефакт [20]
   parent: RandomArtifactSpawner
   components:
     - type: RandomSpawner

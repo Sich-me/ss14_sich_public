@@ -546,25 +546,29 @@
   parent: ClothingOuterHardsuitBase
   id: SichClothingOuterVoidsuitIHS
   name: скафандр БАГ
-  description: Старий та дещо пошкоджений, але все ще дієздатний скафандр Безпеки Айронгамер. Хто це такі? Гарне питання. Що він тут робить? Як ти це хочеш дізнатися, оглядаючи його. . .
+  description: Старий та дещо потертий, але все ще дієздатний скафандр Безпеки Айронгамер. Хто це такі? Гарне питання. Що він тут робить? Як ти це хочеш дізнатися, оглядаючи його... Якщо гарно придивитися, то помітите в районі шиї напис "CEV-Eris".
   components:
   - type: Sprite
     sprite: _Sich/Clothing/OuterClothing/Hardsuits/IHS.rsi
   - type: Clothing
     sprite: _Sich/Clothing/OuterClothing/Hardsuits/IHS.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.7
+    damageCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.7
-        Heat: 0.8
+        Blunt: 0.6
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.7
         Radiation: 0.5
+        Caustic: 0.6
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.7
+    sprintModifier: 0.7
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: SichClothingHeadHelmetVoidsuitIHS

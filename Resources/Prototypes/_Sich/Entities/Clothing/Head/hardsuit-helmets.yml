@@ -432,12 +432,12 @@
     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
   - type: Clothing
     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
+  - type: PointLight
+    color: "#47CC9E"
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.75
-        Heat: 0.8
-  - type: PointLight
-    color: "#47CC9E"
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

@@ -32,7 +32,7 @@
   id: MobGoliath
   parent: [ BaseMobAsteroid, MobBloodstream ]
   name: голіаф
-  description: Масивний звір, який використовує довгі щупальця, щоб схопити свою здобич, погрожувати йому не рекомендується за жодних обставин.
+  description: Масивний звір, який використовує довгі мацаки (щупальця), щоб схопити свою здобич. Не варто погрожувати йому за жодних обставин, а краще навіть поряд не стійте.
   components:
   - type: Sprite
     sprite: Mobs/Aliens/Asteroid/goliath.rsi
@@ -304,7 +304,7 @@
 - type: entity
   id: FoodHivelordRemains
   parent: FoodBase
-  name: залишки володаря рою
+  name: рештки володаря рою
   description: Все, що залишилося від рою, здається, це те, що дозволяє йому відламувати від себе шматки, не завдаючи собі болю... Його цілющі властивості скоро стануть інертними, якщо не використовувати їх швидко. Намагайтеся не думати про те, що ви їсте.
   components:
   - type: SolutionContainerManager
@@ -337,7 +337,7 @@
 - type: entity
   id: FoodHivelordRemainsInert
   parent: BaseItem
-  name: інертні залишки рою
+  name: інертні рештки рою
   description: Все, що залишилося від володаря рою... Тепер все дійсно втрачено.
   components:
   - type: Sprite
@@ -358,8 +358,8 @@
 - type: entity
   id: MobBasilisk
   parent: [ BaseMobAsteroid, MobBloodstream ]
-  name: basilisk
-  description: A territorial beast, covered in a thick shell that absorbs energy. Its stare causes victims to freeze from the inside.
+  name: василіск
+  description: Чи то звір, чи то якась істота. Вкритий товстим панциром, який поглинає енергію. Його погляд змушує жертв замерзати зсередини.
   components:
   - type: Sprite
     sprite: Mobs/Aliens/Asteroid/basilisk.rsi
