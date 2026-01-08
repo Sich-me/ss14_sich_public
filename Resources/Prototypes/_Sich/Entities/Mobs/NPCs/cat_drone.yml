@@ -97,7 +97,7 @@
   - type: Tag
     tags:
       - DoorBumpOpener
-      - CanPilot
+      - VimPilot
       - CannotSuicide
   - type: MovementAlwaysTouching
   - type: PressureImmunity

@@ -9,48 +9,13 @@
   "states": [
     {
       "name": "cat_drone",
-      "directions": 4,
-      "delays": [
-        [
-          1
-        ],
-        [
-          1
-        ],
-        [
-          1
-        ],
-        [
-          1
-        ]
-      ]
+      "directions": 4
     },
     {
-      "name": "cat_drone_dead",
-      "delays": [
-        [
-          1
-        ]
-      ]
+      "name": "cat_drone_dead"
     },
     {
-      "name": "cat_drone_rest",
-      "delays": [
-        [
-          0.1,
-          0.2,
-          0.1,
-          0.2
-        ]
-      ]
-    },
-    {
-      "name": "cat_drone_sit",
-      "delays": [
-        [
-          1
-        ]
-      ]
+      "name": "cat_drone_sit"
     }
   ]
 }
