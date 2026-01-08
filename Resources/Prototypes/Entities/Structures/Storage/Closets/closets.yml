@@ -3,7 +3,7 @@
   id: ClosetTool
   name: шафа для інструментів 
   parent: ClosetSteelBase
-  description: Це сховище для інструментів.
+  description: Це сховище для інструментів 
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -16,7 +16,7 @@
   id: ClosetRadiationSuit
   name: шафа з антирадіаційним костюмом
   parent: ClosetSteelBase
-  description: Вочевидь, комфортніше, ніж радіація.
+  description: "Вочевидь, комфортніше ніж радіація"
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -40,9 +40,9 @@
 # Emergency N2 closet
 - type: entity
   id: ClosetEmergencyN2
-  name: аварійна шафа з азотом
+  name: emergency nitrogen closet
   parent: ClosetSteelBase
-  description: Вона повна обладнання для порятунку вашого життя. За умови, що ви дихаєте азотом.
+  description: It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -68,7 +68,7 @@
   id: ClosetBomb
   name: шафа сапера
   parent: ClosetSteelBase
-  description: Це сховище для вибухозахисного костюму.
+  description: Це сховище для проти вибухового костюму
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -79,9 +79,9 @@
 # Janitorial bomb suit closet
 - type: entity
   id: ClosetJanitorBomb
-  name: шафа прибиральника-сапера
+  name: шафа прибиральника з ПВ костюмом
   parent: ClosetSteelBase
-  description: Це шафа прибиральника з його особистим вибухозахисним костюмом.
+  description: Це шафа прибиральника з проти вибуховим костюмом
   categories: [ DoNotMap ]
   components:
   - type: Appearance
@@ -97,7 +97,7 @@
   id: ClosetL3
   parent: ClosetSteelBase
   name: шафа 3-тього рівня біологічної небезпеки
-  description: Це сховище речей при біологічній небезпеці 3 рівня.
+  description: Це сховище речей при біологічній небезпеці 3 рівня
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -180,7 +180,7 @@
   name: підозріла шафа
   suffix: Bluespace
   parent: ClosetMaintenance
-  description: Це сховище для речей... П-Правда ж?
+  description: Це сховище для речей... п-..правда?
   components:
     - type: ArrivalsBlacklist
     - type: BluespaceLocker
@@ -199,7 +199,7 @@
   name: підозріла шафа
   suffix: Bluespace unstable
   parent: ClosetMaintenance
-  description: Це сховище для речей... П-Правда ж?
+  description: Це сховище для речей... п-..правда?
   components:
     - type: ArrivalsBlacklist
     - type: BluespaceLocker

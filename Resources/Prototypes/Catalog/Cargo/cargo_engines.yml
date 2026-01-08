@@ -1,5 +1,6 @@
 - type: cargoProduct
   id: EngineAmeJar
+  name: паливо АМД
   icon:
     sprite: Objects/Power/AME/ame_jar.rsi
     state: jar
@@ -10,6 +11,7 @@
 
 - type: cargoProduct
   id: EngineSingularityGenerator
+  name: генератор сингулярності
   icon:
     sprite: Structures/Power/Generation/Singularity/generator.rsi
     state: icon
@@ -20,6 +22,7 @@
 
 - type: cargoProduct
   id: EngineSingularityContainment
+  name: генератор поля
   icon:
     sprite: Structures/Power/Generation/Singularity/containment.rsi
     state: icon
@@ -40,6 +43,7 @@
 
 - type: cargoProduct
   id: EngineSingularityCollector
+  name: збирач радіації
   icon:
     sprite: Structures/Power/Generation/Singularity/collector.rsi
     state: ca_on
@@ -50,6 +54,7 @@
 
 - type: cargoProduct
   id: EngineParticleAccelerator
+  name: генератор частинок
   icon:
     sprite: Structures/Power/Generation/PA/control_box.rsi
     state: completed
@@ -60,6 +65,7 @@
 
 - type: cargoProduct
   id: EngineSolar
+  name: запчастини сонячних панелей
   icon:
     sprite: Objects/Devices/flatpack.rsi
     state: solar-assembly-part

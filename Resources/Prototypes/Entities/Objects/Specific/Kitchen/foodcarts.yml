@@ -1,9 +1,9 @@
 - type: entity
-  name: візок для їжі
+  name: візок з їжею
   id: FoodCartBase
   abstract: true
   parent: BaseStructureDynamic
-  description: Візок для їжі.
+  description: Візок з їжею.
   components:
     - type: Sprite
       netsync: false
@@ -67,10 +67,10 @@
     #      startingItem: PowerCellMedium
 
 - type: entity
-  name: візок для гарячої їжі
+  name: візок для гарачої їжі
   id: FoodCartHot
   parent: FoodCartBase
-  description: Виходь-но і подай пару хот-догів!
+  description: Виходь но і подай пару хот-догів!
   components:
     - type: Sprite
       noRot: true
@@ -150,7 +150,7 @@
   name: візок для холодної їжі
   id: FoodCartCold
   parent: FoodCartBase
-  description: Це кухар з морозивом! Це, дідько, кухар з морозивом!!
+  description: Це кухар з морозивом! Це дідько кухар з морозивом!!
   components:
     - type: Sprite
       noRot: true

@@ -84,7 +84,7 @@
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
   id: ClothingOuterHardsuitSpatio
   name: промисловий скафандр
-  description: Легкий скафандр, розроблений для промислової роботи в умовах нульової гравітації. Має незначене бронювання на випадок зустрічі з космічною агресивною фауною.
+  description: Легкий скафандр, розроблений для промислової роботи в умовах нульової гравітації.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/spatio.rsi
@@ -119,7 +119,7 @@
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
   id: ClothingOuterHardsuitSalvage
   name: шахтарський скафандр
-  description: Спеціальний скафандр, який захищає від середовища з низьким тиском. Має посилене бронювання на випадок зустрічі з космічною агресивною фауною.
+  description: Спеціальний скафандр, який захищає від середовища з низьким тиском. Має посилене покриття на випадок зустрічі з космічною фауною.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/salvage.rsi
@@ -195,8 +195,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
   id: ClothingOuterHardsuitMaxim
-  name: шахтарський скафандр "Максимум"
-  description: Вогонь та мороз загартовують не лише зброю, а й шахтарів.
+  name: шахтарський скафандр "Максим"
+  description: Вогонь та жара, загартовують не лише зброю, але й шахтарів.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/maxim.rsi
@@ -509,7 +509,7 @@
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitLuxury #DO NOT MAP - https://github.com/space-wizards/space-station-14/pull/19738#issuecomment-1703486738
   name: розкішний шахтарський скафандр
-  description: Відреставрований шахтарський скафандр, пофарбований у кольори квартирмейстера. Графенова підкладка дає менший захист, зате рухатися з нею набагато легше.
+  description: Відреставнований шахтарський скафандр, пофарбований у кольори квартирмейстера. Графенова підкладка надає менший захист, зате рухатися в ній набагато легше.
   categories: [ DoNotMap ]
   components:
   - type: Sprite

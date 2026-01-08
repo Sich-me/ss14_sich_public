@@ -163,7 +163,7 @@
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelSalvage
   name: ранець шахтаря
-  description: Потужний ранець для ваших трофеїв.
+  description: Робасний ранець, для ваших трофеїв.
   components:
     - type: Sprite
       sprite: Clothing/Back/Satchels/salvage.rsi

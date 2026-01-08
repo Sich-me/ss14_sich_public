@@ -29,7 +29,7 @@
     - VendingMachineSnackOrange
     - VendingMachineSnackTeal
     - VendingMachineSoda #Robust Sofdrinks [Soda]
-#      - VendingMachineSovietSoda – Sich. Прибрано, бо русняве
+    - VendingMachineSovietSoda #Boda
     - VendingMachineSpaceUp
     - VendingMachineStarkist
     chance: 1

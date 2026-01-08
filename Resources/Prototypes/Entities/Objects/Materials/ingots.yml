@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: IngotBase
-  description: Злиток коштовного металу з нанесеним на нього логотипом НаноТрейзен.
+  description: Злиток важкого металу з логотипом НаноТрейзен.
   components:
   - type: Sprite
     sprite: Objects/Materials/ingots.rsi

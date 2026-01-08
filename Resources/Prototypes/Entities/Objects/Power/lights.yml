@@ -116,9 +116,9 @@
 # https://academo.org/demos/colour-temperature-relationship/
 - type: entity
   parent: BaseLightbulb
-  name: лампочка розжарювання
+  name: incandescent light bulb
   id: LightBulb
-  description: Лампочка. По формі нагадує грушу. НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: A light bulb.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -133,9 +133,9 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: лед лампочка
+  name: led light bulb
   id: LedLightBulb
-  description: Енергоефективна лампочка. Така ж груша. НЕ ПРОБУЙТЕ СУЧАСНО ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: A power efficient light bulb.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -152,9 +152,9 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: лампочка тьмяного світла
+  name: dim light bulb
   id: DimLightBulb
-  description: Темна лампочка для створення спеціальної гнітучої атмосфери тех. приміщень. НЕ ПРОБУЙТЕ В ТЕМНУ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: A dim light bulb for populating the darkness of maintenance.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -169,9 +169,9 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: лампочка теплого світла
+  name: warm light bulb
   id: WarmLightBulb
-  description: Тепла лампочка для створення затишної атмосфери. НЕ ПРОБУЙТЕ АТМОСФЕРНО ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: A warm light bulb for a more cozy atmosphere.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -186,9 +186,9 @@
 
 - type: entity
   parent: LightBulb
-  name: стара лампочка розжарювання
+  name: old incandescent light bulb
   id: LightBulbOld
-  description: Лампочка в агонії. НЕ ПРОБУЙТЕ ПО СТАРИНЦІ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: An aging light bulb.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -200,9 +200,9 @@
 - type: entity
   suffix: Broken
   parent: BaseLightbulb
-  name: лампочка розжарювання
+  name: incandescent light bulb
   id: LightBulbBroken
-  description: Лампочка. По формі вже не груша. ВСЕОДНО НЕ ПРОБУЙТЕ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: A light bulb.
   components:
   - type: LightBulb
     startingState: Broken
@@ -210,9 +210,9 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: службова лампочка
+  name: service light bulb
   id: ServiceLightBulb
-  description: Зелена лампочка низької яскравості, що використовується для систем оповіщення про необхідність прибирання. НЕ ПРОБУЙТЕ ПО ПРИБИРАЛЬНИЦЬКІ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  description: A low-brightness green lightbulb used in janitorial service lights.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -227,9 +227,9 @@
 
 - type: entity
   parent: BaseLightTube
-  name: люмінесцентна трубчаста лампа
+  name: fluorescent light tube
   id: LightTube
-  description: Лампа. Ця по формі нагадує трубку. Може містити у собі ртуть, будьте обережні.
+  description: A light fixture.
   components:
   - type: LightBulb
     color: "#FFE4CE" # 5000K color temp
@@ -240,9 +240,9 @@
 
 - type: entity
   parent: LightTube
-  name: стара люмінесцента трубчаста лампа
+  name: old fluorescent light tube
   id: LightTubeOld
-  description: Лампа в агонії. Може містити у собі стару ртуть, будьте обережні.
+  description: An aging light fixture.
   components:
   - type: LightBulb
     color: "#FFDABB" # old fluorescents are yellower-4500K temp
@@ -254,17 +254,17 @@
 - type: entity
   suffix: Broken
   parent: BaseLightTube
-  name: люмінесцентна трубчаста лампа
+  name: fluorescent light tube
   id: LightTubeBroken
-  description: Лампа. Вона бачила кращі часи. Все ще може містити у собі ртуть, будьте обережні.
+  description: A light fixture.
   components:
   - type: LightBulb
     startingState: Broken
 
 - type: entity
   parent: BaseLightTube
-  name: лед трубчаста лампа
-  description: Енергоефективна лампа. Така ж трубка. Наврядч містить у собі ртуть.
+  name: led light tube
+  description: A high power high energy bulb.
   id: LedLightTube
   components:
   - type: LightBulb
@@ -277,8 +277,8 @@
 
 - type: entity
   parent: BaseLightTube
-  name: трубчаста лампа зовнішнього освітлення
-  description: Потужна лампа для глибин космосу. Зазвичай використовується ззовні космічних станцій чи шатлів. Може містити багато ртуті, будьте дуже обережні.
+  name: exterior light tube
+  description: A high power high energy bulb for the depths of space. May contain mercury.
   id: ExteriorLightTube
   components:
   - type: LightBulb
@@ -291,8 +291,8 @@
 
 - type: entity
   parent: BaseLightTube
-  name: натрієва трубчаста лампа
-  description: Потужна лампа для глибин космосу. Атмосферненько. Солона. Може містити у собі ртуть з сіллю, будьте обережні.
+  name: sodium light tube
+  description: A high power high energy bulb for the depths of space. Salty.
   id: SodiumLightTube
   components:
   - type: LightBulb
@@ -305,8 +305,8 @@
 
 - type: entity
   parent: BaseLightTube
-  name: кришталева трубчаста лампа
-  description: Потужна лампа, яка має всередині невеликий кольоровий кристал. Красиве. Може містити у собі ртуть з кристалами, будьте обережні.
+  name: crystal light tube
+  description: A high power high energy bulb which has a small colored crystal inside.
   id: BaseLightTubeCrystal
   abstract: true
   components:
@@ -319,7 +319,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: лазурова кришталева трубчаста лампа
+  name: cyan crystal light tube
   id: LightTubeCrystalCyan
   components:
   - type: LightBulb
@@ -334,7 +334,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: синя кришталева трубчаста лампа
+  name: blue crystal light tube
   id: LightTubeCrystalBlue
   components:
   - type: LightBulb
@@ -349,7 +349,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: жовта кришталева трубчаста лампа
+  name: yellow crystal light tube
   id: LightTubeCrystalYellow
   components:
   - type: LightBulb
@@ -364,7 +364,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: рожева кришталева трубчаста лампа
+  name: pink crystal light tube
   id: LightTubeCrystalPink
   components:
   - type: LightBulb
@@ -379,7 +379,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: помаранчева кришталева трубчаста лампа
+  name: orange crystal light tube
   id: LightTubeCrystalOrange
   components:
   - type: LightBulb
@@ -394,8 +394,8 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: чорна кришталева трубчаста лампа
-  description: Потужна лампа, яка має всередині невеликий кольоровий кристал. Саме ця не дуже яскрава. Може містити у собі ртуть з кристалами, будьте обережні.
+  name: black crystal light tube
+  description: A high power high energy bulb which has a small colored crystal inside. It isn't very bright.
   id: LightTubeCrystalBlack
   components:
   - type: LightBulb
@@ -412,7 +412,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: червона кришталева трубчаста лампа
+  name: red crystal light tube
   id: LightTubeCrystalRed
   components:
   - type: LightBulb
@@ -427,7 +427,7 @@
 
 - type: entity
   parent: LightTubeCrystalCyan
-  name: зелена кришталева трубчаста лампа
+  name: green crystal light tube
   id: LightTubeCrystalGreen
   components:
   - type: LightBulb
@@ -443,8 +443,8 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: кришталева лампочка
-  description: Потужна лампочка, яка має всередині невеликий кольоровий кристал. Маленьке, але все ще красиве. НЕ ПРОБУЙТЕ РІЗНОКОЛЬОРОВО ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  name: crystal light bulb
+  description: A high power high energy bulb which has a small colored crystal inside.
   id: BaseLightbulbCrystal
   abstract: true
   components:
@@ -459,7 +459,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: лазурова кришталева лампочка
+  name: cyan crystal light bulb
   id: LightBulbCrystalCyan
   components:
   - type: LightBulb
@@ -474,7 +474,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: синя кришталева лампочка
+  name: blue crystal light bulb
   id: LightBulbCrystalBlue
   components:
   - type: LightBulb
@@ -489,7 +489,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: жовта кришталева лампочка
+  name: yellow crystal light bulb
   id: LightBulbCrystalYellow
   components:
   - type: LightBulb
@@ -504,7 +504,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: рожева кришталева лампочка
+  name: pink crystal light bulb
   id: LightBulbCrystalPink
   components:
   - type: LightBulb
@@ -519,7 +519,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: помаранчева кришталева лампочка
+  name: orange crystal light bulb
   id: LightBulbCrystalOrange
   components:
   - type: LightBulb
@@ -534,8 +534,8 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: чорна кришталева лампочка
-  description: Потужна лампочка, яка має всередині невеликий кольоровий кристал. Саме ця не дуже яскрава й мала. НЕ ПРОБУЙТЕ В ТИХУ ЗАПХАТИ ЇЇ СОБІ В РОТА!
+  name: black crystal light bulb
+  description: A high power high energy bulb which has a small colored crystal inside. It isn't very bright.
   id: LightBulbCrystalBlack
   components:
   - type: LightBulb
@@ -552,7 +552,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: червона кришталева лампочка
+  name: red crystal light bulb
   id: LightBulbCrystalRed
   components:
   - type: LightBulb
@@ -567,7 +567,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: зелена кришталева лампочка
+  name: green crystal light bulb
   id: LightBulbCrystalGreen
   components:
   - type: LightBulb

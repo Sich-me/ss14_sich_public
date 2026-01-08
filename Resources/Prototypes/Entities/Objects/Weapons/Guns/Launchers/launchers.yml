@@ -294,8 +294,7 @@
                 False: { visible: false }
 
 - type: entity
-  name: крюк-пушка
-  description: Спеціальний пристрій на основі абордажного крюка та пістолетоподібної "пушки"! Допомогає вам не полетіти в далекі та порожні простори космоси. # Sich. Бо, чому ні?
+  name: крюк пушка
   parent: BaseItem
   id: WeaponGrapplingGun
   components:

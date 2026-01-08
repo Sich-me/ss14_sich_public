@@ -117,7 +117,7 @@
 
 - type: entity
   id: TeslaGroundingRod
-  name: заземлюючий стрижень
+  name: заземлюючий стержень
   description: Машина, яка не дає блискавці вдарити занадто далеко.
   placement:
     mode: SnapgridCenter

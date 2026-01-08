@@ -998,7 +998,7 @@
 - type: entity
   id: OreProcessorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: плата рудообробника
+  name: плата перероблювача руди
   components:
     - type: Sprite
       state: supply
@@ -1011,7 +1011,7 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: OreProcessorIndustrialMachineCircuitboard
-  name: плата промислового рудообробника
+  name: плата просунутого перероблювача руди
   components:
   - type: Sprite
     state: supply

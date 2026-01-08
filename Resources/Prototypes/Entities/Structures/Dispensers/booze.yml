@@ -1,8 +1,8 @@
 - type: entity
   id: BoozeDispenserEmpty
-  name: дозатор алкоголю
+  name: дозатор напоїв
   suffix: Empty
-  description: Дозатор алкоголю з одним слотом для наповнення склянки. Весь його вміст зберігається всередині у вигляді ємностей з відповідними рідинами, за бажанням ви можете туди додати декілька своїх.
+  description: Дозатор напоїв з одним слотом для наповнення ємності.
   parent: ReagentDispenserBase
   components:
   - type: Rotatable

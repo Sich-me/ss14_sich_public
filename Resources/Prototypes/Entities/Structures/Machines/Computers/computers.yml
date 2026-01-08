@@ -823,8 +823,8 @@
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerRadar
-  name: комп'ютер сканера мас
-  description: Комп'ютер для виявлення великих об'єктів поблизу станції (типу шатлів та уламків). Відображає самі об'єкти, а також відстань до них. Фактично радар.
+  name: комп'ютер масового сканування
+  description: Комп'ютер для виявлення тіл, що знаходяться поблизу, з відображенням їх за позицією та масою.
   components:
   - type: Sprite
     layers:
@@ -1205,8 +1205,8 @@
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerSalvageJobBoard
-  name: комп'ютер завдань шахтарів
-  description: Консоль для доступу до завдань шахтарів. Якщо ви достатньо відважні та витривалі – спробуйте виконати!
+  name: salvage job board
+  description: Console for accessing salvage jobs, if you're tough enough.
   components:
   - type: Sprite
     layers:
@@ -1242,7 +1242,7 @@
   id: ComputerSalvageExpedition
   parent: BaseComputerAiAccess
   name: комп'ютер експедицій шахтарів
-  description: Використовується для отримання координат планет з комплексами, які можна використовувати для видобутку ресурсів. Пам'ятайте, там будуть лише ви, ваша команда та купа місцевої файну, тому смерть буде остаточна!
+  description: Використовується для отримання місій з порятунку, якщо ви достатньо витривалі.
   components:
     - type: Sprite
       layers:

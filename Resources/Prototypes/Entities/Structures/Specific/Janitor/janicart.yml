@@ -1,9 +1,9 @@
 # Mop Bucket
 - type: entity
-  name: відро для швабри
+  name: mop bucket
   id: MopBucket
   parent: [BaseStructureDynamic, StructureWheeled]
-  description: Зберігає воду та сльози прибиральника в перемішку з вмістом всіх калюж станції.
+  description: Holds water and the tears of the janitor.
   components:
   - type: Clickable
   - type: Sprite
@@ -117,7 +117,7 @@
         - MachineMask
 
 - type: entity
-  name: відро для швабри
+  name: mop bucket
   id: MopBucketFull
   parent: MopBucket
   suffix: full
@@ -137,9 +137,9 @@
 
 - type: entity
   parent: BaseWrappedCube
-  name: кубик відра для швабри
+  name: mop bucket cube
   id: MopBucketCubeWrapped
-  description: Розгорніть та додайте води, щоб отримати відро для швабри!
+  description: Unwrap this to get a mop bucket cube.
   components:
   - type: SpawnItemsOnUse
     items:
@@ -149,10 +149,10 @@
 
 # Janicart
 - type: entity
-  name: візок прибиральника
+  name: janitorial trolley
   id: JanitorialTrolley
   parent: [BaseStructureDynamic, StructureWheeled]
-  description: Це є альфа і омега в сфері ідеальної чистоти станції.
+  description: This is the alpha and omega of sanitation.
   components:
     - type: Sprite
       noRot: true

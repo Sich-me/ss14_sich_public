@@ -1,8 +1,8 @@
 - type: entity
   id: SichCrateArmoryRifleTricksterBlackwater
   parent: CrateWeaponSecure
-  name: ящик з гвинтівками "Трікстер"
-  description: Містить у собі 2 гвинтівки типу "Трікстер" виробництва Асоціації Блеквотер, в комплекті також йдуть 4 магазина до них. Потребує доступ Зброярні для відкриття.
+  name: ящик гвинтівок "трікстер"
+  description: Містить 2 гвинтівки типу "Трікстер виробництва Асоціації Блеквотер із магазинами до них. Потребує доступ до зброярні щоб відкрити.
   components:
   - type: StorageFill
     contents:
@@ -14,10 +14,11 @@
 - type: entity
   id: SichCrateArmoryLaserFalconBlackwater
   parent: CrateWeaponSecure
-  name: ящик з лазерними гвинтівками "Фалькон"
-  description: Містить у собі 2 лазерних гвинтівок типу "Фалькон" виробництва Асоціації Блеквотер. Потребує доступ Зброярні для відкриття.
+  name: ящик лазерних гвинтівок "фалькон"
+  description: Містить три екземпляри лазерних гвинтівок типу "Фалькон", виготовлені Асоціацією Блеквотер. Потребує доступ до зброярні щоб відкрити.
   components:
   - type: StorageFill
     contents:
       - id: SichWeaponLaserCarbineFalconBlackwater
         amount: 3
+

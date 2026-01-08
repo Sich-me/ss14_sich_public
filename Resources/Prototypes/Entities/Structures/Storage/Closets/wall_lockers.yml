@@ -1,7 +1,7 @@
 - type: entity
   id: ClosetWall
   parent: BaseWallCloset
-  name: настінна технічна шафа
+  name: стінна технічна шафа
   description: Це сховище для речей.
   components:
   - type: EntityStorageVisuals
@@ -11,9 +11,9 @@
 
 - type: entity
   id: ClosetWallEmergency
-  name: аварійна настінна шафа
+  name: стінна аварійна шафа
   parent: BaseWallCloset
-  description: Це сховище з кисневим балоном, дихальною маскою, та аварійним костюмом.
+  description: Це сховище з кисневим балоном, дихальною маскою, та аварійним костюмом
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: emergency
@@ -23,8 +23,8 @@
 - type: entity
   parent: BaseWallCloset
   id: ClosetWallEmergencyN2
-  name: аварійна настінна шафа з азотом
-  description: Вона повна обладнання для порятунку вашого життя. За умови, що ви дихаєте азотом.
+  name: emergency nitrogen wall closet
+  description: It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: n2
@@ -33,9 +33,9 @@
 
 - type: entity
   id: ClosetWallFire
-  name: настінна протипожежна шафа
+  name: стінна протипожежна шафа
   parent: BaseWallCloset
-  description: Це сховище вогнеборців.
+  description: Це сховище для вогнеборців 
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: fire
@@ -45,8 +45,8 @@
 - type: entity
   id: ClosetWallBlue
   parent: BaseWallCloset
-  name: синя настінна шафа
-  description: Гардероб зі стильно-синім одягом.
+  name: синя стінна шафа
+  description: "Гардероб зі стильним синім одягом"
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -56,8 +56,8 @@
 - type: entity
   id: ClosetWallPink
   parent: BaseWallCloset
-  name: рожева настінна шафа
-  description: Гардероб з казково-рожевим одягом.
+  name: рожева стінна шафа
+  description: "Гардероб з казково рожевим одягом"
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -68,7 +68,7 @@
   id: ClosetWallBlack
   parent: BaseWallCloset
   name: чорна стіннна шафа
-  description: Гардероб зі стильно-чорним одягом. Ні, ви не знайдете тут пакети для русні.
+  description: "Гардероб з стильним чорним одягом. Ні, ви не знайдете тут пакети для русні"
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -78,8 +78,8 @@
 - type: entity
   id: ClosetWallGreen
   parent: BaseWallCloset
-  name: зелена настінна шафа
-  description: Гардероб зі стильно-зеленим одягом.
+  name: зелена стінна шафа
+  description: "Гардероб з стильним зеленим одягом"
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -89,7 +89,7 @@
 - type: entity
   id: ClosetWallOrange
   parent: BaseWallCloset
-  name: настінна шафа в'язня 
+  name: стінна шафа в'язня 
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -99,8 +99,8 @@
 - type: entity
   id: ClosetWallYellow
   parent: BaseWallCloset
-  name: жовта настінна шафа
-  description: Гардероб зі стильно-жовтим одягом.
+  name: жовта стінна шафа
+  description: "Гардероб зі стильним жовтим одягом"
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -110,8 +110,8 @@
 - type: entity
   id: ClosetWallWhite
   parent: BaseWallCloset
-  name: біла настінна шафа
-  description: Гардероб зі стильно-білим одягом.
+  name: біла стінна шафа
+  description: "Гардероб зі стильно білим одягом"
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -121,8 +121,8 @@
 - type: entity
   id: ClosetWallGrey
   parent: BaseWallCloset
-  name: сіра настінна шафа
-  description: Гардероб зі стильно-сірим одягом.
+  name: сіра стінна шафа
+  description: "Гардероб зі стильно сірим одягом"
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -132,8 +132,8 @@
 - type: entity
   id: ClosetWallMixed
   parent: BaseWallCloset
-  name: змішана настінна шафа
-  description: Гардероб з різнокольоровим одягом.
+  name: змішана стінна шафа
+  description: "Гардероб зі змішаним різнокольоровим одягом"
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -143,7 +143,7 @@
 - type: entity
   id: ClosetWallAtmospherics
   parent: BaseWallCloset
-  name: настінна шафа атмосферного інженера
+  name: стінна шафа атмосферного інженера
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -153,7 +153,7 @@
 - type: entity
   id: LockerWallMedical
   parent: BaseWallLocker
-  name: медична настінна шафа
+  name: медична стінна шафа
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: med
@@ -165,8 +165,8 @@
 - type: entity
   parent: BaseWallLocker
   id: LockerWallEvacRepair
-  name: аварійний настінний локер шатлу евакуації
-  description: Для випадків, коли тільки це та молитви здатні врятувати життя всім на борту.
+  name: emergency shuttle emergency wall locker
+  description: It's emergencies all the way down.
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: eng
@@ -178,8 +178,8 @@
 - type: entity
   parent: [ GenpopBase , BaseWallLocker ]
   id: LockerWallBasePrisoner
-  name: настінна шафа ув'язненого
-  description: Це локер для особистих речей ув'язненого під час його перебування у в'язниці.
+  name: prisoner wall closet
+  description: It's a secure locker for an inmate's personal belongings during their time in prison.
   suffix: 1
 
 - type: entity

@@ -192,8 +192,8 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesBootsJump
-  name: стриббутси
-  description: Високотехнологічні черевики, які дають вам неймовірну здібність – СТРИБАТИ! У цих черевиках ви можете перестрибувати через лаву, прірви, дивні хімікати на підлозі чи навіть ваших власних колег!
+  name: jump boots
+  description: High-tech boots that give you the incredible ability to JUMP! With these boots you can jump over lava, chasms and weird chemicals on the floor!
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/jumpboots.rsi

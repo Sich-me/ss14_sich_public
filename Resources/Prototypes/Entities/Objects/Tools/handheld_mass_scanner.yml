@@ -1,8 +1,8 @@
 - type: entity
-  name: ручний сканер мас
+  name: handheld mass scanner
   parent: BaseHandheldComputer
   id: HandHeldMassScanner
-  description: Сканер мас, але тепер у вашій кишені! Фактично радар.
+  description: A hand-held mass scanner.
   components:
   - type: Item
     sprite: Objects/Tools/handheld_mass_scanner.rsi

@@ -128,7 +128,7 @@ chat-speech-verb-name-small-mob = Миші
 chat-speech-verb-small-mob-1 = пищить
 chat-speech-verb-small-mob-2 = попискує
 
-chat-speech-verb-name-large-mob = Коропи
+chat-speech-verb-name-large-mob = Карпи
 chat-speech-verb-large-mob-1 = реве
 chat-speech-verb-large-mob-2 = гарчить
 

@@ -41,7 +41,7 @@
   name: аварійний ящик для інструментів
   parent: ToolboxBase
   id: ToolboxEmergency
-  description: Яскраво-червоний ящик, укомплектований приладдям для надзвичайних ситуацій.
+  description: Яскраво-червоний ящик, укомплектований інструментами для надзвичайних ситуацій.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
@@ -53,7 +53,7 @@
   name: ящик для інструментів механіка
   parent: ToolboxBase
   id: ToolboxMechanical
-  description: Синій ящик, що зазвичай наповнений інструментами, які використовують механіки.
+  description: Синій ящик, укомплектований інструментами для механіка.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_blue.rsi
@@ -65,7 +65,7 @@
   name: ящик для інструментів електрика
   parent: ToolboxBase
   id: ToolboxElectrical
-  description: Жовтий ящик, що зазвичай наповнений інструментами, які використовують електрики.
+  description: Ящик, що зазвичай наповнений спорядженням для електрика.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_yellow.rsi
@@ -74,11 +74,11 @@
     sprite: Objects/Tools/Toolboxes/toolbox_yellow.rsi
 
 - type: entity
-  name: ящик для інструментів електрика
+  name: електроінструментарій
   suffix: Syndicate, Turret
   parent: ToolboxElectrical
   id: ToolboxElectricalTurret
-  description: Жовтий ящик, що зазвичай наповнений інструментами, які використовують електрики.
+  description: Ящик для інструментів, в якому зазвичай зберігаються електричні прилади.
   components:
   - type: Damageable
     damageContainer: Inorganic
@@ -105,10 +105,10 @@
     price: 1350
 
 - type: entity
-  name: ящик для інструментів митця
+  name: митецький ящик для інструментів
   parent: ToolboxBase
   id: ToolboxArtistic
-  description: Зелений ящик, що зазвичай наповнений митецьким приладдям.
+  description: Ящик, що зазвичай наповнений митецьким приладдям.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_green.rsi
@@ -120,7 +120,7 @@
   name: підозрілий ящик для інструментів
   parent: [ToolboxBase, BaseSyndicateContraband]
   id: ToolboxSyndicate
-  description: Зловісного вигляду червоно-сірий ящик, наповнений елітними інструментами синдикату (можливо).
+  description: Зловісного вигляду ящик, наповнений елітними інструментами синдикату.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_syn.rsi
@@ -137,10 +137,10 @@
         Blunt: 20
 
 - type: entity
-  name: золотий ящик для інструментів
+  name: золотий ящик з інструментами
   parent: ToolboxBase
   id: ToolboxGolden
-  description: Ящик з чистого твердого золота 999 проби. Янукович вбив би за таке...
+  description: Ящик із твердого золота. Янукович вбив би за таке...
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_gold.rsi

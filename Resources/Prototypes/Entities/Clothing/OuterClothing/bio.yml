@@ -1,9 +1,9 @@
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothingGasTanks]
   id: ClothingOuterBioGeneral
-  name: костюм біозахисту
+  name: біо комбінезон
   suffix: Generic
-  description: Костюм для захисту від біологічних та хімічних загроз. Частково ізолює користувача від зовнішнього світу, покриваючи все тіло.
+  description: Комбінезон для захисту від біологічного зараження.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Bio/general.rsi
@@ -26,9 +26,9 @@
 - type: entity
   parent: ClothingOuterBioGeneral
   id: ClothingOuterBioCmo
-  name: костюм біозахисту головного лікаря
+  name: біо комбінезон головного лікаря
   suffix: CMO
-  description: Вдосконалений костюм для захисту від біологічних та хімічних загроз. Ця модель зроблена у кольорах ГЛ.
+  description: Вдосконалений комбінезон для захисту від біологічного зараження, у кольорах ГЛ.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Bio/cmo.rsi
@@ -38,9 +38,9 @@
 - type: entity
   parent: ClothingOuterBioGeneral
   id: ClothingOuterBioJanitor
-  name: костюм біозахисту прибиральників
+  name: біо комбінезон прибиральника
   suffix: Janitor
-  description: Костюм, який захищає власника від біологічних забруднень та токсичних чи їдких речовин.
+  description: Костюм, що захищає від біологічних забруднень і розливів їдких речовин.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Bio/janitor.rsi
@@ -54,9 +54,9 @@
 - type: entity
   parent: ClothingOuterBioGeneral
   id: ClothingOuterBioScientist
-  name: костюм біозахисту вчених
+  name: біо комбінезон вчених
   suffix: Science
-  description: Костюм для захисту від біологічних та хімічних загроз. Ця модель зроблена у кольорах НВ.
+  description: Комбінезон для захисту від біологічного зараження, у кольорах НВ.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Bio/scientist.rsi
@@ -66,9 +66,9 @@
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSecurityContraband]
   id: ClothingOuterBioSecurity
-  name: костюм біозахисту охорони
+  name: біо комбінезон охорони
   suffix: Security
-  description: Костюм, який захищає власника від біологічних та хімічних загроз, оснащений додатковою бронею. Ця модель зроблена спеціально для СБ.
+  description: Костюм, що захищає від біологічного зараження, оснащений додатковою бронею.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Bio/security.rsi
@@ -90,9 +90,9 @@
 - type: entity
   parent: ClothingOuterBioGeneral
   id: ClothingOuterBioVirology
-  name: костюм біозахисту вірусологів
+  name: біо комбінезон вірусолога
   suffix: Virology
-  description: Костюм, який надійно захищає від біологічних та хімічних загроз. Ця модель зроблена спеціально для вірусологів, найкраще для кращих.
+  description: Костюм, який надійно захищає від біологічного забруднення.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Bio/virology.rsi

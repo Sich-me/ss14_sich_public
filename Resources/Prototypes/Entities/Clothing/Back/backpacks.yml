@@ -189,7 +189,7 @@
   parent: ClothingBackpack
   id: ClothingBackpackSalvage
   name: шахтарський рюкзак
-  description: Потужний рюкзак для вашого хабаря.
+  description: Робасний рюкзак для вашого хабара.
   components:
     - type: Sprite
       sprite: Clothing/Back/Backpacks/salvage.rsi

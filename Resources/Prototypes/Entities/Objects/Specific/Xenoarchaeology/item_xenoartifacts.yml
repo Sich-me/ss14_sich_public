@@ -2,7 +2,7 @@
   parent: [BaseItem, BaseXenoArtifact]
   id: BaseXenoArtifactItem
   name: артефакт
-  description: Дивний артефакт невідомого походження, епохи та часу. Здається, він бачив багато всього. Ідеально лягає в руку.
+  description: Дивний артефакт невідомих часів. Здається, добре провести час. Ідеально лягає в руку.
   abstract: true
   noSpawn: true
   components:
@@ -76,7 +76,7 @@
   id: ArtifactFragment
   parent: BaseItem
   name: фрагмент артефакту
-  description: Шматок якогось артефакту. Ви могли б зібрати з цього цілий артефакт, якби мали декілька.
+  description: Розбитий шматок артефакту. Ви могли б його відремонтувати, якби у вас було більше таких.
   components:
   - type: Sprite
     sprite: Objects/Specific/Xenoarchaeology/artifact_fragments.rsi

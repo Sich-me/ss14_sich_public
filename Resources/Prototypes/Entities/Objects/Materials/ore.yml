@@ -64,7 +64,7 @@
 - type: entity
   parent: OreBase
   id: DiamondOre
-  name: алмазоносна руда
+  name: діамантова руда
   suffix: Повний
   components:
   - type: Stack
@@ -130,7 +130,7 @@
 - type: entity
   parent: OreBase
   id: PlasmaOre
-  name: плазмова руда
+  name: руда плазми
   suffix: Повний
   components:
   - type: Stack

@@ -1,8 +1,8 @@
 - type: entity
-  name: картонна коробка
+  name: cardboard box
   parent: BoxBase
   id: BoxCardboard
-  description: Картонна коробка для зберігання речей.
+  description: A cardboard box for storing things.
   components:
   - type: Item
     size: Large
@@ -19,10 +19,10 @@
     - BoxCardboard
 
 - type: entity
-  name: коробка з мишоловками
+  name: mousetrap box
   parent: BoxCardboard
   id: BoxMousetrap
-  description: Коробка повна мишоловок для.. мишей. Витягайте обережно, безпека ваших пальців не гарантується.
+  description: This box is filled with mousetraps. Try not to get your hand stuck in one.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -35,10 +35,10 @@
       - state: mousetraps
 
 - type: entity
-  name: коробка з лампочками
+  name: lightbulb box
   parent: BoxCardboard
   id: BoxLightbulb
-  description: Спеціальна коробка для зберігання лампочок. В неї влазять лише трубчасті та звичайні лампочки. Обережно, крихке!
+  description: This box is shaped on the inside so that only light tubes and bulbs fit.
   components:
   - type: Sprite
     layers:
@@ -57,7 +57,7 @@
         amount: 12
 
 - type: entity
-  name: коробка з лампочками теплого світла
+  name: lightbulb box warm
   parent: BoxLightbulb
   id: BoxWarmLightbulb
   components:
@@ -68,7 +68,7 @@
         amount: 12
 
 - type: entity
-  name: коробка з трубчастими лампами
+  name: lighttube box
   parent: BoxLightbulb
   id: BoxLighttube
   components:
@@ -83,7 +83,7 @@
         amount: 12
 
 - type: entity
-  name: коробка з різними лампочками
+  name: mixed lights box
   parent: BoxLightbulb
   id: BoxLightMixed
   components:
@@ -101,7 +101,7 @@
           amount: 6
 
 - type: entity
-  name: коробка з святковими трубчастими лампочками
+  name: holiday lighttube box
   parent: BoxLightbulb
   id: BoxLighttubeHoliday
   components:
@@ -114,10 +114,10 @@
         rolls: 6 # Rolls instead of amounts to alternate.
 
 - type: entity
-  name: коробка з КПК
+  name: PDA box
   parent: BoxCardboard
   id: BoxPDA
-  description: Коробка запасних пасажирських Кишенькових Персональних Комп'ютерів. Ви знали про цю розшифровк?
+  description: A box of spare PDA microcomputers.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -130,10 +130,10 @@
       - state: pda
 
 - type: entity
-  name: коробка з ID-картками
+  name: ID card box
   parent: BoxCardboard
   id: BoxID
-  description: Коробка запасних пасажирських ID-карток. Де ви загубили свою?
+  description: A box of spare blank ID cards.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -146,10 +146,10 @@
       - state: pda
 
 - type: entity
-  name: коробка з гарнітурами
+  name: headset box
   parent: BoxCardboard
   id: BoxHeadset
-  description: Коробка запасних пасажирських гарнітур. Де ви загубили свою?
+  description: A box of spare passenger headsets.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -162,10 +162,10 @@
       - state: headset
 
 - type: entity
-  name: коробка з мезонними окулярами
+  name: meson box
   parent: BoxCardboard
   id: BoxMesonScanners
-  description: Коробка запасних мезонних окулярів. По простому – інженерні окуляри.
+  description: A box of spare meson goggles.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -178,10 +178,10 @@
       - state: meson
 
 - type: entity
-  name: сухпай
+  name: M.R.E.
   parent: BoxCardboard
   id: BoxMRE
-  description: Коробка з старим військовим пайком, який пережив б й тебе. Як не дивно – він такий ж сухий та не смачний, як й 20 років тому.
+  description: A box of decades old military surplus rations. It is surprisingly not rotten.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -208,10 +208,10 @@
         amount: 3
 
 - type: entity
-  name: коробка з надувними стінами
+  name: inflatable wall box
   parent: BoxCardboard
   id: BoxInflatable
-  description: Коробка з комплектом надувних стін та дверей. Їх не слід використовувати, як засоби для підтримки плавучості.
+  description: Inflatable walls are not to be used as floatation devices.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -227,10 +227,10 @@
       - state: inflatable
 
 - type: entity
-  name: коробка дня Хацуне Міку
+  name: hatsune miku day bag
   parent: ClothingBackpackDuffel
   id: BoxPerformer
-  description: Щасливого дня Хацуне Міку! Міку-Міку-Міку!
+  description: Happy Hatsune Miku Day!
   components:
   - type: EntityTableContainerFill
     containers:
@@ -243,10 +243,10 @@
           amount: 2
 
 - type: entity
-  name: коробка з флаєрами
+  name: flare box
   parent: BoxCardboard
   id: BoxFlare
-  description: Коробка аварійних флаєрів. Час надзвичайної ситуації, вечірки чи навіть революції (або все відразу)!
+  description: A box of flares. Party time.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -259,10 +259,10 @@
       - state: flare
 
 - type: entity
-  name: коробка з пакетами для сміття
+  name: trashbag box
   parent: BoxCardboard
   id: BoxTrashbag
-  description: Коробка з пакетами для сміття. *щасливі звуки прибиральника*
+  description: A box of trashbags. Happy janitor noises.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -282,10 +282,10 @@
       - state: trashbag
 
 - type: entity
-  name: коробка з ключами шифрування пасажирів
+  name: passenger encryption key box
   parent: BoxCardboard
   id: BoxEncryptionKeyPassenger
-  description: Коробка запасних ключів шифрування. Де ви загубили свій?
+  description: A box of spare encryption keys.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -302,7 +302,7 @@
       - EncryptionKey
 
 - type: entity
-  name: коробка з ключами шифрування логістичного відділу
+  name: cargo encryption key box
   parent: BoxEncryptionKeyPassenger
   id: BoxEncryptionKeyCargo
   components:
@@ -313,7 +313,7 @@
         amount: 4
 
 - type: entity
-  name: коробка з ключами шифрування інженерного відділу
+  name: engineering encryption key box
   parent: BoxEncryptionKeyPassenger
   id: BoxEncryptionKeyEngineering
   components:
@@ -324,7 +324,7 @@
         amount: 4
 
 - type: entity
-  name: коробка з науково-медичними ключами шифрування
+  name: med-sci encryption key box
   parent: BoxEncryptionKeyPassenger
   id: BoxEncryptionKeyMedicalScience
   components:
@@ -335,7 +335,7 @@
         amount: 4
 
 - type: entity
-  name: коробка з ключами шифрування медичного відділу
+  name: medical encryption key box
   parent: BoxEncryptionKeyPassenger
   id: BoxEncryptionKeyMedical
   components:
@@ -346,7 +346,7 @@
         amount: 4
 
 - type: entity
-  name: коробка з ключами шифрування роботехніки
+  name: robotech encryption key box
   parent: BoxEncryptionKeyPassenger
   id: BoxEncryptionKeyRobo
   components:
@@ -357,7 +357,7 @@
         amount: 4
 
 - type: entity
-  name: коробка з ключами шифрування наукового відділу
+  name: science encryption key box
   parent: BoxEncryptionKeyPassenger
   id: BoxEncryptionKeyScience
   components:
@@ -368,7 +368,7 @@
         amount: 4
 
 - type: entity
-  name: коробка з ключами шифрування служби безпеки
+  name: security encryption key box
   parent: BoxEncryptionKeyPassenger
   id: BoxEncryptionKeySecurity
   components:
@@ -379,7 +379,7 @@
         amount: 4
 
 - type: entity
-  name: коробка з ключами шифрування сервісу
+  name: service encryption key box
   parent: BoxEncryptionKeyPassenger
   id: BoxEncryptionKeyService
   components:
@@ -390,10 +390,10 @@
         amount: 4
 
 - type: entity
-  name: коробка з ключами шифрування синдикату
+  name: syndicate encryption key box
   parent: [BoxEncryptionKeyPassenger, BaseSyndicateContraband]
   id: BoxEncryptionKeySyndie
-  description: Два ключі шифрування Синдикату за ціною одного. Мініатюризовані для зручності використання.
+  description: Two syndicate encryption keys for the price of one. Miniaturized for ease of use.
   components:
   - type: Item
     size: Normal
@@ -405,11 +405,11 @@
   - type: Storage
 
 - type: entity
-  name: свинцево-облицьована коробка
+  name: lead-lined box
   parent: BoxCardboard
   suffix: DEBUG
   id: BoxLeadLined
-  description: Спеціальна коробка, яка стримує небезпечне радіаційне випромінювання в середині себе.
+  description: This box stymies the transmission of harmful radiation.
   components:
   - type: Sprite
     state: box
@@ -417,10 +417,10 @@
     resistance: 2
 
 - type: entity
-  name: коробка з свічками
+  name: candle box
   parent: BoxCardboard
   id: BoxCandle
-  description: Спеціально відлита коробка для зберігання свічок. Атмосферненько.
+  description: This box is specifically moulded to only carry candles.
   components:
   - type: Sprite
     layers:
@@ -448,7 +448,7 @@
           amount: 2
 
 - type: entity
-  name: коробка з маленькими свічками
+  name: small candle box
   parent: BoxCandle
   id: BoxCandleSmall
   components:
@@ -468,10 +468,10 @@
           amount: 4
 
 - type: entity
-  name: коробка з дротиками
+  name: darts box
   parent: BoxCardboard
   id: BoxDarts
-  description: Коробка, яка наповнена різнокольоровими дротиками. Не кидайте їх у людей!
+  description: A box filled with colorful darts.
   components:
   - type: Sprite
     layers:
@@ -491,10 +491,10 @@
           amount: 2
 
 - type: entity
-  name: коробка з конвертами
+  name: envelope box
   parent: BoxCardboard
   id: BoxEnvelope
-  description: Коробка, яка наповнена конвертами. Як давно ви відправляли листа близьким?
+  description: A box filled with envelopes.
   components:
   - type: Sprite
     layers:
@@ -507,10 +507,10 @@
         amount: 9
 
 - type: entity
-  name: коробка з столовими приборами
+  name: utensil box
   parent: BoxCardboard
   id: BoxUtensil
-  description: Коробка, яка наповнена виделками та ложками. Спробуйте їсти, як нормальна людина.
+  description: A box filled with forks and spoons.
   components:
   - type: Sprite
     layers:

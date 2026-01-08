@@ -1,7 +1,7 @@
 - type: entity
   parent: CrateBaseWeldable
   id: CrateGenericSteel
-  name: ящик
+  name: crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/generic.rsi
@@ -20,7 +20,7 @@
 - type: entity
   parent: CrateBaseWeldable
   id: CratePlastic
-  name: пластиковий ящик
+  name: plastic crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/plastic.rsi
@@ -39,7 +39,7 @@
 - type: entity
   parent: CratePlastic
   id: CrateFreezer
-  name: холодильний ящик
+  name: freezer
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/freezer.rsi
@@ -59,7 +59,7 @@
 - type: entity
   parent: CratePlastic
   id: CrateHydroponics
-  name: ботанічний ящик
+  name: hydroponics crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/hydroponics.rsi
@@ -69,7 +69,7 @@
 - type: entity
   parent: CratePlastic
   id: CrateMedical
-  name: медичний ящик
+  name: medical crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/medical.rsi
@@ -79,8 +79,8 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateRadiation
-  name: ящик протирадиаційного обладнання
-  description: Насправді не має свинцевого покриття. Не зберігайте в ньому плутоній.
+  name: radiation gear crate
+  description: Is not actually lead lined. Do not store your plutonium in this.
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/radiation.rsi
@@ -90,7 +90,7 @@
 - type: entity
   parent: CratePlastic
   id: CrateInternals
-  name: ящик для кисневого обладнання
+  name: oxygen crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/o2.rsi
@@ -100,7 +100,7 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateElectrical
-  name: ящик для електричного приладдя
+  name: electrical crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/electrical.rsi
@@ -110,7 +110,7 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateEngineering
-  name: інженерний ящик
+  name: engineering crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/engineering.rsi
@@ -120,7 +120,7 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateScience
-  name: науковий ящик
+  name: science crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/science.rsi
@@ -130,7 +130,7 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateSurgery
-  name: хірургічний ящик
+  name: surgery crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/surgery.rsi
@@ -140,7 +140,7 @@
 - type: entity
   parent: CrateGeneric
   id: CrateWeb
-  name: ящик з павутиння
+  name: web crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/web.rsi
@@ -195,7 +195,7 @@
 - type: entity
   parent: [ CrateBaseSecure, BaseSecurityContraband ]
   id: CrateSecgear
-  name: ящик з обладнанням безпеки
+  name: secgear crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/sec_gear.rsi
@@ -207,7 +207,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateEngineeringSecure
-  name: ящик інженерів з замком
+  name: secure engineering crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/engicrate_secure.rsi
@@ -219,7 +219,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateMedicalSecure
-  name: ящик медиків з замком
+  name: secure medical crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/medicalcrate_secure.rsi
@@ -231,7 +231,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateChemistrySecure
-  name: ящик хіміків з замком
+  name: secure chemistry crate
   components:
     - type: Icon
       sprite: Structures/Storage/Crates/chemcrate_secure.rsi
@@ -243,7 +243,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CratePrivateSecure
-  name: приватний ящик
+  name: private crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/privatecrate_secure.rsi
@@ -253,7 +253,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateScienceSecure
-  name: ящик науковців з замком
+  name: secure science crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/scicrate_secure.rsi
@@ -265,7 +265,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CratePlasma
-  name: ящик для плазми
+  name: plasma crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/plasma.rsi
@@ -277,7 +277,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateSecure
-  name: ящик з замком
+  name: secure crate
   components:
     - type: Icon
       sprite: Structures/Storage/Crates/secure.rsi
@@ -287,7 +287,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateHydroSecure
-  name: ящик ботаніки з замком
+  name: secure hydroponics crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/hydro_secure.rsi
@@ -299,7 +299,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateWeaponSecure
-  name: ящик для зброї з замком
+  name: secure weapon crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/weapon.rsi
@@ -312,8 +312,8 @@
   parent: [ CrateBaseSecure, BaseSecurityContraband ]
   suffix: Armory, Secure
   id: CrateContrabandStorageSecure
-  name: ящик для зберігання контрабанди
-  description: Ящик на замку для зберігання контрабанди, конфіскованої у підозрюваних або ув'язнених.
+  name: contraband storage crate
+  description: An armory access locked crate for storing contraband confiscated from suspects or prisoners.
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/sec_gear.rsi
@@ -323,7 +323,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateCommandSecure
-  name: ящик командування
+  name: command crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/command.rsi
@@ -335,7 +335,7 @@
 - type: entity
   parent: CrateGeneric
   id: CrateLivestock
-  name: контейнер для тварин
+  name: livestock crate
   components:
   - type: EntityStorage
     airtight: false
@@ -392,7 +392,7 @@
 - type: entity
   parent: CrateGeneric
   id: CrateRodentCage
-  name: клітка для хом'яка
+  name: hamster cage
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/cage.rsi
@@ -455,8 +455,8 @@
 - type: entity
   id: CrateBaseLockBox
   parent: CrateBaseSecure
-  name: скринька з замком
-  description: Безпечна скринька з замком. Кошти від її продажу будуть підуть департаменту-власнику. Проте пам'ятайте, що вантаж логістика отримує свою частку.
+  name: lock box
+  description: "A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut."
   abstract: true
   components:
   - type: Sprite
@@ -495,7 +495,7 @@
 - type: entity
   id: CrateLockBoxEngineering
   parent: CrateBaseLockBox
-  name: скринька інженерів з замком
+  name: engineering lock box
   components:
   - type: Sprite
     layers:
@@ -525,7 +525,7 @@
 - type: entity
   id: CrateLockBoxMedical
   parent: CrateBaseLockBox
-  name: скринька медиків з замком
+  name: medical lock box
   components:
   - type: Sprite
     layers:
@@ -555,7 +555,7 @@
 - type: entity
   id: CrateLockBoxScience
   parent: CrateBaseLockBox
-  name: скринька вчених з замком
+  name: science lock box
   components:
   - type: Sprite
     layers:
@@ -585,7 +585,7 @@
 - type: entity
   id: CrateLockBoxSecurity
   parent: CrateBaseLockBox
-  name: скринька безпеки з замком
+  name: security lock box
   components:
   - type: Sprite
     layers:
@@ -615,7 +615,7 @@
 - type: entity
   id: CrateLockBoxService
   parent: CrateBaseLockBox
-  name: скринька сервісу з замком
+  name: service lock box
   components:
   - type: Sprite
     layers:
@@ -645,8 +645,8 @@
 - type: entity
   parent: CrateGeneric
   id: CratePirate
-  name: піратський сундук
-  description: Скриня космічного пірата, не для станційних щурів.
+  name: pirate chest
+  description: A space pirate chest, not for station lubbers.
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/piratechest.rsi
@@ -673,9 +673,9 @@
 - type: entity
   parent: CratePirate
   id: CrateToyBox
-  name: коробка з іграшками
+  name: toy box
   suffix: Empty
-  description: Коробка, переповнена веселощами.
+  description: A box overflowing with fun.
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/toybox.rsi
@@ -696,8 +696,8 @@
 - type: entity
   parent: CrateGeneric
   id: CrateCoffin
-  name: гроб
-  description: Зручна труна, чудове місце для вампірів і трупів, а ще деякі молі такі люблять.
+  name: coffin
+  description: A comfy coffin, excellent place for the vampires and corpses.
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/coffin.rsi
@@ -744,9 +744,9 @@
 - type: entity
   parent: CrateGeneric
   id: CrateWoodenGrave
-  name: могила
+  name: grave
   suffix: wooden
-  description: Хтось помер тут...
+  description: Someone died here...
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/wooden_grave.rsi
@@ -801,9 +801,9 @@
 - type: entity
   parent: CrateWoodenGrave
   id: CrateStoneGrave
-  name: могила
+  name: grave
   suffix: stone
-  description: Хтось помер тут...
+  description: Someone died here...
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/stone_grave.rsi
@@ -822,8 +822,8 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateSyndicate
-  name: ящик Синдикату
-  description: Темний сталевий ящик з кроваво-червоними смугами та витисненою літерою S спереду.
+  name: Syndicate crate
+  description: A dark steel crate with red bands and a letter S embossed on the front.
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/syndicate.rsi
@@ -833,7 +833,7 @@
 - type: entity
   parent: [StructureWheeled, CrateBaseWeldable]
   id: CrateTrashCart
-  name: візок для сміття
+  name: trash cart
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/trashcart.rsi
@@ -856,7 +856,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateTrashCartJani
-  name: візок прибиральника для сміття
+  name: janitorial trash cart
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/trashcart_jani.rsi

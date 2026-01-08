@@ -12,8 +12,8 @@
 - type: entity
   id: FultonBeacon
   parent: BaseFoldable
-  name: маяк фултонів
-  description: Маяк до якого направляються фултони. Для використання встановіть його та не забудьте прив'язати ваші фултони до нього.
+  name: fulton beacon
+  description: Beacon to receive fulton extractions.
   components:
     - type: Physics
       bodyType: Dynamic
@@ -57,8 +57,8 @@
   id: Fulton
   parent: BaseItem
   suffix: Full
-  name: фултон
-  description: Використовується для евакуації ящиків та інших великих об'єктів. Ну, або вербовки членів екіпажу в вашу приступну організацію через викрадення на секретний космічний форпост. Потребує маяк фултонів для роботи.
+  name: fulton
+  description: Used to extract containers, items, or forcibly recruit people into your base of operations.
   components:
   - type: Fulton
   - type: Item
@@ -89,7 +89,7 @@
 - type: entity
   id: Fulton1
   parent: Fulton
-  name: фултон
+  name: fulton
   suffix: One
   components:
   - type: Stack
@@ -98,7 +98,7 @@
 - type: entity
   id: FultonEffect
   categories: [ HideSpawnMenu ]
-  name: шар фултона
+  name: fulton effect
   components:
   - type: TimedDespawn
     lifetime: 60

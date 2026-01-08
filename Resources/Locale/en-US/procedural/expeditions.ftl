@@ -1,59 +1,59 @@
-salvage-expedition-type = Місія
-salvage-expedition-window-title = Шахтарська експедиція
-salvage-expedition-window-difficulty = Складність:
-salvage-expedition-window-details = Деталі:
-salvage-expedition-window-hostiles = Ворожа фауна:
-salvage-expedition-window-duration = Тривалість:
-salvage-expedition-window-biome = Місцевість:
-salvage-expedition-window-modifiers = Модифікатори:
+salvage-expedition-type = Mission
+salvage-expedition-window-title = Salvage expeditions
+salvage-expedition-window-difficulty = Difficulty:
+salvage-expedition-window-details = Details:
+salvage-expedition-window-hostiles = Hostiles:
+salvage-expedition-window-duration = Duration:
+salvage-expedition-window-biome = Biome:
+salvage-expedition-window-modifiers = Modifiers:
 
-offering-window-claimed = Обрано
-offering-window-claim = Обрати
+offering-window-claimed = Claimed
+offering-window-claim = Claim
 
-salvage-expedition-window-next = Нові через:
+salvage-expedition-window-next = Next offer
 
-salvage-expedition-difficulty-Moderate = Помірна
-salvage-expedition-difficulty-Hazardous = Небезпечна
-salvage-expedition-difficulty-Extreme = Екстримальна
+salvage-expedition-difficulty-Moderate = Moderate
+salvage-expedition-difficulty-Hazardous = Hazardous
+salvage-expedition-difficulty-Extreme = Extreme
 
-salvage-expedition-difficulty-players = Рекомендована кількість шахтарів:
+salvage-expedition-difficulty-players = Recommended salvagers:
 
 # Runner
-salvage-expedition-not-all-present = Не всі шахтарі на борту шатла!
+salvage-expedition-not-all-present = Not all salvagers are aboard the shuttle!
 
-salvage-expedition-announcement-countdown-minutes = {$duration} хвилин залишилось на виконання експедиції.
-salvage-expedition-announcement-countdown-seconds = {$duration} секунд залишилось на виконання експедиції.
-salvage-expedition-announcement-dungeon = Комплекст розташований на {$direction}.
-salvage-expedition-completed = Експедиція виконана.
-salvage-expedition-reward-description = Нагорода за виконання місії
+salvage-expedition-announcement-countdown-minutes = {$duration} minutes remaining to complete the expedition.
+salvage-expedition-announcement-countdown-seconds = {$duration} seconds remaining to complete the expedition.
+salvage-expedition-announcement-dungeon = Dungeon is located {$direction}.
+salvage-expedition-completed = Expedition is completed.
+salvage-expedition-reward-description = Mission completion reward
 
 # Salvage biome mod
-salvage-biome-mod-caves = Печери
-salvage-biome-mod-grasslands = Луги
-salvage-biome-mod-snow = Сніжні степи
-salvage-biome-mod-lava = Лавовий біом
+salvage-biome-mod-caves = Caves
+salvage-biome-mod-grasslands = Grasslands
+salvage-biome-mod-snow = Snow
+salvage-biome-mod-lava = Lava
 
 # Salvage mods
-salvage-light-mod-daylight = День
-salvage-light-mod-evening = Вечір
-salvage-light-mod-night = Ніч
+salvage-light-mod-daylight = Daylight
+salvage-light-mod-evening = Evening
+salvage-light-mod-night = Night time
 
-salvage-temperature-mod-room-temperature = Кімнатна температура
-salvage-temperature-mod-hot = Гарячо
-salvage-temperature-mod-high-temperature = Дуже гарячо
-salvage-temperature-mod-extreme-heat = Екстремально гарячо
-salvage-temperature-mod-cold = Прохолодно
-salvage-temperature-mod-low-temperature = Холодно
-salvage-temperature-mod-extreme-cold = Екстремально холодно
+salvage-temperature-mod-room-temperature = Room temperature
+salvage-temperature-mod-hot = Hot
+salvage-temperature-mod-high-temperature = High temperature
+salvage-temperature-mod-extreme-heat = Extreme heat
+salvage-temperature-mod-cold = Cold
+salvage-temperature-mod-low-temperature = Low temperature
+salvage-temperature-mod-extreme-cold = Extreme cold
 
-salvage-air-mod-no-atmosphere = Атмосфера відсутня
-salvage-air-mod-breathable-atmosphere = Атмосфера придатна для дихання
-salvage-air-mod-dangerous-atmosphere = Небезпечна атмосфера
-salvage-air-mod-toxic-atmosphere = Токсична атмосфера
-salvage-air-mod-volatile-atmosphere = Легкозаймиста атмосфера
+salvage-air-mod-no-atmosphere = No atmosphere
+salvage-air-mod-breathable-atmosphere = Breathable atmosphere
+salvage-air-mod-dangerous-atmosphere = Dangerous atmosphere
+salvage-air-mod-toxic-atmosphere = Toxic atmosphere
+salvage-air-mod-volatile-atmosphere = Volatile atmosphere
 
-salvage-dungeon-mod-lava-brig = Лавовий бріг
-salvage-dungeon-mod-snowy-labs = Сніжні лабораторії
-salvage-dungeon-mod-experiment = Експерементальне
-salvage-dungeon-mod-haunted = Підземелля з привидами
-salvage-dungeon-mod-mineshaft = Шахти
+salvage-dungeon-mod-lava-brig = Lava Brig
+salvage-dungeon-mod-snowy-labs = Snowy labs
+salvage-dungeon-mod-experiment = Experiment
+salvage-dungeon-mod-haunted = Haunted
+salvage-dungeon-mod-mineshaft = Mineshaft

@@ -2,7 +2,7 @@
   id: ClosetBase
   parent: BaseStructureDynamic
   name: шафа
-  description: Стандартне сховище для речей, виробництва Нанотрейзен.
+  description: Стандартне сховище для речей,в авторстві Нанотрейзен.
   abstract: true
   components:
   - type: Animateable
@@ -132,8 +132,8 @@
   parent: BaseWallmountMetallic
   id: BaseWallCloset
   abstract: true
-  name: настінна шафа
-  description: Стандартне сховище для речей, виробництва Нанотрейзен. Тепер також у вашій стіні!
+  name: стінна шафа
+  description: Стандартне сховище для речей, в авторстві Нанотрейзен, й тепер також на твоїй стіні!
   components:
   - type: ResistLocker
   - type: Weldable
@@ -231,7 +231,7 @@
   id: SuitStorageBase
   parent: BaseStructure
   name: сховище для скафандру
-  description: Високотехнологічне сховище, виробництва Нанотрейзен.
+  description: Високотехнологічне сховище, в авторстві Нанотрейзен.
   components:
   - type: AccessReader
   - type: Lock

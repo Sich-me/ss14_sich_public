@@ -91,7 +91,7 @@
 - type: entity
   id: LockerChiefEngineer
   parent: LockerBaseSecure
-  name: локер головного інженера
+  name: локер голови інженерного відділу
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -161,8 +161,8 @@
 - type: entity
   parent: LockerBase
   id: LockerEvacRepair
-  name: аварійний локер шатлу евакуації
-  description: Для випадків, коли тільки це та молитви здатні врятувати життя всім на борту.
+  name: emergency shuttle emergency locker
+  description: It's emergencies all the way down.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -429,8 +429,8 @@
 - type: entity
   parent: [ GenpopBase , LockerBaseSecure ]
   id: LockerPrisoner
-  name: шафа ув'язненого
-  description: Це локер для особистих речей ув'язненого під час його перебування у в'язниці.
+  name: prisoner closet
+  description: It's a secure locker for an inmate's personal belongings during their time in prison.
   suffix: 1
   components:
   - type: Fixtures
@@ -516,7 +516,7 @@
   id: LockerDetective
   parent: LockerBooze
   name: шафа детектива 
-  description: Зазвичай порожня... Як й ваше серце.
+  description: Зазвичай пустий... як і ваше серце.
   components:
   - type: AccessReader
     access: [["Detective"]]

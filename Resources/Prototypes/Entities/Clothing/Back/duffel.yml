@@ -156,8 +156,8 @@
 - type: entity
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelSalvage
-  name: велика сумка шахтаря
-  description: Потужна сумка для найбільшої здобичі.
+  name: salvage duffel bag
+  description: A large duffel bag for holding extra exotic treasures.
   components:
     - type: Sprite
       sprite: Clothing/Back/Duffels/salvage.rsi

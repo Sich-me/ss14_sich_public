@@ -6,7 +6,7 @@
   id: CableStack
   abstract: true
   parent: BaseItem
-  name: моток кабелю
+  name: купа кабелів
   suffix: Full
   components:
   - type: Tag
@@ -39,7 +39,7 @@
   parent: CableStack
   name: моток кабелю ВН
   suffix: Full
-  description: Кабелі для високої напруги, використовуються для підключення генераторів електрики до надпотужного обладнання, підстанцій та НАМів.
+  description: HV cables for connecting engines to heavy duty machinery, SMESes, and substations.
   components:
   - type: Stack
     stackType: CableHV
@@ -97,7 +97,7 @@
   id: CableMVStack
   name: моток кабелю СН
   suffix: Full
-  description: Кабелі для середньої напруги, використовуються для підключення підстанцій до зональних контролерів живлення (ЗКЖ), а також для живлення ще деяких пристроїв, таких, як випромінювачі.
+  description: MV cables for connecting substations to APCs, and also powering a select few things like emitters.
   components:
   - type: Stack
     stackType: CableMV
@@ -152,7 +152,7 @@
   parent: CableStack
   id: CableApcStack
   name: моток кабелю НН
-  description: Кабелі для низької напруги, використовуються для підключення ЗКЖ до інших машин абощо.
+  description: Дроти низької напруги потрібні для підключення АРС до інших машин абощо.
   suffix: Full
   components:
   - type: Sprite

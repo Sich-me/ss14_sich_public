@@ -1,5 +1,6 @@
 - type: cargoProduct
   id: MaterialGlass
+  name: скло
   icon:
     sprite: Objects/Materials/Sheets/glass.rsi
     state: glass_3
@@ -10,6 +11,7 @@
 
 - type: cargoProduct
   id: MaterialSteel
+  name: сталь
   icon:
     sprite: Objects/Materials/Sheets/metal.rsi
     state: steel_3
@@ -20,6 +22,7 @@
 
 - type: cargoProduct
   id: MaterialPlastic
+  name: пластик
   icon:
     sprite: Objects/Materials/Sheets/other.rsi
     state: plastic_3
@@ -40,6 +43,7 @@
 
 - type: cargoProduct
   id: MaterialPlasteel
+  name: пласталь
   icon:
     sprite: Objects/Materials/Sheets/metal.rsi
     state: plasteel_3
@@ -80,6 +84,7 @@
 
 - type: cargoProduct
   id: MaterialPlasma
+  name: плазма
   icon:
     sprite: Objects/Materials/Sheets/other.rsi
     state: plasma_3
@@ -130,6 +135,7 @@
 
 - type: cargoProduct
   id: MaterialFuelTank
+  name: бак з паливом
   icon:
     sprite: Structures/Storage/tanks.rsi
     state: fueltank
@@ -140,6 +146,7 @@
 
 - type: cargoProduct
   id: MaterialWaterTank
+  name: бак з водою
   icon:
     sprite: Structures/Storage/tanks.rsi
     state: watertank

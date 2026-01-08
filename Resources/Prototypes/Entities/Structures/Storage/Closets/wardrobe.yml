@@ -3,7 +3,7 @@
   id: WardrobeBase
   parent: ClosetSteelBase
   abstract: true
-  description: Це сховище для стандартного одягу Нанотрейзен, виробництва Нанотрейзен.
+  description: Це сховище для стандартного одягу Нанотрейзен.
 
 # Colored
 
@@ -12,7 +12,7 @@
   id: WardrobeBlue
   parent: WardrobeBase
   name: синій гардероб 
-  description: Гардероб зі стильно-синім одягом.
+  description: "Гардероб зі стильно синім одягом"
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -25,7 +25,7 @@
   id: WardrobePink
   parent: WardrobeBase
   name: рожевий гардероб 
-  description: Гардероб з казково-рожевим одягом.
+  description: "Гардероб з казково рожевим одягом"
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -38,7 +38,7 @@
   id: WardrobeBlack
   parent: WardrobeBase
   name: чорний гардероб 
-  description: Гардероб зі стильно-чорним одягом. Не шукайте тут пакети для русні.
+  description: "Гардероб зі стильно чорним одягом. Не шукайте тут пакети для русні"
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -51,7 +51,7 @@
   id: WardrobeGreen
   parent: WardrobeBase
   name: зелений гардероб 
-  description: Гардероб зі стильно-зеленим одягом.
+  description: "Гардероб зі стильно зеленим одягом"
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -76,7 +76,7 @@
   id: WardrobeYellow
   parent: WardrobeBase
   name: жовтий гардероб 
-  description: Гардероб зі стильно-жовтим одягом.
+  description: "Гардероб зі стильно жовим одягом"
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -89,7 +89,7 @@
   id: WardrobeWhite
   parent: WardrobeBase
   name: білий гардероб 
-  description: Гардероб зі стильно-білим одягом.
+  description: "Гардероб зі стильно білим одягом"
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -102,7 +102,7 @@
   id: WardrobeGrey
   parent: WardrobeBase
   name: сірий гардероб 
-  description: Гардероб зі сірим одягом.
+  description: "Гардероб зі сірим одягом "
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -115,7 +115,7 @@
   id: WardrobeMixed
   parent: WardrobeBase
   name: змішений гардероб 
-  description: Гардероб з різнокольоровим одягом.
+  description: "Гардероб з різноманітним одягом"
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -151,42 +151,42 @@
   id: ClosetJanitor
   parent: WardrobeMixed
   name: шафа прибиральника
-  description: Це сховище для речей прибиральника.
+  description: Це сховище для речей прибиральника
 
 - type: entity
   id: WardrobeFormal
   parent: WardrobeBlack
   name: формальна шафа
-  description: Це сховище для формального одягу.
+  description: Це сховище для формального одягу
 
 - type: entity
   id: ClosetChef
   parent: WardrobeBlack
   name: шафа шеф-кухаря 
-  description: Це сховище для інгредієнтів та пасток для пацюків.
+  description: Це сховище для інгредієнтів та пасток для пацюків
 
 - type: entity
   id: WardrobeChapel
   parent: WardrobeBlack
   name: гардероб священника
-  description: Це сховище релігійного одягу, ухваленого Нанотрейзен.
+  description: Це сховище релігійного одягу, ухваленого Нанотрейзен 
 
 - type: entity
   id: ClosetLegal
   parent: WardrobeBlue
   name: ділова шафа
-  description: Це сховище речей призначених для судових засідань.
+  description: Це сховище речей призначених для судових засідань 
 
 - type: entity
   id: WardrobeCargo
   parent: WardrobePrison
-  name: гардероб логістики
+  name: гардероб карго
 
 - type: entity
   id: WardrobeSalvage
   parent: WardrobeMixed
   name: гардероб шахтарів
-  description: Зокрема, (можливо) не вкрадений з уламку.
+  description: Зокрема, не вкрадений з уламку
 
 - type: entity
   id: WardrobeEngineering

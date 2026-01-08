@@ -71,7 +71,7 @@
           - /Maps/Ruins/atmos_interchange.yml
           - /Maps/Ruins/chunked_tcomms.yml
           - /Maps/Ruins/biodome_satellite.yml
-#          - /Maps/Ruins/derelict.yml - прибрано білдом Січі. Бо руснява мапа за концептом
+          - /Maps/Ruins/derelict.yml
           - /Maps/Ruins/djstation.yml
           - /Maps/Ruins/empty_flagship.yml
           - /Maps/Ruins/hydro_outpost.yml

@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: SheetMetalBase
-  description: Лист твердого металу, який часто використовується на станції та у багатьох інших місцях та сферах.
+  description: Лист металу, який часто використовується на станції в різних сферах.
   components:
   - type: Sprite
     sprite: Objects/Materials/Sheets/metal.rsi
@@ -99,7 +99,7 @@
   parent: SheetMetalBase
   id: SheetBrass
   name: латунь
-  description: Лист латуні, що використовується переважно любителями годинникових механізмів та залишками ратваріанських культів.
+  description: Лист латуні, що використовується переважно любителями годинникових механізмів та залишків ратваріанських культів.
   suffix: Повний
   components:
   - type: Material

@@ -1,8 +1,8 @@
 - type: entity
-  name: Трава-До-Біса
+  name: Plant-B-Gone
   id: PlantBGoneSpray
   parent: SprayBottle
-  description: Вбиває ці докучливі бур'яни! Зроблено УкраВіт™
+  description: Вбиває ці докучливі бур'яни!
   suffix: "Filled"
   components:
   - type: Tag
@@ -28,7 +28,7 @@
   name: спрей від бур'янів
   id: WeedSpray
   parent: SprayBottle
-  description: Це токсична суміш у формі спрею для знищення дрібних бур’янів. Не розпиляти на діон!
+  description: Це токсична суміш у формі спрею для знищення дрібних бур’янів.
   suffix: "Filled"
   components:
   - type: Sprite
@@ -57,7 +57,7 @@
   name: спрей від шкідників
   id: PestSpray
   parent: WeedSpray
-  description: Це спрей від шкідників! Не вдихати! Не розпиляти на ніан та арахнідів!
+  description: Це якийсь спрей від шкідників! Не вдихати!
   suffix: "Filled"
   components:
   - type: Sprite

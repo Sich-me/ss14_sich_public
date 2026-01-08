@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CrateSyndicate, StorePresetUplink, BaseSyndicateContraband ]
   id: CrateSyndicateSurplusBundle
-  name: ящик надлишків Синдикату
-  description: Містить у собі випадкове спорядження Синдикату сумарною вартістю 50 телекристалів. Схоже воно не знадобилося минулом користувачам. Це може бути, як непотрібний мотлох, так і справді хороші речі. ГЕЙМБЛІІІІІН!!!
+  name: Syndicate surplus crate
+  description: Contains 50 telecrystals worth of completely random Syndicate items. It can be useless junk or really good.
   components:
     - type: SurplusBundle
       totalPrice: 50
@@ -10,9 +10,9 @@
 - type: entity
   parent: CrateSyndicate
   id: CrateCybersunJuggernautBundle
-  name: набір джагернаута Кіберсану
+  name: Cybersun juggernaut bundle
   suffix: Filled
-  description: Містить усе, крім великої рушниці, для влаштування масованої різні.
+  description: Contains everything except a big gun to go postal.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -25,8 +25,8 @@
 - type: entity
   parent: [ CrateSyndicate, StorePresetUplink, BaseSyndicateContraband ]
   id: CrateSyndicateSuperSurplusBundle
-  name: супер ящик надлишків Синдикату
-  description: Містить у собі випадкове спорядження Синдикату сумарною вартістю 125 телекристалів. Схоже воно не знадобилося минулом користувачам. Це може бути, як непотрібний мотлох, так і справді хороші речі. МОР ГЕЙМБЛІІІІІН!!!
+  name: Syndicate super surplus crate
+  description: Contains 125 telecrystals worth of completely random Syndicate items.
   components:
     - type: SurplusBundle
       totalPrice: 125

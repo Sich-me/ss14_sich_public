@@ -1,7 +1,7 @@
 reagent-name-toxin = токсин
 reagent-desc-toxin = Токсична хімічна речовина.
 
-reagent-name-carpotoxin = коропотоксин
+reagent-name-carpotoxin = карпотоксин
 reagent-desc-carpotoxin = Токсичні виділення космічного коропа. Викликає болісне відчуття печіння.
 
 reagent-name-mold = цвіль

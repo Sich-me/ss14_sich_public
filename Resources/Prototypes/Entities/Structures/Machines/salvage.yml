@@ -1,8 +1,8 @@
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: SalvageMagnet
-  name: шахтарський магніт
-  description: Притягує шахтарство.
+  name: salvage magnet
+  description: Pulls in salvage.
   components:
   - type: Sprite
     sprite: Structures/Machines/salvage.rsi
@@ -48,8 +48,8 @@
 - type: entity
   parent: SalvageMagnet
   id: SalvageLocator
-  name: шахтарський локатор
-  description: Знаходить шахтарство.
+  name: salvage locator
+  description: Locates salvage.
   components:
   - type: SalvageMagnet
   - type: ApcPowerReceiver
