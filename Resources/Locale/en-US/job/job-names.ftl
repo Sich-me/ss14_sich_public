@@ -46,8 +46,6 @@ job-name-ertengineer = ERT інженер
 job-name-ertsecurity = ERT офіцерСБ
 job-name-ertmedic = ERT медик
 job-name-ertjanitor = ERT прибиральник
-job-name-boxer = Боксер
-job-name-zookeeper = Зоолог
 job-name-visitor = Відвідувач
 job-name-cluwne = Клуня
 
@@ -69,11 +67,10 @@ job-title-cluwne = Cluwne
 job-title-universal = Universal
 
 # Role timers - Make these alphabetical or I cut you
-JobAtmosphericTechnician = Atmospheric Technician
+JobAtmosphericTechnician = Атмосферний інженер
 JobBartender = Бармен
 JobBorg = Кіборг
 JobBotanist = Ботанік
-JobBoxer = Боксер
 JobCaptain = Капітан
 JobCargoTechnician = Вантажник
 JobCentralCommandOfficial = Представник ЦК
@@ -117,4 +114,3 @@ JobStationEngineer = Інженер
 JobTechnicalAssistant = Технічний Асистент
 JobVisitor = Відвідувач
 JobWarden = Наглядач
-JobZookeeper = Зоолог

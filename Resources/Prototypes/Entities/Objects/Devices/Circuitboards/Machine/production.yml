@@ -1050,7 +1050,7 @@
 
 - type: entity
   id: SyndicateMicrowaveMachineCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [ BaseMachineCircuitboard, BaseSyndicateContraband ]
   name: плата мікрохвильової печі "donk. co"
   components:
     - type: Sprite

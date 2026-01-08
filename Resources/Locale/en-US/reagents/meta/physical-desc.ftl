@@ -97,3 +97,5 @@ reagent-physical-desc-slimy = слизьку
 reagent-physical-desc-neural = невральну
 reagent-physical-desc-unidentifiable = невизначене
 reagent-physical-desc-non-newtonian = неньютонівську
+reagent-physical-desc-thin = рідку
+reagent-physical-desc-arcryox = крижано-блакитну

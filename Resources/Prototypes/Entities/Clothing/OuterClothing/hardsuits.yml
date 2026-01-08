@@ -879,7 +879,7 @@
 
 #ERT Chaplain Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitJuggernaut ]
+  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndie ]
   id: ClothingOuterHardsuitERTChaplain
   name: скафандр капелана ГШР
   description: Захисний скафандр для капелана Групи Швидкого Реагування. Ніхто не зможе перемогти тебе, коли на твоєму боці бог.
@@ -893,7 +893,7 @@
 
 #ERT Engineer Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitCBURN
+  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieElite ]
   id: ClothingOuterHardsuitERTEngineer
   name: скафандр інженера ГШР
   description: Захистний скафандр для інженера Групи Швидкого Реагування. Ідеально підходить до випадків коли треба виправити наслідки чиєїсь халатності
@@ -941,7 +941,7 @@
 
 #ERT Janitor Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitCBURN
+  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieElite ]
   id: ClothingOuterHardsuitERTJanitor
   name: скафандр прибиральника ГШР
   description: Захистний скафандр для прибиральника Групи Швидкого Реагування. Певно, найкорисніший серед скафандрів ГШР.
