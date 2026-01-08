@@ -15,6 +15,9 @@
       "name": "cat_drone_dead"
     },
     {
+      "name": "cat_drone_rest"
+    },
+    {
       "name": "cat_drone_sit"
     }
   ]
