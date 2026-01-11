@@ -10,6 +10,30 @@
       massLimit: 10000
       dampingRatio: 4
       frequency: 20
+    - type: Sprite
+      sprite: _Sich/Objects/Weapons/Guns/Launchers/poltergeist_tether_force.rsi
+      layers:
+        - state: base
+        - state: base-unshaded
+          map: [ "unshaded" ]
+          shader: unshaded
+          visible: false
+    - type: ToggleableVisuals
+      spriteLayer: unshaded
+      inhandVisuals:
+        left:
+          - state: inhand-left-unshaded
+            shader: unshaded
+        right:
+          - state: inhand-right-unshaded
+            shader: unshaded
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.TetherVisualsStatus.Key:
+          unshaded:
+            True: { visible: true }
+            False: { visible: false }
 
 - type: entity
   parent: WeaponForceGun
@@ -38,3 +62,19 @@
           map: [ "unshaded" ]
           shader: unshaded
           visible: false
+    - type: ToggleableVisuals
+      spriteLayer: unshaded
+      inhandVisuals:
+        left:
+          - state: inhand-left-unshaded
+            shader: unshaded
+        right:
+          - state: inhand-right-unshaded
+            shader: unshaded
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.TetherVisualsStatus.Key:
+          unshaded:
+            True: { visible: true }
+            False: { visible: false }
