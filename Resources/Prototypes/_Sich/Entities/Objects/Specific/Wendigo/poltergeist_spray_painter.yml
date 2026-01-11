@@ -7,6 +7,6 @@
   components:
   - type: AutoRecharge
     rechargeDuration: 3
-    - type: Sprite
+  - type: Sprite
     sprite: _Sich/Objects/Specific/poltergeist_spray_painter.rsi
     state: icon
