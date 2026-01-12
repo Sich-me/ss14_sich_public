@@ -1,2 +1,5 @@
 - type: Tag
   id: CrayonRainbow # ItemMapper: CrayonBox
+
+- type: Tag
+  id: IPCBrain # Storage whitelist: MMI.
