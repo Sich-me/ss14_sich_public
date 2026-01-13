@@ -20,7 +20,6 @@
       whitelist:
         components:
         - Brain
-        - IPCBrain # зміни для Січі, зробленно для балансу ксеноборгів
   - type: BorgBrain
   - type: BlockMovement
   - type: Examiner
