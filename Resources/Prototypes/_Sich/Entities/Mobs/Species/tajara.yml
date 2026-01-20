@@ -44,10 +44,11 @@
       types:
         Heat: 2
   - type: Temperature
-    heatDamageThreshold: 400
-    coldDamageThreshold: 185
     currentTemperature: 310.15
     specificHeat: 46
+  - type: TemperatureDamage
+    heatDamageThreshold: 400
+    coldDamageThreshold: 185
     coldDamage:
       types:
         Cold : 0.1 #per second, scales with temperature & other constants
