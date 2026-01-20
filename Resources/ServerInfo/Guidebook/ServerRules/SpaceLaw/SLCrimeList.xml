@@ -133,11 +133,12 @@
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Масове знищення майна/саботаж
+        Знищення критичного майна
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Знищення життєво важливої інфраструктури
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
@@ -498,10 +499,7 @@
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Включає в себе знищення робочого обладнання, 
-        такого як гідропіддони, дозатори для випивки, 
-        дозатори для хімікатів. Крок вперед від вандалізму, 
-        але крок назад від масового знищення.
+        Включає знищення робочого обладнання, як-от гідропонні лотки, дозатори напоїв або хімікатів. Це серйозніше за звичайний вандалізм, але менш тяжко, ніж знищення критичного майна.
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
@@ -646,18 +644,18 @@
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Масове знищення майна/саботаж
+        Знищення критичного майна
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Заподіяння масивної шкоди території або важливій системі станцій.
+        Знищення критично важливого обладнання та систем станції.
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Здебільшого використовується для смертоносних вибухів або саботажу основних станційних систем, 
-        таких як виробництво електроенергії, хімія, підстанції або атмосфера.
+        Включає знищення машинного обладнання станції, як-от комп’ютери для ID-карток або сервери телекомунікацій, 
+        енергетичних пристроїв, наприклад підстанцій, та неагресивних силіконів (боргів).
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
@@ -817,6 +815,27 @@
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Знищення життєво важливої інфраструктури
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Знищення обладнання або інфраструктури, що робить департамент непрацездатним або критично порушує його функціонування.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Здебільшого застосовується у випадках масштабних вибухів або саботажу основних систем станції, таких як генерація електроенергії, 
+        вантажний шаттл або ШІ станції.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        4-03
+      </Box>
+    </ColorBox>
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Замах на вбивство
       </Box>

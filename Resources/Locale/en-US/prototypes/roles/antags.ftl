@@ -36,6 +36,8 @@ roles-antag-space-ninja-objective = Використовуйте свою скр
 roles-antag-paradox-clone-name = Парадоксальний Клон
 roles-antag-paradox-clone-objective = Дивна аномалія простору-часу телепортувала вас в іншу реальність! Тепер вам потрібно знайти свого двійника, вбити його та зайняти його місце.
 
+roles-antag-pirate-name = Пірат
+
 roles-antag-thief-name = Злодій
 roles-antag-thief-objective = Додайте деяку власність NT до своєї особистої колекції без застосування насильства.
 
