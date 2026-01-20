@@ -1,7 +1,7 @@
 - type: entity
   parent: SprayBottleBase
   id: PlantBGoneSpray
-   name: Трава-До-Біса
+  name: Трава-До-Біса
   suffix: "Filled"
   description: Вбиває ці докучливі бур'яни! Зроблено УкраВіт™
   components:
