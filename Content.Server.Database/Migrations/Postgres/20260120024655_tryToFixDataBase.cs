@@ -5,7 +5,7 @@
 namespace Content.Server.Database.Migrations.Postgres
 {
     /// <inheritdoc />
-    public partial class HeightWidth : Migration
+    public partial class tryToFixDataBase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -13,16 +13,16 @@ namespace Content.Server.Database.Migrations.Postgres
             migrationBuilder.AddColumn<float>(
                 name: "height",
                 table: "profile",
-                type: "REAL",
+                type: "real",
                 nullable: false,
-                defaultValue: 1f);
+                defaultValue: 0f);
 
             migrationBuilder.AddColumn<float>(
                 name: "width",
                 table: "profile",
-                type: "REAL",
+                type: "real",
                 nullable: false,
-                defaultValue: 1f);
+                defaultValue: 0f);
         }
 
         /// <inheritdoc />
