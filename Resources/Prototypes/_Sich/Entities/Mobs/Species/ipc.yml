@@ -29,21 +29,19 @@
     state: full
   # Damage and speed
   - type: Bloodstream
-    bloodReagents:
+    bloodReferenceSolution:
       reagents:
       - ReagentId: Oil
-        Quantity: 1
+        Quantity: 300
     bloodlossDamage:
       types:
         Heat: 0.25
     bloodlossHealDamage:
       types:
         Heat: -0.5
-  - type: Temperature
+  - type: TemperatureDamage
     heatDamageThreshold: 452.875 # melting point of iron 1/4th, cause fuck physics you know #erm actualy there is not only iron also other things that has lower melting temperature
-    coldDamageThreshold: 283.15 # 10c aka "cold" causes condensation/freezing and as such shorting 
-    currentTemperature: 313.15
-    specificHeat: 46
+    coldDamageThreshold: 283.15 # 10c aka "cold" causes condensation/freezing and as such shorting
     coldDamage:
       types:
         Cold: 1
@@ -52,6 +50,9 @@
       types:
         Heat: 2
         Cold: -1
+  - type: Temperature
+    currentTemperature: 313.15
+    specificHeat: 46
   - type: ZombieImmune
   - type: Repairable
     damageValue: -10 # 10 seconds to repair from crit
