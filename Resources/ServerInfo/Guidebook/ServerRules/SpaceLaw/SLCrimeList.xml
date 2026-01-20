@@ -806,7 +806,7 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Широкий спектр речей, що використовуються здебільшого як паличка-виручалочка, коли йдеться про незаконний контроль над іншою істотою.
+        Широкий спектр речей, що використовуються здебільшого як палочка-виручалочка, коли йдеться про незаконний контроль над іншою істотою.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -814,28 +814,28 @@
         4-02
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Знищення життєво важливої інфраструктури
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Знищення обладнання або інфраструктури, що робить департамент непрацездатним або критично порушує його функціонування.
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Здебільшого застосовується у випадках масштабних вибухів або саботажу основних систем станції, таких як генерація електроенергії, 
         вантажний шаттл або ШІ станції.
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         4-03
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Замах на вбивство
       </Box>
