@@ -103,6 +103,11 @@
     shiveringHeatRegulation: 2000 #Максимальна кількість тепла змінена через "тремтіння", нагрівання при переохолодженні (стокове 2000)
     normalBodyTemperature: 296.15 #Нормальна температура тіла, та яку тіло буде старатися досягти (стокове 310.2)
     thermalRegulationTemperatureThreshold: 10 #Значення від якого залежить коли температура вже буде вважатися не нормою, лише індикація (стокове 10)
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      160: Dead
 
 - type: entity
   parent: BaseSpeciesDummy
