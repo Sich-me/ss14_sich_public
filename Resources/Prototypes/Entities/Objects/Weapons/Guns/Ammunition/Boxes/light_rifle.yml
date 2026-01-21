@@ -59,8 +59,8 @@
 - type: entity
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRiflePractice
-  name: коробка з набоями (.30 гвинтівочний тренувальний)
-  description: A cardboard box of .30 rifle rounds. Intended to hold non-harmful chalk ammunition.
+  name: коробка набоїв (.30 гвинтівкові навчальні)
+  description: Картонна коробка гвинтівкових набоїв калібру .30. Призначена для зберігання безпечних навчальних боєприпасів.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRiflePractice
@@ -73,10 +73,10 @@
     - state: practice
 
 - type: entity
-  id: MagazineBoxLightRifleIncendiary
   parent: BaseMagazineBoxLightRifle
-  name: коробка з набоями (.30 гвинтівочний запалювальний)
-  description: A cardboard box of .30 rifle rounds. Intended to hold self-igniting incendiary ammunition.
+  id: MagazineBoxLightRifleIncendiary
+  name: коробка набоїв (.30 гвинтівкові запалювальні)
+  description: Картонна коробка гвинтівкових набоїв калібру .30. Призначена для зберігання самозаймистих запалювальних боєприпасів.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleIncendiary

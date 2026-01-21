@@ -86,3 +86,6 @@ signal-port-description-logic-memory-input = Сигнал для заванта�
 
 signal-port-name-logic-enable = Увімкнений
 signal-port-description-logic-enable = Завантажує вхідний сигнал в ячейку пам'яті тільки при подачі високого сигналу.
+
+signal-port-name-logic-random-input = Вхідний сигнал
+signal-port-description-logic-random-input = Отримує будь-який сигнал для активації випадкового виходу.

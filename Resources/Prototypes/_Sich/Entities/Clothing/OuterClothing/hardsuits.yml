@@ -390,6 +390,8 @@
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
+  - type: StaminaResistance
+    damageCoefficient: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: Armor
@@ -398,8 +400,8 @@
         Blunt: 0.3
         Slash: 0.4
         Piercing: 0.4
-        Heat: 0.6
-        Radiation: 0.6
+        Heat: 0.7
+        Radiation: 0.8
         Caustic: 0.5
   - type: ClothingSpeedModifier
     walkModifier: 0.9

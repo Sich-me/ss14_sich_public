@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urist McBot
-  parent: BaseMobSpecies
+  parent: [BaseMobSpecies, MobFlammable]
   id: BaseMobIPC
   abstract: true
   components:
@@ -29,21 +29,19 @@
     state: full
   # Damage and speed
   - type: Bloodstream
-    bloodReagents:
+    bloodReferenceSolution:
       reagents:
       - ReagentId: Oil
-        Quantity: 1
+        Quantity: 300
     bloodlossDamage:
       types:
         Heat: 0.25
     bloodlossHealDamage:
       types:
         Heat: -0.5
-  - type: Temperature
-    heatDamageThreshold: 452.875 # melting point of iron 1/4th, cause fuck physics you know
-    coldDamageThreshold: 283.15 # 10c aka "cold" causes condensation/freezing and as such shorting 
-    currentTemperature: 313.15
-    specificHeat: 46
+  - type: TemperatureDamage
+    heatDamageThreshold: 452.875 # melting point of iron 1/4th, cause fuck physics you know #erm actualy there is not only iron also other things that has lower melting temperature
+    coldDamageThreshold: 283.15 # 10c aka "cold" causes condensation/freezing and as such shorting
     coldDamage:
       types:
         Cold: 1
@@ -52,9 +50,14 @@
       types:
         Heat: 2
         Cold: -1
+  - type: Temperature
+    currentTemperature: 313.15
+    specificHeat: 46
   - type: ZombieImmune
   - type: Repairable
-    doAfterDelay: 10
+    damageValue: -10 # 10 seconds to repair from crit
+    doAfterDelay: 1
+    fuelCost: 0.5
     allowSelfRepair: true
   - type: Barotrauma
     damage:
@@ -64,10 +67,21 @@
     speedModifierThresholds:
       70: 0.6
       90: 0.4
+  - type: ThermalRegulator #типу охолодження від сиситеми охолодження
+    metabolismHeat: 800
+    radiatedHeat: 100
+    implicitHeatRegulation: 500
+    sweatHeatRegulation: 2000
+    shiveringHeatRegulation: 2000
+    normalBodyTemperature: 300.15
+    thermalRegulationTemperatureThreshold: 2
   - type: Flammable
     damage:
       types:
         Heat: 1.2
+  - type: FireVisuals
+    alternateState: Standing
+  - type: StunVisuals
   # Misc
   - type: Speech
     speechSounds: IPC

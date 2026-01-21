@@ -28,7 +28,8 @@
 - type: entity
   parent: BaseMagazineBoxAntiMateriel
   id: MagazineBoxAntiMateriel
-  name: коробка з набоями (.60-великокаліберний)
+  name: коробка набоїв (.60 антиматеріальні)
+  description: Картонна коробка антиматеріальних набоїв калібру .60.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeAntiMateriel

@@ -1,15 +1,22 @@
 - type: entity
-  id: Bonfire
+  abstract: true
   parent: BaseStructure
-  name: багаття
-  description: Що може бути краще, ніж пізній вечір під небом з гітарою та друзями.
+  id: BaseBonfire
   components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        mask:
+        - Impassable
+        layer:
+        - Opaque
+        - BulletImpassable
   - type: Sprite
     noRot: true
     sprite: Structures/Decoration/bonfire.rsi
-    layers:
-      - state: bonfire
-      - state: burning
   - type: PointLight
     radius: 5
     energy: 3
@@ -23,6 +30,9 @@
           !type:DamageTrigger
           damage: 50
         behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: WoodDestroy
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
   - type: AmbientSound
@@ -31,15 +41,51 @@
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
   - type: AlwaysHot
+  - type: IgnitionSource
+    temperature: 700
+    ignited: true
 
 - type: entity
-  id: LegionnaireBonfire
-  parent: Bonfire
-  name: багаття легіонерів
-  description: Там, у країні лави і попелу, можна приготувати зефір і картоплю.
+  parent: BaseBonfire
+  id: Bonfire
+  name: багаття
+  description: Що може бути кращим за пізній вечір під відкритим небом з гітарою та друзями?
   components:
   - type: Sprite
     layers:
-      - state: legionnaire_bonfire
+    - state: burning
+  - type: Construction
+    graph: Bonfire
+    node: bonfire
+
+- type: entity
+  parent: BaseBonfire
+  id: BonfireStake
+  name: багаття з палею
+  description: Зловісне багаття з палею для... церемоніальних цілей. Краще не питати.
+  components:
+  - type: Sprite
+    sprite: Structures/Decoration/bonfire_stake.rsi
+    layers:
+    - state: burning
+    offset: "0, 0.5"
+  - type: Strap
+    position: Stand
+    buckleOffset: "0, 0.5"
+    buckleDoafterTime: 5
+  - type: IgniteOnBuckle
+  - type: Construction
+    graph: Bonfire
+    node: bonfireStake
+
+- type: entity
+  parent: BaseBonfire
+  id: LegionnaireBonfire
+  name: багаття легіонера
+  description: Там, у країні лави та попелу, є місце, де можна посмажити зефір та картоплю.
+  components:
+  - type: Sprite
+    layers:
+    - state: legionnaire_bonfire
   - type: PointLight
     color: "#FF5601"

@@ -58,7 +58,7 @@
         sprite: Mobs/Effects/brute_damage.rsi
         color: "#7a8bf2"
   - type: Bloodstream
-    bloodReagents:
+    bloodReferenceSolution:
       reagents:
       - ReagentId: AmmoniaBlood
         Quantity: 1
@@ -75,10 +75,11 @@
       50: 0.7
       70: 0.5
   - type: Temperature
-    heatDamageThreshold: 320 #Пошкодження від тепла (стокове 325, 320 у ніан)
-    coldDamageThreshold: 220 #Пошкодження від холоду (стокове 260, 230 у ніан)
     currentTemperature: 296.15 #Початкова температура (стокове 310.25)
     specificHeat: 54 #Кількість тепла для зміни температури, більше - складніше змінити температуру (стокове 42, у ніан 46)
+  - type: TemperatureDamage
+    heatDamageThreshold: 320 #Пошкодження від тепла (стокове 325, 320 у ніан)
+    coldDamageThreshold: 220 #Пошкодження від холоду (стокове 260, 230 у ніан)
     coldDamage:
       types:
         Cold : 0.05 #per second, scales with temperature & other constants
@@ -102,6 +103,11 @@
     shiveringHeatRegulation: 2000 #Максимальна кількість тепла змінена через "тремтіння", нагрівання при переохолодженні (стокове 2000)
     normalBodyTemperature: 296.15 #Нормальна температура тіла, та яку тіло буде старатися досягти (стокове 310.2)
     thermalRegulationTemperatureThreshold: 10 #Значення від якого залежить коли температура вже буде вважатися не нормою, лише індикація (стокове 10)
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      160: Dead
 
 - type: entity
   parent: BaseSpeciesDummy

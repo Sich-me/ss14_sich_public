@@ -20,13 +20,19 @@
 - type: entity
   id: OrganIPCCPU
   parent: BaseIPCOrgan
-  name: integrated posibrain
-  description: It seems to be a machine of sorts?
+  name: обчислювальний процесор ІПШ
+  description: Схоже це щось типу мозоку для ІПШ? На диво підходить для ММІ, тож можна його вставити туди щоб зробити функціональним знову.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       state: posibrain
     - type: Organ
+    - type: Input
+      context: "ghost"
+    - type: Brain
+    - type: InputMover
+    - type: Examiner
+    - type: BlockMovement     
     - type: Metabolizer
       updateInterval: 1.5
       maxReagents: 2

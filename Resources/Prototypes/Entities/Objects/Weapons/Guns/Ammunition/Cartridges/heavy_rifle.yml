@@ -1,8 +1,8 @@
 - type: entity
-  id: BaseCartridgeHeavyRifle
-  name: патрон (.10 гвинтівочний)
-  parent: [ BaseCartridge, BaseSecurityContraband ]
   abstract: true
+  parent: [ BaseCartridge, BaseSecurityContraband ]
+  id: BaseCartridgeHeavyRifle
+  name: cartridge (.10 rifle)
   components:
   - type: Tag
     tags:
@@ -20,9 +20,9 @@
     price: 10
 
 - type: entity
-  id: CartridgeMinigun
-  name: патрон (.10 гвинтівочний)
   parent: BaseCartridgeHeavyRifle
+  id: CartridgeMinigun
+  name: cartridge (.10 rifle)
   components:
   - type: CartridgeAmmo
     proto: BulletMinigun

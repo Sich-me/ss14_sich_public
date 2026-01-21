@@ -1,9 +1,11 @@
+# When adding new crayons, also add it to id: AllCrayonsTable
+
 - type: entity
   abstract: true
   parent: BaseItem
   id: CrayonInedible
-  name: crayon
-  description: A colourful crayon. Looks tasty. Mmmm...
+  name: крейда
+  description: Кольорова крейда. Заборонений смак.
   components:
   - type: Sprite
     sprite: Objects/Fun/crayons.rsi
@@ -15,6 +17,7 @@
     - Write
     - Crayon
     - Trash
+    - Recyclable
   - type: SpaceGarbage
   - type: UserInterface
     interfaces:
@@ -31,17 +34,8 @@
   abstract: true
   parent: CrayonInedible
   id: Crayon
-  name: crayon
-  description: A colourful crayon. Looks tasty. Mmmm...
+  description: Кольорова крейда. Виглядає смачно. Мммммм...
   components:
-  - type: Sprite
-    sprite: Objects/Fun/crayons.rsi
-  - type: Item
-    sprite: Objects/Fun/crayons.rsi
-    size: Tiny
-  - type: Tag
-    tags:
-    - Recyclable
   - type: Edible
   - type: FlavorProfile
     flavors:
@@ -56,29 +50,12 @@
         - ReagentId: MindbreakerToxin
           Quantity: 2
 
-- type: entity
-  parent: Crayon
-  id: CrayonWhite
-  name: white crayon
-  components:
-  - type: Sprite
-    state: white
-  - type: Item
-    heldPrefix: white
-  - type: Crayon
-    color: white
-  - type: Tag
-    tags:
-    - Write
-    - Crayon
-    - CrayonWhite
-    - Recyclable
-    - Trash
+# special crayons
 
 - type: entity
   parent: Crayon
   id: CrayonMime
-  name: mime crayon
+  name: крейда міма
   components:
   - type: Sprite
     state: mime
@@ -97,7 +74,7 @@
 - type: entity
   parent: Crayon
   id: CrayonRainbow
-  name: rainbow crayon
+  name: веселкова крейда
   components:
   - type: Sprite
     state: rainbow
@@ -110,15 +87,13 @@
     maxCharges: 30
   - type: Tag
     tags:
-    - Write
-    - Crayon
-    - Recyclable
-    - Trash
+    - CrayonRainbow #Sich
 
 - type: entity
   parent: CrayonRainbow
   id: CrayonInfinite # should not be player available to prevent decal spam
-  name: infinite crayon
+  categories: [ DoNotMap ]
+  name: нескінченна крейда
   components:
   - type: Crayon
     deleteEmpty: false
@@ -128,8 +103,8 @@
 - type: entity
   parent: CrayonInedible
   id: CrayonBorg
-  name: electric crayon
-  description: Supposedly the most delicious crayon type in all the universes; unfortunately, you cannot eat.
+  name: електрична крейда
+  description: Напевно найсмачніша крейда в усьому світі!; Нажаль, ти не зможеш її з'їсти.
   components:
   - type: Sprite
     state: electric
@@ -139,20 +114,34 @@
     deleteEmpty: false
     color: Red
     selectableColor: true
-  - type: LimitedCharges
-    maxCharges: 30
   - type: AutoRecharge
     rechargeDuration: 5
+
+# monocolor crayons
+
+- type: entity
+  parent: Crayon
+  id: CrayonWhite
+  name: біла крейда
+  components:
+  - type: Sprite
+    state: white
+  - type: Item
+    heldPrefix: white
+  - type: Crayon
+    color: white
   - type: Tag
     tags:
     - Write
     - Crayon
+    - CrayonWhite
+    - Recyclable
     - Trash
 
 - type: entity
   parent: Crayon
   id: CrayonBlack
-  name: black crayon
+  name: чорна крейда
   components:
   - type: Sprite
     state: black
@@ -171,7 +160,7 @@
 - type: entity
   parent: Crayon
   id: CrayonRed
-  name: red crayon
+  name: червона крейда
   components:
   - type: Sprite
     state: red
@@ -190,7 +179,7 @@
 - type: entity
   parent: Crayon
   id: CrayonOrange
-  name: orange crayon
+  name: помаранчова крейда
   components:
   - type: Sprite
     state: orange
@@ -209,7 +198,7 @@
 - type: entity
   parent: Crayon
   id: CrayonYellow
-  name: yellow crayon
+  name: жовта крейда
   components:
   - type: Sprite
     state: yellow
@@ -228,7 +217,7 @@
 - type: entity
   parent: Crayon
   id: CrayonGreen
-  name: green crayon
+  name: зелена крейда
   components:
   - type: Sprite
     state: green
@@ -247,7 +236,7 @@
 - type: entity
   parent: Crayon
   id: CrayonBlue
-  name: blue crayon
+  name: синя крейда
   components:
   - type: Sprite
     state: blue
@@ -266,7 +255,7 @@
 - type: entity
   parent: Crayon
   id: CrayonPurple
-  name: purple crayon
+  name: фіолетова крейда
   components:
   - type: Sprite
     state: purple
@@ -285,19 +274,21 @@
 - type: entity
   parent: BoxCardboard
   id: CrayonBox
-  name: crayon box
-  description: It's a box of crayons.
+  name: коробка крейди
+  description: це коробка крейди.
   components:
   - type: Sprite
-    sprite: Objects/Fun/crayons.rsi
+    sprite: _Sich/Objects/Fun/crayons.rsi #Sich
     state: box
   - type: Storage
     grid:
-    - 0,0,7,0
+    - 0,0,8,0 #Sich
     maxItemSize: Tiny
   - type: Item
-    sprite: Objects/Fun/crayons.rsi
+    sprite: _Sich/Objects/Fun/crayons.rsi #Sich
     size: Small
+    shape:
+    - 0,0,1,1
     heldPrefix: box
   - type: EntityTableContainerFill
     containers:
@@ -311,6 +302,7 @@
         - id: CrayonPurple
         - id: CrayonBlack
         - id: CrayonWhite
+        - id: CrayonRainbow #Sich
   - type: ItemMapper
     mapLayers:
       black_box:
@@ -345,4 +337,8 @@
         whitelist:
           tags:
           - CrayonWhite
+      rainbow_box: #Sich
+        whitelist:
+          tags:
+          - CrayonRainbow
   - type: Appearance
