@@ -7,4 +7,5 @@
   components:
   - type: Sprite
     sprite: _Sich/Objects/Specific/poltergeist_chameleon.rsi
-    state: icon
+    layers:
+    - state: icon
