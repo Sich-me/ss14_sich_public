@@ -32,6 +32,8 @@
           Heat: 1
     - type: Damageable
       damageContainer: Shield
+    - type: ExaminableDamage
+      messages: ShieldMessages
     - type: Destructible
       thresholds:
         - trigger:
@@ -60,11 +62,28 @@
     - type: StaticPrice
       price: 100
 
+- type: entity
+  name: base repairable shield
+  parent: BaseShield
+  id: BaseRepairableShield
+  description: A repairable shield!
+  abstract: true
+  components:
+  - type: Repairable # Negative values represent healing
+    damage:
+      groups:
+        Brute: -60 # 20 of each Brute Type - 20% of a basic shield HP
+      types:
+        Heat: -20
+    fuelCost: 10 # 1/2 of a Welder for a full repair
+    doAfterDelay: 5
+    allowSelfRepair: false
+
 #Security Shields
 
 - type: entity
   name: щит від бунту
-  parent: [ BaseShield, BaseSecurityContraband ]
+  parent: [ BaseRepairableShield, BaseSecurityContraband ]
   id: RiotShield
   description: Великий баштовий щит. Добре підходить для контролю натовпу.
   components:
@@ -85,7 +104,7 @@
 
 - type: entity
   name: лазерний щит
-  parent: [ BaseShield, BaseSecurityContraband ]
+  parent: [ BaseRepairableShield, BaseSecurityContraband ]
   id: RiotLaserShield
   description: Захисний щит, створений для того, щоб протистояти лазерам, але не більше того.
   components:
@@ -105,7 +124,7 @@
 
 - type: entity
   name: балістичний щит
-  parent: [ BaseShield, BaseSecurityContraband ]
+  parent: [ BaseRepairableShield, BaseSecurityContraband ]
   id: RiotBulletShield
   description: Балістичний щит, створений для того, щоб протистояти кулям, але не більше того.
   components:
@@ -234,7 +253,7 @@
 
 - type: entity
   name: імпровізований щит
-  parent: BaseShield
+  parent: BaseRepairableShield
   id: MakeshiftShield
   description: Пошарпаний на вигляд щит, мало на що придатний.
   components:
@@ -343,7 +362,7 @@
 
 - type: entity
   name: годинниковий щит
-  parent: BaseShield
+  parent: BaseRepairableShield
   id: ClockworkShield
   description: Ратвар ойрфрф лбх джвгу увф себгрпгвба.
   components:
@@ -492,6 +511,8 @@
     - type: Appearance
     - type: Damageable
       damageContainer: Shield
+    - type: ExaminableDamage
+      messages: EnergyShieldMessages
     - type: Destructible
       thresholds:
         - trigger:
@@ -533,7 +554,7 @@
 
 - type: entity
   name: телескопічний щит
-  parent: BaseShield
+  parent: BaseRepairableShield
   id: TelescopicShield
   description: Удосконалений щит для захисту від бунту, виготовлений з легких матеріалів, який розкладається для зручності зберігання.
   components:

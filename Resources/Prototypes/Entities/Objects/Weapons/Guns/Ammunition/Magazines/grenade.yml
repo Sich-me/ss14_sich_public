@@ -1,8 +1,8 @@
 - type: entity
+  abstract: true
+  parent: [ BaseItem, BaseSecurityContraband ]
   id: BaseMagazineGrenade
   name: grenade cartridge
-  parent: [ BaseItem, BaseSecurityContraband ]
-  abstract: true
   components:
   - type: Tag
     tags:
@@ -40,48 +40,48 @@
   - type: Appearance
 
 - type: entity
-  id: MagazineGrenadeEmpty
-  name: картридж для гранат
   parent: BaseMagazineGrenade
+  id: MagazineGrenadeEmpty
+  name: grenade cartridge
   components:
   - type: BallisticAmmoProvider
 
 - type: entity
-  id: MagazineGrenadeFrag
-  name: картридж з осколковими гранатами
   parent: BaseMagazineGrenade
+  id: MagazineGrenadeFrag
+  name: frag grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeFrag
 
 - type: entity
-  id: MagazineGrenadeEMP
-  name: картридж з ЕМІ гранатами
   parent: BaseMagazineGrenade
+  id: MagazineGrenadeEMP
+  name: EMP grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeEMP
 
 - type: entity
-  id: MagazineGrenadeFlash
-  name: картридж з світлошумовими гранатами
   parent: BaseMagazineGrenade
+  id: MagazineGrenadeFlash
+  name: flash grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeFlash
 
 - type: entity
-  id: MagazineGrenadeBlast
-  name: картридж з вибуховими гранатами
   parent: BaseMagazineGrenade
+  id: MagazineGrenadeBlast
+  name: blast grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeBlast
 
 - type: entity
-  id: MagazineGrenadeBaton
-  name: картридж з кінетичним гранатами
   parent: BaseMagazineGrenade
+  id: MagazineGrenadeBaton
+  name: baton grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeBaton

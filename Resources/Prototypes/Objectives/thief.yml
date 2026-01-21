@@ -555,8 +555,8 @@
 - type: entity
   parent: [BaseThiefObjective, BaseLivingObjective]
   id: EscapeThiefShuttleObjective
-  name: Втекти до центрального командування живим і вільним.
-  description: Ви ж не хочете, щоб про вашу незаконну діяльність хтось дізнався?
+  name: Евакуюйтеся на ЦентКом живим та без кайданків на борту евакуаційного шатла.
+  description: Ви ж не хочете, щоб ваші незаконні справи були кимось викриті, чи не так?
   components:
   - type: Objective
     difficulty: 1.3

@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BoxDonkSoftBase
-  name: foamdart box
+  name: toy ammunition box
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -18,6 +18,7 @@
   parent: BoxDonkSoftBase
   id: BoxDonkSoftBox
   name: коробка паралонових дротиків
+  description: Коробка паралонових дротиків
   components:
   - type: BallisticAmmoProvider
     whitelist:
@@ -35,6 +36,7 @@
   parent: BaseMagazineBoxMagnum
   id: BoxCartridgeCap
   name: коробка патронів для іграшкового пістолета
+  description: Коробка патронів для іграшкового пістолета
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCap
