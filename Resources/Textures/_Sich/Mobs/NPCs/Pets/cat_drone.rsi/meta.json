@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "drawn by Svetoslav228",
+  "states": [
+    {
+      "name": "cat_drone",
+      "directions": 4
+    },
+    {
+      "name": "cat_drone_dead"
+    },
+    {
+      "name": "cat_drone_rest"
+    },
+    {
+      "name": "cat_drone_sit"
+    }
+  ]
+}
