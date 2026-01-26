@@ -1,5 +1,5 @@
 - type: entity
-  parent: CrateLivestock
+  parent: PetCarrier
   id: CrateNPCSichMobCatDrone
   name: контейнер з робо-кішкою
   description: Контейнер, який містить у собі робо-кішку
