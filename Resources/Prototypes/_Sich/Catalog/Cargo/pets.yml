@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: LivestockCatDrone
+  icon:
+    sprite: _Sich/Mobs/NPCs/Pets/cat_drone.rsi
+    state: cat_drone
+  product: CrateNPCSichMobCatDrone
+  cost: 1500
+  category: cargoproduct-category-name-livestock
+  group: market
