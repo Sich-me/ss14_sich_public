@@ -28,6 +28,10 @@
   description: Ріжуть дроти та русню.
   suffix: полтергейст
   components:
+  - type: Tool
+    qualities:
+      - Cutting
+    speedModifier: 0.1
   - type: MeleeWeapon
     wideAnimationRotation: -90
     attackRate: 1
@@ -62,6 +66,13 @@
   id: PoltergeistNetworkConfigurator
   name: містичний конфігуратор мережі
   description: Інструмент для зв'язування пристроїв між собою. Має два режими, режим списку служить для масового зв'язування пристроїв та режим підключення для розширеного зв'язування пристроїв.
+  suffix: полтергейст
+
+- type: entity
+  parent: Multitool
+  id: PoltergeistMultitool
+  name: містичний ультитул
+  description: Удосконалений інструмент для копіювання, зберігання та надсилання електричних імпульсів і сигналів через дроти та машини.
   suffix: полтергейст
   
 - type: entity
