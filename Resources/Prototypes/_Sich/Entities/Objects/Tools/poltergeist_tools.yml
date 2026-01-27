@@ -10,6 +10,8 @@
     storedSprite:
       sprite: Objects/Tools/crowbar.rsi
       state: storage
+  - type: Prying
+    speedModifier: 0.5
   - type: MeleeWeapon
     wideAnimationRotation: -90
     attackRate: 1
@@ -42,6 +44,10 @@
   description: Крутий інструмент вищого рівня у вигляді викрутки.
   suffix: полтергейст
   components:
+  - type: Tool
+    qualities:
+      - Screwing
+    speedModifier: 0.25
   - type: MeleeWeapon
     wideAnimationRotation: -90
     attackRate: 1
@@ -52,10 +58,10 @@
       path: /Audio/Magic/Eldritch/voidblink.ogg
 
 - type: entity
-  parent: Multitool
-  id: PoltergeistMultitool
-  name: містичний ультитул
-  description: Удосконалений інструмент для копіювання, зберігання та надсилання електричних імпульсів і сигналів через дроти та машини.
+  parent: NetworkConfigurator
+  id: PoltergeistNetworkConfigurator
+  name: містичний конфігуратор мережі
+  description: Інструмент для зв'язування пристроїв між собою. Має два режими, режим списку служить для масового зв'язування пристроїв та режим підключення для розширеного зв'язування пристроїв.
   suffix: полтергейст
   
 - type: entity

@@ -53,9 +53,8 @@
   - type: ItemBorgModule
     hands:
     - item: PoltergeistCrowbar
-    - item: PoltergeistWirecutter #no wrench
     - item: PoltergeistScrewdriver
     - item: PoltergeistWelderIndustrial
-    - item: PoltergeistMultitool
+    - item: PoltergeistNetworkConfigurator
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: tool-module }

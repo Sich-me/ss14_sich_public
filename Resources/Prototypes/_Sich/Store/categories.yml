@@ -1,0 +1,4 @@
+#Poltergeist
+- type: storeCategory
+  id: PoltergeistAbilities
+  name: store-category-abilities

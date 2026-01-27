@@ -37,6 +37,11 @@
         Base: poltergeist_dead
       Dead:
         Base: poltergeist_dead
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+        requireInputValidation: false
   - type: Damageable
     damageContainer: ManifestedSpirit
   - type: PassiveDamage
@@ -68,6 +73,14 @@
     actions:
     - ActionBlink
     - ActionPolymorphJaunt
+#    - ActionPoltergeistShop
+#  - type: Store
+#    categories:
+#    - PoltergeistAbilities
+#    currencyWhitelist:
+#    - PoltergeistEssence
+#    balance:
+#      PoltergeistEssence: 30
   - type: IgnoreSpiderWeb
   - type: Examiner
   - type: DoAfter
