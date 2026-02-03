@@ -1,5 +1,5 @@
 - type: entity
-  parent: [VolatileGrenadeBase, GrenadeBase, BaseSecurityContraband ]
+  parent: [VolatileGrenadeBase, TimerGrenadeBase, BaseSecurityContraband ]
   id: SmokeGrenade
   name: димова шашка
   description: Тактична граната, яка при використанні випускає велику хмару диму.
@@ -81,7 +81,7 @@
     price: 350
 
 - type: entity
-  parent: [ BaseEngineeringContraband, VolatileGrenadeBase, GrenadeBase ] # Prevent inheriting DeleteOnTrigger from SmokeGrenade
+  parent: [ BaseEngineeringContraband, VolatileGrenadeBase, TimerGrenadeBase ] # Prevent inheriting DeleteOnTrigger from SmokeGrenade
   id: AirGrenade
   name: повітряна граната
   description: Спеціальна твердотільна хімічна граната, що використовується для швидкого випускання повітряної суміші навколо себе. Здатна заповнити до 30 квадратних метрів!

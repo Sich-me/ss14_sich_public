@@ -4,6 +4,7 @@
   - BaseSimpleMob
   - MobCombat
   - MobBloodstream
+  - BaseMobAnimal
   id: MobHellspawn
   description: Нестримна сила кривавої бійні.
   components:
@@ -27,8 +28,6 @@
   - type: NpcFactionMember
     factions:
       - SimpleHostile
-  - type: Body
-    prototype: Animal
   - type: Damageable
     damageContainer: BiologicalMetaphysical
     damageModifierSet: HellSpawn

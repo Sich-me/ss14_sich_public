@@ -2,7 +2,7 @@
   # Ніани
 
   <Box>
-    <GuideEntityEmbed Entity="MobMoth" Caption=""/>
+    <GuideEntityEmbed Entity="AppearanceMoth" Caption=""/>
   </Box>
 
   Вони можуть їсти бавовну, тканини та одяг, але практично нічого з того, що інші вважають "їстівним". Вони віддають перевагу дещо нижчому температурному діапазону, ніж люди.

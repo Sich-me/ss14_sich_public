@@ -18,10 +18,10 @@ thief-backpack-button-deselect = Ні переплутав [X]
 
 thief-backpack-category-chameleon-name = набір хамелеона
 thief-backpack-category-chameleon-description =
-    Ви всі і ніхто; ви майстер маскування.
-    Включає: набір одягу хамелеона, проектор хамелеон,
-    агентську ID картку
-    Маскуйтесь під кого завгодно і під що завгодно.
+    Ви — всі і ніхто; ви майстер маскування.
+    Включає: Повний набір одягу «Хамелеон» з ID-карткою агента,
+    проектор «Хамелеон» та фальшивий імплант захисту розуму.
+    Маскуйтеся під будь-кого та будь-що.
 
 thief-backpack-category-tools-name = набір для злому
 thief-backpack-category-tools-description =

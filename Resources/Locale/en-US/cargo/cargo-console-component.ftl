@@ -1,5 +1,7 @@
 ## UI
 cargo-console-menu-title = Консоль подачі заявок на вантаж
+cargo-console-menu-flavor-left = Замовте більше коробок піцци ніж зазвичай!
+cargo-console-menu-flavor-right = v2.1
 cargo-console-menu-account-name-label = Акаунт:{" "}
 cargo-console-menu-account-name-none-text = Немає
 cargo-console-menu-account-name-format = [bold][color={$color}]{$name}[/color][/bold] [font="Monospace"]\[{$code}\][/font]
@@ -7,30 +9,33 @@ cargo-console-menu-shuttle-name-label = Ім'я шатла:{" "}
 cargo-console-menu-shuttle-name-none-text = Немає
 cargo-console-menu-points-label = Баланс:{" "}
 cargo-console-menu-points-amount = ${$amount}
-cargo-console-menu-shuttle-status-label = Статус шатлу{" "}
-cargo-console-menu-shuttle-status-away-text = Геть
-cargo-console-menu-order-capacity-label = Обсяг замовлення:{" "}
-cargo-console-menu-call-shuttle-button = Активувати телепанель
+cargo-console-menu-shuttle-status-label = Статус шатла:{" "}
+cargo-console-menu-shuttle-status-away-text = Відсутній
+cargo-console-menu-order-capacity-label = Місткість замовлення:{" "}
+cargo-console-menu-call-shuttle-button = Активувати телепад
 cargo-console-menu-permissions-button = Дозволи
 cargo-console-menu-categories-label = Категорії:{" "}
 cargo-console-menu-search-bar-placeholder = Пошук
-cargo-console-menu-requests-label = Заявки
+cargo-console-menu-requests-label = Запити
 cargo-console-menu-orders-label = Замовлення
-cargo-console-menu-order-reason-description = Причини: {$reason}
 cargo-console-menu-populate-categories-all-text = Усі
-cargo-console-menu-populate-orders-cargo-order-row-product-name-text = {$productName} (x{$orderAmount}) для {$orderRequester} з [color={$accountColor}]{$account}[/color]
-cargo-console-menu-cargo-order-row-approve-button = Затвердити
-cargo-console-menu-cargo-order-row-cancel-button = Закрити
+cargo-console-menu-order-row-title = {$productName} (x{$orderAmount} за {$orderPrice}$)
+cargo-console-menu-populate-orders-cargo-order-row-product-name-text = Запитано: {$orderRequester} з [color={$accountColor}]{$account}[/color]
+cargo-console-menu-order-row-product-description = Причина: {$orderReason}
+cargo-console-menu-order-row-button-approve = Схвалити
+cargo-console-menu-order-row-button-cancel = Скасувати
+cargo-console-menu-order-row-alerts-reason-absent = Причина не вказана
+cargo-console-menu-order-row-alerts-requester-unknown = Невідомо
 cargo-console-menu-tab-title-orders = Замовлення
 cargo-console-menu-tab-title-funds = Перекази
 cargo-console-menu-account-action-transfer-limit = [bold]Ліміт переказу:[/bold] ${$limit}
 cargo-console-menu-account-action-transfer-limit-unlimited-notifier = [color=gold](Необмежено)[/color]
-cargo-console-menu-account-action-select = [bold]Дії акаунту:[/bold]
-cargo-console-menu-account-action-amount = [bold]Кількість:[/bold] $
-cargo-console-menu-account-action-button = Переказ
-cargo-console-menu-toggle-account-lock-button = Переключити ліміт переказу
+cargo-console-menu-account-action-select = [bold]Дія з рахунком:[/bold]
+cargo-console-menu-account-action-amount = [bold]Сума:[/bold] $
+cargo-console-menu-account-action-button = Переказати
+cargo-console-menu-toggle-account-lock-button = Змінити ліміт переказу
 cargo-console-menu-account-action-option-withdraw = Зняти готівку
-cargo-console-menu-account-action-option-transfer = Переказати кошти до {$code}
+cargo-console-menu-account-action-option-transfer = Переказати кошти на {$code}
 
 # Orders
 cargo-console-order-not-allowed = Доступ заборонено

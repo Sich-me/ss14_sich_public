@@ -8,5 +8,7 @@ flatpacker-ui-title = Флетпакер 1001
 flatpacker-ui-materials-label = Матеріали
 flatpacker-ui-cost-label = Ціна пакування
 flatpacker-ui-no-board-label = Плата відсутня!
+flatpacker-ui-board-invalid-label = [color=red]Невірна плата!
+    Неможливо надрукувати![/color]
 flatpacker-ui-insert-board = Вставте плату, щоб почати.
 flatpacker-ui-pack-button = Пакувати

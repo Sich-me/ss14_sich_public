@@ -1,6 +1,6 @@
 ﻿- type: entity
   save: false
-  parent: [ BaseSimpleMob, MobCombat ]
+  parent: [ BaseSimpleMob, BaseMobAnimal, MobCombat ]
   id: BaseMobArgocyte
   suffix: ШІ
   description: Небезпечний інопланетянин, що опинився на протилежному боці планет, відомий своєю схильністю до поїдання руїн.
@@ -38,8 +38,6 @@
     damage:
       types:
         Slash: 5
-  - type: Body
-    prototype: Animal
   - type: Flammable
     fireSpread: true
     canResistFire: true

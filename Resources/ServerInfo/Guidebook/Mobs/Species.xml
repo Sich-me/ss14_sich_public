@@ -4,22 +4,22 @@
   Нанотрейзен наймають різноманітні види розумних істот.
 
   <Box>
-  <GuideEntityEmbed Entity="MobArachnid" Caption="Арахнід"/>
-  <GuideEntityEmbed Entity="MobDiona" Caption="Діона"/>
-  <GuideEntityEmbed Entity="MobDwarf" Caption="Дворф"/>
-  <GuideEntityEmbed Entity="MobHuman" Caption="Людина"/>
-  <GuideEntityEmbed Entity="MobMoth" Caption="Ніана"/>
-  <GuideEntityEmbed Entity="MobReptilian" Caption="Унатх"/>
+  <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Арахнід"/>
+  <GuideEntityEmbed Entity="AppearanceDiona" Caption="Діона"/>
+  <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Дворф"/>
+  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Людина"/>
+  <GuideEntityEmbed Entity="AppearanceMoth" Caption="Ніана"/>
+  <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Унатх"/>
   </Box>
   <Box>
-  <GuideEntityEmbed Entity="MobSlimePerson" Caption="Слайм-персона"/>
-  <GuideEntityEmbed Entity="MobVox" Caption="Вокс"/>
+  <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Слайм-персона"/>
+  <GuideEntityEmbed Entity="AppearanceVox" Caption="Вокс"/>
   <GuideEntityEmbed Entity="MobIPC" Caption="ІПШ"/>
   <GuideEntityEmbed Entity="MobTajara" Caption="Таяран"/>
   <GuideEntityEmbed Entity="MobAvali" Caption="Авалі"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="MobVulpkanin" Caption="Vulpkanin"/>
+    <GuideEntityEmbed Entity="AppearanceVulpkanin" Caption="Vulpkanin"/>
   </Box>
 
 </Document>

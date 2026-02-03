@@ -42,6 +42,7 @@ highlights-janitor = Прибиральник
 highlights-lawyer = Адвокат, Юрист, Юриссст
 highlights-librarian = Бібліотекар, Бібліотека, Бібліотеці
 highlights-mime = Мім
+highlights-musician = Музикант, "Музика", Театр, Театр, Сервіс
 highlights-passenger = Пасажир, Пасссажир, Пасажжжир
 highlights-serviceworker = Сервісний Працівник, СССервісний Працівник, Сервісник, СССервісник, "Бар", "Барі", Ботанічний, Кухар, Кухня, Кухні
 
