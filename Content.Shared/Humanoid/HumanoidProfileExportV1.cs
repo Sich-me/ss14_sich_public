@@ -62,6 +62,12 @@ public sealed partial class HumanoidCharacterProfileV1
     public ProtoId<SpeciesPrototype> Species;
 
     [DataField]
+    public float Height;
+
+    [DataField]
+    public float Width;
+
+    [DataField]
     public int Age;
 
     [DataField]
@@ -81,7 +87,7 @@ public sealed partial class HumanoidCharacterProfileV1
 
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
+        return new(Name, FlavorText, Species, Height, Width, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
     }
 }
 
