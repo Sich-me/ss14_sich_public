@@ -1,0 +1,357 @@
+- type: markingsGroup
+  parent: Undergarments
+  id: Avali
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayers.Hair:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.FacialHair:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: true
+      default: [ AvaliTailBase ]
+    enum.HumanoidVisualLayers.Chest:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Snout:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.HeadSide:
+      limit: 1
+      required: true
+      default: [ AvaliEarsBase ]
+    enum.HumanoidVisualLayers.LArm:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RArm:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LHand:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 1
+      required: false
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceAvali
+  name: avali appearance
+  components:
+  - type: Inventory
+    speciesId: avali
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: mask
+    displacements:
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: mask
+  - type: InitialBody
+    organs:
+      Torso: OrganAvaliTorso
+      Head: OrganAvaliHead
+      ArmLeft: OrganAvaliArmLeft
+      ArmRight: OrganAvaliArmRight
+      HandRight: OrganAvaliHandRight
+      HandLeft: OrganAvaliHandLeft
+      LegLeft: OrganAvaliLegLeft
+      LegRight: OrganAvaliLegRight
+      FootLeft: OrganAvaliFootLeft
+      FootRight: OrganAvaliFootRight
+      Brain: OrganAvaliBrain
+      Eyes: OrganAvaliEyes
+      Tongue: OrganAvaliTongue
+      Appendix: OrganAvaliAppendix
+      Ears: OrganAvaliEars
+      Lungs: OrganAvaliLungs
+      Heart: OrganAvaliHeart
+      Stomach: OrganAvaliStomach
+      Liver: OrganAvaliLiver
+      Kidneys: OrganAvaliKidneys
+  - type: HumanoidProfile
+    species: Avali
+  - type: ScaleVisuals
+    scale: 0.9, 0.9
+
+- type: entity
+  parent:
+  - AppearanceAvali
+  - BaseSpeciesMobOrganic
+  id: MobAvali
+  name: Urist McRaptor
+  components:
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost
+  - type: Hunger
+  - type: Thirst
+  - type: Icon
+    sprite: _Sich/Mobs/Species/Avali/parts.rsi
+    state: full
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    scale: 0.9, 0.9
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatChicken
+      amount: 3
+  - type: Speech
+    speechVerb: Parrot # RMC did it right.
+    speechSounds: MaleAvali
+  - type: TypingIndicator
+    proto: avali
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 95 #tiny
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Vocal
+    sounds:
+      Male: MaleAvali
+      Female: FemaleAvali
+      Unsexed: MaleAvali
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Avali # PLACEHOLDER for now :3
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#7a8bf2"
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: AmmoniaBlood
+        Quantity: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.7
+      70: 0.5
+  - type: Temperature
+    currentTemperature: 296.15 #Початкова температура (стокове 310.25)
+    specificHeat: 54 #Кількість тепла для зміни температури, більше - складніше змінити температуру (стокове 42, у ніан 46)
+  - type: TemperatureDamage
+    heatDamageThreshold: 320 #Пошкодження від тепла (стокове 325, 320 у ніан)
+    coldDamageThreshold: 220 #Пошкодження від холоду (стокове 260, 230 у ніан)
+    coldDamage:
+      types:
+        Cold : 0.05 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 3 #per second, scales with temperature & other constants
+  - type: Flammable
+    damage:
+      types:
+        Heat: 4.5
+  - type: TemperatureSpeed #Сповільнення від температури
+    thresholds: #(стокове +10, у ніан +5 від цих значень)
+      283: 0.9
+      270: 0.75
+      245: 0.5
+  - type: ThermalRegulator
+    metabolismHeat: 600 #Нагрівання від метаболізму (стокове 800)
+    radiatedHeat: 75 #Розсіювання тепла (стокове 100)
+    implicitHeatRegulation: 500 #"Рівень регулювання тепла, який представляє процеси терморегулювання, не закодовані явно.", не знаю, що це. . . (стокове 500)
+    sweatHeatRegulation: 2000 #Максимальна кількість тепла змінена через "піт", охолодження при перегріванні (стокове 2000)
+    shiveringHeatRegulation: 2000 #Максимальна кількість тепла змінена через "тремтіння", нагрівання при переохолодженні (стокове 2000)
+    normalBodyTemperature: 296.15 #Нормальна температура тіла, та яку тіло буде старатися досягти (стокове 310.2)
+    thermalRegulationTemperatureThreshold: 10 #Значення від якого залежить коли температура вже буде вважатися не нормою, лише індикація (стокове 10)
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      160: Dead
+  
+- type: entity
+  parent: OrganBase
+  id: OrganAvali
+  abstract: true
+  suffix: Avali
+
+- type: entity
+  id: OrganAvaliMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Animal ]
+
+- type: entity
+  parent: OrganAvali
+  id: OrganAvaliInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+
+- type: entity
+  parent: OrganAvali
+  id: OrganAvaliExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Sich/Mobs/Species/Avali/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: _Sich/Mobs/Species/Avali/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Avali
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganAvaliExternal ]
+  id: OrganAvaliTorso
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganAvaliExternal ]
+  id: OrganAvaliHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.HeadSide
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganAvaliExternal ]
+  id: OrganAvaliArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganAvaliExternal ]
+  id: OrganAvaliArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganAvaliExternal ]
+  id: OrganAvaliHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganAvaliExternal ]
+  id: OrganAvaliHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganAvaliExternal ]
+  id: OrganAvaliLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganAvaliExternal ]
+  id: OrganAvaliLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganAvaliExternal ]
+  id: OrganAvaliFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganAvaliExternal ]
+  id: OrganAvaliFootRight
+
+- type: entity
+  parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganAvaliInternal ]
+  id: OrganAvaliBrain
+
+- type: entity
+  parent: [ OrganBaseEyes, OrganAvaliInternal, OrganAvaliExternal ]
+  id: OrganAvaliEyes
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: _Sich/Mobs/Species/Avali/parts.rsi
+      state: eyes
+
+- type: entity
+  parent: [ OrganBaseTongue, OrganAvaliInternal ]
+  id: OrganAvaliTongue
+
+- type: entity
+  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganAvaliInternal ]
+  id: OrganAvaliAppendix
+
+- type: entity
+  parent: [ OrganBaseEars, OrganSpriteHumanInternal, OrganAvaliInternal ]
+  id: OrganAvaliEars
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganAvaliInternal, OrganAvaliMetabolizer ]
+  id: OrganAvaliLungs
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganAvaliInternal, OrganAvaliMetabolizer ]
+  id: OrganAvaliHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganAvaliInternal, OrganAvaliMetabolizer ]
+  id: OrganAvaliStomach
+  components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - Soup
+      - Fruit
+      - ReptilianFood
+      - Meat
+      - Pill
+      - Crayon
+      - Paper
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganAvaliInternal, OrganAvaliMetabolizer ]
+  id: OrganAvaliLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganAvaliInternal, OrganAvaliMetabolizer ]
+  id: OrganAvaliKidneys
