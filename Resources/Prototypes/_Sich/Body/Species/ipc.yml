@@ -287,8 +287,8 @@
   - type: PowerCellDraw
     drawRate: 0.05
   - type: Lock
-    unlockTime: 69
-    lockTime: 69
+    unlockTime: 30
+    lockTime: 5
     locked: true
     unlockOnClick: false
   - type: WiresPanel
