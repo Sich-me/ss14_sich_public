@@ -195,7 +195,7 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-    - id: Steel
+    - id: SheetSteel10
       amount: 3
   - type: Speech
     speechSounds: IPC
