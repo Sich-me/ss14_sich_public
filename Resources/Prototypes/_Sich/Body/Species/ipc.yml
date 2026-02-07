@@ -287,13 +287,17 @@
   - type: PowerCellDraw
     drawRate: 0.05
   - type: Lock
+    unlockTime: 69
+    lockTime: 69
     locked: true
     unlockOnClick: false
   - type: WiresPanel
+    openDelay: 10
   - type: LockedWiresPanel
   - type: BorgChassis
     hasMindState: ipc_4_sides
     noMindState: ipc_4_sides
+    canOpenSelfUi: true
   
 - type: entity
   parent: OrganBase
