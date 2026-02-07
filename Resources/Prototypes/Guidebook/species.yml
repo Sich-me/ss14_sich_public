@@ -60,14 +60,4 @@
   id: Vulpkanin
   name: species-name-vulpkanin
   text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"
-
-- type: guideEntry
-  id: IPC
-  name: species-name-ipc
-  text: "/ServerInfo/Guidebook/Mobs/IPC.xml"
-
-- type: guideEntry
-  id: Tajara
-  name: species-name-tajara
-  text: "/ServerInfo/Guidebook/Mobs/Tajara.xml"
   

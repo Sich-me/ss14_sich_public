@@ -12,7 +12,7 @@
       limit: 0
       required: false
     enum.HumanoidVisualLayers.Chest:
-      limit: 1
+      limit: 3
       required: true
       default: [ IPCChassisTorso] #фактично це просто workoaround того що накладання не працюють нормально для деталей ІПШ
     enum.HumanoidVisualLayers.Head:
