@@ -49,6 +49,18 @@
     {
       "name": "head",
       "directions": 4
+    },
+    {
+      "name": "ipc_4_sides",
+      "directions": 4
+    },
+    {
+      "name": "ipc_e",
+      "directions": 4
+    },
+    {
+      "name": "ipc_l",
+      "directions": 4
     }
   ]
 }

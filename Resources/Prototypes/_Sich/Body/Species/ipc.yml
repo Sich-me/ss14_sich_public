@@ -95,6 +95,85 @@
   id: MobIPC
   name: Urist McBot
   components:
+  - type: Sprite #це усе треба бо воно перезаписує те що у парентах
+    layers:
+    # Torso
+    - map: [ "enum.HumanoidVisualLayers.Chest" ]
+
+    # Head
+    - map: [ "enum.HumanoidVisualLayers.Head" ]
+    - map: [ "enum.HumanoidVisualLayers.Snout" ]
+    - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+
+    # Limbs
+    - map: [ "enum.HumanoidVisualLayers.RArm" ]
+    - map: [ "enum.HumanoidVisualLayers.LArm" ]
+    - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+    - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+
+    # Underwear & clothing
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
+    - map: ["jumpsuit"]
+
+    # Extremities
+    - map: ["enum.HumanoidVisualLayers.LFoot"]
+    - map: ["enum.HumanoidVisualLayers.RFoot"]
+    - map: ["enum.HumanoidVisualLayers.LHand"]
+    - map: ["enum.HumanoidVisualLayers.RHand"]
+
+    # Stuff that goes over the body but below equipment
+    - map: ["enum.HumanoidVisualLayers.Overlay"]
+
+    # More equipment
+    - map: [ "gloves" ]
+    - map: [ "shoes" ]
+    - map: [ "ears" ]
+    - map: [ "eyes" ]
+    - map: [ "belt" ]
+    - map: [ "id" ]
+    - map: [ "outerClothing" ]
+    - map: [ "back" ]
+    - map: [ "neck" ]
+
+    # Stuff that goes in front of equipment
+    - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
+    - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+    - map: [ "enum.HumanoidVisualLayers.Hair" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+    - map: [ "enum.HumanoidVisualLayers.Tail" ]
+
+    # Stuff that goes in front of stuff that goes in front of equipment
+    - map: [ "mask" ]
+    - map: [ "head" ]
+    - map: [ "pocket1" ]
+    - map: [ "pocket2" ]
+
+    # Extra stuff
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"]
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+
+    - map: [ "clownedon" ] # Dynamically generated
+      sprite: "Effects/creampie.rsi"
+      state: "creampie_human"
+      visible: false
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: ipc_4_sides
+      sprite: _Sich/Mobs/Species/IPC/parts.rsi
+    - state: ipc_e
+      sprite: _Sich/Mobs/Species/IPC/parts.rsi
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: ipc_l
+      sprite: _Sich/Mobs/Species/IPC/parts.rsi
+      shader: unshaded
+      map: ["light"]
+      visible: false
   - type: Respirator # цей компонент це один великий workaround щоб тест не сварився 
     damage:
       types:
@@ -206,22 +285,17 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: PowerCellDraw
-    drawRate: 0.5
+    drawRate: 0.3
   - type: Lock
     locked: true
     unlockOnClick: false
-    unlockTime: 5
+    UnlockTime: 10
   - type: WiresPanel
   - type: LockedWiresPanel
-  - type: UserInterface
-    interfaces:
-      enum.BorgUiKey.Key:
-        type: BorgBoundUserInterface
-  - type: ActivatableUI
-    key: enum.BorgUiKey.Key
-  - type: UIRequiresLock
-    userInterfaceKeys:
-    - enum.BorgUiKey.Key
+  - type: BorgChassis
+    hasMindState: ipc_4_sides
+    noMindState: ipc_4_sides
+    CanOpenSelfUi: false
   
 - type: entity
   parent: OrganBase
@@ -316,7 +390,7 @@
   components:
     - type: Sprite
       state: posibrain
-      sprite: _Sich/Mobs/Species/IPCs/organs.rsi
+      sprite: _Sich/Mobs/Species/IPC/organs.rsi
     - type: GibbableOrgan
     - type: Organ
       category: Brain
