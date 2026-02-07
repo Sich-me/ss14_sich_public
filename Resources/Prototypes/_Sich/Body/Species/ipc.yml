@@ -285,17 +285,19 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: PowerCellDraw
-    drawRate: 0.3
+    drawRate: 0.05
   - type: Lock
+    UnlockTime: 69
+    LockTime: 69
     locked: true
     unlockOnClick: false
-    UnlockTime: 10
   - type: WiresPanel
+    OpenDelay: 10
   - type: LockedWiresPanel
   - type: BorgChassis
     hasMindState: ipc_4_sides
     noMindState: ipc_4_sides
-    CanOpenSelfUi: false
+    CanOpenSelfUi: true
   
 - type: entity
   parent: OrganBase
@@ -319,7 +321,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _Sich/Mobs/Species/IPCs/organs.rsi
+    sprite: _Sich/Mobs/Species/IPC/organs.rsi
 
 - type: entity
   parent: OrganIPC
@@ -327,10 +329,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _Sich/Mobs/Species/IPCs/parts.rsi
+    sprite: _Sich/Mobs/Species/IPC/parts.rsi
   - type: VisualOrgan
     data:
-      sprite: _Sich/Mobs/Species/IPCs/parts.rsi
+      sprite: _Sich/Mobs/Species/IPC/parts.rsi
   - type: VisualOrganMarkings
     markingData:
       group: IPC
