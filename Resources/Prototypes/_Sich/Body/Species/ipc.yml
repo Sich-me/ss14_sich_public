@@ -1,7 +1,6 @@
 - type: markingsGroup
   parent: Undergarments
   id: IPC
-  onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
@@ -14,7 +13,8 @@
       required: false
     enum.HumanoidVisualLayers.Chest:
       limit: 1
-      required: false
+      required: true
+      default: [ IPCChassisTorso] #фактично це просто workoaround того що накладання не працюють нормально для деталей ІПШ
     enum.HumanoidVisualLayers.Head:
       limit: 1
       required: true
@@ -30,22 +30,36 @@
       required: false
     enum.HumanoidVisualLayers.LArm:
       limit: 1
-      required: false
+      required: true
+      default: [ IPCChassisLArm ]
     enum.HumanoidVisualLayers.RArm:
       limit: 1
-      required: false
+      required: true
+      default: [ IPCChassisRArm ]
     enum.HumanoidVisualLayers.LHand:
       limit: 1
-      required: false
+      required: true
+      default: [ IPCChassisLHand ]
     enum.HumanoidVisualLayers.RHand:
       limit: 1
-      required: false
+      required: true
+      default: [ IPCChassisRHand ]
     enum.HumanoidVisualLayers.LLeg:
       limit: 1
-      required: false
+      required: true
+      default: [ IPCChassisLLeg ]
     enum.HumanoidVisualLayers.RLeg:
       limit: 1
-      required: false
+      required: true
+      default: [ IPCChassisRLeg ]
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 1
+      required: true
+      default: [ IPCChassisLFoot ]
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 1
+      required: true
+      default: [ IPCChassisRFoot ]
 
 - type: entity
   parent: BaseSpeciesAppearance
@@ -183,6 +197,31 @@
       0: Alive
       100: Critical
       200: Dead
+  - type: PowerCellSlot #заряд та батареки й усе що для того треба
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+  - type: PowerCellDraw
+    drawRate: 0.5
+  - type: Lock
+    locked: true
+    unlockOnClick: false
+    unlockTime: 5
+  - type: WiresPanel
+  - type: LockedWiresPanel
+  - type: UserInterface
+    interfaces:
+      enum.BorgUiKey.Key:
+        type: BorgBoundUserInterface
+  - type: ActivatableUI
+    key: enum.BorgUiKey.Key
+  - type: UIRequiresLock
+    userInterfaceKeys:
+    - enum.BorgUiKey.Key
   
 - type: entity
   parent: OrganBase

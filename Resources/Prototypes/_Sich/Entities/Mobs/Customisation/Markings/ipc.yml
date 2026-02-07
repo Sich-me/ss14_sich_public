@@ -1,4 +1,4 @@
-
+# дефолтні маркування
 - type: marking
   id: IPCChassisHead
   bodyPart: Head
@@ -7,6 +7,89 @@
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
       state: ipc_head
+
+- type: marking
+  id: IPCChassisTorso
+  bodyPart: Chest
+  markingCategory: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_torso
+      
+- type: marking
+  id: IPCChassisLArm
+  bodyPart: LArm
+  markingCategory: Arms
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_l_arm
+
+- type: marking
+  id: IPCChassisRArm
+  bodyPart: RArm
+  markingCategory: Arms
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_r_arm
+
+- type: marking
+  id: IPCChassisLLeg
+  bodyPart: LLeg
+  markingCategory: Legs
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_l_leg
+      
+- type: marking
+  id: IPCChassisRLeg
+  bodyPart: RLeg
+  markingCategory: Legs
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_r_leg
+
+- type: marking
+  id: IPCChassisLFoot
+  bodyPart: LFoot
+  markingCategory: Legs
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_l_foot
+      
+- type: marking
+  id: IPCChassisRFoot
+  bodyPart: RFoot
+  markingCategory: Legs
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_r_foot
+
+- type: marking
+  id: IPCChassisLHand
+  bodyPart: LHand
+  markingCategory: Arms
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_l_hand
+      
+- type: marking
+  id: IPCChassisRHand
+  bodyPart: RHand
+  markingCategory: Arms
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_r_hand
+
+#деталі
     
 - type: marking
   id: IPCChassisHumanDiodes
