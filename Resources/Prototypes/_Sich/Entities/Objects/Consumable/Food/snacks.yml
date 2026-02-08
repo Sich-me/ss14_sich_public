@@ -216,8 +216,7 @@
   name: Щурпси
   parent: FoodSnackBase
   id: FoodSnackMouseChips
-  description: Натуральні засушені мишенята. Аж кігтики оближеш!
-              ПОПЕРЕДЖЕННЯ, ПРОДУКТ МОЖЕ МІСТИТИ СИРЕ М'ЯСО!
+  description: Натуральні засушені мишенята. Аж кігтики оближеш! ПОПЕРЕДЖЕННЯ, ПРОДУКТ МОЖЕ МІСТИТИ СИРЕ М'ЯСО!
   components:
   - type: SolutionContainerManager
     solutions:
