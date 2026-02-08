@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ GrenadeBase, BaseMinorContraband ]
+  parent: [ TimerGrenadeBase, BaseMinorContraband ]
   id: PipeBomb
   name: саморобна бомба
   description: Саморобна вибухівка з труб та дроту.

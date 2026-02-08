@@ -1,12 +1,13 @@
 
-gun-selected-mode-examine = Поточний режим вогню: [color={$color}]{$mode}[/color].
-gun-fire-rate-examine = Скорострільність: [color={$color}]{$fireRate}[/color] на секунду.
-gun-selector-verb = Перемкнути на {$mode} режим
-gun-selected-mode = Обрано {$mode} режим
+gun-selected-mode-examine = Поточний вибраний режим вогню: [color={$color}]{$mode}[/color].
+gun-fire-rate-examine = Скорострільність: [color={$color}]{$fireRate}[/color] пострілів на секунду.
+gun-selector-verb = Перемкнути на {$mode}
+gun-selected-mode = Вибрано режим: {$mode}
 gun-disabled = Ви не можете використовувати зброю!
-gun-set-fire-mode = Встановлено режим [color=yellow]{$mode}[/color].
-gun-magazine-whitelist-fail = Це не влазить в цю зброю!
-gun-magazine-fired-empty = Немає патронів!
+gun-set-fire-mode-examine = Встановлено режим [color=yellow]{$mode}[/color].
+gun-set-fire-mode-popup = Змінено на {$mode}
+gun-magazine-whitelist-fail = Це не підходить до цієї зброї!
+gun-magazine-fired-empty = Набоїв не залишилося!
 
 # SelectiveFire
 gun-SemiAuto = напівавтоматичний

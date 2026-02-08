@@ -1,25 +1,32 @@
 # Воно довгий час не працювало, поки просто піде в коментарі
+# пофіксив
 ## TODO: make more categories
 ## Guns
 
-#- type: listing
-#  id: SichUplinkHardsuitMerc
-#  name: "Скафандр Найманця"
-#  description: "Скафандр що використовуєтсья найманцями. Добре захищає від бойових пошкоджень, але має поганий захист від навколишнього середовища"
-#  icon: { sprite: /Textures/_Sich/Clothing/OuterClothing/Hardsuits/merc.rsi, state: icon }
-#  productEntity: SichClothingBackpackDuffelMercHardsuitBundle
-#  cost:
-#    Telecrystal: 10
-#  categories:
-#  - UplinkArmor
-
-#- type: listing
-#  id: SichUplinkSMGOtaku
-#  name: "СМГ Отаку"
-#  description: "Пістолет-кулемет розроблений Азійською Співдружністю, що має вбудований глушник. Використовує патрони калібру .35"
-#  icon: { sprite: /Textures/_Sich/Objects/Weapons/Guns/SMGs/otaku.rsi, state: icon }
-#  productEntity: SichClothingBackpackDuffelSyndicateSMGOtaku
-#  cost:
-#    Telecrystal: 11
-#  categories:
-#  - UplinkWeapons
+- type: listing
+  id: SichUplinkSMGOtaku
+  name: uplink-smg-otaku-name
+  description: uplink-smg-otaku-desc
+  icon: { sprite: /Textures/_Sich/Objects/Weapons/Guns/SMGs/otaku.rsi, state: icon }
+  productEntity: SichClothingBackpackDuffelSyndicateSMGOtaku
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 14
+  cost:
+    Telecrystal: 17
+  categories:
+  - UplinkWeaponry
+  
+- type: listing
+  id: SichUplinkHardsuitMerc
+  name: uplink-hardsuit-merc-name
+  description: uplink-hardsuit-merc-desc
+  icon: { sprite: /Textures/_Sich/Clothing/OuterClothing/Hardsuits/merc.rsi, state: icon }
+  productEntity: SichClothingBackpackDuffelMercHardsuitBundle
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 8
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWearables

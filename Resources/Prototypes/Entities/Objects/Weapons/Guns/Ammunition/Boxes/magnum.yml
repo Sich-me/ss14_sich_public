@@ -42,8 +42,8 @@
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumPractice
-  name: коробка з набоями (.45 магнум тренувальний)
-  description: A cardboard box of .45 magnum rounds. Intended to hold non-harmful chalk ammunition.
+  name: ammunition box (.45 magnum practice)
+  description: A cardboard box of .45 magnum rounds. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
@@ -90,8 +90,8 @@
 - type: entity
   id: MagazineBoxMagnumAP
   parent: BaseMagazineBoxMagnum
-  name: коробка з набоями (.45 магнум бронебійний)
-  description: A cardboard box of .45 magnum rounds. Intended to hold rare armor-piercing ammunition.
+  name: ammunition box (.45 magnum armor-piercing)
+  description: A cardboard box of .45 magnum rounds. Intended to hold specialized armor-piercing ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumAP

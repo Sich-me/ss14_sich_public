@@ -2,7 +2,7 @@
   name: космічний короп
   id: BaseMobCarp
   parent: [ SimpleSpaceMobBase, FlyingMobBase, MobCombat ]
-  description: Це космічний короп.
+  description: Це космічний короп. *кусь*
   abstract: true
   components:
     - type: InputMover
@@ -44,7 +44,7 @@
       baseWalkSpeed: 2.5
       baseSprintSpeed: 3.5
     - type: Stamina
-      critThreshold: 100
+      baseCritThreshold: 100
     - type: DamageStateVisuals
       states:
         Alive:
@@ -143,7 +143,7 @@
   parent: MobCarp
   id: MobCarpRainbow
   name: веселковий короп
-  description: Ого, яка блискуча рибка!
+  description: Ого, яка блискуча рибка! *веселковий кусь*
   components:
   - type: PointLight
     radius: 1.5
@@ -165,7 +165,7 @@
 - type: entity
   name: космічний короп
   id: MobCarpDragon
-  suffix: Виводок Дракона
+  suffix: DragonBrood
   parent: MobCarp
   components:
     - type: GhostRole
@@ -185,11 +185,12 @@
       damage:
        types: {}
     - type: Temperature
+    - type: TemperatureDamage
       heatDamageThreshold: 1200
 - type: entity
   id: MobCarpDungeon
   parent: MobCarp
-  suffix: Підземелля
+  suffix: Dungeon
   components:
   - type: MobThresholds
     thresholds:
@@ -205,9 +206,9 @@
 
 - type: entity
   name: акулячий мальок
-  parent: BaseMobCarp
+  parent: [ BaseMobBloodsucker, BaseMobCarp ]
   id: MobShark
-  description: Небезпечна акула з чорноти нескінченного космосу, яка любить пити кров.
+  description: Небезпечна акула з чорноти нескінченного космосу, яка любить пити кров. *великий кусь*
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Carps/sharkminnow.rsi
@@ -233,7 +234,7 @@
         0: Alive
         82: Dead # Might seem random, but this brings up the hits to kill with a crusher mark to 3
     - type: Stamina
-      critThreshold: 150
+      baseCritThreshold: 150
     - type: DamageStateVisuals
       states:
         Alive:
@@ -242,9 +243,6 @@
         Dead:
           Base: dead
           BaseUnshaded: dead_mouth
-    - type: Body
-      prototype: Bloodsucker
-      requiredLegs: 1
     - type: Butcherable
       spawned:
         - id: FoodMeatFish
@@ -260,6 +258,6 @@
 - type: entity
   id: MobSharkSalvage
   parent: MobShark
-  suffix: "Набір правил шахтарів"
+  suffix: "Salvage Ruleset"
   components:
     - type: SalvageMobRestrictions

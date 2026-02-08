@@ -1,7 +1,7 @@
 reagent-name-toxin = токсин
 reagent-desc-toxin = Токсична хімічна речовина.
 
-reagent-name-carpotoxin = карпотоксин
+reagent-name-carpotoxin = коропотоксин
 reagent-desc-carpotoxin = Токсичні виділення космічного коропа. Викликає болісне відчуття печіння.
 
 reagent-name-mold = цвіль
@@ -84,3 +84,6 @@ reagent-desc-mechanotoxin = Нейротоксин, який використо�
 
 reagent-name-toxintrash = перероблений матеріал
 reagent-desc-toxintrash = Огидно пахнуча жижа, ефективно очищена з утилізованих відходів. Вона є ідеальним, безвідходним способом перетворення брухту на поживу для Воксів, хоча для інших є сильною отрутою.
+
+reagent-name-hemorrhinol = геморинол
+reagent-desc-hemorrhinol = Токсин, що спричиняє серйозні пошкодження кровоносних судин, призводячи до стрімкої крововтрати.

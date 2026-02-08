@@ -20,7 +20,7 @@ ui-vote-map-tie = Нічия у голосуванні за мапу! Вибир
 ui-vote-map-win = { $winner } перемогла у голосуванні за мапу!
 ui-vote-map-notlobby = Голосування за карти дійсне лише у лобі перед початком раунду!
 ui-vote-map-notlobby-time = Голосування за картку дійсне тільки в лобі до початку раунду, до якого залишилося { $time }!
-
+ui-vote-map-invalid = { $winner } став недійсним після голосування за мапу! Він не буде обраний!
 
 # Votekick votes
 ui-vote-votekick-unknown-initiator = Гравець

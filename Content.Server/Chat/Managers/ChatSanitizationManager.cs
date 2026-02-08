@@ -88,6 +88,7 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         Entry("?", "chatsan-confused"), // Sich
         Entry("-_-", "chatsan-unimpressed"),
         Entry("smh", "chatsan-unimpressed"),
+        Entry(":?", "chatsan-shrugs"),
         Entry("o/", "chatsan-waves"),
         Entry("о/", "chatsan-waves"), // Sich
         Entry("^^/", "chatsan-waves"),

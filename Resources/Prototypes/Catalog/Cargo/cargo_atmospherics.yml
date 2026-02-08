@@ -1,6 +1,5 @@
 - type: cargoProduct
   id: AtmosphericsAir
-  name: Каністра з повітрям
   icon:
     sprite: Structures/Storage/canister.rsi
     state: grey
@@ -11,7 +10,6 @@
 
 - type: cargoProduct
   id: AtmosphericsOxygen
-  name: Каністра з киснем
   icon:
     sprite: Structures/Storage/canister.rsi
     state: blue
@@ -32,7 +30,6 @@
 
 - type: cargoProduct
   id: AtmosphericsNitrogen
-  name: Каністра з азотом
   icon:
     sprite: Structures/Storage/canister.rsi
     state: red
@@ -53,7 +50,6 @@
 
 - type: cargoProduct
   id: AtmosphericsCarbonDioxide
-  name: Каністра з вуглекислим газом
   icon:
     sprite: Structures/Storage/canister.rsi
     state: black

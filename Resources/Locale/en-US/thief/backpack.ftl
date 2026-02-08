@@ -18,10 +18,10 @@ thief-backpack-button-deselect = Ні переплутав [X]
 
 thief-backpack-category-chameleon-name = набір хамелеона
 thief-backpack-category-chameleon-description =
-    Ви всі і ніхто; ви майстер маскування.
-    Включає: набір одягу хамелеона, проектор хамелеон,
-    агентську ID картку
-    Маскуйтесь під кого завгодно і під що завгодно.
+    Ви — всі і ніхто; ви майстер маскування.
+    Включає: Повний набір одягу «Хамелеон» з ID-карткою агента,
+    проектор «Хамелеон» та фальшивий імплант захисту розуму.
+    Маскуйтеся під будь-кого та будь-що.
 
 thief-backpack-category-tools-name = набір для злому
 thief-backpack-category-tools-description =
@@ -55,7 +55,7 @@ thief-backpack-category-communicator-description =
     Гроші - це сила, а секрети - це гроші. Використовуйте свій срібний язик
     і багатство, щоб підірвати станцію.
     Включає: головний ключ для всіх каналів станцій, ручку CyberSun,
-    голосова маска-хамелеон і 20 тисяч спесо всередині портфеля.
+    імплант зміни голосу і 20 тисяч спесо всередині портфеля.
 
 thief-backpack-category-smuggler-name = комплект контрабандиста
 thief-backpack-category-smuggler-description =

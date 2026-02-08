@@ -97,3 +97,4 @@ anomaly-behavior-inconstancy = [color=crimson]Виявлено непостій�
 anomaly-behavior-fast = [color=crimson]Частота пульсації сильно підвищена.[/color]
 anomaly-behavior-strenght = [color=crimson]Потужність пульсації значно збільшена.[/color]
 anomaly-behavior-moving = [color=crimson]Виявлено нестабільність координат.[/color]
+anomaly-secret-admin = [color=red](ERROR)[/color]

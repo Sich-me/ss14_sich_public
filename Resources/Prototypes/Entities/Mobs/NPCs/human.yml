@@ -1,6 +1,6 @@
 - type: entity
   name: цивільний
-  parent: BaseMobHuman
+  parent: MobHuman
   id: MobCivilian
   description: Жалюгідна купа таємниць.
   components:
@@ -13,8 +13,8 @@
     - NanoTrasen
 
 - type: entity
-  name: шахтар
-  parent: BaseMobHuman
+  name: утилізатор
+  parent: MobHuman
   id: MobSalvager
   components:
     - type: NpcFactionMember
@@ -31,7 +31,7 @@
 
 - type: entity
   name: космо-пірат
-  parent: BaseMobHuman
+  parent: MobHuman
   id: MobSpirate
   description: Йарр!
   components:
@@ -49,7 +49,7 @@
 
 - type: entity
   name: піхотинець синдикату
-  parent: BaseMobHuman
+  parent: MobHuman
   id: MobSyndicateFootsoldier
   components:
     - type: NpcFactionMember
@@ -68,9 +68,11 @@
   name: пілот шатлу синдикату
   parent: MobSyndicateFootsoldier
   id: MobSyndicateFootsoldierPilot
+  components:
+  - type: Unrevivable #Додавання білду Січі.
 
 - type: entity
-  parent: BaseMobHuman
+  parent: MobHuman
   suffix: Dead
   save: false # mobs are currently not saveable.
   id: SalvageHumanCorpse
@@ -88,6 +90,7 @@
         Blunt: 19
   - type: Inventory
     templateId: corpse
+  - type: Unrevivable #Додавання білду Січі.
 
 - type: entity
   parent: MobHuman

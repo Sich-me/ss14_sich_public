@@ -1,24 +1,32 @@
-﻿- type: entity
-  id: RandomArtifactSpawner
-  name: random artifact spawner
+﻿- type: entityTable
+  id: RandomArtifactTable
+  table: !type:GroupSelector
+    children:
+    - id: ComplexXenoArtifact
+      weight: 2
+    - id: ComplexXenoArtifactItem
+
+- type: entity
   parent: MarkerBase
+  id: RandomArtifactSpawner
+  name: випадковий артефакт
+  description: Один з ще не вивчених об'єктів космосу для потреб НВ! Будьте обережні, не вивченість також означає можливі дуже небезпечні реакції на оточення. # Sich
   components:
-    - type: Sprite
-      layers:
-        - state: red
-        - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
-          state: ano01
-    - type: RandomSpawner
-      prototypes:
-        - ComplexXenoArtifact
-        - ComplexXenoArtifact
-        - ComplexXenoArtifactItem
-      chance: 1
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+      state: ano01
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: RandomArtifactTable
 
 - type: entity
   id: RandomArtifactSpawner20
-  name: random artifact spawner [20]
+  name: випадковий артефакт [20]
   parent: RandomArtifactSpawner
   components:
-    - type: RandomSpawner
-      chance: 0.2
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: RandomArtifactTable
+      prob: 0.2

@@ -1,0 +1,630 @@
+# When adding new figurines, also add them to id: AllFigurinesTable
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: BaseFigurine
+  name: фігурка
+  description: Маленька Фігурка.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/figurines.rsi
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 100
+  - type: StaticPrice
+    price: 75
+  - type: Tag
+    tags:
+    - Figurine
+  - type: UseDelay
+    delay: 5
+  - type: UseDelayOnTrigger
+  - type: UseDelayTriggerCondition # prevent spam
+  - type: TriggerOnActivate
+  - type: TriggerOnSignal
+  - type: Speech
+    speechSounds: Pai # it just sounds better
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
+
+#HUMANOID FIGURINES
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineHeadOfPersonnel
+  name: фігурка голови персоналу
+  description: Фігурка, що зображує славного главу всього персоналу, який як завжди відсутній у своєму офісі.
+  components:
+  - type: Sprite
+    state: hop
+  - type: SpeakOnTrigger
+    pack: FigurinesHoP
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurinePassenger
+  name: фігурка пасажира
+  description: Фігурка повсякденного, звичайного пасажира. Попахує робастом...
+  components:
+  - type: Sprite
+    state: passenger
+  - type: SpeakOnTrigger
+    pack: FigurinesPassenger
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineGreytider
+  name: фігурка ґрейтайда
+  description: Фігурка із зображенням дуже підозрілого на вигляд пасажира. Ґрейтайди єднаймося!
+  components:
+  - type: Sprite
+    state: passenger_greytide
+  - type: SpeakOnTrigger
+    pack: FigurinesGreytider
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineClown
+  name: фігурка клоуна
+  description: Фігурка клоуна. Ти здригаєшся, коли думаєш про те, що люди, ймовірно, робили з цією фігуркою раніше. Вам страшно уявити себе на місці цієї мініатюри.
+  components:
+  - type: Sprite
+    state: clown
+  - type: SpeakOnTrigger
+    pack: FigurinesClown
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineHoloClown
+  name: фігурка голоклоуна
+  description: Фігурка голоклоуна. Ще більше дратує, ніж клоун, і не менш реально.
+  components:
+  - type: Sprite
+    state: holoclown
+  - type: SpeakOnTrigger
+    pack: FigurinesHoloClown
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineMime
+  name: фігурка міма
+  description: Фігурка того мовчазного виродка, з яким ви надто знайомі. Найстрашніша істота на станції.
+  components:
+  - type: Sprite
+    state: mime
+  - type: SpeakOnTrigger
+    pack: FigurinesMime
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineMusician
+  name: фігурка музиканта
+  description: Фігурка музики, його музика була такою бомбезною!
+  components:
+  - type: Sprite
+    state: musician
+  - type: SpeakOnTrigger
+    pack: FigurinesMusician
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineBoxer
+  name: фігурка боксера
+  description: Фігурка боксера, ви коли небудь бачили їх на станції? В будь якому разі - "пора..".
+  components:
+  - type: Sprite
+    state: boxer
+  - type: SpeakOnTrigger
+    pack: FigurinesBoxer
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineCaptain
+  name: фігурка капітана
+  description: Фігурка капітана цивільного судна Нанотрейзен. Занадто блискуча, чи не так?
+  components:
+  - type: Sprite
+    state: captain
+  - type: SpeakOnTrigger
+    pack: FigurinesCaptain
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineHeadOfSecurity
+  name: фігурка голови служби безпеки
+  description: Фігурка славетного начальника відділу охорони. 
+  components:
+  - type: Sprite
+    state: hos
+  - type: SpeakOnTrigger
+    pack: FigurinesHoS
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineWarden
+  name: фігурка наглядача
+  description: Фігурка Наглядача, готового в будь-який момент посадити Вас.
+  components:
+  - type: Sprite
+    state: warden
+  - type: SpeakOnTrigger
+    pack: FigurinesWarden
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineDetective
+  name: фігурка детектива
+  description: Фігурка детектива в його культовому плащі. Не вистачає пляшки віскі у руці.
+  components:
+  - type: Sprite
+    state: detective
+  - type: SpeakOnTrigger
+    pack: FigurinesDetective
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineSecurity
+  name: фігурка офіцера сб
+  description: Фігурка офіцера безпеки з електрошокером, готового захищати станцію від загроз.
+  components:
+  - type: Sprite
+    state: security
+  - type: SpeakOnTrigger
+    pack: FigurinesSecurity
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineLawyer
+  name: фігурка адвоката
+  description: Фігурка юриста у щойно пошитому костюмі. Йому точно не можна довірити вашу судову справу!
+  components:
+  - type: Sprite
+    state: lawyer
+  - type: SpeakOnTrigger
+    pack: FigurinesLawyer
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineCargoTech
+  name: фігурка вантажника
+  description: Фігурка вантажника. Виглядає дуже втомлено від постійного тягання важких ящиків.
+  components:
+  - type: Sprite
+    state: cargotech
+  - type: SpeakOnTrigger
+    pack: FigurinesCargoTech
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineSalvage
+  name: фігурка шахтаря
+  description: Фігурка шахтаря, який тримає ніж для виживання.
+  components:
+  - type: Sprite
+    state: salvage
+  - type: SpeakOnTrigger
+    pack: FigurinesSalvage
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineQuartermaster
+  name: фігурка квартирмейстера
+  description: Фігурка квартирмейстера. Змучена замовленнями від усього екіпажу.
+  components:
+  - type: Sprite
+    state: qm
+  - type: SpeakOnTrigger
+    pack: FigurinesQM
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineChiefEngineer
+  name: фігурка головного інженера
+  description: Фігурка славетного начальника Інженерного відділу.
+  components:
+  - type: Sprite
+    state: ce
+  - type: SpeakOnTrigger
+    pack: FigurinesCE
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineEngineer
+  name: фігурка інженера
+  description: Фігурка інженера з ломом напоготові.
+  components:
+  - type: Sprite
+    state: engineer
+  - type: SpeakOnTrigger
+    pack: FigurinesEngineer
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineAtmosTech
+  name: фігурка атмосферного інженера
+  description: Фігурка атмосферного інженера, що тримає незапалений зварювальний апарат.
+  components:
+  - type: Sprite
+    state: atmos
+  - type: SpeakOnTrigger
+    pack: FigurinesAtmosTech
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineResearchDirector
+  name: фігурка директора наукового відділу
+  description: Фігурка славного ДНВ. Він завжди готовий взірвати ваш відділ своїми винаходами!
+  components:
+  - type: Sprite
+    state: rd
+  - type: SpeakOnTrigger
+    pack: FigurinesRD
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineScientist
+  name: фігурка науковця
+  description: Фігурка вченого в халаті.
+  components:
+  - type: Sprite
+    state: scientist
+  - type: SpeakOnTrigger
+    pack: FigurinesScientist
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineChiefMedicalOfficer
+  name: фігурка головного лікаря
+  description: Фігурка Головного Лікаря в халаті.
+  components:
+  - type: Sprite
+    state: cmo
+  - type: SpeakOnTrigger
+    pack: FigurinesCMO
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineChemist
+  name: фігурка хіміка
+  description: Фігурка хіміка, який, ймовірно, планує виготовити метамфетамін.
+  components:
+  - type: Sprite
+    state: chemist
+  - type: SpeakOnTrigger
+    pack: FigurinesChemist
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineParamedic
+  name: фігурка парамедика
+  description: Фігурка парамедика у його скафандрі.
+  components:
+  - type: Sprite
+    state: paramedic
+  - type: SpeakOnTrigger
+    pack: FigurinesParamedic
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineMedicalDoctor
+  name: фігурка доктора
+  description: Фігурка лікаря, одягненого в халат і зі шприцем у руці.
+  components:
+  - type: Sprite
+    state: medical
+  - type: SpeakOnTrigger
+    pack: FigurinesDoctor
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineLibrarian
+  name: фігурка бібліотекаря
+  description: Фігурка бібліотекаря. Виглядає не дуже цікаво.
+  components:
+  - type: Sprite
+    state: librarian
+  - type: SpeakOnTrigger
+    pack: FigurinesLibrarian
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineChaplain
+  name: фігурка священника
+  description: Фігурка священника, будімо сподіватися що він молиться за наші душі, а не за призив демонів...
+  components:
+  - type: Sprite
+    state: chaplain
+  - type: SpeakOnTrigger
+    pack: FigurinesChaplain
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineChef
+  name: фігурка шефа
+  description: Фігурка кухаря, майстра кулінарного мистецтва!.. Як правило..
+  components:
+  - type: Sprite
+    state: chef
+  - type: SpeakOnTrigger
+    pack: FigurinesChef
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineBartender
+  name: фігурка бармена
+  description: Фігурка бармена, який виглядає стильно в цих шкарах та шляпі!
+  components:
+  - type: Sprite
+    state: bartender
+  - type: SpeakOnTrigger
+    pack: FigurinesBartender
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineBotanist
+  name: фігурка ботаніка
+  description: Фігурка ботаніка, яка точно не дозволить кудзу вийти з-під контролю.
+  components:
+  - type: Sprite
+    state: botanist
+  - type: SpeakOnTrigger
+    pack: FigurinesBotanist
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineJanitor
+  name: фігурка прибиральника
+  description: Фігурка прибиральника у його чудових галошах!
+  components:
+  - type: Sprite
+    state: janitor
+  - type: SpeakOnTrigger
+    pack: FigurinesJanitor
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineNukie
+  name: фігурка оперативника синдикату
+  description: Фігурка когось у криваво-червоному комбінезоні, схожому на те, що може носити хтось із ядерної оперативної групи.
+  components:
+  - type: Sprite
+    state: nukie
+  - type: SpeakOnTrigger
+    pack: FigurinesNukie
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineNukieElite
+  name: фігурка елітного оперативника синдикату
+  description: Фігурка когось у елітному криваво-червоному комбінезоні, схожому на те, що може носити хтось із команди ядерних оперативників.
+  components:
+  - type: Sprite
+    state: nukie_elite
+  - type: SpeakOnTrigger
+    pack: FigurinesNukieElite
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineNukieCommander
+  name: фігурка командиру ядерних оперативників синдикату
+  description: Фігурка когось у посиленому криваво-червоному скафандрі, схожому на те, що може носити командир ядерної оперативної групи.
+  components:
+  - type: Sprite
+    state: nukie_commander
+  - type: SpeakOnTrigger
+    pack: FigurinesNukieCommander
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineFootsoldier
+  name: фігурка піхотинця синдикату
+  description: Фігурка звичайного піхотинця Синдикату.
+  components:
+  - type: Sprite
+    state: footsoldier
+  - type: SpeakOnTrigger
+    pack: FigurinesFootsoldier
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineWizard
+  name: фігурка чаклуна
+  description: Фігурка людини з довгою шовковистою бородою в одязі чарівника. Тут точно щось не чисто!
+  components:
+  - type: Sprite
+    state: wizard
+  - type: SpeakOnTrigger
+    pack: FigurinesWizard
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineWizardFake
+  name: фігурка несправжнього чарівника
+  description: Фігурка зображує когось у костюмі фальшивої дупи. Який обдир!
+  components:
+  - type: Sprite
+    state: wizard_fake
+  - type: SpeakOnTrigger
+    pack: FigurinesWizard
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineGriffin
+  name: griffin figure
+  description: A figurine depicting 'The Griffin', criminal mastermind.
+  components:
+  - type: Sprite
+    state: griffin
+  - type: SpeakOnTrigger
+    pack: FigurinesGriffin
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineOwlman
+  name: owlman figure
+  description: A figurine depicting 'Owlman', the defender of justice.
+  components:
+  - type: Sprite
+    state: owlman
+  - type: SpeakOnTrigger
+    pack: FigurinesOwlman
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineSkeleton
+  name: skeleton figure
+  description: A figurine depicting a spooky scary skeleton.
+  components:
+  - type: Sprite
+    state: skeleton
+  - type: SpeakOnTrigger
+    pack: FigurinesSkeleton
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineThief
+  name: thief figure
+  description: A figurine depicting a kleptomaniac that hides in the shadows.
+  components:
+  - type: Sprite
+    state: thief
+  - type: SpeakOnTrigger
+    pack: FigurinesThief
+
+#Nonhuman Figurines
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyNuke
+  name: nuke toy
+  description: A plastic model of a Nuclear Fission Explosive. No uranium included... probably.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/toy_nuke.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Fun/toy_nuke.rsi
+    slots:
+    - HEAD
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        offset: "0, 0.12"
+  - type: Tag
+    tags:
+    - Figurine
+    - Payload
+  - type: UseDelay
+    delay: 180.0
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Machines/Nuke/nuke_alarm.ogg
+      params:
+        volume: -5
+        maxDistance: 10
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineSpaceDragon
+  name: фігурка космічного дракона
+  description: Велика фігурка, що зображує космічного дракона, його червоні очі дивляться на жертву.
+  components:
+  - type: Sprite
+    state: spacedragon
+  - type: SpeakOnTrigger
+    pack: FigurinesSpaceDragon
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineQueen
+  name: фігурка ксено королеви
+  description: Велика фігурка, що зображує королеву ксено, готову до атаки.
+  components:
+  - type: Sprite
+    state: queen
+  - type: SpeakOnTrigger
+    pack: FigurinesQueen
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineRatKing
+  name: фігурка короля щурів
+  description: Велика фігурка, що зображує щурячого короля, який готується звити своє гніздо. 
+  components:
+  - type: Sprite
+    state: ratking
+  - type: SpeakOnTrigger
+    pack: FigurinesRatKing
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineRatServant
+  name: фігурка прислуги короля щурів
+  description: Фігурка із зображенням щура, який служить королю щурів!
+  components:
+  - type: Sprite
+    state: ratservant
+  - type: SpeakOnTrigger
+    pack: FigurinesRatServant
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineMouse
+  name: фігурка миші
+  description: Фігурка, що зображує мишку, що біжить до найближчого шматка їжі.
+  components:
+  - type: Sprite
+    state: mouse
+  - type: SpeakOnTrigger
+    pack: FigurinesMouse
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineSlime
+  name: фігурка слайма
+  description: Статуетка, що зображує напівпрозорий синій слиз.
+  components:
+  - type: Sprite
+    state: slime
+  - type: SpeakOnTrigger
+    pack: FigurinesSlime
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineHamlet
+  name: фігурка гамлета
+  description: Статуетка із зображенням Гамлета, мікрохвильова піч в комплект не входить.
+  components:
+  - type: Sprite
+    state: hamlet
+  - type: SpeakOnTrigger
+    pack: FigurinesHamlet
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyAi
+  name: AI toy
+  description: A scaled-down toy AI core.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/AI.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Fun/AI.rsi
+    slots:
+    - HEAD
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        offset: "0, 0.06"
+  - type: SpeakOnTrigger
+    pack: FigurinesAI

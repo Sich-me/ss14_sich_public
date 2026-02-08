@@ -1,7 +1,7 @@
 - type: entity
-  name: explosive grenade
-  description: Grenade that creates a small but devastating explosion.
-  parent: [VolatileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
+  name: вибухова граната
+  description:  Граната, що створює невеликий, але руйнівний та небезпечний вибух.
+  parent: [VolatileGrenadeBase, TimerGrenadeBase, BaseSyndicateContraband]
   id: ExGrenade
   components:
   - type: ExplodeOnTrigger
@@ -23,8 +23,8 @@
 
 - type: entity
   name: світлошумова граната
-  description: МОЇ ОЧІ, МОЇ ВУХА!!
-  parent: [ FragileGrenadeBase, GrenadeBase, BaseSecurityContraband ]
+  description: ПФІІІІІІІІІІУ! МОЇ ОЧІ, МОЇ ВУХА!! 
+  parent: [ FragileGrenadeBase, TimerGrenadeBase, BaseSecurityContraband ]
   id: GrenadeFlashBang
   components:
   - type: Sprite
@@ -74,12 +74,12 @@
     - type: TimedDespawn
       lifetime: 0.5
 
-#The explosive values for these are pretty god damn mediocre, but SS14's explosion system is hard to understand - this is a good enough approximation of how it was in SS13.
-#Ideally, there should be a weak radius around the bomb outside of its gibbing / spacing range capable of dealing fair damage to players / structures.
+# Tuned to be a general bomb that deals equipment damage without explicitly gibbing, however it will still gladly instakill anyone that mishandles it.
+# One of the few syndie bombs that should punch holes in space.
 - type: entity
   name: міні-бомба синдикату
-  description: Вироблена синдикатом вибухівка, що використовується для руйнування та поширення хаосу.
-  parent: [VolatileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
+  description: Вироблена синдикатом вибухівка, гарна для пробиття обшивки станції чи знищення чогось не великого, але важливого.
+  parent: [VolatileGrenadeBase, TimerGrenadeBase, BaseSyndicateContraband]
   id: SyndieMiniBomb
   components:
   - type: Sprite
@@ -108,7 +108,7 @@
 - type: entity
   name: самознищення
   description: Вийдіть на власні умови!
-  parent: GrenadeBase
+  parent: TimerGrenadeBase
   id: SelfDestructSeq
   categories: [ HideSpawnMenu ]
   components:
@@ -131,13 +131,31 @@
         volume: 30
     initialBeepDelay: 0
     beepInterval: 16
+  - type: LightBehaviorOnTrigger
+    behavior: activate
+  - type: PointLight
+    energy: 50
+    radius: 0
+    color: Red
+    softness: 0
+    falloff: 20
+    mask: /Textures/Effects/LightMasks/double_cone.png
+  - type: RotatingLight
+    speed: 360
+  - type: LightBehaviour
+    behaviours:
+    - !type:FadeBehaviour # have the radius start small and get larger as it starts to burn
+      id: activate
+      maxDuration: 5
+      startValue: 1
+      endValue: 2
 
 
 - type: entity
-  parent: [ FragileGrenadeBase, GrenadeBase, BaseSyndicateContraband ]
+  parent: [ FragileGrenadeBase, TimerGrenadeBase, BaseSyndicateContraband ]
   id: SingularityGrenade
-  name: Граната сингулярності
-  description: Граната, що імітує розгін сингулярності, створює потужну гравітаційну свердловину.
+  name: граната сингулярності
+  description: Граната, що імітує сингулярність. Створює потужну гравітаційну аномалію на короткий проміжок часу, притягуючи все й всіх до себе.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/singularitygrenade.rsi
@@ -176,9 +194,10 @@
         sound:
           path: /Audio/Effects/Grenades/Supermatter/supermatter_loop.ogg
       - type: GravityWell
-        maxRange: 7
-        baseRadialAcceleration: 5
-        baseTangentialAcceleration: .5
+        maxRange: 5
+        minRange: 0.25
+        baseRadialAcceleration: 25
+        baseTangentialAcceleration: 5
         gravPulsePeriod: 0.03
       - type: SingularityDistortion
         intensity: 150
@@ -206,7 +225,7 @@
 
 - type: entity
   name: граната білої діри
-  description: Граната, яка на деякий час відштовхує все навколо.
+  description: Протилежність гранаті чорної діри, імітує, відповідно, білу діру. Створює потужну гравітаційну аномалію на короткий проміжок часу, відштовхуючи все й всіх від себе.
   parent: SingularityGrenade
   id: WhiteholeGrenade
   components:
@@ -265,9 +284,9 @@
     price: 1000
 
 - type: entity
-  name: ядерний варіант
-  description: Будь ласка, не кидайте її, подумайте про дітей.
-  parent: GrenadeBase
+  name: ядерна граната
+  description: Будь ласка, не кидайте її! Подумайте про дітей!!!
+  parent: TimerGrenadeBase
   id: NuclearGrenade
   components:
   - type: Sprite
@@ -299,7 +318,7 @@
 
 - type: entity
   name: модульна граната
-  description: Корпус від гранати. Потрібен пусковий механізм та заряд.
+  description: Корпус від гранати. Для її роботоспособності також потрібен пусковий механізм та заряд.
   parent: BaseItem
   id: ModularGrenade
   components:
@@ -346,32 +365,28 @@
     price: 75
 
 - type: entity
-  name: граната ЕМІ
-  description: Граната, призначена для виведення з ладу електронних систем.
-  parent: [FragileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
+  name: ЕМІ граната
+  description: Граната електрично-магнітого імпульсу, призначена для виведення з ладу електронних систем та пристроїв.
+  parent: [ImpactGrenadeBase, BaseSyndicateContraband]
   id: EmpGrenade
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/empgrenade.rsi
   - type: EmpOnTrigger
     keysIn:
-    - timer
+    - trigger
     range: 5.5
     energyConsumption: 50000
   - type: DeleteOnTrigger
     keysIn:
-    - timer
-  - type: Appearance
-  - type: TimerTriggerVisuals
-    primingSound:
-      path: /Audio/Effects/countdown.ogg
+    - trigger
   - type: StaticPrice
     price: 666 # 2000 for 3, I love fractions
 
 - type: entity
-  name: свята ручна граната
-  description: Господи, благослови цю Твою ручну гранату, щоб нею Ти міг рознести Твоїх ворогів на дрібні шматочки, у Твоїй милості.
-  parent: [GrenadeBase, BaseSyndicateContraband]
+  name: свята граната
+  description: Господи, благослови цю ручну гранату, щоб рознесені були нею вороги твої на шматочки малі, во славу Тебе та дітей твоїх. Амінь!
+  parent: [TimerGrenadeBase, BaseSyndicateContraband]
   id: HolyHandGrenade
   components:
   - type: Sprite
@@ -401,8 +416,8 @@
 
 - type: entity
   name: фальшива граната
-  description: Повноцінна граната без будь-яких вибухів.
-  parent: GrenadeBase
+  description: Повноціна граната, за виключенням того, що не вибухає.
+  parent: TimerGrenadeBase
   id: GrenadeDummy
   components:
   - type: Sprite
@@ -428,7 +443,7 @@
 
 - type: entity
   name: підступна бомба синдикату 
-  description: Вибухівка, виготовлена синдикатом, була чудовим відволікаючим маневром.
+  description: Вибухівка, виготовлена синдикатом, буде чудовим відволікаючим маневром.
   parent: [GrenadeDummy, BaseSyndicateContraband]
   id: SyndieTrickyBomb
   components:
@@ -449,4 +464,4 @@
       params:
         volume: 12
   - type: StaticPrice
-    price: 1000
+    price: 50

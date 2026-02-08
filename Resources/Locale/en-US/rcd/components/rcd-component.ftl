@@ -8,12 +8,12 @@ rcd-component-examine-build-details = Наразі він налаштовани
 ### Interaction Messages
 
 # Mode change
-rcd-component-change-mode = RCD тепер налаштований на режим '{$mode}'.
-rcd-component-change-build-mode = Тепер РСД налаштовано на будівництво {MAKEPLURAL($name)}.
+rcd-component-change-mode = ПШБ тепер налаштований на режим '{$mode}'.
+rcd-component-change-build-mode = Тепер ПШБ налаштовано на будівництво {MAKEPLURAL($name)}.
 
 # Ammo count
-rcd-component-no-ammo-message = У РСД закінчилися заряди!
-rcd-component-insufficient-ammo-message = У РСД не вистачає зарядів!
+rcd-component-no-ammo-message = У ПШБ закінчилися заряди!
+rcd-component-insufficient-ammo-message = У ПШБ не вистачає зарядів!
 
 # Deconstruction
 rcd-component-tile-indestructible-message = Цю плитку неможливо знищити!
@@ -29,6 +29,7 @@ rcd-component-must-build-on-subfloor-message = Ви можете будуват�
 rcd-component-cannot-build-on-subfloor-message = Ви не можете побудувати це на відкритій підлозі!
 rcd-component-cannot-build-on-occupied-tile-message = Тут не можна будувати, простір вже зайнятий!
 rcd-component-cannot-build-identical-tile = Ця плитка там вже є!
+rcd-component-cannot-build-identical-entity = Це вже там існує!
 
 
 ### Category names

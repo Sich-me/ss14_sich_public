@@ -3,7 +3,7 @@
   parent: BaseItem
   id: SheetGlassBase
   name: скло
-  description: Лист скла, який часто використовується на станції в різних сферах.
+  description: Прозорий лист скла, його часто використовується на станції та у багатьох інших місцях та сферах.
   components:
   - type: Sprite
     sprite: Objects/Materials/Sheets/glass.rsi
@@ -113,7 +113,7 @@
   parent: SheetGlassBase
   id: SheetRGlass
   name: армоване скло
-  description: Армований лист скла.
+  description: Все ще прозорий лист армованого скла.
   suffix: Повний
   components:
   - type: PhysicalComposition
@@ -193,7 +193,7 @@
   parent: SheetGlassBase
   id: SheetPGlass
   name: плазмове скло
-  description: Лист напівпрозорої плазми.
+  description: Напівпрозорий лист скла укріплений плазмою. Не токсична лише у твердому стані.
   suffix: Повний
   components:
   - type: PhysicalComposition
@@ -268,7 +268,7 @@
   parent: SheetPGlass
   id: SheetRPGlass
   name: армоване плазмове скло
-  description: Армований лист напівпрозорої плазми.
+  description: Все ще напівпрозорий армований лист скла укріплений плазмою.
   suffix: Повний
   components:
   - type: PhysicalComposition
@@ -323,7 +323,7 @@
   parent: SheetGlassBase
   id: SheetUGlass
   name: уранове скло
-  description: Лист уранового скла.
+  description: Напівпрозорий лист скла укріплений ураном. Не токсичний лише у твердому стані.
   suffix: Повний
   components:
   - type: PhysicalComposition
@@ -398,7 +398,7 @@
   parent: SheetUGlass
   id: SheetRUGlass
   name: армоване уранове скло
-  description: Армований лист урану.
+  description: Все ще напівпрозорий армований лист скла укріплений ураном.
   components:
   - type: PhysicalComposition
     materialComposition:

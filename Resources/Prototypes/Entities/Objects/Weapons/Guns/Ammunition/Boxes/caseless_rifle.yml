@@ -43,8 +43,8 @@
 - type: entity
   parent: BaseMagazineBoxCaselessRifle
   id: MagazineBoxCaselessRiflePractice
-  name: коробка з набоями (.25 безгільзовий тренувальний)
-  description: A cardboard box of .25 caseless rounds. Intended to hold non-harmful chalk ammunition.
+  name: коробка набоїв (.25 безгільзові навчальні)
+  description: Картонна коробка безгільзових набоїв калібру .25. Призначена для зберігання безпечних навчальних боєприпасів.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRiflePractice

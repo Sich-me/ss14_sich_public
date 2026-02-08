@@ -20,7 +20,7 @@
       - VendingMachineShamblersJuice
       - VendingMachineSmite
       - VendingMachineSoda #Robust Sofdrinks [Soda]
-      - VendingMachineSovietSoda #Boda
+#      - VendingMachineSovietSoda – Sich. Прибрано, бо русняве
       - VendingMachineSpaceUp
       - VendingMachineStarkist
     chance: 1

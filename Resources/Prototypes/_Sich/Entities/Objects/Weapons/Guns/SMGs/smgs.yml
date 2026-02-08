@@ -14,11 +14,15 @@
   - type: Clothing
     sprite: _Sich/Objects/Weapons/Guns/SMGs/otaku.rsi
   - type: Gun
-    fireRate: 8
+    fireRate: 7
+    minAngle: 0
+    maxAngle: 28
+    angleIncrease: 4
+    angleDecay: 35
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
       params:
-        volume: -8
+        volume: -6
   - type: ChamberMagazineAmmoProvider
     autoEject: true
   - type: MagazineVisuals

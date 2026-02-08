@@ -49,7 +49,7 @@ ui-options-misc-label = Різне
 ui-options-interface-label = Інтерфейс
 
 
-ui-options-auto-fill-highlights = Автоматично заповнювати підсвічування інформацією персонажа
+ui-options-auto-fill-highlights = Автоматично встановити список підсвічувань на основі імені та професії вашого персонажа
 ui-options-highlights-color = Колір підсвічування:
 ui-options-highlights-color-example = Це підсвічений текст!
 ui-options-show-held-item = Показувати утримуваний елемент поруч з курсором
@@ -108,6 +108,9 @@ ui-options-vp-width = Ширина вікна перегляду:
 ui-options-hud-layout = Макет HUD:
 
 ## Controls menu
+
+ui-options-hold-to-attack-melee = Утримувати для атаки (ближній бій)
+ui-options-hold-to-attack-ranged = Утримувати для атаки (дальній бій)
 
 ui-options-binds-reset-all = Скинути всі сполучення клавіш
 ui-options-binds-explanation = Нажміть, щоб змінити кнопку, ПКМ - щоб очистити

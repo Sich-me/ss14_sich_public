@@ -1,8 +1,8 @@
 - type: entity
+  parent: [ BaseStructureDynamic, BasePaperLabelableVisualized ]
   id: CrateArtifactContainer
-  parent: BaseStructureDynamic
   name: контейнер для артефактів
-  description: Використовується для безпечного утримання та переміщення артефактів.
+  description: Використовується для безпечного зберігання та перенесення артефактів.
   components:
     - type: Transform
       noRot: true
@@ -64,16 +64,6 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
-    - type: PaperLabel
-      labelSlot:
-        insertVerbText: comp-paper-label-insert
-        ejectVerbText: comp-paper-label-eject
-        whitelist:
-          components:
-            - Paper
-        blacklist:
-          tags:
-          - Book
     - type: Appearance
     - type: EntityStorageVisuals
       stateDoorOpen: artifact_container_open
@@ -95,7 +85,6 @@
             True: { offset: "0.0,0.3125" }
             False: { offset: "0.0,0.0" }
     - type: LockVisuals
-    - type: ItemSlots
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -106,8 +95,8 @@
 - type: entity
   parent: BaseStorageItem
   id: HandheldArtifactContainer
-  name: handheld artifact container
-  description: A handheld case used to safely contain and move small artifacts.
+  name: ручний контейнер для артефактів
+  description: Ручний контейнер, який використовується для безпечного зберігання та переміщення невеликих артефактів.
   components:
   - type: Sprite
     sprite: Objects/Storage/artifact_container.rsi

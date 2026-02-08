@@ -35,3 +35,5 @@ comp-kitchen-spike-hooked = [color=red]{ CAPITALIZE(THE($victim)) } на цьо�
 comp-kitchen-spike-meat-name = { $name } ({ $victim })
 
 comp-kitchen-spike-victim-examine = [color=orange]{ CAPITALIZE(SUBJECT($target)) } виглядає досить худим.[/color]
+
+comp-kitchen-spike-deconstruct-occupied = Далі [color=red]зніміть тіло з гака[/color].

@@ -2,7 +2,7 @@
   # Люди
 
   <Box>
-    <GuideEntityEmbed Entity="MobHumanDummy" Caption=""/>
+    <GuideEntityEmbed Entity="AppearanceHuman" Caption=""/>
   </Box>
 
   Залежно від того, кого ви запитаєте, люди або нічим не примітні, або є універсальним стандартом, з яким порівнюється все інше.

@@ -1,4 +1,5 @@
 ## UI
+door-remote-toggle-eletrify-text = Перемкнути перевантаження
 door-remote-open-close-text = Відчиняє та Зачиняє двері
 door-remote-toggle-bolt-text = Перемикає Болтування
 door-remote-emergency-access-text = Перемикає Аварійний Доступ

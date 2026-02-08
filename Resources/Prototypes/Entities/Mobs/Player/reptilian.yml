@@ -1,8 +1,0 @@
-- type: entity
-  save: false
-  name: Уріст МакЛуска
-  suffix: Urisst' Mzhand
-  parent: BaseMobReptilian
-  id: MobReptilian
-
-#Вех

@@ -8,9 +8,15 @@
     - Document
     - Paper
   - type: Appearance
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+  - type: ExtinguishableSetCollisionWake
   - type: Flammable
     fireSpread: true
     alwaysCombustible: true
+    canExtinguish: true
     damage:
       types:
         Heat: 1
@@ -277,9 +283,8 @@
 - type: entity
   id: PaperSalvageJobLabel
   parent: PaperCargoInvoice
-  name: Наклейка на вантаж для шахтарів  
-  description: Паперова наклейка, що позначає ящик як вантаж для виконання шахтарських завдань. Продаж такого ящика виконає завдання.
-
+  name: наліпка на шахтарський вантаж  
+  description: Паперова наліпка, яку ліплять на ящики з шахтарським вантажем по завданню. Продаж такого ящика з необхідним вмістом всередині виконає завдання.
   components:
   - type: Sprite
     layers:

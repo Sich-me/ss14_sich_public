@@ -189,7 +189,7 @@
   parent: ClothingBackpack
   id: ClothingBackpackSalvage
   name: шахтарський рюкзак
-  description: Робасний рюкзак для вашого хабара.
+  description: Потужний рюкзак для вашого хабаря.
   components:
     - type: Sprite
       sprite: Clothing/Back/Backpacks/salvage.rsi
@@ -208,13 +208,15 @@
   parent: [ ClothingBackpack, BaseCentcommContraband ]
   id: ClothingBackpackERTLeader
   name: рюкзак лідера ГШР
-  description: Місткий рюкзак з великою кількістю кишень, який носить керівник групи швидкого реагування на надзвичайні ситуації.
+  description: Місткий рюкзак з великою кількістю кишень, який носить лідер групи швидкого реагування на надзвичайні ситуації.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ertleader.rsi
   - type: Storage
     grid:
-    - 0,0,10,3
+    - 0,0,8,3
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
 
 - type: entity
   parent: ClothingBackpackERTLeader
@@ -362,7 +364,7 @@
   id: ClothingBackpackDebug
   name: вакзак
   description: Що це в біса взагалі таке?
-  suffix: Debug
+  suffix: DEBUG
   components:
   - type: Storage
     grid:
@@ -378,7 +380,7 @@
   id: ClothingBackpackDebug2
   name: великий вакзак
   description: Що це в біса взагалі таке?
-  suffix: Debug
+  suffix: DEBUG
   components:
   - type: Storage
     grid:
@@ -389,7 +391,7 @@
   id: ClothingBackpackDebug3
   name: гейський вакзак
   description: Що це в біса взагалі таке?
-  suffix: Debug
+  suffix: DEBUG
   components:
   - type: Storage
     grid:
@@ -410,7 +412,7 @@
   id: ClothingBackpackDebug4
   name: офсетний вакзак
   description: Що це в біса взагалі таке?
-  suffix: Debug
+  suffix: DEBUG
   components:
   - type: Storage
     grid:

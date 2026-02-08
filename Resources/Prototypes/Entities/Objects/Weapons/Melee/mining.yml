@@ -2,7 +2,7 @@
   name: кайло
   parent: BaseItem
   id: Pickaxe
-  description: Зазубрений до досконалості, щоб втикати його в скелі.
+  description: Зазубрено до досконалості, щоб втикати його в скелі.
   components:
   - type: Tag
     tags:
@@ -41,10 +41,10 @@
       Wood: 100
 
 - type: entity
-  name: гірничий бур
+  name: бур
   parent: BaseItem
   id: MiningDrill
-  description: Потужний інструмент для швидкого буріння каменів.
+  description: Потужний інструмент для швидкого буріння каменюк.
   components:
   - type: Item
     storedRotation: -90
@@ -68,10 +68,10 @@
         Structural: 15
 
 - type: entity
-  name: бур з алмазним наконечником
+  name: бур з діамантовим вістрям
   parent: MiningDrill
   id: MiningDrillDiamond
-  description: Значно ефективніший гірничий бур з алмазним наконечником.
+  description: Покращена версія звичайного бура. Блищить!
   components:
   - type: Sprite
     sprite: Objects/Tools/handdrilldiamond.rsi
@@ -95,7 +95,7 @@
   parent: BaseItem
   id: BaseWeaponCrusher # Crusher? But I...
   name: руйнівник
-  description: Рання версія прото-кінетичного прискорювача виготовлена для ближнього бою.
+  description: Рання версія протокінетичного прискорювача, створена для ближнього бою, а також здатна випускати снаряди, які підсилюють удари нею ж та лікують власника.
   components:
   - type: Sharp
   - type: Execution
@@ -170,8 +170,8 @@
 - type: entity
   parent: [ BaseKnife, BaseWeaponCrusher, BaseSecurityCargoContraband]
   id: WeaponCrusherDagger
-  name: кинжал руйнівник
-  description: Зменшена версія кінетичної глефи, здатна влізти в кишеню та освітити шлях попереду. Використовує кінетичну енергію, для того, щоб лезо вібрувало на високих швидкостях.
+  name: кинджал-руйнівник
+  description: Зменшена версія глефи-руйнівника, здатна влізти в кишеню та освітити шлях попереду. Використовує кінетичну енергію, для того, щоб лезо вібрувало на високих швидкостях.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher_dagger.rsi
@@ -215,8 +215,8 @@
 - type: entity
   parent: [ WeaponCrusher, BaseSecurityCargoContraband]
   id: WeaponCrusherGlaive
-  name: руйнівник глефа
-  description: Ранній прототип протокінетичного прискорювача у формі глефи. Забезпечує краще лікування ціною меншої зарядженої шкоди.
+  name: глефа-руйнівник
+  description: Ранній прототип протокінетичного прискорювача у формі глефи. Здатна на все теж саме, але має трохи меншу шкоди при набагато кращому лікуванні.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher_glaive.rsi

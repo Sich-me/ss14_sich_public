@@ -9,6 +9,10 @@ station-ai-is-too-damaged-for-upload = Завантаження не вдало�
 station-ai-core-losing-power = Ядро ШІ працює на резервному живленні.
 station-ai-core-critical-power = Критично низький рівень живлення ядра ШІ. Необхідно відновити зовнішнє живлення, інакше може статися серйозне пошкодження даних!
 
+# Ghost role
+station-ai-ghost-role-name = Station AI
+station-ai-ghost-role-description = Serve the station crew as its ever watchful AI.
+
 # Radial actions
 ai-open = Відкриті дії
 ai-close = Закриті дії

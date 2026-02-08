@@ -84,8 +84,17 @@
   name: мішок борошна
   description: Великий мішок борошна. Те що треба для випічки!
   components:
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "flour-big_open"} # open
+          False: {state: "flour-big"} # closed
   - type: Sprite
-    state: flour-big
+    layers:
+    - state: flour-big
+      map: ["enum.OpenableVisuals.Layer"]
   - type: SolutionContainerManager
     solutions:
       food:
@@ -116,8 +125,17 @@
   name: мішок кукурудзяного борошна
   description: Великий мішок кукурудзяного борошна. Згодиться для приготування їжі.
   components:
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "cornmeal-big_open"} # open
+          False: {state: "cornmeal-big"} # closed
   - type: Sprite
-    state: cornmeal-big
+    layers:
+    - state: cornmeal-big
+      map: ["enum.OpenableVisuals.Layer"]
   - type: SolutionContainerManager
     solutions:
       food:
@@ -147,8 +165,17 @@
   name: мішок рису
   description: Великий мішок рису. Гарний для приготування їжі! Хааааяяяяя!
   components:
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "rice-big_open"} # open
+          False: {state: "rice-big"} # closed
   - type: Sprite
-    state: rice-big
+    layers:
+    - state: rice-big
+      map: ["enum.OpenableVisuals.Layer"]
   - type: SolutionContainerManager
     solutions:
       food:
@@ -178,8 +205,17 @@
   name: мішок цукру
   description: Великий мішок смачного космічного цукру.
   components:
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "sugar-big_open"} # open
+          False: {state: "sugar-big"} # closed
   - type: Sprite
-    state: sugar-big
+    layers:
+    - state: sugar-big
+      map: ["enum.OpenableVisuals.Layer"]
   - type: SolutionContainerManager
     solutions:
       food:
@@ -211,8 +247,17 @@
   name: оливкова олія
   description: Олійкова олива. З космічних оливок, мабуть.
   components:
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "oliveoil_open"} # open
+          False: {state: "oliveoil"} # closed
   - type: Sprite
-    state: oliveoil
+    layers:
+    - state: oliveoil
+      map: ["enum.OpenableVisuals.Layer"]
   - type: SolutionContainerManager
     solutions:
       food:
@@ -229,8 +274,17 @@
   name: майонез
   description: Пляшка майонезу.
   components:
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "mayo_open"} # open
+          False: {state: "mayo"} # closed
   - type: Sprite
-    state: mayo
+    layers:
+    - state: mayo
+      map: ["enum.OpenableVisuals.Layer"]
   - type: SolutionContainerManager
     solutions:
       food:

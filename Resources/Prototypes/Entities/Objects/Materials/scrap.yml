@@ -31,8 +31,8 @@
   parent: BaseStructure
   id: BaseScrapLarge
   abstract: true
-  name: scrap
-  description: Worthless junk. You could probably get some materials out of it though.
+  name: брухт
+  description: Нікчемний мотлох. Хоча, можливо, з нього можна було б отримати деякі матеріали..
   suffix: Scrap
   components:
   - type: InteractionOutline
@@ -70,8 +70,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapSteel
-  name: купа абразивної сталі
-  description: Купа сталі, звареної в умовах екстремальної спеки. Загалом вона пристойного розміру, з неї, мабуть, можна було б отримати чималу кількість листів сталі.
+  name: купа сталевого брухту
+  description: Купа сталі, яку зварило разом щось дуже горяче. Чи то вибух, чи то пожежа. Цей шмат має досить не малі розміри, якщо переробити, то з неї вийде отримати не мало матеріалів.
   components:
   - type: Sprite
     layers:
@@ -126,7 +126,7 @@
   parent: BaseScrap
   id: ScrapAirlock1
   name: двері шлюзу
-  description: Раніше вони тримали повітря всередині. Тепер, здається, вона взагалі нічого не робить.
+  description: Раніше вони тримали повітря всередині. Тепер, здається, воно взагалі нічого не робить.
   components:
   - type: Sprite
     layers:
@@ -151,7 +151,7 @@
   parent: BaseScrap
   id: ScrapAirlock2
   name: лампа шлюзу
-  description: Так йому і треба за те, що весь час блимає червоним кольором.
+  description: Так йому й треба за те, що весь час блимав червоним кольором.
   components:
   - type: Sprite
     layers:
@@ -182,7 +182,7 @@
   parent: BaseScrap
   id: ScrapCamera
   name: зламана камера
-  description: Можливо, він все ще спостерігає.
+  description: Можливо, вона все ще спостерігає.
   components:
   - type: Sprite
     layers:
@@ -195,7 +195,7 @@
 - type: entity
   parent: BaseScrap
   id: ScrapCanister1
-  name: ручка каністри
+  name: ручка від каністри
   description: Допомагає тримати каністру. Тепер вам потрібна лише сама каністра.
   components:
   - type: Sprite
@@ -208,8 +208,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapCanister2
-  name: вентиль каністри
-  description: Вентиль з газової каністри.
+  name: вентиль від каністри
+  description: Вентиль з газової каністри. Тепер залишається знайти, куди його закрутити.
   components:
   - type: Sprite
     layers:
@@ -223,8 +223,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapCloset
-  name: двері шафи
-  description: Вибиті двері з шафи. Виглядає як гарний настінний декор.
+  name: двері від шафи
+  description: Двері, але без самої шафи. Виглядає як гарний настінний декор.
   components:
   - type: Sprite
     layers:
@@ -243,7 +243,7 @@
   parent: BaseScrap
   id: ScrapFaxMachine
   name: факс
-  description: Невдалий результат того, що до Центрального командування було надіслано надто багато NSFW-артів.
+  description: Невдалий результат того, що до Центрального командування було надіслано надто багато ASCII артів.
   components:
   - type: Sprite
     layers:
@@ -272,7 +272,7 @@
   parent: BaseScrap
   id: ScrapFirelock1
   name: протипожежні двері
-  description: Принаймні, ви все ще знаєте, для чого вони призначений.
+  description: Принаймні, ви все ще знаєте, для чого вони призначені.
   components:
   - type: Sprite
     layers:
@@ -456,8 +456,8 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorPlasmaLeaking
-  name: leaking P.A.C.M.A.N. generator
-  description: An old looking P.A.C.M.A.N. generator whos plasma tanks started leaking.
+  name: протікаючий генератор типу P.A.C.M.A.N.
+  description: На вигляд старий генератор P.A.C.M.A.N., схоже його резервуар для плазми почав протікати.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -474,8 +474,8 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorPlasma
-  name: old P.A.C.M.A.N. generator
-  description: An old looking P.A.C.M.A.N. generator. It's in very poor condition and non functional.
+  name: старий генератор типу P.A.C.M.A.N.
+  description: На вигляд старий генератор P.A.C.M.A.N., він у дуже поганому стані та схоже давно не здатен працювати.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -490,8 +490,8 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorUraniumLeaking
-  name: leaking S.U.P.E.R.P.A.C.M.A.N. generator
-  description: A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure. It's leaking uranium.
+  name: протікаючий генератор типу S.U.P.E.R.P.A.C.M.A.N.
+  description: На вигляд старий генератор S.U.P.E.R.P.A.C.M.A.N., схоже він пережив щось жахливе. З нього капає рідкий уран.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -519,8 +519,8 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorUranium
-  name: destroyed S.U.P.E.R.P.A.C.M.A.N. generator
-  description: A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure.
+  name: знищений генератор типу S.U.P.E.R.P.A.C.M.A.N.
+  description: Генератор S.U.P.E.R.P.A.C.M.A.N., який пережив щось жахливе. Наврядчи він вже буде працювати...
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -543,8 +543,8 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorFrame
-  name: generator frame
-  description: A frame of a P.A.C.M.A.N. or S.U.P.E.R.P.A.C.M.A.N. type generator. Where is the rest of it?
+  name: корпус генератора
+  description: Корпус для генератора P.A.C.M.A.N. або S.U.P.E.R.P.A.C.M.A.N. Куди поділися всі інші запчастини?
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
@@ -557,8 +557,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapGeneratorFuelTank
-  name: fuel tank
-  description: A fuel tank from a S.U.P.E.R.P.A.C.M.A.N. type generator. The gauge indicates its got a little fuel left.
+  name: паливний бак
+  description: Паливний бак від генератора S.U.P.E.R.P.A.C.M.A.N. Датчик на ньому показує, що пального не залишилось.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi

@@ -1,10 +1,10 @@
 # Rockets
 
 - type: entity
-  id: CartridgeRocket
-  name: ПГ-7ВЛ
   parent: [BaseItem, BaseMajorContraband]
-  description: Ракета 1,5 призначена для РПГ-7. Має трубчасту форму.
+  id: CartridgeRocket
+  name: PG-7VL grenade
+  description: A 1.5 warhead designed for the RPG-7 launcher. Has tubular shape.
   components:
   - type: Tag
     tags:
@@ -21,10 +21,10 @@
     price: 20
 
 - type: entity
-  id: CartridgeRocketSlow
-  name: ПГ-7ВЛ "Ракета-Равлик"
   parent: [BaseItem, BaseMajorContraband]
-  description: Ракета 1,5 призначена для РПГ-7. Має трубчасту форму. Вона занадто повільна..
+  id: CartridgeRocketSlow
+  name: PG-7VL grenade "Snail-Rocket"
+  description: A 1.5 warhead designed for the RPG-7 launcher. It's unusually slow.
   components:
     - type: Tag
       tags:
@@ -43,10 +43,10 @@
 # Grenades
 
 - type: entity
-  id: BaseGrenade
-  name: звичайна граната
-  parent: [BaseItem, BaseMajorContraband]
   abstract: true
+  parent: [BaseItem, BaseMajorContraband]
+  id: BaseGrenade
+  name: base grenade
   components:
   - type: Tag
     tags:
@@ -56,9 +56,9 @@
   - type: Sprite
 
 - type: entity
-  id: GrenadeBaton
-  name: кінетична граната
   parent: BaseGrenade
+  id: GrenadeBaton
+  name: baton grenade
   components:
   - type: CartridgeAmmo
     proto: BulletGrenadeBaton
@@ -73,9 +73,9 @@
     suffix: false
 
 - type: entity
-  id: GrenadeBlast
-  name: вибухова граната
   parent: BaseGrenade
+  id: GrenadeBlast
+  name: blast grenade
   components:
   - type: CartridgeAmmo
     proto: BulletGrenadeBlast
@@ -90,9 +90,9 @@
     suffix: false
 
 - type: entity
-  id: GrenadeFlash
-  name: спалахова граната
   parent: BaseGrenade
+  id: GrenadeFlash
+  name: flash grenade
   components:
   - type: CartridgeAmmo
     proto: BulletGrenadeFlash
@@ -107,9 +107,9 @@
     suffix: false
 
 - type: entity
-  id: GrenadeFrag
-  name: осколкова граната
   parent: BaseGrenade
+  id: GrenadeFrag
+  name: frag grenade
   components:
   - type: CartridgeAmmo
     proto: BulletGrenadeFrag
@@ -141,9 +141,9 @@
     suffix: false
 
 - type: entity
-  id: GrenadeEMP
-  name: ЕМІ граната
   parent: BaseGrenade
+  id: GrenadeEMP
+  name: EMP grenade
   components:
   - type: CartridgeAmmo
     proto: BulletGrenadeEMP
@@ -160,10 +160,10 @@
 # Cannon Balls
 
 - type: entity
-  id: BaseCannonBall
-  name: звичайне гарматне ядро
-  parent: [BaseItem, BaseMajorContraband]
   abstract: true
+  parent: [BaseItem, BaseMajorContraband]
+  id: BaseCannonBall
+  name: base cannon ball
   components:
   - type: Tag
     tags:
@@ -173,10 +173,10 @@
   - type: Sprite
 
 - type: entity
-  id: CannonBall
-  name: гарматне ядро
-  suffix: Pirate
   parent: BaseCannonBall
+  id: CannonBall
+  name: cannonball
+  suffix: Pirate
   components:
   - type: CartridgeAmmo
     proto: BulletCannonBall
@@ -186,10 +186,10 @@
     state: ball
 
 - type: entity
-  id: CannonBallGrapeshot
-  name: виноградне ядро
-  suffix: Pirate
   parent: BaseCannonBall
+  id: CannonBallGrapeshot
+  name: grapeshot
+  suffix: Pirate
   components:
   - type: CartridgeAmmo
     proto: PelletGrapeshotSpread
@@ -199,10 +199,10 @@
     state: grapeshot
 
 - type: entity
-  id: CannonBallGlassshot
-  name: скляне ядро
-  suffix: Pirate
   parent: BaseCannonBall
+  id: CannonBallGlassshot
+  name: glassshot
+  suffix: Pirate
   components:
   - type: CartridgeAmmo
     proto: PelletGlassSpread

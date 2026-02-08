@@ -1,5 +1,0 @@
-- type: entity
-  save: false
-  name: Уріст МакПухнаст
-  parent: BaseMobMoth
-  id: MobMoth

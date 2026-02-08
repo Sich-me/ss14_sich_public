@@ -11,7 +11,7 @@ alerts-low-pressure-name = [color=red]Низький тиск[/color]
 alerts-low-pressure-desc = Повітря навколо вас [color=red]небезпечно тонке[/color]. [color=green]Скафандр[/color] міг би вас захистити.
 
 alerts-high-pressure-name = [color=red]Високий тиск[/color]
-alerts-high-pressure-desc = Повітря навколо вас [color=red]небезпечно товсте[/color]. [color=green]Гермокостюм[/color] міг би вас захистити.
+alerts-high-pressure-desc = Повітря навколо вас [color=red]небезпечно щільне[/color]. [color=green]Скафандра[/color] буде достатньо для вашого захисту.
 
 alerts-on-fire-name = [color=red]У вогні[/color]
 alerts-on-fire-desc = Ви [color=red]палаєте[/color]. Клацніть на сповіщення, щоб зупинитися, впасти та перекочуватися, аби зупинити вогонь. Або пройдіть до зони з вакуумом.

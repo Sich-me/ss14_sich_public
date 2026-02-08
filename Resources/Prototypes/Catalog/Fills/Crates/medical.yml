@@ -1,8 +1,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateMedicalSupplies
-  name: medical supplies crate
-  description: Basic medical supplies.
+  name: ящик з медичними розхідниками
+  description: Ящик з базовими ліками. Містить у собі пару аптечок першої допомоги, бинти, пакети крові та стерильні рукавички з масками.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -21,8 +21,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateChemistrySupplies
-  name: chemistry supplies crate
-  description: Basic chemistry supplies.
+  name: ящик з хімічним обладнанням
+  description: Ящик з базовим хім. обладнанням. Містить у собі колби, пляшечки шприци, баночки для пігулок та піпетки.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -39,8 +39,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateChemistryVials
-  name: vial supply crate
-  description: Crate filled with a box of vials.
+  name: ящик з флаконами
+  description: Ящик, який містить у собі флакони.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -50,8 +50,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateMindShieldImplants
-  name: MindShield implant crate
-  description: Crate filled with 3 MindShield implants.
+  name: ящик з імплантами захисту розуму
+  description: Містить у собі 3 імпланти захисту розуму.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -62,8 +62,8 @@
 - type: entity
   parent: CrateSurgery
   id: CrateMedicalSurgery
-  name: surgical supplies crate
-  description: Surgical instruments.
+  name: ящик з хірургічним обладнанням
+  description: Містить у собі базове хірургічне обладнання. Все необхідне для проведення операцій!
   components:
   - type: EntityTableContainerFill
     containers:
@@ -80,8 +80,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateMedicalScrubs
-  name: medical scrubs crate
-  description: Medical clothings.
+  name: ящик з одягом для медиків
+  description: Містить у собі комплект різноманітного медичного одягу.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -99,8 +99,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateEmergencyBurnKit
-  name: emergency burn kit
-  description: Crate filled with a burn treatment kit.
+  name: екстрений комплект з аптечкою від опіків
+  description: Ящик з аптечкою від опіків. Пече...
   components:
   - type: EntityTableContainerFill
     containers:
@@ -110,8 +110,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateEmergencyToxinKit
-  name: emergency toxin kit
-  description: Crate filled with a toxin treatment kit.
+  name: екстрений комплект з аптечкою від отруєння
+  description: Ящик з аптечкою від отруєння. Пити треба було менше.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -121,8 +121,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateEmergencyO2Kit
-  name: emergency O2 kit
-  description: Crate filled with an O2 treatment kit.
+  name: екстрений комплект з аптечкою від нестачі кисню
+  description: Ящик з аптечкою від нестачі кисню. Якщо з вас витікає червона, синя чи зелена рідина – це погано.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -132,8 +132,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateEmergencyBruteKit
-  name: emergency brute kit
-  description: Crate filled with a brute treatment kit.
+  name: екстрений комплект з аптечкою від механічних травм
+  description: Ящик з аптечкою від механічних травм. Не бійтеся впасти – бійтеся не встати.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -143,8 +143,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateEmergencyAdvancedKit
-  name: emergency advanced kit
-  description: Crate filled with an advanced treatment kit.
+  name: екстрений комплект з просунутою аптечкою
+  description: Ящик з просунутою аптечкою. Для складніших випадків.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -154,8 +154,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateEmergencyRadiationKit
-  name: emergency radiation kit
-  description: Crate filled with a radiation treatment kit.
+  name: екстрений комплект з протирадіаційною аптечкою
+  description: Ящик з протирадіаційною аптечкою. Металевий присмак та почервоніння шкіри – це не норма.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -165,8 +165,8 @@
 - type: entity
   parent: CrateMedical
   id: CrateBodyBags
-  name: body bags crate
-  description: Contains ten body bags.
+  name: ящик з мішками для тіл
+  description: Містить у собі 10 мішків для тіл. Не будемо питати, нащо вам це.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -177,8 +177,8 @@
 - type: entity
   parent: CrateMedicalSecure
   id: CrateVirologyBiosuit
-  name: virology bio suit crate
-  description: Contains 2 biohazard suits to ensure that no disease will distract you from treating the crew. Requires Medical access to open.
+  name: ящик з костюмами біозахисту вірусологів
+  description: Містить у собі 2 костюми біологічного захисту найкращої модифікації разом з стерильними масками, щоб жодна хвороба не відволікала вас від лікування екіпажу. Потребує доступ Медичного для відкриття.
   components:
   - type: EntityTableContainerFill
     containers:

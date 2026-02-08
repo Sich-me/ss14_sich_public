@@ -28,5 +28,3 @@ fibers-regal-blue = глобоко-сині
 fibers-olive = оливкові
 fibers-silver = срібні
 fibers-gold = золоті
-fibers-maroon = бордові
-fibers-pink = рожеві

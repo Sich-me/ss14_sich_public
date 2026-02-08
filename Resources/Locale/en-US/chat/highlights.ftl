@@ -42,13 +42,12 @@ highlights-janitor = Прибиральник
 highlights-lawyer = Адвокат, Юрист, Юриссст
 highlights-librarian = Бібліотекар, Бібліотека, Бібліотеці
 highlights-mime = Мім
+highlights-musician = Музикант, "Музика", Театр, Театр, Сервіс
 highlights-passenger = Пасажир, Пасссажир, Пасажжжир
 highlights-serviceworker = Сервісний Працівник, СССервісний Працівник, Сервісник, СССервісник, "Бар", "Барі", Ботанічний, Кухар, Кухня, Кухні
 
 # Station-specific
-highlights-boxer = Боксер, Ринг
 highlights-reporter = Репортер, Кориспондент, Кориссспондент, Журналіст, Журналіссст, Жжжурналіст
-highlights-zookeeper = Зоолог, Зззолог
 highlights-psychologist = Психолог, Псссихолог
 
 # Silicon

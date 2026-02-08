@@ -2,7 +2,7 @@
   # Унатхи
 
   <Box>
-    <GuideEntityEmbed Entity="MobReptilian" Caption=""/>
+    <GuideEntityEmbed Entity="AppearanceReptilian" Caption=""/>
   </Box>
 
   Вони можуть їсти ЛИШЕ фрукти і м'ясо, але можуть їсти сире м'ясо і пити кров без будь-яких негативних наслідків.

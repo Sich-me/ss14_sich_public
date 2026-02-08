@@ -13,7 +13,7 @@ steal-target-groups-weapon-antique-laser = антикварний лазерни
 steal-target-groups-nuke-disk = ядерний диск автентифікації
 steal-target-groups-weapon-energy-magnum = енергетичний магнум
 
-# Злодійська колекція
+# Thief Collection
 steal-target-groups-figurines = статуетки
 steal-target-groups-heads-cloaks = плащ голови
 steal-target-groups-heads-bedsheets = ковдра голови
@@ -25,8 +25,9 @@ steal-target-groups-mail = пошта
 steal-target-groups-id-cards = ID-картки
 steal-target-groups-officer-handguns = пістолет офіцера служби безпеки
 steal-target-groups-lamps = ЛАМПА
+steal-target-groups-huds = HUD
 
-# Крадіжка одного предмета
+# Thief single item
 steal-target-groups-forensic-scanner = криміналістичний сканер
 steal-target-groups-flippo-engraved-lighter = детективна запальничка з гравіюванням Flippo
 steal-target-groups-ammo-tech-fab-circuitboard = друкована плата для набоїв techfab
@@ -39,7 +40,6 @@ steal-target-groups-fire-axe = пожежна сокира
 steal-target-groups-ame-part-flatpack = деталь АМД
 steal-target-groups-salvage-expeditions-computer-circuitboard = комп'ютерна плата рятувальних експедицій
 steal-target-groups-cargo-shuttle-console-circuitboard = комп'ютерна плата вантажного шатла
-steal-target-groups-clothing-eyes-hud-beer = пивні окуляри
 steal-target-groups-bible = біблія
 steal-target-groups-clothing-neck-goldmedal = золота медаль екіпажу
 steal-target-groups-clothing-neck-clownmedal = медаль клоуна

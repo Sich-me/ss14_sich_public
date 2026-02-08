@@ -1,8 +1,8 @@
 - type: entity
   id: ClosetBase
-  parent: BaseStructureDynamic
+  parent: [ BaseStructureDynamic, BasePaperLabelableVisualized ]
   name: шафа
-  description: Стандартне сховище для речей,в авторстві Нанотрейзен.
+  description: Стандартне сховище для речей, виробництва Нанотрейзен.
   abstract: true
   components:
   - type: Animateable
@@ -25,17 +25,6 @@
       sprite: Structures/Storage/closet_labels.rsi
       map: ["enum.PaperLabelVisuals.Layer"]
   - type: MovedByPressure
-  - type: PaperLabel
-    labelSlot:
-      insertVerbText: comp-paper-label-insert
-      ejectVerbText: comp-paper-label-eject
-      whitelist:
-        components:
-        - Paper
-      blacklist:
-        tags:
-        - Book
-  - type: ItemSlots
   - type: DamageOnHighSpeedImpact
     damage:
       types:
@@ -132,8 +121,8 @@
   parent: BaseWallmountMetallic
   id: BaseWallCloset
   abstract: true
-  name: стінна шафа
-  description: Стандартне сховище для речей, в авторстві Нанотрейзен, й тепер також на твоїй стіні!
+  name: настінна шафа
+  description: Стандартне сховище для речей, виробництва Нанотрейзен. Тепер також у вашій стіні!
   components:
   - type: ResistLocker
   - type: Weldable
@@ -231,7 +220,7 @@
   id: SuitStorageBase
   parent: BaseStructure
   name: сховище для скафандру
-  description: Високотехнологічне сховище, в авторстві Нанотрейзен.
+  description: Високотехнологічне сховище, виробництва Нанотрейзен.
   components:
   - type: AccessReader
   - type: Lock
