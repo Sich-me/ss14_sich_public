@@ -285,7 +285,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: PowerCellDraw
-    drawRate: 0.05
+    drawRate: 0.1
   - type: Lock
     unlockTime: 30
     lockTime: 5
