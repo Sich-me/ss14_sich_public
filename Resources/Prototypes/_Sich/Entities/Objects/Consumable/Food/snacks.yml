@@ -208,3 +208,53 @@
     tags:
     - Trash
   - type: SpaceGarbage
+
+
+#
+
+- type: entity
+  name: Щурпси
+  parent: FoodSnackBase
+  id: FoodSnackMouseChips
+  description: Натуральні засушені мишенята. Аж кігтики оближеш! ПОПЕРЕДЖЕННЯ, ПРОДУКТ МОЖЕ МІСТИТИ СИРЕ М'ЯСО!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/snacks.rsi
+    state: mouseChips
+  - type: Item
+    sprite: _Sich/Objects/Consumable/Food/snacks.rsi
+    heldPrefix: mouseChips
+  - type: Edible
+    trash:
+    - FoodPacketMouseChipsTrash
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: FoodPacketTrash
+  id: FoodPacketMouseChipsTrash
+  name: пачка з-під щурпсів
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/snacks.rsi
+    state: mouseChips_Trash
+  - type: Item
+    sprite: _Sich/Objects/Consumable/Food/snacks.rsi
+    inhandVisuals:
+      left:
+      - state: mouseChips-inhand-left
+        color: "#008000"
+      right:
+      - state: mouseChips-inhand-right
+        color: "#008000"
