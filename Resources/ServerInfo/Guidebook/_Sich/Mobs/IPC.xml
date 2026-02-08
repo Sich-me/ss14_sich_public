@@ -2,7 +2,7 @@
   # ІПШ
 
   <Box>
-    <GuideEntityEmbed Entity="BaseSpeciesAppearance" Caption=""/>
+    <GuideEntityEmbed Entity="AppearanceIPC" Caption=""/>
   </Box>
 
   Інтегральні Позитронні Шасі - роботи гуманоїдної форми з розвинутим Штучним Інтелектом, що розробляються першочергово людськими компаніями.
