@@ -47,7 +47,6 @@
 - type: marking
   id: IPCChassisRLeg
   bodyPart: RLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -56,7 +55,6 @@
 - type: marking
   id: IPCChassisLFoot
   bodyPart: LFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -65,7 +63,6 @@
 - type: marking
   id: IPCChassisRFoot
   bodyPart: RFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -74,7 +71,6 @@
 - type: marking
   id: IPCChassisLHand
   bodyPart: LHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -83,7 +79,6 @@
 - type: marking
   id: IPCChassisRHand
   bodyPart: RHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -94,7 +89,6 @@
 - type: marking
   id: IPCChassisHumanDiodes
   bodyPart: Chest
-  markingCategory: Overlay
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -104,7 +98,6 @@
 - type: marking
   id: IPCChassisHumanSegments
   bodyPart: Chest
-  markingCategory: Overlay
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -113,7 +106,6 @@
 - type: marking
   id: IPCChassisHumanHeadM
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -122,7 +114,6 @@
 - type: marking
   id: IPCChassisHumanHeadF
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -131,7 +122,6 @@
 - type: marking
   id: IPCChassisHumanJawM
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -140,7 +130,6 @@
 - type: marking
   id: IPCChassisHumanJawF
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -149,7 +138,6 @@
 - type: marking
   id: IPCChassisHumanEyes
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -159,7 +147,6 @@
 - type: marking
   id: IPCChassisHumanTorsoF
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -168,7 +155,6 @@
 - type: marking
   id: IPCChassisHumanTorsoM
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -177,7 +163,6 @@
 - type: marking
   id: IPCChassisHumanLArm
   bodyPart: LArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -186,7 +171,6 @@
 - type: marking
   id: IPCChassisHumanRArm
   bodyPart: RArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -195,7 +179,6 @@
 - type: marking
   id: IPCChassisHumanLLeg
   bodyPart: LLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -204,7 +187,6 @@
 - type: marking
   id: IPCChassisHumanRLeg
   bodyPart: RLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -213,7 +195,6 @@
 - type: marking
   id: IPCChassisHumanLHand
   bodyPart: LHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -222,7 +203,6 @@
 - type: marking
   id: IPCChassisHumanRHand
   bodyPart: RHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -231,7 +211,6 @@
 - type: marking
   id: IPCChassisHumanLFoot
   bodyPart: LFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -240,7 +219,6 @@
 - type: marking
   id: IPCChassisHumanRFoot
   bodyPart: RFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -249,7 +227,6 @@
 - type: marking
   id: IPCChassisN1Head
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -258,7 +235,6 @@
 - type: marking
   id: IPCChassisN1Monoeye
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -267,7 +243,6 @@
 - type: marking
   id: IPCChassisN1Chest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -276,7 +251,6 @@
 - type: marking
   id: IPCChassisN1LArm
   bodyPart: LArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -285,7 +259,6 @@
 - type: marking
   id: IPCChassisN1RArm
   bodyPart: RArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -294,7 +267,6 @@
 - type: marking
   id: IPCChassisN1LLeg
   bodyPart: LLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -303,7 +275,6 @@
 - type: marking
   id: IPCChassisN1RLeg
   bodyPart: RLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -312,7 +283,6 @@
 - type: marking
   id: IPCChassisN1LHand
   bodyPart: LHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -321,7 +291,6 @@
 - type: marking
   id: IPCChassisN1RHand
   bodyPart: RHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -330,7 +299,6 @@
 - type: marking
   id: IPCChassisN1LFoot
   bodyPart: LFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -339,7 +307,6 @@
 - type: marking
   id: IPCChassisN1RFoot
   bodyPart: RFoot
-  markingCategory: Legs
   groupWhitelist: [IPC]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -348,7 +315,6 @@
 - type: marking
   id: IPCChassisDesHead
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -357,7 +323,6 @@
 - type: marking
   id: IPCChassisDesHeadMonitor
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -366,7 +331,6 @@
 - type: marking
   id: IPCChassisDesChest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -375,7 +339,6 @@
 - type: marking
   id: IPCChassisDesLArm
   bodyPart: LArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -384,7 +347,6 @@
 - type: marking
   id: IPCChassisDesRArm
   bodyPart: RArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -393,7 +355,6 @@
 - type: marking
   id: IPCChassisDesLLeg
   bodyPart: LLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -402,7 +363,6 @@
 - type: marking
   id: IPCChassisDesRLeg
   bodyPart: RLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -411,7 +371,6 @@
 - type: marking
   id: IPCChassisDesLHand
   bodyPart: LHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -420,7 +379,6 @@
 - type: marking
   id: IPCChassisDesRHand
   bodyPart: RHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -429,7 +387,6 @@
 - type: marking
   id: IPCChassisDesLFoot
   bodyPart: LFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -438,7 +395,6 @@
 - type: marking
   id: IPCChassisDesRFoot
   bodyPart: RFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -447,7 +403,6 @@
 - type: marking
   id: IPCChassisRenuinHead
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -456,7 +411,6 @@
 - type: marking
   id: IPCChassisRenuinChest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -465,7 +419,6 @@
 - type: marking
   id: IPCChassisRenuinLArm
   bodyPart: LArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -474,7 +427,6 @@
 - type: marking
   id: IPCChassisRenuinRArm
   bodyPart: RArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -483,7 +435,6 @@
 - type: marking
   id: IPCChassisRenuinLLeg
   bodyPart: LLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -492,7 +443,6 @@
 - type: marking
   id: IPCChassisRenuinRLeg
   bodyPart: RLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -501,7 +451,6 @@
 - type: marking
   id: IPCChassisRenuinLHand
   bodyPart: LHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -510,7 +459,6 @@
 - type: marking
   id: IPCChassisRenuinRHand
   bodyPart: RHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -519,7 +467,6 @@
 - type: marking
   id: IPCChassisRenuinLFoot
   bodyPart: LFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -528,7 +475,6 @@
 - type: marking
   id: IPCChassisRenuinRFoot
   bodyPart: RFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -537,7 +483,6 @@
 - type: marking
   id: IPCChassisBishopHead
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -546,7 +491,6 @@
 - type: marking
   id: IPCChassisBishopHeadMonitor
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -555,7 +499,6 @@
 - type: marking
   id: IPCChassisBishopChest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -564,7 +507,6 @@
 - type: marking
   id: IPCChassisBishopLArm
   bodyPart: LArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -573,7 +515,6 @@
 - type: marking
   id: IPCChassisBishopRArm
   bodyPart: RArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -582,7 +523,6 @@
 - type: marking
   id: IPCChassisBishopLLeg
   bodyPart: LLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -591,7 +531,6 @@
 - type: marking
   id: IPCChassisBishopRLeg
   bodyPart: RLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -600,7 +539,6 @@
 - type: marking
   id: IPCChassisBishopLHand
   bodyPart: LHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -609,7 +547,6 @@
 - type: marking
   id: IPCChassisBishopRHand
   bodyPart: RHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -618,7 +555,6 @@
 - type: marking
   id: IPCChassisBishopLFoot
   bodyPart: LFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -627,7 +563,6 @@
 - type: marking
   id: IPCChassisBishopRFoot
   bodyPart: RFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -636,7 +571,6 @@
 - type: marking
   id: IPCChassisXionHead
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -645,7 +579,6 @@
 - type: marking
   id: IPCChassisXionHeadMonitor
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -654,7 +587,6 @@
 - type: marking
   id: IPCChassisXionChest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -663,7 +595,6 @@
 - type: marking
   id: IPCChassisXionLArm
   bodyPart: LArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -672,7 +603,6 @@
 - type: marking
   id: IPCChassisXionRArm
   bodyPart: RArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -681,7 +611,6 @@
 - type: marking
   id: IPCChassisXionLLeg
   bodyPart: LLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -690,7 +619,6 @@
 - type: marking
   id: IPCChassisXionRLeg
   bodyPart: RLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -699,7 +627,6 @@
 - type: marking
   id: IPCChassisXionLHand
   bodyPart: LHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -708,7 +635,6 @@
 - type: marking
   id: IPCChassisXionRHand
   bodyPart: RHand
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -717,7 +643,6 @@
 - type: marking
   id: IPCChassisXionLFoot
   bodyPart: LFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -726,7 +651,6 @@
 - type: marking
   id: IPCChassisXionRFoot
   bodyPart: RFoot
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -736,7 +660,6 @@
 - type: marking
   id: IPCScreenStatic
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -745,7 +668,6 @@
 - type: marking
   id: IPCScreenBlue
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -754,7 +676,6 @@
 - type: marking
   id: IPCScreenBreakout
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -763,7 +684,6 @@
 - type: marking
   id: IPCScreenEight
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -772,7 +692,6 @@
 - type: marking
   id: IPCScreenGoggles
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -781,7 +700,6 @@
 - type: marking
   id: IPCScreenExcla
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -790,7 +708,6 @@
 - type: marking
   id: IPCScreenHeart
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -799,7 +716,6 @@
 - type: marking
   id: IPCScreenMonoeye
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -808,7 +724,6 @@
 - type: marking
   id: IPCScreenNature
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -817,7 +732,6 @@
 - type: marking
   id: IPCScreenOrange
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -826,7 +740,6 @@
 - type: marking
   id: IPCScreenPink
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -835,7 +748,6 @@
 - type: marking
   id: IPCScreenQuestion
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -844,7 +756,6 @@
 - type: marking
   id: IPCScreenShower
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -853,7 +764,6 @@
 - type: marking
   id: IPCScreenYellow
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -862,7 +772,6 @@
 - type: marking
   id: IPCScreenScroll
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -871,7 +780,6 @@
 - type: marking
   id: IPCScreenConsole
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -880,7 +788,6 @@
 - type: marking
   id: IPCScreenRgb
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -889,7 +796,6 @@
 - type: marking
   id: IPCScreenGlider
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -898,7 +804,6 @@
 - type: marking
   id: IPCScreenRainbow
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -907,7 +812,6 @@
 - type: marking
   id: IPCScreenBsod
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -916,7 +820,6 @@
 - type: marking
   id: IPCScreenRedtext
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -925,7 +828,6 @@
 - type: marking
   id: IPCScreenSinewave
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -934,7 +836,6 @@
 - type: marking
   id: IPCScreenScreenwave
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -943,7 +844,6 @@
 - type: marking
   id: IPCScreenEcgwave
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -952,7 +852,6 @@
 - type: marking
   id: IPCScreenEyes
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -961,7 +860,6 @@
 - type: marking
   id: IPCScreenEyesstall
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -970,7 +868,6 @@
 - type: marking
   id: IPCScreenEyesangry
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -979,7 +876,6 @@
 - type: marking
   id: IPCScreenLoading
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -988,7 +884,6 @@
 - type: marking
   id: IPCScreenWindowsxp
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -997,7 +892,6 @@
 - type: marking
   id: IPCScreenTetris
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1006,7 +900,6 @@
 - type: marking
   id: IPCScreenTv
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1015,7 +908,6 @@
 - type: marking
   id: IPCScreenTextdrop
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1024,7 +916,6 @@
 - type: marking
   id: IPCScreenStars
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1033,7 +924,6 @@
 - type: marking
   id: IPCScreenRainbowdiag
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1042,7 +932,6 @@
 - type: marking
   id: IPCScreenBlank
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1051,7 +940,6 @@
 - type: marking
   id: IPCScreenSmile
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1060,7 +948,6 @@
 - type: marking
   id: IPCScreenSad
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1069,7 +956,6 @@
 - type: marking
   id: IPCScreenRing
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1078,7 +964,6 @@
 - type: marking
   id: IPCScreenL
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1087,7 +972,6 @@
 - type: marking
   id: IPCScreenTvAntenna
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1096,7 +980,6 @@
 - type: marking
   id: IPCScreenTesla
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1105,7 +988,6 @@
 - type: marking
   id: IPCScreenCyberheadantenna
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1114,7 +996,6 @@
 - type: marking
   id: IPCScreenSidelights
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1123,7 +1004,6 @@
 - type: marking
   id: IPCScreenAntlers
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1132,7 +1012,6 @@
 - type: marking
   id: IPCScreenDrone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1141,7 +1020,6 @@
 - type: marking
   id: IPCScreenCrowned
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
@@ -1150,7 +1028,6 @@
 - type: marking
   id: IPCScreenAntennae
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
