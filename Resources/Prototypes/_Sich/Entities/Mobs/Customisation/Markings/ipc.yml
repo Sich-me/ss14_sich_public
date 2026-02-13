@@ -2,7 +2,6 @@
 - type: marking
   id: IPCChassisHead
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -11,7 +10,6 @@
 - type: marking
   id: IPCChassisTorso
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -20,7 +18,6 @@
 - type: marking
   id: IPCChassisLArm
   bodyPart: LArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -29,7 +26,6 @@
 - type: marking
   id: IPCChassisRArm
   bodyPart: RArm
-  markingCategory: Arms
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
@@ -38,7 +34,6 @@
 - type: marking
   id: IPCChassisLLeg
   bodyPart: LLeg
-  markingCategory: Legs
   groupWhitelist: [ IPC ]
   sprites:
     - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
