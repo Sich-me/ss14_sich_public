@@ -7,10 +7,10 @@
     - !type:DepartmentTimeRequirement
       department: Civilian
       time: 0.5h
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Tajara
+    # - !type:SpeciesRequirement
+    #   inverted: true
+    #   species:
+    #   - Tajara
   startingGear: ChefGear
   icon: "JobIconChef"
   supervisors: job-supervisors-hop

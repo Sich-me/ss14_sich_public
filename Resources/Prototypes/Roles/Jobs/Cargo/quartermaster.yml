@@ -19,7 +19,7 @@
       inverted: true
       species:
       - Vox
-      - Tajara
+      # - Tajara
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"

@@ -14,9 +14,9 @@
   <Box>
   <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Слайм-персона"/>
   <GuideEntityEmbed Entity="AppearanceVox" Caption="Вокс"/>
-  <GuideEntityEmbed Entity="MobIPC" Caption="ІПШ"/>
-  <GuideEntityEmbed Entity="MobTajara" Caption="Таяран"/>
-  <GuideEntityEmbed Entity="MobAvali" Caption="Авалі"/>
+  <GuideEntityEmbed Entity="AppearanceIPC" Caption="ІПШ"/>
+  <!-- <GuideEntityEmbed Entity="MobTajara" Caption="Таяран"/> -->
+  <GuideEntityEmbed Entity="AppearanceAvali" Caption="Авалі"/>
   </Box>
   <Box>
     <GuideEntityEmbed Entity="AppearanceVulpkanin" Caption="Vulpkanin"/>

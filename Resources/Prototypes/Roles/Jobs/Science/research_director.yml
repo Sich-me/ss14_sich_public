@@ -17,7 +17,7 @@
     species:
     - Vox
     - SlimePerson
-    - Tajara
+    # - Tajara
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

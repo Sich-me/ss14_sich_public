@@ -22,7 +22,7 @@
       species:
       - Vox
       - SlimePerson
-      - Tajara
+      # - Tajara
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

@@ -24,7 +24,7 @@
       - Vox
       - Diona
       - SlimePerson
-      - Tajara
+      # - Tajara
     - !type:TraitsRequirement
       inverted: true
       traits:

@@ -8,7 +8,7 @@
   name: species-name-ipc
   text: "/ServerInfo/Guidebook/_Sich/Mobs/IPC.xml"
 
-- type: guideEntry
-  id: Tajara
-  name: species-name-tajara
-  text: "/ServerInfo/Guidebook/_Sich/Mobs/Tajara.xml"
+# - type: guideEntry
+#   id: Tajara
+#   name: species-name-tajara
+#   text: "/ServerInfo/Guidebook/_Sich/Mobs/Tajara.xml"

@@ -1,16 +1,16 @@
-- type: loadoutEffectGroup
-  id: EffectSpeciesTajar
-  effects:
-  - !type:SpeciesLoadoutEffect
-    species:
-    - Tajara
+# - type: loadoutEffectGroup
+#   id: EffectSpeciesTajar
+#   effects:
+#   - !type:SpeciesLoadoutEffect
+#     species:
+#     - Tajara
 
-- type: loadout
-  id: EmergencySpecialTajar
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: EffectSpeciesTajar
-  storage:
-    back:
-    - BoxSurvival
-  
+# - type: loadout
+#   id: EmergencySpecialTajar
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: EffectSpeciesTajar
+#   storage:
+#     back:
+#     - BoxSurvival
+#   

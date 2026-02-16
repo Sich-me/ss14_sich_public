@@ -1,8 +1,8 @@
 <Document>
-  # Vox
+  # Таяран
 
   <Box>
-    <GuideEntityEmbed Entity="MobTajara" Caption=""/>
+    <!-- <GuideEntityEmbed Entity="MobTajara" Caption=""/> -->
   </Box>
 
   Гуманоїдні котоподібні істоти з далекої холодної планети Адомай, з якими людство зовсім нещодавно встановило контакт.
