@@ -604,3 +604,13 @@
   id: 36
   time: '2026-02-08T17:59:09.0000000+00:00'
   url: https://github.com/Sich-me/ss14_sich_public/pull/102
+- author: Pyrizhok333x2
+  changes:
+  - message: "\u041C\u0430\u043B\u0430 \u0437\u043C\u0456\u043D\u0430 \u0443 \u0444\
+      \u043E\u0440\u043C\u043E\u043B\u044E\u0432\u0430\u043D\u043D\u0456 \u0442\u0440\
+      \u0435\u0442\u044C\u043E\u0433\u043E \u043F\u0443\u043D\u043A\u0442\u0443 \u043F\
+      \u0440\u0430\u0432\u0438\u043B\u0430 2.14"
+    type: Tweak
+  id: 37
+  time: '2026-02-16T16:03:01.0000000+00:00'
+  url: https://github.com/Sich-me/ss14_sich_public/pull/95
