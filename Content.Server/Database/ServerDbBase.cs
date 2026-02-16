@@ -419,8 +419,6 @@ namespace Content.Server.Database
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.Species,
-                profile.Height,
-                profile.Width,
                 profile.Age,
                 sex,
                 gender,
@@ -428,6 +426,8 @@ namespace Content.Server.Database
                 (
                     Color.FromHex(profile.EyeColor),
                     Color.FromHex(profile.SkinColor),
+                    profile.Height,
+                    profile.Width,
                     markings
                 ),
                 spawnPriority,
@@ -451,8 +451,8 @@ namespace Content.Server.Database
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
             profile.Gender = humanoid.Gender.ToString();
-            profile.Height = humanoid.Height;
-            profile.Width = humanoid.Width;
+            profile.Height = appearance.Height;
+            profile.Width = appearance.Width;
             profile.EyeColor = appearance.EyeColor.ToHex();
             profile.SkinColor = appearance.SkinColor.ToHex();
             profile.SpawnPriority = (int) humanoid.SpawnPriority;

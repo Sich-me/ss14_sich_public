@@ -8,9 +8,7 @@
       params:
         variation: 0.125
     Laugh:
-      path: /Audio/Animals/lizard_happy.ogg
-      params:
-        variation: 0.125
+      collection: MaleLaugh
     CatMeow:
       collection: CatMeows
     CatHisses:

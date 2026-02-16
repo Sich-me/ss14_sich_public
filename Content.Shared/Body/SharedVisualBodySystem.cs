@@ -1,9 +1,10 @@
-using System.Linq;
-using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid;
+using Content.Shared.Humanoid.Markings;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Linq;
+using System.Numerics;
 
 namespace Content.Shared.Body;
 
@@ -181,6 +182,11 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
             kvp => ResolveMarkings(kvp.Value, profile.SkinColor, profile.EyeColor, groupProto.Appearances));
 
         SetOrganMarkings(ent, resolved);
+    }
+
+    internal void SetScale(EntityUid uid, Vector2 scale)
+    {
+        //throw new NotImplementedException();
     }
 }
 
