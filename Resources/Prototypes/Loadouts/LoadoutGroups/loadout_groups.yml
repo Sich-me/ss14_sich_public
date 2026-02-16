@@ -73,7 +73,7 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
-  - EmergencySpecialTajar
+  # - EmergencySpecialTajar
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -555,7 +555,7 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
-  - EmergencySpecialTajar
+  # - EmergencySpecialTajar
 
 - type: loadoutGroup
   id: ClownJobTrinkets
@@ -620,7 +620,7 @@
   - EmergencyOxygenMime
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
-  - EmergencySpecialTajar
+  # - EmergencySpecialTajar
 
 #- type: loadoutGroup
 #  id: MimeJobTrinkets
@@ -967,7 +967,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
-  - EmergencySpecialTajar
+  # - EmergencySpecialTajar
 
 # Science
 - type: loadoutGroup
@@ -1301,7 +1301,7 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
-  - EmergencySpecialTajar
+  # - EmergencySpecialTajar
 
 # Wildcards
 - type: loadoutGroup
@@ -1340,7 +1340,7 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
-  - EmergencySpecialTajar
+  # - EmergencySpecialTajar
 
 - type: loadoutGroup
   id: SurvivalMilitaryDouble
