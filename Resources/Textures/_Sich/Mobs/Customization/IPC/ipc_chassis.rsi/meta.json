@@ -12,6 +12,42 @@
       "directions": 4
     },
 	{
+      "name": "ipc_torso",
+      "directions": 4
+    },
+	{
+      "name": "ipc_l_arm",
+      "directions": 4
+    },
+	{
+      "name": "ipc_l_foot",
+      "directions": 4
+    },
+	{
+      "name": "ipc_l_hand",
+      "directions": 4
+    },
+	{
+      "name": "ipc_l_leg",
+      "directions": 4
+    },
+	{
+      "name": "ipc_r_arm",
+      "directions": 4
+    },
+	{
+      "name": "ipc_r_foot",
+      "directions": 4
+    },
+	{
+      "name": "ipc_r_hand",
+      "directions": 4
+    },
+	{
+      "name": "ipc_r_leg",
+      "directions": 4
+    },
+	{
       "name": "diodes-unshaded",
       "directions": 4
     },

@@ -1,6 +1,33 @@
 marking-IPCChassisHead = Голова ІПШ
 marking-IPCChassisHead-ipc_head = Голова ІПШ
 
+marking-IPCChassisTorso = Торс ІПШ
+marking-IPCChassisTorso-ipc_torso = Торс ІПШ
+
+marking-IPCChassisLArm = Ліва рука ІПШ
+marking-IPCChassisLArm-ipc_l_arm = Ліва рука ІПШ
+
+marking-IPCChassisRArm = Права рука ІПШ
+marking-IPCChassisRArm-ipc_r_arm = Права рука ІПШ
+
+marking-IPCChassisLHand = Ліва лодоня ІПШ
+marking-IPCChassisLHand-ipc_l_hand = Ліва лодоня ІПШ
+
+marking-IPCChassisRHand = Права лодоня ІПШ
+marking-IPCChassisRHand-ipc_r_hand = Права лодоня ІПШ
+
+marking-IPCChassisLLeg = Ліва нога ІПШ
+marking-IPCChassisLLeg-ipc_l_leg = Ліва нога ІПШ
+
+marking-IPCChassisRLeg = Права нога ІПШ
+marking-IPCChassisRLeg-ipc_r_leg = Права нога ІПШ
+
+marking-IPCChassisLFoot = Ліва стопа ІПШ
+marking-IPCChassisLFoot-ipc_l_foot = Ліва стопа ІПШ
+
+marking-IPCChassisRFoot = Права стопа ІПШ
+marking-IPCChassisRFoot-ipc_r_foot = Права стопа ІПШ
+
 marking-IPCChassisHumanHeadF = Синтетична жіноча голова
 marking-IPCChassisHumanHeadF-human_head_f = Синтетична жіноча голова
 
