@@ -1156,16 +1156,16 @@ namespace Content.Client.Lobby.UI
         {
             if (Profile is null) return;
             Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithHeight(height));
-            SetDirty();
             ReloadPreview();
+            SetDirty();
         }
 
         private void SetProfileWidth(float width)
         {
             if (Profile is null) return;
             Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithWidth(width));
-            SetDirty();
             ReloadPreview();
+            SetDirty();
         }
 
         private void SetSpecies(string newSpecies)

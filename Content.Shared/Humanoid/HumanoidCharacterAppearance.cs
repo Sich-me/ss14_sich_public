@@ -196,7 +196,9 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         if (ReferenceEquals(this, other)) return true;
         return EyeColor.Equals(other.EyeColor) &&
                SkinColor.Equals(other.SkinColor) &&
-               MarkingManager.MarkingsAreEqual(Markings, other.Markings);
+               MarkingManager.MarkingsAreEqual(Markings, other.Markings) &&
+               Width.Equals(other.Width) &&
+               Height.Equals(other.Height);
     }
 
     public override bool Equals(object? obj)
