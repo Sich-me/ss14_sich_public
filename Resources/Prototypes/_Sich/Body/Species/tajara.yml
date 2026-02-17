@@ -1,0 +1,306 @@
+- type: markingsGroup
+  parent: Undergarments
+  id: Tajara
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayers.Hair:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.FacialHair:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: true
+      default: [ TajaraTail ]
+    enum.HumanoidVisualLayers.Chest:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Snout:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.HeadSide:
+      limit: 1
+      required: true
+      default: [ TajaraEars ]
+    enum.HumanoidVisualLayers.LArm:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RArm:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LHand:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 1
+      required: false
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceTajara
+  name: tajara appearance
+  components:
+  - type: Inventory
+    speciesId: tajara
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: mask
+    displacements:
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: mask
+  - type: InitialBody
+    organs:
+      Torso: OrganTajaraTorso
+      Head: OrganTajaraHead
+      ArmLeft: OrganTajaraArmLeft
+      ArmRight: OrganTajaraArmRight
+      HandRight: OrganTajaraHandRight
+      HandLeft: OrganTajaraHandLeft
+      LegLeft: OrganTajaraLegLeft
+      LegRight: OrganTajaraLegRight
+      FootLeft: OrganTajaraFootLeft
+      FootRight: OrganTajaraFootRight
+      Brain: OrganTajaraBrain
+      Eyes: OrganTajaraEyes
+      Tongue: OrganTajaraTongue
+      Appendix: OrganTajaraAppendix
+      Ears: OrganTajaraEars
+      Lungs: OrganTajaraLungs
+      Heart: OrganTajaraHeart
+      Stomach: OrganTajaraStomach
+      Liver: OrganTajaraLiver
+      Kidneys: OrganTajaraKidneys
+  - type: HumanoidProfile
+    species: Tajara
+
+- type: entity
+  parent:
+  - AppearanceTajara
+  - BaseSpeciesMobOrganic
+  id: MobTajara
+  name: Urist McPaws
+  components:
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost
+  - type: Hunger
+  - type: Thirst
+  - type: Icon
+    sprite: _Sich/Mobs/Species/Tajara/parts.rsi
+    state: full
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeat
+      amount: 4
+  - type: Speech
+    speechSounds: Tajara
+  - type: Vocal
+    sounds:
+      Male: MaleTajara
+      Female: FemaleTajara
+      Unsexed: MaleTajara
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Tajara
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#AA0000"
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Blood
+        Quantity: 300
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Piercing: 5
+  - type: Flammable
+    damage:
+      types:
+        Heat: 2
+  - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 46
+  - type: TemperatureDamage
+    heatDamageThreshold: 400
+    coldDamageThreshold: 185
+    coldDamage:
+      types:
+        Cold : 0.1 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 1.5 #per second, scales with temperature & other constants
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.7
+    baseSprintSpeed : 4.8
+  - type: Perishable
+  
+- type: entity
+  parent: OrganBase
+  id: OrganTajara
+  abstract: true
+  suffix: Tajara
+
+- type: entity
+  id: OrganTajaraMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Animal ]
+
+- type: entity
+  parent: OrganTajara
+  id: OrganTajaraInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+
+- type: entity
+  parent: OrganTajara
+  id: OrganTajaraExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Sich/Mobs/Species/Tajara/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: _Sich/Mobs/Species/Tajara/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Tajara
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganTajaraExternal ]
+  id: OrganTajaraTorso
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganTajaraExternal ]
+  id: OrganTajaraHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.HeadSide
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganTajaraExternal ]
+  id: OrganTajaraArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganTajaraExternal ]
+  id: OrganTajaraArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganTajaraExternal ]
+  id: OrganTajaraHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganTajaraExternal ]
+  id: OrganTajaraHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganTajaraExternal ]
+  id: OrganTajaraLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganTajaraExternal ]
+  id: OrganTajaraLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganTajaraExternal ]
+  id: OrganTajaraFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganTajaraExternal ]
+  id: OrganTajaraFootRight
+
+- type: entity
+  parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganTajaraInternal ]
+  id: OrganTajaraBrain
+
+- type: entity
+  parent: [ OrganBaseEyes, OrganTajaraInternal, OrganTajaraExternal ]
+  id: OrganTajaraEyes
+
+- type: entity
+  parent: [ OrganBaseTongue, OrganTajaraInternal ]
+  id: OrganTajaraTongue
+
+- type: entity
+  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganTajaraInternal ]
+  id: OrganTajaraAppendix
+
+- type: entity
+  parent: [ OrganBaseEars, OrganSpriteHumanInternal, OrganTajaraInternal ]
+  id: OrganTajaraEars
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganTajaraInternal, OrganTajaraMetabolizer ]
+  id: OrganTajaraLungs
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganTajaraInternal, OrganTajaraMetabolizer ]
+  id: OrganTajaraHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganTajaraInternal, OrganTajaraMetabolizer ]
+  id: OrganTajaraStomach
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganTajaraInternal, OrganTajaraMetabolizer ]
+  id: OrganTajaraLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganTajaraInternal, OrganTajaraMetabolizer ]
+  id: OrganTajaraKidneys
