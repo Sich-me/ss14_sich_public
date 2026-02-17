@@ -2,7 +2,7 @@
   # Таяран
 
   <Box>
-    <!-- <GuideEntityEmbed Entity="AppearanceTajara" Caption=""/> -->
+    <GuideEntityEmbed Entity="AppearanceTajara" Caption=""/>
   </Box>
 
   Гуманоїдні котоподібні істоти з далекої холодної планети Адомай, з якими людство зовсім нещодавно встановило контакт.
