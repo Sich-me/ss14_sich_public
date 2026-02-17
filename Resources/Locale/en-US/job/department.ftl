@@ -1,11 +1,11 @@
-department-Cargo = Карго
-department-Civilian = Цивільні
+department-Cargo = Логістичний відділ
+department-Civilian = Цивільний персонал
 department-Command = Командування
 department-CentralCommand = Центральне Командування
-department-Engineering = Інженерія
-department-Medical = Медичний
+department-Engineering = Інженерний відділ
+department-Medical = Медичний відділ
 department-Security = Служба безпеки
-department-Science = Дослідження та Розробка
+department-Science = Науковий відділ
 department-Silicon = Силікони
 department-Specific = Специфічні для станції
 
