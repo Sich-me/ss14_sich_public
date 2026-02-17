@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Numerics;
 using Content.Shared.Body;
 using Content.Shared.Humanoid.Markings;
@@ -21,37 +21,57 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
     public Color SkinColor { get; set; } = Color.FromHsv(new Vector4(0.07f, 0.2f, 1f, 1f));
 
     [DataField]
+    public float Height { get; set; } = 1;
+
+    [DataField]
+    public float Width { get; set; } = 1;
+
+    [DataField]
     public Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>> Markings { get; set; } = new();
 
     public HumanoidCharacterAppearance(
         Color eyeColor,
         Color skinColor,
+        float height,
+        float width,
         Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>> markings)
     {
         EyeColor = ClampColor(eyeColor);
         SkinColor = ClampColor(skinColor);
         Markings = markings;
+        Height = height;
+        Width = width;
     }
 
     public HumanoidCharacterAppearance(HumanoidCharacterAppearance other) :
-        this(other.EyeColor, other.SkinColor, new(other.Markings))
+        this(other.EyeColor, other.SkinColor, other.Height, other.Width, new(other.Markings))
     {
 
     }
 
     public HumanoidCharacterAppearance WithEyeColor(Color newColor)
     {
-        return new(newColor, SkinColor, Markings);
+        return new(newColor, SkinColor, Height, Width, Markings);
     }
 
     public HumanoidCharacterAppearance WithSkinColor(Color newColor)
     {
-        return new(EyeColor, newColor, Markings);
+        return new(EyeColor, newColor, Height, Width, Markings);
     }
 
     public HumanoidCharacterAppearance WithMarkings(Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>> newMarkings)
     {
-        return new(EyeColor, SkinColor, newMarkings);
+        return new(EyeColor, SkinColor, Height, Width, newMarkings);
+    }
+
+    public HumanoidCharacterAppearance WithHeight(float newHeight)
+    {
+        return new(EyeColor, SkinColor, newHeight, Width, Markings);
+    }
+
+    public HumanoidCharacterAppearance WithWidth(float newWidth)
+    {
+        return new(EyeColor, SkinColor, Height, newWidth, Markings);
     }
 
     public static HumanoidCharacterAppearance DefaultWithSpecies(ProtoId<SpeciesPrototype> species, Sex sex)
@@ -69,6 +89,8 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         var appearance = new HumanoidCharacterAppearance(
             Color.Black,
             skinColor,
+            1,
+            1,
             new()
         );
         return EnsureValid(appearance, species, sex);
@@ -103,7 +125,12 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
             _ => strategy.ClosestSkinColor(new Color(random.NextFloat(1), random.NextFloat(1), random.NextFloat(1), 1)),
         };
 
-        return new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new());
+        //sich height width 
+        var height = random.NextFloat(protoMan.Index<SpeciesPrototype>(species).MinHeight, protoMan.Index<SpeciesPrototype>(species).MaxHeight);
+        var width = random.NextFloat(protoMan.Index<SpeciesPrototype>(species).MinWidth, protoMan.Index<SpeciesPrototype>(species).MaxWidth);
+        //sich height width
+
+        return new HumanoidCharacterAppearance(newEyeColor, newSkinColor, height, width, new());
     }
 
     public static Color ClampColor(Color color)
@@ -117,6 +144,9 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
 
         var proto = IoCManager.Resolve<IPrototypeManager>();
         var markingManager = IoCManager.Resolve<MarkingManager>();
+
+        var height = Math.Clamp(appearance.Height, proto.Index(species).MinHeight, proto.Index(species).MaxHeight);
+        var width = Math.Clamp(appearance.Width, proto.Index(species).MinWidth, proto.Index(species).MaxWidth);
 
         var skinColor = appearance.SkinColor;
         var validatedMarkings = appearance.Markings.ShallowClone();
@@ -155,6 +185,8 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         return new HumanoidCharacterAppearance(
             eyeColor,
             skinColor,
+            height,
+            width,
             validatedMarkings);
     }
 
@@ -164,7 +196,9 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
         if (ReferenceEquals(this, other)) return true;
         return EyeColor.Equals(other.EyeColor) &&
                SkinColor.Equals(other.SkinColor) &&
-               MarkingManager.MarkingsAreEqual(Markings, other.Markings);
+               MarkingManager.MarkingsAreEqual(Markings, other.Markings) &&
+               Width.Equals(other.Width) &&
+               Height.Equals(other.Height);
     }
 
     public override bool Equals(object? obj)

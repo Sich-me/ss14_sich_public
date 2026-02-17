@@ -34,8 +34,8 @@
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
     species: Dwarf
-  - type: ScaleVisuals
-    scale: 1, 0.8
+  # - type: ScaleVisuals
+  #   scale: 1, 0.8 білд січі
 
 - type: entity
   parent:

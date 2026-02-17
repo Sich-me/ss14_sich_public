@@ -28,8 +28,6 @@ public sealed class HumanoidProfileSystem : EntitySystem
         ent.Comp.Age = profile.Age;
         ent.Comp.Species = profile.Species;
         ent.Comp.Sex = profile.Sex;
-        ent.Comp.Height = profile.Height;
-        ent.Comp.Width = profile.Width;
         Dirty(ent);
 
         var sexChanged = new SexChangedEvent(ent.Comp.Sex, profile.Sex);

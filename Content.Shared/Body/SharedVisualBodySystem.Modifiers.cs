@@ -9,6 +9,7 @@ using Content.Shared.Verbs;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Robust.Shared.Network;
 
 namespace Content.Shared.Body;
 
@@ -16,6 +17,7 @@ public abstract partial class SharedVisualBodySystem
 {
     [Dependency] private readonly ISharedAdminManager _admin = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _userInterface = default!;
+    [Dependency] private readonly INetManager _netManager = default!;
 
     private void InitializeModifiers()
     {
@@ -124,14 +126,27 @@ public abstract partial class SharedVisualBodySystem
 
         ApplyProfile(ent,
             new()
-        {
-            Sex = sex,
-            SkinColor = appearance.SkinColor,
-            EyeColor = appearance.EyeColor,
-        });
+            {
+                Sex = sex,
+                SkinColor = appearance.SkinColor,
+                EyeColor = appearance.EyeColor
+            });
 
         var markingsEvt = new ApplyOrganMarkingsEvent(appearance.Markings);
         RaiseLocalEvent(ent, ref markingsEvt);
+        if (_netManager.IsClient)
+        {
+            var apperanceEvt = new ApplyApperanceEvent(appearance);
+            RaiseLocalEvent(ent, ref apperanceEvt);
+        }
+        else if (_netManager.IsServer)
+        {
+            var netEntity = GetNetEntity(ent.Owner);
+            var netEvent = new ApplyApperanceServerEvent(netEntity, appearance);
+            RaiseNetworkEvent(netEvent);
+        }
+
+        Logger.DebugS("body", $"Applied appearance to {ent}: {appearance.Width} {appearance.Height}");
     }
 
     public void ApplyProfileTo(Entity<VisualBodyComponent?> ent, HumanoidCharacterProfile profile)

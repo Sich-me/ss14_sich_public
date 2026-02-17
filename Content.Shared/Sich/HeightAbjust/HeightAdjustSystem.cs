@@ -39,10 +39,10 @@ public sealed class HeightAdjustSystem : EntitySystem
         else
             succeeded = false;
 
-        //if (EntityManager.HasComponent<HumanoidProfileComponent>(uid))
-            //_appearance.SetScale(uid, scale);
-        //else
-        //    succeeded = false;
+        if (EntityManager.HasComponent<HumanoidProfileComponent>(uid))
+            _appearance.SetScale(uid, scale);
+        else
+            succeeded = false;
 
         return succeeded;
     }

@@ -8,6 +8,8 @@ using Robust.Client.Graphics;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Numerics;
+using Content.Client.Sprite;
 
 namespace Content.Client.Body;
 
@@ -32,8 +34,34 @@ public sealed class VisualBodySystem : SharedVisualBodySystem
 
         SubscribeLocalEvent<VisualOrganMarkingsComponent, BodyRelayedEvent<HumanoidLayerVisibilityChangedEvent>>(OnMarkingsChangedVisibility);
 
+        SubscribeLocalEvent<VisualBodyComponent, ApplyApperanceEvent>(OnApplyApperanceHandler, after: [typeof(ScaleVisualsSystem)]);
+
+        SubscribeNetworkEvent<ApplyApperanceServerEvent>(OnServerApplyApperanceHandler, after: [typeof(ScaleVisualsSystem)]);
+
         Subs.CVar(_cfg, CCVars.AccessibilityClientCensorNudity, OnCensorshipChanged, true);
         Subs.CVar(_cfg, CCVars.AccessibilityServerCensorNudity, OnCensorshipChanged, true);
+    }
+
+    private void OnServerApplyApperanceHandler(ApplyApperanceServerEvent ev)
+    {
+        var ent = GetEntity(ev.Entity);
+        ApplyApperanceTo(ent, ev.Appearance);
+    }
+
+    private void OnApplyApperanceHandler(Entity<VisualBodyComponent> ent, ref ApplyApperanceEvent args)
+    {
+        ApplyApperanceTo(ent.Owner, args.Appearance);
+    }
+
+    private void ApplyApperanceTo(EntityUid ent, HumanoidCharacterAppearance appearance)
+    {
+        if (!TryComp<SpriteComponent>(ent, out var sprite)) return;
+
+        var width = appearance.Width;
+        var height = appearance.Height;
+        var scale = new Vector2(width, height);
+        _sprite.SetScale(ent, scale);
+        Logger.DebugS("visualbody", $"Set scale of {ent} to {scale} based on appearance with width {width} and height {height}");
     }
 
     private void OnCensorshipChanged(bool value)

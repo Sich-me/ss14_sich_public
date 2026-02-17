@@ -240,7 +240,7 @@ namespace Content.Client.Lobby.UI
 
             CHeightSlider.MinValue = prototype.MinHeight;
             CHeightSlider.MaxValue = prototype.MaxHeight;
-            CHeightSlider.Value = Profile?.Height ?? prototype.DefaultHeight;
+            CHeightSlider.Value = Profile?.Appearance.Height ?? prototype.DefaultHeight;
             float avgHeight = prototype.AverageHeight;
 
             calculateHeight();
@@ -249,7 +249,6 @@ namespace Content.Client.Lobby.UI
             {
                 if (Profile is null)
                     return;
-                prototype = _species.Find(x => x.ID == Profile.Species) ?? _species.First(); // Just in case
                 calculateHeight();
                 SetProfileHeight(CHeightSlider.Value);
                 UpdateWeight();
@@ -257,7 +256,7 @@ namespace Content.Client.Lobby.UI
 
             void calculateHeight()
             {
-                float a = (avgHeight * (1 - (60f / 176f))) / 0.4f;
+                float a = (avgHeight * (1 - (60f / avgHeight))) / 0.4f;
                 float b = avgHeight - a;
                 var height = MathF.Round(a * CHeightSlider.Value + b);
                 CHeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
@@ -274,7 +273,7 @@ namespace Content.Client.Lobby.UI
 
             CWidthSlider.MinValue = prototype.MinWidth;
             CWidthSlider.MaxValue = prototype.MaxWidth;
-            CWidthSlider.Value = Profile?.Width ?? prototype.DefaultWidth;
+            CWidthSlider.Value = Profile?.Appearance.Width ?? prototype.DefaultWidth;
             var width = MathF.Round(prototype.AverageWidth * CWidthSlider.Value);
             CWidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", width));
 
@@ -1155,16 +1154,18 @@ namespace Content.Client.Lobby.UI
 
         private void SetProfileHeight(float height)
         {
-            Profile = Profile?.WithHeight(height);
-            SetDirty();
+            if (Profile is null) return;
+            Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithHeight(height));
             ReloadPreview();
+            SetDirty();
         }
 
         private void SetProfileWidth(float width)
         {
-            Profile = Profile?.WithWidth(width);
-            SetDirty();
+            if (Profile is null) return;
+            Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithWidth(width));
             ReloadPreview();
+            SetDirty();
         }
 
         private void SetSpecies(string newSpecies)
@@ -1376,7 +1377,7 @@ namespace Content.Client.Lobby.UI
             var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
 
             CHeightSlider.MinValue = species.MinHeight;
-            CHeightSlider.Value = Profile.Height;
+            CHeightSlider.Value = Profile.Appearance.Height;
             CHeightSlider.MaxValue = species.MaxHeight;
 
             var height = MathF.Round(species.AverageHeight * CHeightSlider.Value);
@@ -1391,7 +1392,7 @@ namespace Content.Client.Lobby.UI
             var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
 
             CWidthSlider.MinValue = species.MinWidth;
-            CWidthSlider.Value = Profile.Width;
+            CWidthSlider.Value = Profile.Appearance.Width;
             CWidthSlider.MaxValue = species.MaxWidth;
 
             var width = MathF.Round(species.AverageWidth * CWidthSlider.Value);
@@ -1410,7 +1411,7 @@ namespace Content.Client.Lobby.UI
             {
                 var radius = fixture.Fixtures["fix1"].Shape.Radius;
                 var density = fixture.Fixtures["fix1"].Density;
-                var avg = (Profile.Width + Profile.Height) / 2;
+                var avg = (Profile.Appearance.Width + Profile.Appearance.Height) / 2;
                 var weight = MathF.Round(MathF.PI * MathF.Pow(radius * avg, 2) * density);
                 CWeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) weight));
             }

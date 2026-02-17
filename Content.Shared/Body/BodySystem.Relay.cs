@@ -16,6 +16,7 @@ public sealed partial class BodySystem
         SubscribeLocalEvent<BodyComponent, ApplyOrganMarkingsEvent>(RefRelayBodyEvent);
         SubscribeLocalEvent<BodyComponent, OrganCopyAppearanceEvent>(RefRelayBodyEvent);
         SubscribeLocalEvent<BodyComponent, HumanoidLayerVisibilityChangedEvent>(RefRelayBodyEvent);
+        SubscribeLocalEvent<BodyComponent, ApplyApperanceEvent>(RefRelayBodyEvent);
     }
 
     private void RefRelayBodyEvent<T>(EntityUid uid, BodyComponent component, ref T args) where T : struct
