@@ -9,6 +9,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using System.Numerics;
+using Content.Client.Sprite;
 
 namespace Content.Client.Body;
 
@@ -33,9 +34,9 @@ public sealed class VisualBodySystem : SharedVisualBodySystem
 
         SubscribeLocalEvent<VisualOrganMarkingsComponent, BodyRelayedEvent<HumanoidLayerVisibilityChangedEvent>>(OnMarkingsChangedVisibility);
 
-        SubscribeLocalEvent<VisualBodyComponent, ApplyApperanceEvent>(OnApplyApperanceHandler, after: [typeof(SpriteSystem)]);
+        SubscribeLocalEvent<VisualBodyComponent, ApplyApperanceEvent>(OnApplyApperanceHandler, after: [typeof(ScaleVisualsSystem)]);
 
-        SubscribeNetworkEvent<ApplyApperanceServerEvent>(OnServerApplyApperanceHandler, after: [typeof(SpriteSystem)]);
+        SubscribeNetworkEvent<ApplyApperanceServerEvent>(OnServerApplyApperanceHandler, after: [typeof(ScaleVisualsSystem)]);
 
         Subs.CVar(_cfg, CCVars.AccessibilityClientCensorNudity, OnCensorshipChanged, true);
         Subs.CVar(_cfg, CCVars.AccessibilityServerCensorNudity, OnCensorshipChanged, true);
