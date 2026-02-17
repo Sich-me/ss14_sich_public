@@ -1,0 +1,419 @@
+- type: marking
+  id: TajaraEars
+  bodyPart: HeadTop
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: ears_cat_outer
+
+- type: marking
+  id: TajaraTail
+  bodyPart: Tail
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: tail_cat
+    
+- type: marking
+  id: TajaraBelly
+  bodyPart: Chest
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: belly_mark
+    
+- type: marking
+  id: TajaraBelly2
+  bodyPart: Chest
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: belly_mark_2
+
+- type: marking
+  id: TajaraLHandFur
+  bodyPart: LHand
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: l_hand_fur
+
+- type: marking
+  id: TajaraLArmFur
+  bodyPart: LArm
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: l_arm_fur
+    
+- type: marking
+  id: TajaraRHandFur
+  bodyPart: RHand
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: r_hand_fur
+    
+- type: marking
+  id: TajaraRArmFur
+  bodyPart: RArm
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: r_arm_fur
+
+- type: marking
+  id: TajaraLFootFur
+  bodyPart: LFoot
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: l_foot_fur
+    
+- type: marking
+  id: TajaraLLegFur
+  bodyPart: LLeg
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: l_leg_fur
+    
+- type: marking
+  id: TajaraRFootFur
+  bodyPart: RFoot
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: r_foot_fur
+
+- type: marking
+  id: TajaraRLegFur
+  bodyPart: RLeg
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: r_leg_fur
+    
+- type: marking
+  id: TajaraChest
+  bodyPart: Chest
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: chest_mark
+    
+- type: marking
+  id: TajaraChestHalf
+  bodyPart: Chest
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: chest_half
+    
+- type: marking
+  id: TajaraLHandHalf
+  bodyPart: LHand
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: l_hand_half
+
+- type: marking
+  id: TajaraLArmHalf
+  bodyPart: LArm
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: l_arm_half
+    
+- type: marking
+  id: TajaraRHandHalf
+  bodyPart: RHand
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: r_hand_half
+    
+- type: marking
+  id: TajaraRArmHalf
+  bodyPart: RArm
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: r_arm_half
+
+- type: marking
+  id: TajaraLFootHalf
+  bodyPart: LFoot
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: l_foot_half
+    
+- type: marking
+  id: TajaraLLegHalf
+  bodyPart: LLeg
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: l_leg_half
+    
+- type: marking
+  id: TajaraRFootHalf
+  bodyPart: RFoot
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: r_foot_half
+
+- type: marking
+  id: TajaraRLegHalf
+  bodyPart: RLeg
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: r_leg_half
+    
+- type: marking
+  id: TajaraSnoutShade
+  bodyPart: Snout
+  speciesRestriction: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: snout_shade 
+
+#hair
+
+- type: marking
+  id: TajaraHairBangs
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_bangs
+      
+- type: marking
+  id: TajaraHairClean
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_clean
+      
+- type: marking
+  id: TajaraHairCombedBack
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_combedback
+      
+- type: marking
+  id: TajaraCutTail
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_cuttail
+      
+- type: marking
+  id: TajaraDreadlocks
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_dreadlocks
+      
+- type: marking
+  id: TajaraFingerwave
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_fingerwave
+      
+- type: marking
+  id: TajaraHairLong
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_long
+      
+- type: marking
+  id: TajaraHairMessy
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_messy
+      
+- type: marking
+  id: TajaraHairMohawk
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_mohawk
+      
+- type: marking
+  id: TajaraOvereye
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_overeye
+      
+- type: marking
+  id: TajaraHairPlait
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_plait
+      
+- type: marking
+  id: TajaraPonytail
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_ponytail
+      
+- type: marking
+  id: TajaraRattail
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_rattail
+      
+- type: marking
+  id: TajaraRibbons
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_ribbons
+      
+- type: marking
+  id: TajaraHairShaggy
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_shaggy
+      
+- type: marking
+  id: TajaraHairShy
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_shy
+      
+- type: marking
+  id: TajaraSidebraid
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_sidebraid
+      
+- type: marking
+  id: TajaraStraight
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_straight
+      
+- type: marking
+  id: TajaraTailedBangs
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_tailedbangs
+      
+- type: marking
+  id: TajaraTajSpiky
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_tajspiky
+      
+- type: marking
+  id: TajaraBob
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_tbob
+      
+- type: marking
+  id: TajaraBraid
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_tbraid
+      
+- type: marking
+  id: TajaraHairTought
+  bodyPart: Hair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_hair.rsi
+      state: hair_tough
+
+#facial hair
+
+- type: marking
+  id: TajaraFacialHairGoatee
+  bodyPart: FacialHair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_facial_hair.rsi
+      state: goatee
+      
+- type: marking
+  id: TajaraFacialHairMoustage
+  bodyPart: FacialHair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_facial_hair.rsi
+      state: moustage
+      
+- type: marking
+  id: TajaraFacialHairMutton
+  bodyPart: FacialHair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_facial_hair.rsi
+      state: mutton
+      
+- type: marking
+  id: TajaraFacialHairPenlistage
+  bodyPart: FacialHair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_facial_hair.rsi
+      state: penlistage
+      
+- type: marking
+  id: TajaraFacialHairSideburns
+  bodyPart: FacialHair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_facial_hair.rsi
+      state: sideburns
+      
+- type: marking
+  id: TajaraFacialHairSmallstage
+  bodyPart: FacialHair
+  speciesRestriction: [Tajara]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/tajara_facial_hair.rsi
+      state: smallstage
