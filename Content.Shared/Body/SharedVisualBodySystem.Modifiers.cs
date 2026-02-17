@@ -145,8 +145,6 @@ public abstract partial class SharedVisualBodySystem
             var netEvent = new ApplyApperanceServerEvent(netEntity, appearance);
             RaiseNetworkEvent(netEvent);
         }
-
-        Logger.DebugS("body", $"Applied appearance to {ent}: {appearance.Width} {appearance.Height}");
     }
 
     public void ApplyProfileTo(Entity<VisualBodyComponent?> ent, HumanoidCharacterProfile profile)

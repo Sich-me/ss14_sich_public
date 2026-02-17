@@ -61,7 +61,6 @@ public sealed class VisualBodySystem : SharedVisualBodySystem
         var height = appearance.Height;
         var scale = new Vector2(width, height);
         _sprite.SetScale(ent, scale);
-        Logger.DebugS("visualbody", $"Set scale of {ent} to {scale} based on appearance with width {width} and height {height}");
     }
 
     private void OnCensorshipChanged(bool value)
