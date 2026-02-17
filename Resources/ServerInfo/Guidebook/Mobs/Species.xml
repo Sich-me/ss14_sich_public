@@ -15,7 +15,7 @@
   <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Слайм-персона"/>
   <GuideEntityEmbed Entity="AppearanceVox" Caption="Вокс"/>
   <GuideEntityEmbed Entity="AppearanceIPC" Caption="ІПШ"/>
-  <!-- <GuideEntityEmbed Entity="MobTajara" Caption="Таяран"/> -->
+  <GuideEntityEmbed Entity="AppearanceTajara" Caption="Таяран"/>
   <GuideEntityEmbed Entity="AppearanceAvali" Caption="Авалі"/>
   </Box>
   <Box>

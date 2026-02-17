@@ -8,7 +8,9 @@
       params:
         variation: 0.125
     Laugh:
-      collection: MaleLaugh
+      path: /Audio/_Sich/Voice/Tajaran/Tajara_happy.ogg
+      params:
+        variation: 0.125
     CatMeow:
       collection: CatMeows
     CatHisses:
