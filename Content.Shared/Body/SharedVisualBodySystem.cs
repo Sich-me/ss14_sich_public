@@ -2,6 +2,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 using System.Linq;
 using System.Numerics;
@@ -208,3 +209,17 @@ public readonly record struct ApplyOrganProfileDataEvent(OrganProfileData? Base,
 [ByRefEvent]
 public readonly record struct ApplyOrganMarkingsEvent(Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>> Markings);
 
+[ByRefEvent]
+public readonly record struct ApplyApperanceEvent(HumanoidCharacterAppearance Appearance);
+
+[NetSerializable, Serializable]
+public sealed class ApplyApperanceServerEvent : EntityEventArgs
+{
+    public NetEntity Entity { get; }
+    public HumanoidCharacterAppearance Appearance { get; }
+    public ApplyApperanceServerEvent(NetEntity entity, HumanoidCharacterAppearance appearance)
+    {
+        Entity = entity;
+        Appearance = appearance;
+    }
+}
