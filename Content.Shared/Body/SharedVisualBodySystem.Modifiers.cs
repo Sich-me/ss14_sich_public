@@ -127,8 +127,8 @@ public abstract partial class SharedVisualBodySystem
         {
             Sex = sex,
             SkinColor = appearance.SkinColor,
-            EyeColor = appearance.EyeColor,
-        });
+            EyeColor = appearance.EyeColor
+         });
 
         var markingsEvt = new ApplyOrganMarkingsEvent(appearance.Markings);
         RaiseLocalEvent(ent, ref markingsEvt);
