@@ -178,6 +178,8 @@ namespace Content.Server.Preferences.Managers
                 (
                     Color.FromHex(profile.EyeColor),
                     Color.FromHex(profile.SkinColor),
+                    profile.Height,
+                    profile.Width,
                     markings
                 ),
                 spawnPriority,
