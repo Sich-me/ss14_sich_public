@@ -52,7 +52,7 @@ humanoid-profile-editor-job-priority-high-button = Високий
 humanoid-profile-editor-job-priority-medium-button = Середній
 humanoid-profile-editor-job-priority-low-button = Низький
 humanoid-profile-editor-job-priority-never-button = Ніколи
-humanoid-profile-editor-naming-rules-warning = Попередження: образливі імена та описи IC або LRP призведуть до втручання адміністрації. Для більшої інформації читайте наші \[Rules\].
+humanoid-profile-editor-naming-rules-warning = Попередження. Образливі або неадекватні імена чи описи персонажів призведуть до втручання адміністратора. Прочитайте Правила Серверу для більш детальної інформації.
 humanoid-profile-editor-markings-tab = Маркування
 humanoid-profile-editor-flavortext-tab = Опис
 
