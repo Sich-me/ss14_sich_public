@@ -91,7 +91,7 @@
     species: IPC
 
 - type: entity
-  parent: [ AppearanceIPC, BaseSpeciesMob, MobFlammable]
+  parent: [ AppearanceIPC, BaseSpeciesMob, MobFlammable, MobAtmosStandard]
   id: MobIPC
   name: Urist McBot
   components:
@@ -242,12 +242,17 @@
     coldDamageThreshold: 283.15 # 10c aka "cold" causes condensation/freezing and as such shorting
     coldDamage:
       types:
-        Cold: 1
-        Heat: -2
+        Cold: 0.6
+        Heat: -1.2
     heatDamage:
       types:
-        Heat: 2
-        Cold: -1
+        Heat: 1.2
+        Cold: -0.6
+  - type: Barotrauma
+    damage:
+      types:
+        Heat: 0.4    #типу перегрів бо у космосі вакум та неможливо охолоджуватися нормально + у ІПШ й так більший дамаг від опіків
+        Blunt: 0.2    #гідравлика чи пневматика нелюбить велику різницю у тиску
   - type: Temperature
     currentTemperature: 313.15
     specificHeat: 46
@@ -259,10 +264,10 @@
     alternateState: Standing
   - type: StunVisuals
   - type: TemperatureSpeed #Сповільнення від температури
-    thresholds: #(стокове +10, у ніан +5 від цих значень)
-      283: 0.9
-      270: 0.75
-      245: 0.5
+    thresholds: #(типу конденсат у на схемах спиричиняє сповільнення праці)
+      280: 0.95
+      260: 0.8
+      235: 0.6
   - type: ThermalRegulator #типу охолодження від сиситеми охолодження
     metabolismHeat: 800
     radiatedHeat: 100
@@ -285,7 +290,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: PowerCellDraw
-    drawRate: 0.1
+    drawRate: 0.3
   - type: Lock
     unlockTime: 30
     lockTime: 5
