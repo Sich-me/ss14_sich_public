@@ -7,10 +7,6 @@
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 2.5h
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Diona
   icon: "JobIconShaftMiner"
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm

@@ -21,14 +21,6 @@
       time: 4h
     - !type:AgeRequirement
       requiredAge: 35
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Vox
-      - Diona
-      - SlimePerson
-      # - Tajara
-      - IPC
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
