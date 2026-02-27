@@ -92,7 +92,7 @@ namespace Content.Client.Lobby.UI
                 if (profile is not HumanoidCharacterProfile humanoid)
                     continue;
                 var characterPickerButton =
-                    new CharacterPickerButton(_prototypeManager, _playerManager, group, humanoid, isSelected);
+                    new CharacterPickerButton(_prototypeManager, _playerManager, group, humanoid, isSelected, true);
                 CharacterList.AddChild(characterPickerButton);
 
                 if (isSelected && _selectedSlot != slot)
