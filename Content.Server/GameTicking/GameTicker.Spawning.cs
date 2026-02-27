@@ -1,10 +1,8 @@
-using System.Globalization;
-using System.Linq;
-using System.Numerics;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
 using Content.Server.GameTicking.Events;
 using Content.Server.Ghost;
+using Content.Server.Ghost.Roles;
 using Content.Server.Spawners.Components;
 using Content.Server.Speech.Components;
 using Content.Server.Station.Components;
@@ -27,6 +25,9 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using System.Globalization;
+using System.Linq;
+using System.Numerics;
 
 namespace Content.Server.GameTicking
 {
@@ -35,6 +36,7 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
         [Dependency] private readonly AdminSystem _admin = default!;
+        [Dependency] private readonly NewLifeSystem _newLifeSystem = default!; //🌟Starlight🌟
 
         public static readonly EntProtoId ObserverPrototypeName = "MobObserver";
         public static readonly EntProtoId AdminObserverPrototypeName = "AdminObserver";
@@ -286,6 +288,9 @@ namespace Content.Server.GameTicking
             {
                 AddComp<OwOAccentComponent>(mob);
             }
+
+            var playerPreferences = _prefsManager.GetPreferences(player.UserId);
+            _newLifeSystem.SaveCharacterToUsed(player.UserId, playerPreferences.IndexOfCharacter(character));     //🌟Starlight🌟
 
             _stationJobs.TryAssignJob(station, jobPrototype, player.UserId);
 

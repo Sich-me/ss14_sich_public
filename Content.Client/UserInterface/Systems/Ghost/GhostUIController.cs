@@ -140,6 +140,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.RequestWarpsPressed -= RequestWarps;
         Gui.ReturnToBodyPressed -= ReturnToBody;
         Gui.GhostRolesPressed -= GhostRolesPressed;
+        Gui.NewLifePressed -= NewLifePressed; //🌟Starlight🌟
         Gui.TargetWindow.WarpClicked -= OnWarpClicked;
 
         Gui.Hide();
