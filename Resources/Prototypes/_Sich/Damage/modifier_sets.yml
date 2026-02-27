@@ -4,7 +4,7 @@
     Blunt: 0.8
     Slash: 0.6
     Piercing: 0.8
-    Radiation: 0.0
+    Radiation: 0.5 #електроніка насправді не любить радіацію
     Asphyxiation: 0.0
     Heat: 1.2
     Shock: 2
