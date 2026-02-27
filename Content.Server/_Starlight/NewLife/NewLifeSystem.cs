@@ -9,7 +9,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Network;
 using Content.Server.RoundEnd;
 using Content.Server.GameTicking;
-using Content.Shared.Starlight.CCVar;
+using Content.Shared.CCVar;
 
 namespace Content.Server.Ghost.Roles;
 
@@ -31,8 +31,8 @@ public sealed class NewLifeSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<RoundEndSystemChangedEvent>(ClearRoundCharacterUsed);
         //cvar for max new lifes
-        _configuration.OnValueChanged(StarlightCCVars.MaxNewLifes, UpdateMaxNewLifes, true);
-        _configuration.OnValueChanged(StarlightCCVars.NewLifeGhostCooldown, UpdateCooldown, true);
+        _configuration.OnValueChanged(CCVars.MaxNewLifes, UpdateMaxNewLifes, true);
+        _configuration.OnValueChanged(CCVars.NewLifeGhostCooldown, UpdateCooldown, true);
     }
 
     private void UpdateMaxNewLifes(int value)
