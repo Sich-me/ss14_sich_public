@@ -2,6 +2,7 @@ using Content.Shared.Construction.Prototypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Content.Shared.Preferences
 {
@@ -58,6 +59,18 @@ namespace Content.Shared.Preferences
         public bool TryIndexOfCharacter(HumanoidCharacterProfile profile, out int index)
         {
             return (index = IndexOfCharacter(profile)) != -1;
+        }
+
+        /// <summary>
+        /// Return true if the profile in the slot exists and is a HumanoidCharacterProfile
+        /// </summary>
+        public bool TryGetHumanoidInSlot(int slot, [NotNullWhen(true)] out HumanoidCharacterProfile? humanoid)
+        {
+            humanoid = null;
+            if (!Characters.TryGetValue(slot, out var profile))
+                return false;
+            humanoid = profile as HumanoidCharacterProfile;
+            return humanoid != null;
         }
     }
 }

@@ -26,18 +26,24 @@ public sealed partial class CharacterPickerButton : ContainerButton
     /// </summary>
     public event Action? OnDeletePressed;
 
+    public HumanoidCharacterProfile Profile { get; private init; }
+
+    /// <param name="simple">If true, don't show enable or delete button (used for late join gui)</param>
     public CharacterPickerButton(
         IPrototypeManager prototypeManager,
         ISharedPlayerManager playerMan,
         ButtonGroup group,
         HumanoidCharacterProfile profile,
-        bool isSelected)
+        bool isSelected,
+        bool simple = false)
     {
         RobustXamlLoader.Load(this);
         AddStyleClass(StyleClassButton);
         ToggleMode = true;
         Group = group;
         var description = profile.Name;
+
+        Profile = profile;
 
         View.LoadPreview(profile);
 
@@ -52,6 +58,11 @@ public sealed partial class CharacterPickerButton : ContainerButton
         DeleteButton.Visible = !isSelected;
 
         DescriptionLabel.Text = description;
+
+        if (simple)
+        {
+            DeleteButton.Visible = false;
+        }
 
         ConfirmDeleteButton.OnPressed += _ =>
         {
