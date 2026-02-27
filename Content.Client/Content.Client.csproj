@@ -31,4 +31,7 @@
       <Generator>MSBuild:Compile</Generator>
     </AdditionalFiles>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LateJoin\" />
+  </ItemGroup>
 </Project>

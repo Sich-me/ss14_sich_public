@@ -1,7 +1,6 @@
 using Content.Server.EUI;
 using Content.Shared.Starlight.NewLife;
 using Content.Shared.Eui;
-using Content.Shared.Ghost.Roles;
 
 namespace Content.Server.Ghost.Roles.UI;
 

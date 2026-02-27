@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Client.Lobby;
 using Content.Client.Lobby.UI;
 using Content.Client.Players.PlayTimeTracking;

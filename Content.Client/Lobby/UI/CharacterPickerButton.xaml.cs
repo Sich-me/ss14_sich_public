@@ -26,6 +26,8 @@ public sealed partial class CharacterPickerButton : ContainerButton
     /// </summary>
     public event Action? OnDeletePressed;
 
+    public HumanoidCharacterProfile Profile { get; private init; }
+
     public CharacterPickerButton(
         IPrototypeManager prototypeManager,
         ISharedPlayerManager playerMan,
@@ -38,6 +40,8 @@ public sealed partial class CharacterPickerButton : ContainerButton
         ToggleMode = true;
         Group = group;
         var description = profile.Name;
+
+        Profile = profile;
 
         View.LoadPreview(profile);
 
