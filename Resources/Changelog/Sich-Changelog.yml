@@ -637,3 +637,18 @@
   id: 39
   time: '2026-02-22T00:21:52.0000000+00:00'
   url: https://github.com/Sich-me/ss14_sich_public/pull/107
+- author: qrwas
+  changes:
+  - message: "\u0414\u043E\u0434\u0430\u043D\u043E \u043D\u043E\u0432\u0443 \u043C\
+      \u0435\u0445\u0430\u043D\u0456\u043A\u0443 \u043D\u043E\u0432\u043E\u0433\u043E\
+      \ \u0436\u0438\u0442\u0442\u044F"
+    type: Add
+  - message: "\u0427\u0435\u0440\u0435\u0437 \u0446\u044E \u043C\u0435\u0445\u0430\
+      \u043D\u0456\u043A\u0443, \u0443 \u043D\u0430\u0441 \u0442\u0435\u043F\u0435\
+      \u0440 \u043D\u043E\u0432\u0435 \u043C\u0435\u043D\u044E \u043B\u0435\u0439\u0442\
+      \u0434\u0436\u043E\u0439\u043D\u0443. \u0425\u0456\u0431\u0430 \u0446\u0435\
+      \ \u043F\u043E\u0433\u0430\u043D\u043E?"
+    type: Tweak
+  id: 40
+  time: '2026-02-27T20:46:40.0000000+00:00'
+  url: https://github.com/Sich-me/ss14_sich_public/pull/108
