@@ -276,6 +276,8 @@
     sprite: Clothing/Head/Hats/captain.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/captain.rsi
+  - type: TypingIndicatorClothing
+    proto: regal
   - type: Tag
     tags:
     - PetWearable
@@ -1160,8 +1162,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCapcap
-  name: кепська кепка кепа
-  description: Грандіозна, стильна кепка кепк... Капека... Пек... Кепак... Головного коротше.
+  name: кепська кепка
+  description: Грандіозна, стильна кепка кепк... Капека... Пек... Кепак... Кіпа... Головного коротше...
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/capcap.rsi
@@ -1169,6 +1171,8 @@
     sprite: Clothing/Head/Hats/capcap.rsi
   - type: Item
     sprite: Clothing/Head/Hats/capcap.rsi
+  - type: TypingIndicatorClothing
+    proto: regal
   - type: Tag
     tags:
     - PetWearable
@@ -1477,8 +1481,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatSolidHeadband
-  name: solid headband
-  description: "\"You'll feel like you're Invisible while wearing this! (DISCLAIMER: DOES NOT ACTUALLY MAKE THE WEARER INVISIBLE)\""
+  name: однотонна пов'язка
+  description: "\"Ви відчуєте себе невидимим, коли носите це! (ЗАСТЕРЕЖЕННЯ: НАСПРАВДІ ВОНА НЕ РОБИТЬ ВЛАСНИКА НЕВИДИМИМ)\""
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/solidheadband.rsi
@@ -1492,8 +1496,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadPropellerHat
-  name: propeller hat
-  description: You're the bestest boy.
+  name: кепка з пропелером
+  description: Ти як дитина.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/propellerhat.rsi
