@@ -246,7 +246,7 @@ namespace Content.Client.Lobby.UI
                 if (Profile is null)
                     return;
                 var value = Math.Clamp(args.Value, prototype.MinWidth, prototype.MaxWidth);
-                var width = MathF.Round(prototype.AverageWidth * value);
+                var width = MathF.Round(prototype.AverageWidth * CWidthSlider.Value);
                 CWidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", width));
                 SetProfileWidth(value);
                 UpdateWeight();
