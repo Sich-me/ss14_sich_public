@@ -1,5 +1,5 @@
 - type: entity
-  name: призрачна рука-лезо
+  name: містична рука-лезо 
   parent: BaseItem
   id: SichPoltergeistArmBlade
   description: Потворне лезо, з містичної матерії.
