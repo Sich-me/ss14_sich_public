@@ -198,8 +198,7 @@ public readonly record struct ApplyOrganProfileDataEvent(OrganProfileData? Base,
 [ByRefEvent]
 public readonly record struct ApplyOrganMarkingsEvent(Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>> Markings);
 
-[ByRefEvent]
-public readonly record struct ApplyApperanceEvent(HumanoidCharacterAppearance Appearance);
+public readonly record struct ApplyHeightWidth();
 
 [NetSerializable, Serializable]
 public sealed class ApplyApperanceServerEvent : EntityEventArgs
