@@ -214,25 +214,19 @@ namespace Content.Client.Lobby.UI
             CHeightSlider.Value = Profile?.Appearance.Height ?? prototype.DefaultHeight;
             float avgHeight = prototype.AverageHeight;
 
-            calculateHeight();
+            var height = MathF.Round(prototype.AverageHeight * CHeightSlider.Value);
+            CHeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
 
             CHeightSlider.OnValueChanged += args =>
             {
                 if (Profile is null)
                     return;
-                calculateHeight();
+                var value = Math.Clamp(args.Value, prototype.MinHeight, prototype.MaxHeight);
+                var height = MathF.Round(prototype.AverageHeight * CHeightSlider.Value);
+                CHeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
                 SetProfileHeight(CHeightSlider.Value);
                 UpdateWeight();
             };
-
-            void calculateHeight()
-            {
-                float a = (avgHeight * (1 - (60f / avgHeight))) / 0.4f;
-                float b = avgHeight - a;
-                var height = MathF.Round(a * CHeightSlider.Value + b);
-                CHeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
-            }
-
 
             CHeightReset.OnPressed += _ =>
             {
@@ -240,7 +234,6 @@ namespace Content.Client.Lobby.UI
                 SetProfileHeight(prototype.DefaultHeight);
                 UpdateWeight();
             };
-
 
             CWidthSlider.MinValue = prototype.MinWidth;
             CWidthSlider.MaxValue = prototype.MaxWidth;
@@ -252,7 +245,6 @@ namespace Content.Client.Lobby.UI
             {
                 if (Profile is null)
                     return;
-                prototype = _species.Find(x => x.ID == Profile.Species) ?? _species.First(); // Just in case
                 var value = Math.Clamp(args.Value, prototype.MinWidth, prototype.MaxWidth);
                 var width = MathF.Round(prototype.AverageWidth * value);
                 CWidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", width));

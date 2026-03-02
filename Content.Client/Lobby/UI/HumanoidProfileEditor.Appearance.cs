@@ -190,6 +190,8 @@ public sealed partial class HumanoidProfileEditor
         RefreshLoadouts();
         UpdateSexControls(); // update sex for new species
         UpdateSpeciesGuidebookIcon();
+        UpdateHeightControls(); //height and width may have different ranges for new species, make sure to update them.
+        UpdateWidthControls();
         ReloadPreview();
     }
 
