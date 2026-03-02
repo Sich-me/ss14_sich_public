@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [ClothingOuterBase, BaseChameleon]
+  parent: [ClothingOuterBase, AllowSuitStorageClothingGasTanks, BaseChameleon]
   id: ClothingOuterChameleon
   name: жилет
   description: Щільний жилет з гумовою водонепроникною оболокою.

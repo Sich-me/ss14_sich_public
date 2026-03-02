@@ -25,11 +25,16 @@ ingestion-verb-drink = Пити
 
 # Edible Component
 
-edible-nom = Ням. {$flavors}
+-edible-satiated = { $satiated ->
+    [true] {" "}Ви відчуваєте, що не можете більше { $verb }.
+  *[false] {""}
+}
+
+edible-nom = Ням. {$flavors}{ -edible-satiated(satiated: $satiated, verb: "eat") }
 edible-nom-other = Ням.
-edible-slurp = Сьорб. {$flavors}
+edible-slurp = Сьорб. {$flavors}{ -edible-satiated(satiated: $satiated, verb: "drink") }
 edible-slurp-other = Сьорб.
-edible-swallow = Ви ковтаєте { THE($food) }
+edible-swallow = Ви ковтаєте { THE($food) }.{ -edible-satiated(satiated: $satiated, verb: "swallow") }
 edible-gulp = Глоток. {$flavors}
 edible-gulp-other = Глоток.
 
@@ -51,6 +56,6 @@ edible-verb-pill = проковтнути
 
 ## Force feeding
 
-edible-force-feed = {CAPITALIZE(THE($user))} намагається змусити вас {$verb} щось!
-edible-force-feed-success = {CAPITALIZE(THE($user))} змусив вас {$verb} щось! {$flavors}
-edible-force-feed-success-user = Ви успішно нагодували {THE($target)}
+edible-force-feed = {CAPITALIZE($user)} намагається змусити вас {$verb} щось!
+edible-force-feed-success = {CAPITALIZE($user)} змусив вас {$verb} щось! {$flavors}{ -edible-satiated(satiated: $satiated, verb: $verb) }
+edible-force-feed-success-user = Ви успішно нагодували {$target}

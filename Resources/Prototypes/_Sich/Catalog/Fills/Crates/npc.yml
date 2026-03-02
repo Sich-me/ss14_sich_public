@@ -1,0 +1,10 @@
+- type: entity
+  parent: PetCarrier
+  id: CrateNPCSichMobCatDrone
+  name: контейнер з робо-кішкою
+  description: Контейнер, який містить у собі робо-кішку
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: SichMobCatDrone

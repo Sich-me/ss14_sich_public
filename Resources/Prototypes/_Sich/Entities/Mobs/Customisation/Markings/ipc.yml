@@ -1,0 +1,1029 @@
+# дефолтні маркування
+- type: marking
+  id: IPCChassisHead
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_head
+
+- type: marking
+  id: IPCChassisTorso
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_torso
+      
+- type: marking
+  id: IPCChassisLArm
+  bodyPart: LArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_l_arm
+
+- type: marking
+  id: IPCChassisRArm
+  bodyPart: RArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_r_arm
+
+- type: marking
+  id: IPCChassisLLeg
+  bodyPart: LLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_l_leg
+      
+- type: marking
+  id: IPCChassisRLeg
+  bodyPart: RLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_r_leg
+
+- type: marking
+  id: IPCChassisLFoot
+  bodyPart: LFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_l_foot
+      
+- type: marking
+  id: IPCChassisRFoot
+  bodyPart: RFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_r_foot
+
+- type: marking
+  id: IPCChassisLHand
+  bodyPart: LHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_l_hand
+      
+- type: marking
+  id: IPCChassisRHand
+  bodyPart: RHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: ipc_r_hand
+
+#деталі
+    
+- type: marking
+  id: IPCChassisHumanDiodes
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: diodes-unshaded
+      shader: unshaded
+      
+- type: marking
+  id: IPCChassisHumanSegments
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: segments
+    
+- type: marking
+  id: IPCChassisHumanHeadM
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_head_m
+      
+- type: marking
+  id: IPCChassisHumanHeadF
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_head_f
+      
+- type: marking
+  id: IPCChassisHumanJawM
+  bodyPart: HeadSide
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_jaw_m
+      
+- type: marking
+  id: IPCChassisHumanJawF
+  bodyPart: HeadSide
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_jaw_f
+      
+- type: marking
+  id: IPCChassisHumanEyes
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_eyes-unshaded
+      shader: unshaded
+      
+- type: marking
+  id: IPCChassisHumanTorsoF
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_torso_f
+      
+- type: marking
+  id: IPCChassisHumanTorsoM
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_torso_m
+      
+- type: marking
+  id: IPCChassisHumanLArm
+  bodyPart: LArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_l_arm
+      
+- type: marking
+  id: IPCChassisHumanRArm
+  bodyPart: RArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_r_arm
+      
+- type: marking
+  id: IPCChassisHumanLLeg
+  bodyPart: LLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_l_leg
+      
+- type: marking
+  id: IPCChassisHumanRLeg
+  bodyPart: RLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_r_leg
+      
+- type: marking
+  id: IPCChassisHumanLHand
+  bodyPart: LHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_l_hand
+      
+- type: marking
+  id: IPCChassisHumanRHand
+  bodyPart: RHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_r_hand
+      
+- type: marking
+  id: IPCChassisHumanLFoot
+  bodyPart: LFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_l_foot
+      
+- type: marking
+  id: IPCChassisHumanRFoot
+  bodyPart: RFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: human_r_foot
+#N1 chassis
+- type: marking
+  id: IPCChassisN1Head
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_head
+      
+- type: marking
+  id: IPCChassisN1Monoeye
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_monoeye
+      
+- type: marking
+  id: IPCChassisN1Chest
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_chest
+      
+- type: marking
+  id: IPCChassisN1LArm
+  bodyPart: LArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_l_arm
+      
+- type: marking
+  id: IPCChassisN1RArm
+  bodyPart: RArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_r_arm
+      
+- type: marking
+  id: IPCChassisN1LLeg
+  bodyPart: LLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_l_leg
+      
+- type: marking
+  id: IPCChassisN1RLeg
+  bodyPart: RLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_r_leg
+      
+- type: marking
+  id: IPCChassisN1LHand
+  bodyPart: LHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_l_hand
+      
+- type: marking
+  id: IPCChassisN1RHand
+  bodyPart: RHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_r_hand
+      
+- type: marking
+  id: IPCChassisN1LFoot
+  bodyPart: LFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_l_foot
+      
+- type: marking
+  id: IPCChassisN1RFoot
+  bodyPart: RFoot
+  groupWhitelist: [IPC]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: n1_r_foot
+#Desperando chassis
+- type: marking
+  id: IPCChassisDesHead
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_head
+      
+- type: marking
+  id: IPCChassisDesHeadMonitor
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_head_monitor
+
+- type: marking
+  id: IPCChassisDesChest
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_chest
+      
+- type: marking
+  id: IPCChassisDesLArm
+  bodyPart: LArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_l_arm
+      
+- type: marking
+  id: IPCChassisDesRArm
+  bodyPart: RArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_r_arm
+      
+- type: marking
+  id: IPCChassisDesLLeg
+  bodyPart: LLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_l_leg
+      
+- type: marking
+  id: IPCChassisDesRLeg
+  bodyPart: RLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_r_leg
+      
+- type: marking
+  id: IPCChassisDesLHand
+  bodyPart: LHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_l_hand
+      
+- type: marking
+  id: IPCChassisDesRHand
+  bodyPart: RHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_r_hand
+      
+- type: marking
+  id: IPCChassisDesLFoot
+  bodyPart: LFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_l_foot
+      
+- type: marking
+  id: IPCChassisDesRFoot
+  bodyPart: RFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: des_r_foot
+# Renuin chassis
+- type: marking
+  id: IPCChassisRenuinHead
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_head_monitor
+      
+- type: marking
+  id: IPCChassisRenuinChest
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_chest
+      
+- type: marking
+  id: IPCChassisRenuinLArm
+  bodyPart: LArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_l_arm
+      
+- type: marking
+  id: IPCChassisRenuinRArm
+  bodyPart: RArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_r_arm
+      
+- type: marking
+  id: IPCChassisRenuinLLeg
+  bodyPart: LLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_l_leg
+      
+- type: marking
+  id: IPCChassisRenuinRLeg
+  bodyPart: RLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_r_leg
+      
+- type: marking
+  id: IPCChassisRenuinLHand
+  bodyPart: LHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_l_hand
+      
+- type: marking
+  id: IPCChassisRenuinRHand
+  bodyPart: RHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_r_hand
+      
+- type: marking
+  id: IPCChassisRenuinLFoot
+  bodyPart: LFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_l_foot
+      
+- type: marking
+  id: IPCChassisRenuinRFoot
+  bodyPart: RFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: renuin_r_foot
+# Bishop chassis
+- type: marking
+  id: IPCChassisBishopHead
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_head
+      
+- type: marking
+  id: IPCChassisBishopHeadMonitor
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_head_monitor
+
+- type: marking
+  id: IPCChassisBishopChest
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_chest
+      
+- type: marking
+  id: IPCChassisBishopLArm
+  bodyPart: LArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_l_arm
+      
+- type: marking
+  id: IPCChassisBishopRArm
+  bodyPart: RArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_r_arm
+      
+- type: marking
+  id: IPCChassisBishopLLeg
+  bodyPart: LLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_l_leg
+      
+- type: marking
+  id: IPCChassisBishopRLeg
+  bodyPart: RLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_r_leg
+      
+- type: marking
+  id: IPCChassisBishopLHand
+  bodyPart: LHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_l_hand
+      
+- type: marking
+  id: IPCChassisBishopRHand
+  bodyPart: RHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_r_hand
+      
+- type: marking
+  id: IPCChassisBishopLFoot
+  bodyPart: LFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_l_foot
+      
+- type: marking
+  id: IPCChassisBishopRFoot
+  bodyPart: RFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: bishop_r_foot
+# Xion chassis
+- type: marking
+  id: IPCChassisXionHead
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_head
+      
+- type: marking
+  id: IPCChassisXionHeadMonitor
+  bodyPart: Head
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_head_monitor
+
+- type: marking
+  id: IPCChassisXionChest
+  bodyPart: Chest
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_chest
+      
+- type: marking
+  id: IPCChassisXionLArm
+  bodyPart: LArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_l_arm
+      
+- type: marking
+  id: IPCChassisXionRArm
+  bodyPart: RArm
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_r_arm
+      
+- type: marking
+  id: IPCChassisXionLLeg
+  bodyPart: LLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_l_leg
+      
+- type: marking
+  id: IPCChassisXionRLeg
+  bodyPart: RLeg
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_r_leg
+      
+- type: marking
+  id: IPCChassisXionLHand
+  bodyPart: LHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_l_hand
+      
+- type: marking
+  id: IPCChassisXionRHand
+  bodyPart: RHand
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_r_hand
+      
+- type: marking
+  id: IPCChassisXionLFoot
+  bodyPart: LFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_l_foot
+      
+- type: marking
+  id: IPCChassisXionRFoot
+  bodyPart: RFoot
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc_chassis.rsi
+      state: xion_r_foot
+#end of chassis
+#monitors and other stuff:
+- type: marking
+  id: IPCScreenStatic
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: static
+
+- type: marking
+  id: IPCScreenBlue
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: blue
+
+- type: marking
+  id: IPCScreenBreakout
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: breakout
+
+- type: marking
+  id: IPCScreenEight
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: eight
+
+- type: marking
+  id: IPCScreenGoggles
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: goggles
+
+- type: marking
+  id: IPCScreenExcla
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: excla
+
+- type: marking
+  id: IPCScreenHeart
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: heart
+
+- type: marking
+  id: IPCScreenMonoeye
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: monoeye
+
+- type: marking
+  id: IPCScreenNature
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: nature
+
+- type: marking
+  id: IPCScreenOrange
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: orange
+
+- type: marking
+  id: IPCScreenPink
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: pink
+
+- type: marking
+  id: IPCScreenQuestion
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: question
+
+- type: marking
+  id: IPCScreenShower
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: shower
+
+- type: marking
+  id: IPCScreenYellow
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: yellow
+
+- type: marking
+  id: IPCScreenScroll
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: scroll
+
+- type: marking
+  id: IPCScreenConsole
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: console
+
+- type: marking
+  id: IPCScreenRgb
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: rgb
+
+- type: marking
+  id: IPCScreenGlider
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: glider
+
+- type: marking
+  id: IPCScreenRainbow
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: rainbow
+
+- type: marking
+  id: IPCScreenBsod
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: bsod
+
+- type: marking
+  id: IPCScreenRedtext
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: redtext
+
+- type: marking
+  id: IPCScreenSinewave
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: sinewave
+
+- type: marking
+  id: IPCScreenScreenwave
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: screenwave
+
+- type: marking
+  id: IPCScreenEcgwave
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: ecgwave
+
+- type: marking
+  id: IPCScreenEyes
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: eyes
+
+- type: marking
+  id: IPCScreenEyesstall
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: eyesstall
+
+- type: marking
+  id: IPCScreenEyesangry
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: eyesangry
+
+- type: marking
+  id: IPCScreenLoading
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: loading
+
+- type: marking
+  id: IPCScreenWindowsxp
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: windowsxp
+
+- type: marking
+  id: IPCScreenTetris
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: tetris
+
+- type: marking
+  id: IPCScreenTv
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: tv
+
+- type: marking
+  id: IPCScreenTextdrop
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: textdrop
+
+- type: marking
+  id: IPCScreenStars
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: stars
+
+- type: marking
+  id: IPCScreenRainbowdiag
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: rainbowdiag
+
+- type: marking
+  id: IPCScreenBlank
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: blank
+
+- type: marking
+  id: IPCScreenSmile
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: smile
+
+- type: marking
+  id: IPCScreenSad
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: sad
+
+- type: marking
+  id: IPCScreenRing
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: ring
+
+- type: marking
+  id: IPCScreenL
+  bodyPart: Snout
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: l
+
+- type: marking
+  id: IPCScreenTvAntenna
+  bodyPart: HeadTop
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: tvantenna
+
+- type: marking
+  id: IPCScreenTesla
+  bodyPart: HeadTop
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: tesla
+
+- type: marking
+  id: IPCScreenCyberheadantenna
+  bodyPart: HeadTop
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: cyberheadantenna
+
+- type: marking
+  id: IPCScreenSidelights
+  bodyPart: HeadSide
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: sidelights
+
+- type: marking
+  id: IPCScreenAntlers
+  bodyPart: HeadTop
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: antlers
+
+- type: marking
+  id: IPCScreenDrone
+  bodyPart: HeadTop
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: drone
+
+- type: marking
+  id: IPCScreenCrowned
+  bodyPart: HeadTop
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: crowned
+
+- type: marking
+  id: IPCScreenAntennae
+  bodyPart: HeadTop
+  groupWhitelist: [ IPC ]
+  sprites:
+    - sprite: _Sich/Mobs/Customization/IPC/ipc.rsi
+      state: antennae

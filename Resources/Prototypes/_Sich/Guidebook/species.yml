@@ -2,3 +2,13 @@
   id: Avali
   name: species-name-avali
   text: "/ServerInfo/Guidebook/_Sich/Mobs/Avali.xml"
+
+- type: guideEntry
+  id: IPC
+  name: species-name-ipc
+  text: "/ServerInfo/Guidebook/_Sich/Mobs/IPC.xml"
+
+- type: guideEntry
+  id: Tajara
+  name: species-name-tajara
+  text: "/ServerInfo/Guidebook/_Sich/Mobs/Tajara.xml"

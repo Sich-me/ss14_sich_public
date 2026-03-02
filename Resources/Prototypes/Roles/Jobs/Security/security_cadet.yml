@@ -10,11 +10,6 @@
 #      department: Security
 #      time: 5h
 #      inverted: true # stop playing intern if you're good at security! (ні?)
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Diona
-      - IPC
     - !type:TraitsRequirement
       inverted: true
       traits:

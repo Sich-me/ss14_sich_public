@@ -15,11 +15,6 @@
       time: 10h
     - !type:AgeRequirement
       requiredAge: 25
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Vox
-      - Tajara
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"

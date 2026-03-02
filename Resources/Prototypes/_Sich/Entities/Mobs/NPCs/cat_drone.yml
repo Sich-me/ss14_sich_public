@@ -1,0 +1,128 @@
+
+- type: entity
+  name: Робо-кішка
+  id: SichMobCatDrone
+  parent: MobCat
+  description: Товста синтетична дупа, яку любить уся станція, на дотик відчувається м'якою та пухнастою. 
+  components:
+  - type: Sprite
+    sprite: _Sich/Mobs/NPCs/Pets/cat_drone.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cat_drone
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cat_drone
+      Critical:
+        Base: cat_drone_dead
+      Dead:
+        Base: cat_drone_dead
+  - type: Temperature
+    currentTemperature: 313.15
+    specificHeat: 46
+  - type: TemperatureDamage
+    heatDamageThreshold: 423
+    coldDamageThreshold: 0
+  - type: Butcherable
+    spawned:
+    - id: SheetSteel
+      amount: 10
+  - type: Repairable
+    damageValue: -10 # 10 seconds to repair from crit
+    doAfterDelay: 1
+    fuelCost: 0.5
+    allowSelfRepair: false
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Oil
+        Quantity: 150
+    bloodlossDamage:
+      types:
+        Heat: 0.25
+    bloodlossHealDamage:
+      types:
+        Heat: -0.5
+  - type: Speech
+    speechSounds: Cat
+    speechVerb: Robotic
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot { }
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: ItemToggle
+    onActivate: false
+    activated: false 
+    onUse: false
+  - type: PowerCellDraw
+    drawRate: 0.01
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+  - type: ItemTogglePointLight
+  - type: HandheldLight
+    toggleOnInteract: false
+    wattage: 0.2
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+    - !type:FadeBehaviour
+      id: radiating
+      maxDuration: 2.0
+      startValue: 3.0
+      endValue: 2.0
+      isLooped: true
+      reverseWhenFinished: true
+    - !type:PulseBehaviour
+      id: blinking
+      interpolate: Nearest
+      maxDuration: 1.0
+      startValue: 0.1
+      endValue: 2.0
+      isLooped: true
+  - type: ToggleableVisuals
+    spriteLayer: light
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 4
+    color: "#FFFFEE"
+    netsync: false
+  - type: ZombieImmune
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10 
+  - type: Tag
+    tags:
+      - DoorBumpOpener
+      - VimPilot
+      - CannotSuicide
+  - type: MovementAlwaysTouching
+  - type: PressureImmunity
+  - type: ProtectedFromStepTriggers
+  - type: NoSlip
+  - type: Insulated
+  - type: InteractionPopup
+    successChance: 0.7
+    interactSuccessString: petting-success-drone-cat
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: Respirator #It just works?
+    minSaturation: 5.0
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-drone-cat-name
+    description: ghost-role-information-drone-cat-description
+    rules: ghost-role-information-nonantagonist-rules
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

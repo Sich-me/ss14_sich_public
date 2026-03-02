@@ -33,6 +33,20 @@
     },
     {
       "name": "sourcandy-trash"
+    },
+    {
+      "name": "mouseChips"
+    },
+    {
+      "name": "mouseChips_Trash"
+    },
+    {
+      "name": "mouseChips-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "mouseChips-inhand-right",
+      "directions": 4
     }
   ]
 }

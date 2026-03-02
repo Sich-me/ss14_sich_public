@@ -1,2 +1,2 @@
-ghost-role-information-poltergeist-name = Полтергейст
-ghost-role-information-poltergeist-description = ти злий дух, який є втіленням усіх вмерлих на станції. ти хочеш наводити жах та хаос на станції, усіляко пакостячи екіпажу та пугаючт його.
+ghost-role-information-drone-cat-name = робо-кішка
+ghost-role-information-drone-cat-description = Ви робо-кішка, улюблена лінива дупа усієї станції, яка любить нявкати, аби отримати їжу, та просто забавлятися чи поспати на консолях.

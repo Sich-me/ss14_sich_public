@@ -10,11 +10,6 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 10h
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Diona
-      - SlimePerson
     - !type:TraitsRequirement
       inverted: true
       traits:

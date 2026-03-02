@@ -14,6 +14,7 @@ public sealed partial class GhostGui : UIWidget
     public event Action? RequestWarpsPressed;
     public event Action? ReturnToBodyPressed;
     public event Action? GhostRolesPressed;
+    public event Action? NewLifePressed;   //🌟Starlight🌟
     private int _prevNumberRoles;
 
     public GhostGui()
@@ -28,6 +29,8 @@ public sealed partial class GhostGui : UIWidget
         ReturnToBodyButton.OnPressed += _ => ReturnToBodyPressed?.Invoke();
         GhostRolesButton.OnPressed += _ => GhostRolesPressed?.Invoke();
         GhostRolesButton.OnPressed += _ => GhostRolesButton.StyleClasses.Remove(StyleClass.Negative);
+        NewLifeButton.OnPressed += _ => NewLifePressed?.Invoke(); //🌟Starlight🌟
+        NewLifeButton.StyleClasses.Add(StyleClass.Negative);  //🌟Starlight🌟
     }
 
     public void Hide()

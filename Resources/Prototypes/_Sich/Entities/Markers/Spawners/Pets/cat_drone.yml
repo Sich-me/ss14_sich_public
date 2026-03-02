@@ -1,0 +1,13 @@
+- type: entity
+  parent: MarkerBase
+  id: SichSpawnMobCatDrone
+  name: Спавнер робо-кішки
+  suffix: Улюбленець станції
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - SichMobCatDrone

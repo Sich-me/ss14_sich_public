@@ -2,9 +2,6 @@
 uplink-pistol-viper-name = Гадюка
 uplink-pistol-viper-desc = Маленький пістолет, який легко приховати, але не здатний похвалитися потужністю. Використовує патрони .35 авто.
 
-uplink-estoc-bundle-name = Есток DMR бандл
-uplink-estoc-bundle-desc = Десигнований марксманський карабін, оснащений оптикою середньої дальності для бою на відстані. У комплекті дві магазинa для гвинтівки (.20 rifle).
-
 uplink-revolver-python-name = Пітон
 uplink-revolver-python-desc = Міцний револьвер, улюбленець агентів Синдикату. Використовує патрони .45 магнум.
 
@@ -37,6 +34,15 @@ uplink-gloves-knuckleduster-desc = A pair of plastitanium knuckle dusters that l
 
 uplink-hushpup-name = Хушпуп
 uplink-hushpup-desc = Потужний дробовик із глушником та невеликою місткістю магазину. Поставляється із запасною коробкою картечі. Використовує набої .50 калібру для дробовика.
+
+uplink-c20r-name = C-20r
+uplink-c20r-desc = Старий вірний: Класичний пістолет-кулемет C-20r.
+
+uplink-bulldog-name = Bulldog
+uplink-bulldog-desc = Компактний та агресивний: Містить популярний дробовик Bulldog.
+
+uplink-grenade-launcher-name = China-Lake
+uplink-grenade-launcher-desc = Старий гранатомет China-Lake у комплекті з 5 протипіхотними снарядами.
 
 # Explosives
 uplink-explosive-grenade-name = Розривна граната
@@ -193,7 +199,10 @@ uplink-singularity-beacon-desc = Пристрій, який притягує с�
 uplink-antimov-law-name = Плата законів Антімова
 uplink-antimov-law-desc = Дуже небезпечний набір законів, використовуйте його з обережністю, якщо хочете, щоб штучний інтелект збожеволів.
 
-# Імпланти
+uplink-syndimov-law-name = Плата законів "Синдикат"
+uplink-syndimov-law-desc = Підривний набір законів, який допоможе схилити ШІ на ваш бік; використовуйте якнайчастіше.
+
+# Implants
 uplink-storage-implanter-name = Імплант сховища
 uplink-storage-implanter-desc = Сховайте смаколики всередині себе за допомогою нової технології блюспейсу!
 
@@ -227,6 +236,9 @@ uplink-micro-bomb-implanter-desc = Вибух при смерті або руч�
 uplink-radio-implanter-name = Радіоімплантатор
 uplink-radio-implanter-desc = Імплантує радіо Синдикату, що дозволяє таємне спілкування без гарнітури.
 
+uplink-voice-mask-implanter-name = Імплант маскування особистості
+uplink-voice-mask-implanter-desc = Змінює ваші голосові зв'язки та структуру обличчя, дозволяючи імітувати будь-кого, кого ви зможете уявити.
+
 # Bundles
 uplink-observation-kit-name = Набір для спостереження
 uplink-observation-kit-desc = Включає плату монітора камер спостереження та худ охорони, замаскований під сонцезахисні окуляри.
@@ -255,8 +267,11 @@ uplink-sniper-bundle-desc = Непомітний портфель, який мі
 uplink-c20r-bundle-name = Набір С-20р
 uplink-c20r-bundle-desc = Старий-добрий: класичний пістолет-кулемет С-20р у комплекті з трьома магазинами.
 
-uplink-buldog-bundle-name = Набір Бульдог
-uplink-buldog-bundle-desc = Голодний та злий: містить популярний дробовик Бульдог, барабан з кулями калібру 12g та чотири барабани з картеччю калібру 12g
+uplink-bulldog-bundle-name = Набір Bulldog
+uplink-bulldog-bundle-desc = Компактний та агресивний: Містить популярний дробовик Bulldog, один барабан куль 12g та чотири барабани картечі 12g.
+
+uplink-estoc-bundle-name = Набір Estoc DMR
+uplink-estoc-bundle-desc = Марксменська гвинтівка, оснащена оптикою середньої дальності для боїв на довгих дистанціях. У комплекті з двома гвинтівковими магазинами (.20 rifle).
 
 uplink-grenade-launcher-bundle-name = Набір Чайна-Лейк
 uplink-grenade-launcher-bundle-desc = Старий гранатомет Чайна-Лейк в комплекті з 11 гранатами різного ураження.
@@ -280,7 +295,7 @@ uplink-starter-kit-desc = 40 телекристалів на базове спо
 uplink-toolbox-name = Ящик інструментів
 uplink-toolbox-desc = Повний комлпект інструментів для механічно обізнаного зрадника. Включає пару ізольованих бойових рукавичок і протигаз синдикату.
 
-uplink-syndicate-jaws-of-life-name = Щелепи життя
+uplink-syndicate-jaws-of-life-name = Щелепи смерті
 uplink-syndicate-jaws-of-life-desc = Комбінований інструмент для підважування та різання. Корисний для проникнення на станцію або в її відділи. Може відчиняти навіть заболтовані двері!
 
 uplink-duffel-surgery-name = Сумка хірургічних інструментів
@@ -317,8 +332,8 @@ uplink-hot-potato-desc = Після активації цю бомбу упов�
 uplink-chimp-upgrade-kit-name = Чіп покращення ручної грамати ЧІМП
 uplink-chimp-upgrade-kit-desc = Вставте цей чіп у стандартну ручну гармату ЧІМП, щоб дозволити їй стріляти омега-частинками. Частинки Омега завдають серйозних опіків і призводять до надкритичного стану аномалій.
 
-uplink-proximity-mine-name = Міна наближення
-uplink-proximity-mine-desc = Міна, замаскована під знак мокрої підлоги.
+uplink-proximity-mine-name = Proximity Mine
+uplink-proximity-mine-desc = A throwable mine disguised as a wet floor sign. Detonates on contact with almost anything, safety always off.
 
 uplink-disposable-turret-name = Одноразова балістична турель
 uplink-disposable-turret-desc = Виглядає та функціонує як звичайний ящик електрика. Після вдару по ящику для інструментів він перетворюється на балістичну турель, теоретично стріляючи по будь-кому, крім членів синдикату. Можна повернути назад у ящик для інструментів за допомогою викрутки та відремонтувати за допомогою гайкового ключа.
@@ -333,8 +348,8 @@ uplink-saw-advanced-name = Просунута циркулярна пила
 uplink-saw-advanced-desc = Передовий хірургічний інструмент, призначений для розрізання як плоті, так і кісток.
 
 # Armor
-uplink-chameleon-name = Набір Хамелеон
-uplink-chameleon-desc = Рюкзак, наповнений предметами, які містять технологію хамелеона, що дозволяє вам маскуватися під будь-що на станції та багато іншого!
+uplink-chameleon-name = Набір «Хамелеон»
+uplink-chameleon-desc = Рюкзак, повний предметів із технологією «хамелеон», що дозволяє маскуватися під будь-кого на станції та навіть більше! У комплекті безкоштовна ID-картка агента!
 
 uplink-clothing-no-slips-shoes-name = Взуття непівсковзайка
 uplink-clothing-no-slips-shoes-desc = Взуття-хамелеон захищаюче від півсковзання.

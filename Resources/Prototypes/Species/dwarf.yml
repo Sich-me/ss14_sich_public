@@ -3,9 +3,7 @@
   name: species-name-dwarf
   roundStart: true
   prototype: MobDwarf
-  sprites: MobHumanSprites
-  markingLimits: MobHumanMarkingLimits
-  dollPrototype: MobDwarfDummy
+  dollPrototype: AppearanceDwarf
   skinColoration: HumanToned
   minHeight: 0.75
   defaultHeight: 0.85

@@ -17,12 +17,6 @@
       time: 10h
     - !type:AgeRequirement
       requiredAge: 30
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Vox
-      - SlimePerson
-      - Tajara
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
@@ -48,7 +42,6 @@
   equipment:
     id: CMOPDA
     ears: ClothingHeadsetCMO
-    belt: ClothingBeltMedicalFilled
   storage:
     back:
     - Flash

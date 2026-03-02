@@ -794,10 +794,9 @@
     price: 100
 
 - type: entity
-  name: експерементальний ЧІМП
   parent: [WeaponPistolCHIMP, BaseSyndicateContraband]
   id: WeaponPistolCHIMPUpgraded
-  description: Цей ЧІМП, здається, стриляє набагато потужніше, ніж зазвичай...
+  suffix: Syndicate
   components:
   - type: BatteryWeaponFireModes
     fireModes:
