@@ -125,8 +125,8 @@
         acts: [ "Destruction" ]
   - type: GhostRole
     makeSentient: true
-    name: ghost-role-information-poltergeist-name
-    description: ghost-role-information-poltergeist-description
+    name: roles-antag-poltergeist-name
+    description: roles-antag-poltergeist-objective
     rules: ghost-role-information-antagonist-rules
     mindRoles:
     - MindRoleGhostRoleSoloAntagonist
