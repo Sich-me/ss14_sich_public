@@ -1,5 +1,5 @@
 - type: entity
-  parent: ChameleonProjector
+  parent: ChameleonProjectorNoBattery
   id: SichPoltergeistChameleonProjector
   name: містичне маскування
   description: За допомогою цього ти можеш замаскуватися під деякі об'єкти.
