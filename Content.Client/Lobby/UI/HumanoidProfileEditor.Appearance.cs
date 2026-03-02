@@ -253,6 +253,74 @@ public sealed partial class HumanoidProfileEditor
         }
     }
 
+    private void SetProfileHeight(float height)
+    {
+        if (Profile is null) return;
+        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithHeight(height));
+        ReloadPreview();
+        SetDirty();
+    }
+
+    private void SetProfileWidth(float width)
+    {
+        if (Profile is null) return;
+        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithWidth(width));
+        ReloadPreview();
+        SetDirty();
+    }
+
+    // Height width
+    private void UpdateHeightControls()
+    {
+        if (Profile == null)
+            return;
+
+        var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
+
+        CHeightSlider.MinValue = species.MinHeight;
+        CHeightSlider.Value = Profile.Appearance.Height;
+        CHeightSlider.MaxValue = species.MaxHeight;
+
+        var height = MathF.Round(species.AverageHeight * CHeightSlider.Value);
+        CHeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int) height));
+    }
+
+    private void UpdateWidthControls()
+    {
+        if (Profile == null)
+            return;
+
+        var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
+
+        CWidthSlider.MinValue = species.MinWidth;
+        CWidthSlider.Value = Profile.Appearance.Width;
+        CWidthSlider.MaxValue = species.MaxWidth;
+
+        var width = MathF.Round(species.AverageWidth * CWidthSlider.Value);
+        CWidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int) width));
+    }
+
+    private void UpdateWeight()
+    {
+        if (Profile == null)
+            return;
+
+        var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
+        _prototypeManager.Index(species.Prototype).TryGetComponent<FixturesComponent>(out var fixture);
+
+        if (fixture != null)
+        {
+            var radius = fixture.Fixtures["fix1"].Shape.Radius;
+            var density = fixture.Fixtures["fix1"].Density;
+            var avg = (Profile.Appearance.Width + Profile.Appearance.Height) / 2;
+            var weight = MathF.Round(MathF.PI * MathF.Pow(radius * avg, 2) * density);
+            CWeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) weight));
+        }
+
+        SpriteView.InvalidateMeasure();
+    }
+    //end Height width
+
     private void OnSkinColorOnValueChanged()
     {
         if (Profile is null) return;
