@@ -27,9 +27,6 @@ trait-paracusia-desc = Ви чуєте звуки яких насправді н
 trait-unrevivable-name = Невідроджуваний
 trait-unrevivable-desc = Вас не можна оживити за допомогою дефібриляторів.
 
-trait-pirate-accent-name = Піратський акцент
-trait-pirate-accent-desc = Ти не можеш перестати говорити як пірат!
-
 trait-accentless-name = Без акцентів
 trait-accentless-desc = У вас немає акценту, який зазвичай притаманний вашому виду
 
@@ -48,21 +45,20 @@ trait-snoring-desc = Ви будете хропіти під час сну.
 trait-liar-name = Патологічний брехун
 trait-liar-desc = Вам важко змусити себе сказати правду. Іноді ти все одно брешеш.
 
-trait-cowboy-name = Ковбойський акцент
-trait-cowboy-desc = Ви говорите з виразним ковбойським акцентом!
-
 trait-german-name = Німецький акцент
 trait-german-desc = Здається, ви приїхали з космічної Німеччини.
 
 trait-italian-name = Одеський акцент
 trait-italian-desc = Таки так, з легким присмаком Чорного моря та нотками «йо-майо».
 
-
 trait-french-name = Французький акцент
 trait-french-desc = Здається, у вашому акценті є певна «je ne sais quoi».
 
 trait-spanish-name = Іспанський акцент
 trait-spanish-desc = Hola señor, donde esta la biblioteca.
+
+trait-scottish-name = Шотландський акцент
+trait-scottish-desc = Ви розмовляєте, як справжній шотландець!
 
 trait-painnumbness-name = Знечулення
 trait-painnumbness-desc = Ви не відчуваєте болю, не усвідомлюючи наскільки сильно можете бути поранені.

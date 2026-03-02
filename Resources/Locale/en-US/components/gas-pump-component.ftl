@@ -1,7 +1,3 @@
-comp-gas-pump-ui-pump-status = Статус:
-comp-gas-pump-ui-status-enabled = Увімкнено
-comp-gas-pump-ui-status-disabled = Вимкнено
-
 comp-gas-pump-ui-pump-set-rate = Встановити
 comp-gas-pump-ui-pump-set-max = Макс.
 

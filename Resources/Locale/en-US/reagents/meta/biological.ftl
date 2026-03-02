@@ -16,6 +16,9 @@ reagent-desc-hemocyanin-blood = Містить мідь на відміну ві
 reagent-name-ammonia-blood = анаеробна кров
 reagent-desc-ammonia-blood = Більше ніщо у всій галактиці не пахне так жахливо.
 
+reagent-name-sulfur-blood = сірчана кров
+reagent-desc-sulfur-blood = Відчувається майже як кислота.
+
 reagent-name-zombie-blood = кров зомбі
 reagent-desc-zombie-blood = Не порадив би це їсти. Можна використовувати для створення щеплення проти інфекції.
 

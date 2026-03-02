@@ -115,6 +115,7 @@
           False: { visible: false }
 
 - type: entity
+  parent: BaseWallmountMetallic
   id: IntercomAssembly
   name: Збірка ітеркому 
   description: Інтерком, не думаю що це зараз дуже корисно.

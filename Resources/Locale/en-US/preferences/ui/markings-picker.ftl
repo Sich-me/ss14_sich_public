@@ -63,3 +63,4 @@ markings-layer-LLeg = Ліва нога
 markings-layer-RFoot = Права стопа
 markings-layer-LFoot = Ліва стопа
 markings-layer-Overlay = Оверлей
+markings-layer-TailOverlay = Оверлей

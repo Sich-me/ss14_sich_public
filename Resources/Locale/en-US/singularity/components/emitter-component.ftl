@@ -13,3 +13,8 @@ comp-emitter-not-anchored = {CAPITALIZE($target)} не прикріплений 
 
 emitter-component-current-type = Поточний вибраний тип - це: [color=yellow]{$type}[/color].
 emitter-component-type-set = Тип встановлений на: {$type}
+
+emitter-destroyed-broadcast = Увімкнений емітер {$location} було знищено.
+emitter-deconstructed-broadcast = Увімкнений {$location} було розібрано.
+emitter-unlocked-broadcast = Увімкнений {$location} було розблоковано.
+emitter-unpowered-broadcast = Увімкнений {$location} втратив живлення.

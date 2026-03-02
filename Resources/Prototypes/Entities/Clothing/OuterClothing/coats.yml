@@ -10,10 +10,10 @@
     sprite: Clothing/OuterClothing/Coats/bomber.rsi
 
 - type: entity
-  parent: [ ClothingOuterBaseMedium, ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband ]
+  parent: [ ClothingOuterArmorBase, ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband ]
   id: ClothingOuterCoatDetective
-  name: плащ детектива
-  description: Багатоцільовий плащ 18-го століття. Той, хто носить цей плащ налаштований серйозно.
+  name: броньований плащ детектива
+  description: Багатоцільовий плащ у стилі XVIII століття. Той, хто носить таке, налаштований на серйозну справу.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Coats/detective.rsi
@@ -29,7 +29,7 @@
 - type: entity
   parent: [ClothingOuterCoatDetectiveLoadout]
   id: ClothingOuterCoatDetectiveLoadoutGrey
-  name: нуарний плащ
+  name: броньований нуарний плащ
   description: Ах, ваш чудовий, вірний плащ. Є кілька порізів тут і там, що надають йому більш вінтажного вигляду. Принаймні, так ви скажете коли дізнаєтесь що його ремонт коштуватиме 1,000 гривень.
   components:
   - type: Sprite

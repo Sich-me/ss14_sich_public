@@ -120,6 +120,9 @@ marking-VulpTailVulpFade-vulp = Хвіст вульпакіна (основа)
 marking-VulpTailVulpFade-vulp-fade = Хвіст вульпакіна (градієнт)
 marking-VulpTailVulpFade = Хвіст вульпакіна (градієнт)
 
+marking-VulpTailCoyote-coyote = Coyote Tail (Base)
+marking-VulpTailCoyote = Vulpkanin Coyote
+
 
 # Chest
 
