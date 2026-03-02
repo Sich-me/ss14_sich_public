@@ -6,6 +6,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Enums;
+using Robust.Shared.Physics;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client.Lobby.UI;

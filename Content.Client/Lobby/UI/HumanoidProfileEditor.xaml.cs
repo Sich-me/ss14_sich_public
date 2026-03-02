@@ -20,6 +20,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Direction = Robust.Shared.Maths.Direction;
 using Robust.Shared.Physics;
+using System.Linq;
 
 namespace Content.Client.Lobby.UI
 {
