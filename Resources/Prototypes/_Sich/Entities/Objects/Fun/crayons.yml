@@ -1,7 +1,7 @@
 - type: entity
   parent: CrayonInedible
   id: SichCrayonPoltergeist
-  name: містична кредка
+  name: містична крейда
   description: містична кредка щоби зіставляти знаки.
   suffix: полтергейст
   components:
