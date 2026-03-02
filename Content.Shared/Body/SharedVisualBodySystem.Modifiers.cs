@@ -11,6 +11,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Robust.Shared.Network;
+using Content.Shared.Sich.HeightAbjust;
 
 namespace Content.Shared.Body;
 
@@ -161,16 +162,14 @@ public abstract partial class SharedVisualBodySystem
 
         var markingsEvt = new ApplyOrganMarkingsEvent(appearance.Markings);
         RaiseLocalEvent(ent, ref markingsEvt);
-        if (_netManager.IsClient)
+
+        if (TryComp<HeightWidthComponent>(ent.Owner, out var heightWidthComponent))
         {
-            var apperanceEvt = new ApplyApperanceEvent(appearance);
-            RaiseLocalEvent(ent, ref apperanceEvt);
-        }
-        else if (_netManager.IsServer)
-        {
-            var netEntity = GetNetEntity(ent.Owner);
-            var netEvent = new ApplyApperanceServerEvent(netEntity, appearance);
-            RaiseNetworkEvent(netEvent);
+            heightWidthComponent.Height = appearance.Height;
+            heightWidthComponent.Width = appearance.Width;
+            Dirty(ent.Owner, heightWidthComponent);
+            var heightWidthEvt = new ApplyHeightWidth();
+            RaiseLocalEvent(ent, heightWidthEvt);
         }
     }
 

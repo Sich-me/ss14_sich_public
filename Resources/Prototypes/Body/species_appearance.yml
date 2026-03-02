@@ -85,6 +85,7 @@
   - type: ComplexInteraction
   - type: ContainerContainer
   - type: Appearance
+  - type: HeightWidth
   - type: HideableHumanoidLayers
   - type: UserInterface
     interfaces:
