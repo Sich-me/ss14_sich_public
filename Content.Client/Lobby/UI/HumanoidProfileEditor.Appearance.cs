@@ -279,11 +279,11 @@ public sealed partial class HumanoidProfileEditor
         var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
 
         CHeightSlider.MinValue = species.MinHeight;
-        CHeightSlider.Value = Profile.Appearance.Height;
         CHeightSlider.MaxValue = species.MaxHeight;
+        CHeightSlider.Value = Profile.Appearance.Height;
 
         var height = MathF.Round(species.AverageHeight * CHeightSlider.Value);
-        CHeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int) height));
+        CHeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
     }
 
     private void UpdateWidthControls()
@@ -294,11 +294,11 @@ public sealed partial class HumanoidProfileEditor
         var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
 
         CWidthSlider.MinValue = species.MinWidth;
-        CWidthSlider.Value = Profile.Appearance.Width;
         CWidthSlider.MaxValue = species.MaxWidth;
+        CWidthSlider.Value = Profile.Appearance.Width;
 
         var width = MathF.Round(species.AverageWidth * CWidthSlider.Value);
-        CWidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int) width));
+        CWidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int)width));
     }
 
     private void UpdateWeight()
@@ -315,7 +315,7 @@ public sealed partial class HumanoidProfileEditor
             var density = fixture.Fixtures["fix1"].Density;
             var avg = (Profile.Appearance.Width + Profile.Appearance.Height) / 2;
             var weight = MathF.Round(MathF.PI * MathF.Pow(radius * avg, 2) * density);
-            CWeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) weight));
+            CWeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int)weight));
         }
 
         SpriteView.InvalidateMeasure();
