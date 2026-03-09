@@ -1,1 +1,1 @@
-ui-lobby-manifest-button = Manifest
+ui-lobby-manifest-button = Маніфест
