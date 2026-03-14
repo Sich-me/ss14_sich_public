@@ -9,6 +9,9 @@ using System.Numerics;
 
 namespace Content.Shared.Body;
 
+/// <summary>
+/// Class responsible for managing the appearance of an entity with <see cref="VisualBodyComponent" /> via its organs with <see cref="VisualOrganComponent" />
+/// </summary>
 public abstract partial class SharedVisualBodySystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
@@ -60,7 +63,7 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
             };
             if (appearances.GetValueOrDefault(prototype.BodyPart) is { MatchSkin: true } appearance && skinColor is { } color)
             {
-                markingWithColor.SetColor(color.WithAlpha(appearance.LayerAlpha));
+                markingWithColor = markingWithColor.WithColor(color.WithAlpha(appearance.LayerAlpha));
             }
             ret.Add(markingWithColor);
         }
@@ -84,20 +87,6 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
     {
         ent.Comp.Markings = markings;
         Dirty(ent);
-    }
-
-    public void CopyAppearanceFrom(Entity<BodyComponent?> source, Entity<BodyComponent?> target)
-    {
-        if (!Resolve(source, ref source.Comp) || !Resolve(target, ref target.Comp))
-            return;
-
-        var sourceOrgans = _container.EnsureContainer<Container>(source, BodyComponent.ContainerID);
-
-        foreach (var sourceOrgan in sourceOrgans.ContainedEntities)
-        {
-            var evt = new OrganCopyAppearanceEvent(sourceOrgan);
-            RaiseLocalEvent(target, ref evt);
-        }
     }
 
     private void OnVisualOrganCopyAppearance(Entity<VisualOrganComponent> ent, ref BodyRelayedEvent<OrganCopyAppearanceEvent> args)
@@ -209,8 +198,7 @@ public readonly record struct ApplyOrganProfileDataEvent(OrganProfileData? Base,
 [ByRefEvent]
 public readonly record struct ApplyOrganMarkingsEvent(Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>> Markings);
 
-[ByRefEvent]
-public readonly record struct ApplyApperanceEvent(HumanoidCharacterAppearance Appearance);
+public readonly record struct ApplyHeightWidth();
 
 [NetSerializable, Serializable]
 public sealed class ApplyApperanceServerEvent : EntityEventArgs

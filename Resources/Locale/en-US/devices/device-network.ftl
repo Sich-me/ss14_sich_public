@@ -55,3 +55,5 @@ device-net-id-apc = ЗКЖ
 device-net-id-atmos-devices = Пристрої атмосу
 device-net-id-reserved = Зарезервовано
 
+# Unknown
+device-address-unknown = ????-????

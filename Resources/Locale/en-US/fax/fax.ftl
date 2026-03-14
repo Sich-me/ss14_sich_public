@@ -26,3 +26,10 @@ fax-machine-ui-paper-not-inserted = Немає паперу
 fax-machine-chat-notify = Отримано нове повідомлення від "{$fax}" факсу
 
 fax-machine-printed-paper-name = друкований папір
+
+fax-machine-sender-info =
+    ─────────────────────────────────────
+    Факс надіслано
+    від: {$sender_name} [адреса: {$sender_addr}]
+    кому: {$recipient_name} [адреса: {$recipient_addr}]
+    о: {$time}

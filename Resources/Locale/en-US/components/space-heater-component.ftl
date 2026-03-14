@@ -1,8 +1,6 @@
 comp-space-heater-ui-title = Блок контролю температури
 comp-space-heater-ui-thermostat = Термостат:
 comp-space-heater-ui-mode = Режим
-comp-space-heater-ui-status-disabled = Вимкнено
-comp-space-heater-ui-status-enabled = Увімкнено
 comp-space-heater-ui-increase-temperature-range = +
 comp-space-heater-ui-decrease-temperature-range = -
 

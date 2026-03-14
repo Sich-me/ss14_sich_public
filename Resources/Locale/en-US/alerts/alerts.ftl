@@ -122,3 +122,6 @@ alerts-rooted-desc = Ви прив’язані до землі. Ви не мо�
 
 alerts-stealthy-name = Кишенькова крадіжка
 alerts-stealthy-desc = Режим крадіжки. Натисніть, щоб перемкнути.
+
+alerts-prying-name = Злом
+alerts-prying-desc = Ви можете вроджено відчиняти двері силою, використовуючи альтернативну взаємодію.

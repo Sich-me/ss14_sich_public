@@ -97,15 +97,16 @@ barsign-prototype-name-spacebucks = Космобакси
 barsign-prototype-description-spacebucks = Від них нікуди не дітися, навіть у космосі, і навіть після того, як ми почали називати їх 'spesos'.
 
 ## Maltroach
-barsign-prototype-name-maltroach = Maltroach
-barsign-prototype-description-maltroach = Squeak!
+barsign-prototype-name-maltroach = Солодовий Тарган
+barsign-prototype-description-maltroach = Пік-пік!
 
 ## Whiskey Echoes
-barsign-prototype-name-whiskeyechoes = Whiskey Echoes
-barsign-prototype-description-whiskeyechoes = An elite bar for elite oper-wait, this is a Nanotrasen station. Why's this sign in the database?
+barsign-prototype-name-whiskeyechoes = Віскі Ехо
+barsign-prototype-description-whiskeyechoes = Елітний бар для елітних опера... чекайте, це ж станція Nanotrasen. Чому ця вивіска взагалі в базі даних?
 
 ## EmpBarSign
-barsign-prototype-description-empbarsign = Щось пішло не по плану.
+barsign-prototype-name-empbarsign = глючна барна вивіска
+barsign-prototype-description-empbarsign = Щось пішло зовсім не так.
 
 ## SignOff
 barsign-prototype-description-sign-off = Ця вивіска, схоже, вимкнена.

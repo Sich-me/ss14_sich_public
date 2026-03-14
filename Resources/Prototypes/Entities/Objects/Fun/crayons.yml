@@ -273,7 +273,7 @@
 
 - type: entity
   parent: BoxCardboard
-  id: CrayonBox
+  id: CrayonBoxEmpty
   name: коробка крейди
   description: це коробка крейди.
   components:
@@ -290,19 +290,6 @@
     shape:
     - 0,0,1,1
     heldPrefix: box
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: CrayonRed
-        - id: CrayonOrange
-        - id: CrayonYellow
-        - id: CrayonGreen
-        - id: CrayonBlue
-        - id: CrayonPurple
-        - id: CrayonBlack
-        - id: CrayonWhite
-        - id: CrayonRainbow #Sich
   - type: ItemMapper
     mapLayers:
       black_box:
@@ -342,3 +329,22 @@
           tags:
           - CrayonRainbow
   - type: Appearance
+
+- type: entity
+  parent: CrayonBoxEmpty
+  id: CrayonBox
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: CrayonRed
+        - id: CrayonOrange
+        - id: CrayonYellow
+        - id: CrayonGreen
+        - id: CrayonBlue
+        - id: CrayonPurple
+        - id: CrayonBlack
+        - id: CrayonWhite
+        - id: CrayonRainbow #Sich

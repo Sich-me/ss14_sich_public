@@ -20,3 +20,4 @@ sandbox-window-show-spawns-button = Показати спавни
 sandbox-window-show-bb-button = Показати BB
 sandbox-window-show-npc-button = Показати NPC
 sandbox-window-link-machines-button = Зв'язати пристрої
+sandbox-window-toggle-thermal-vision = перемкнути тепловізор
