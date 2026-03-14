@@ -406,7 +406,7 @@
   parent: ClothingOuterBase
   id: ClothingOuterRedRacoon
   name: костюм червоного єнота
-  description: Пухнастий костюм, не менш пухнастого червоного єнота!
+  description: Пухнастий костюм, не менш пухнастого червоного єнота! Інструкція з виживання у комплекті не йде.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Misc/red_racoon.rsi

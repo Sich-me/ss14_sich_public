@@ -122,7 +122,7 @@
 - type: entity
   parent: [ClothingOuterArmorBaseCarapace, BaseCommandContraband]
   id: ClothingOuterArmorCaptainCarapace
-  name: панцир капітана
+  name: панцерний бронежилет капітана
   description: Броньована нагрудна пластина, що забезпечує захист, зберігаючи максимальну мобільність і гнучкість. Видається лише найкращим на станції.
   components:
   - type: Sprite
@@ -137,8 +137,8 @@
 - type: entity
   parent: [ClothingOuterArmorBaseCarapace, BaseCentcommContraband]
   id: ClothingOuterArmorCentcommCarapace
-  name: centcomm carapace
-  description: An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to centcomm officials and agents.
+  name: панцерний бронежилет ЦК
+  description: Броньована нагрудна пластина, що забезпечує захист, зберігаючи максимальну мобільність і гнучкість. Видається тільки агентам та представникам ЦК.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/centcomm_carapace.rsi
@@ -150,7 +150,7 @@
   parent: [ClothingOuterArmorBase, ClothingOuterStorageBase, BaseSyndicateContraband]
   id: ClothingOuterVestWeb
   name: бронежилет
-  description: Синтетичний бронежилет. Має додаткові  кишені та балічтичні пластини.
+  description: Синтетичний бронежилет. Має додаткові кишені та балічтичні пластини.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
@@ -170,8 +170,8 @@
 - type: entity
   parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSyndicateContraband]
   id: ClothingOuterVestWebElite
-  name: elite web vest
-  description: A synthetic armor vest. This one has added webbing and heat resistant fibers.
+  name: елітний бронежилет
+  description: Синдикатівський бронежилет. Цей був модифікований проти-тепловим волокном.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Vests/elitevest.rsi
@@ -220,8 +220,8 @@
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSyndicateContraband ]
   id: ClothingOuterArmorRaid
-  name: рейдовий костюм Синдикату
-  description: Напівгнучкий і добре броньований костюм із потужним ліхтарем на плечі. І який нажаль не захищає свого власника від вакууму космосу. Пофарбований у культову криваво-червону палітру Мародерів Горлаксу.
+  name: рейдова броня Синдикату
+  description: Напівгнучкий і добре броньований обладунок із потужним ліхтарем на плечі. І який нажаль не захищає свого власника від вакууму космосу. Пофарбований у культову криваво-червону палітру Мародерів Горлаксу.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/syndie-raid.rsi
@@ -299,7 +299,7 @@
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSecurityContraband]
   id: ClothingOuterArmorRiot
-  name: костюм для придушення заворушень
+  name: протиударний бронекостюм
   description: Напівгнучкий бронекостюм із полікарбонату з посиленим набиванням для захисту від рукопашних атак. Ідеальний для боротьби з хуліганами на станції.
   components:
   - type: Sprite
@@ -321,8 +321,8 @@
 - type: entity
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]
   id: ClothingOuterArmorCult
-  name: окультні обладунки
-  description: Окультні обладунки виготовлені з кісток.
+  name: окультний обладунок
+  description: Міцні окультні обладунки виготовляються з кісток.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
@@ -435,8 +435,8 @@
 - type: entity
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]
   id: ClothingOuterArmorBone
-  name: броня з кісток
-  description: Конструкція з кісток що чудово виконує функцію броні, та костюму на хеллоуїн.
+  name: кістяний обладунок
+  description: Конструкція з кісток що чудово виконує функцію броні та костюму на гелловін.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/bone_armor.rsi
@@ -465,7 +465,7 @@
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]
   id: ClothingOuterArmorPodWars
   name: панцерний обладунок ІІ
-  description: Це перероблений комплект — спадок броні класу "панцерний обладунок" що залишився як спадок часів космічних війн. Пропонує високий рівень захисту, не жертвуючи рухливістю.
+  description: Цей перероблений комплект — спадок броні класу "панцерний обладунок" що залишився як спадок часів першої корпоративної війни. Пропонує високий рівень захисту, не жертвуючи рухливістю.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/podwars_armor.rsi
@@ -485,8 +485,8 @@
 - type: entity
   parent: ClothingOuterArmorBase
   id: CardArmour
-  name: cardboard armour
-  description: A medieval chestpiece built from cardboard.
+  name: картонний обладунок
+  description: Середньовічний обладунок виготовлений з картону. ЗА КАРТОННЕ БРАТЕРСТВО!
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/card_armour.rsi

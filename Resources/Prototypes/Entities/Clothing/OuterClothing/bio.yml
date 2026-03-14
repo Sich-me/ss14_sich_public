@@ -38,7 +38,7 @@
 - type: entity
   parent: ClothingOuterBioGeneral
   id: ClothingOuterBioJanitor
-  name: костюм біозахисту прибиральників
+  name: костюм біозахисту прибиральника
   suffix: Janitor
   description: Костюм, який захищає власника від біологічних забруднень та токсичних чи їдких речовин.
   components:
@@ -54,7 +54,7 @@
 - type: entity
   parent: ClothingOuterBioGeneral
   id: ClothingOuterBioScientist
-  name: костюм біозахисту вчених
+  name: костюм біозахисту НВ
   suffix: Science
   description: Костюм для захисту від біологічних та хімічних загроз. Ця модель зроблена у кольорах НВ.
   components:
@@ -66,7 +66,7 @@
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSecurityContraband]
   id: ClothingOuterBioSecurity
-  name: костюм біозахисту охорони
+  name: костюм біозахисту СБ
   suffix: Security
   description: Костюм, який захищає власника від біологічних та хімічних загроз, оснащений додатковою бронею. Ця модель зроблена спеціально для СБ.
   components:
@@ -90,7 +90,7 @@
 - type: entity
   parent: ClothingOuterBioGeneral
   id: ClothingOuterBioVirology
-  name: костюм біозахисту вірусологів
+  name: костюм біозахисту вірусолога
   suffix: Virology
   description: Костюм, який надійно захищає від біологічних та хімічних загроз. Ця модель зроблена спеціально для вірусологів, найкраще для кращих.
   components:
