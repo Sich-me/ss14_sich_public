@@ -1,10 +1,13 @@
 using Content.Server.Cargo.Components;
 using Content.Server.Station.Systems;
+using Content.Shared.Access.Components;
 using Content.Shared.Cargo;
 using Content.Shared.Cargo.Components;
 using Content.Shared.Cargo.Prototypes;
 using Content.Shared.Interaction;
+using Content.Shared.Inventory;
 using Content.Shared.Paper;
+using Content.Shared.PDA;
 using Content.Shared.Sich.BureaucraticComputer;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
@@ -22,6 +25,7 @@ public sealed class BureaucracyComputerSystem : SharedBureacraticComputerSystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly PaperSystem _paperSystem = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
 
     public override void Initialize()
     {
@@ -39,7 +43,33 @@ public sealed class BureaucracyComputerSystem : SharedBureacraticComputerSystem
         if (!TryComp<ActorComponent>(args.User, out var actor))
             return;
 
+        // Збираємо дані для автозаповнення
+        var stationName = "Невідома станція";
+        if (_station.GetOwningStation(uid) is { } station)
+            stationName = Name(station);
+
+        var charName = Name(args.User);
+        var charJob = "Невідома посада";
+
+        // Шукаємо посаду в ID-картці або КПК
+        if (_inventory.TryGetSlotEntity(args.User, "id", out var idEntity))
+        {
+            if (TryComp<PdaComponent>(idEntity, out var pda) && pda.ContainedId != null)
+            {
+                if (TryComp<IdCardComponent>(pda.ContainedId, out var pdaId))
+                    charJob = pdaId.JobTitle ?? charJob;
+            }
+            else if (TryComp<IdCardComponent>(idEntity, out var id))
+            {
+                charJob = id.JobTitle ?? charJob;
+            }
+        }
+
+        // Відкриваємо UI та надсилаємо стан
         _uiSystem.OpenUi(uid, BureaucracyUiKey.Key, actor.PlayerSession);
+
+        var state = new BureaucracyAutoFillState(stationName, charName, charJob);
+        _uiSystem.SetUiState(uid, BureaucracyUiKey.Key, state);
     }
 
     private void OnPrintMessage(EntityUid uid, BureaucracyComputerComponent component, BureaucracyPrintMessage args)

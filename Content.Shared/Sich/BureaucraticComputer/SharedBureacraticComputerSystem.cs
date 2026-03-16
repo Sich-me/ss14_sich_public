@@ -11,7 +11,7 @@ namespace Content.Shared.Sich.BureaucraticComputer;
 
 public abstract class SharedBureacraticComputerSystem : EntitySystem
 {
-    public static readonly Regex FieldRegex = new(@"\[field=(.+?)\]");
+    public static readonly Regex FieldRegex = new(@"\[field=([^;\]]+)(?:;\s*([^\]]+))?\]", RegexOptions.Compiled);
     [Dependency] protected readonly IGameTiming Timing = default!;
 }
 
@@ -31,5 +31,20 @@ public sealed class BureaucracyPrintMessage : BoundUserInterfaceMessage
     {
         PrototypeId = prototypeId;
         Fields = fields;
+    }
+}
+
+[Serializable, NetSerializable]
+public sealed class BureaucracyAutoFillState : BoundUserInterfaceState
+{
+    public readonly string StationName;
+    public readonly string CharacterName;
+    public readonly string CharacterJob;
+
+    public BureaucracyAutoFillState(string stationName, string characterName, string characterJob)
+    {
+        StationName = stationName;
+        CharacterName = characterName;
+        CharacterJob = characterJob;
     }
 }

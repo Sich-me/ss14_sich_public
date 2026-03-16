@@ -22,6 +22,16 @@ public sealed class BureaucracyComputerBoundUserInterface : BoundUserInterface
         _window.OpenCentered();
     }
 
+    protected override void UpdateState(BoundUserInterfaceState state)
+    {
+        base.UpdateState(state);
+
+        if (state is BureaucracyAutoFillState autoFillState)
+        {
+            _window?.UpdateAutoFill(autoFillState);
+        }
+    }
+
     protected override void Dispose(bool disposing)
     {
         base.Dispose(disposing);

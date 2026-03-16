@@ -15,12 +15,14 @@ namespace Content.Client.Sich.BureaucraticComputer.UI;
 public sealed partial class BureaucracyComputerWindow : FancyWindow
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private readonly ILocalizationManager _loc = default!;
     public readonly Dictionary<string, TextEdit> InputControls = new();
 
     public Action<BureaucraticDocumentPrototype>? OnDocumentSelected;
     public Action<string, Dictionary<string, string>>? OnPrintPressed;
     private ProtoId<BureaucraticDocumentPrototype>? _selectedDocumentId;
 
+    private BureaucracyAutoFillState? _autoFillData;
 
     public Regex FieldRegex = SharedBureacraticComputerSystem.FieldRegex;
 
@@ -82,10 +84,10 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
         {
             Text = document.Name,
             HorizontalAlignment = HAlignment.Center,
-            FontColorOverride = Color.FromHex("#5E9CFF"), // Приємний синій колір для виділення
-            Margin = new Thickness(0, 0, 0, 20) // Робимо більший відступ знизу
+            FontColorOverride = Color.FromHex("#5E9CFF"),
+            Margin = new Thickness(0, 0, 0, 20)
         };
-        documentTitle.StyleClasses.Add("LabelHeading"); // Робимо шрифт більшим (як у заголовків)
+        documentTitle.StyleClasses.Add("LabelHeading");
         DocumentFields.AddChild(documentTitle);
 
         var matches = FieldRegex.Matches(document.Text);
@@ -93,25 +95,28 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
 
         foreach (Match match in matches)
         {
-            var fieldName = match.Groups[1].Value;
+            var fieldId = match.Groups[1].Value.Trim();
+            var headerText = match.Groups[2].Success ? match.Groups[2].Value.Trim() : fieldId;
 
-            if (!processedFields.Add(fieldName))
+            if (!processedFields.Add(fieldId))
                 continue;
+
+            var finalHeader = _loc.TryGetString(headerText, out var locStr) ? locStr : headerText;
 
             var container = new BoxContainer
             {
                 Orientation = BoxContainer.LayoutOrientation.Vertical,
-                Margin = new Thickness(0, 0, 0, 10) // Відступ між окремими полями
+                Margin = new Thickness(0, 0, 0, 10)
             };
 
             // 2. Робимо заголовки полів виразнішими
             var label = new Label
             {
-                Text = $"▶ {fieldName.ToUpper()}:", // Додаємо стрілочку і робимо великими літерами
-                FontColorOverride = Color.FromHex("#EAEAEA"), // Яскраво-білий/світло-сірий колір
+                Text = $"▶ {finalHeader.ToUpper()}:",
+                FontColorOverride = Color.FromHex("#EAEAEA"),
                 Margin = new Thickness(0, 0, 0, 4)
             };
-            label.StyleClasses.Add("LabelKeyText"); // Додаємо стандартний стиль SS14 для жирного тексту
+            label.StyleClasses.Add("LabelKeyText");
 
             var textEditBackground = new PanelContainer
             {
@@ -139,7 +144,12 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
             container.AddChild(textEditBackground);
 
             DocumentFields.AddChild(container);
-            InputControls.Add(fieldName, textEdit);
+            InputControls.Add(fieldId, textEdit);
         }
+    }
+
+    public void UpdateAutoFill(BureaucracyAutoFillState state)
+    {
+        _autoFillData = state;
     }
 }
