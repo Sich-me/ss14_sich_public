@@ -736,6 +736,36 @@
     FoodDoughFlat: 1
     FoodWorldPeas: 3
 
+#Алкогольні піци
+- type: microwaveMealRecipe
+  id: RecipeBeerPizza
+  name: рецепт пивної піци
+  result: FoodPizzaBeer
+  time: 30
+  group: Pizza
+  reagents:
+    Beer: 20
+  solids:
+    FoodDoughFlat: 1
+    FoodCheeseSlice: 1
+    FoodSnackCheesie: 1
+    FoodSnackChips: 1
+    FoodSnackPopcorn: 1
+
+- type: microwaveMealRecipe
+  id: RecipeWinePizza
+  name: рецепт винної піци
+  result: FoodPizzaWine
+  time: 30
+  group: Pizza
+  reagents:
+    Wine: 20
+  solids:
+    FoodDoughFlat: 1
+    FoodMeatFish: 1
+    FoodApple: 1
+    FoodGrape: 1
+
 #Italian
 - type: microwaveMealRecipe
   id: RecipeBoiledSpaghetti
