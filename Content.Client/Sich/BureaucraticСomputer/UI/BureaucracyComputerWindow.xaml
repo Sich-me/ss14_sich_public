@@ -1,0 +1,24 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               x:Class="Content.Client.Sich.BureaucraticComputer.UI.BureaucracyComputerWindow"
+               Title="Bureaucracy Computer"
+               MinWidth="400"
+               MinHeight="300">
+    <BoxContainer Orientation="Vertical" Margin="10">
+
+        <Label Text="Доступні шаблони документів:" 
+               Margin="0 0 0 10" />
+
+        <BoxContainer Name="DocumentList" 
+                      Orientation="Vertical" 
+                      VerticalExpand="True" />
+
+        <Control VerticalExpand="True" />
+
+        <Button Name="PrintButton" 
+                Text="Роздрукувати" 
+                HorizontalAlignment="Center" 
+                Disabled="True" />
+
+    </BoxContainer>
+</DefaultWindow>
