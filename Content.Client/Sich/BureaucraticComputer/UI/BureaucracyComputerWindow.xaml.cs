@@ -8,7 +8,9 @@ using Robust.Shared.IoC;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
+
 namespace Content.Client.Sich.BureaucraticComputer.UI;
 
 [GenerateTypedNameReferences]
@@ -16,12 +18,13 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly ILocalizationManager _loc = default!;
+
     public readonly Dictionary<string, TextEdit> InputControls = new();
 
     public Action<BureaucraticDocumentPrototype>? OnDocumentSelected;
     public Action<string, Dictionary<string, string>>? OnPrintPressed;
-    private ProtoId<BureaucraticDocumentPrototype>? _selectedDocumentId;
 
+    private ProtoId<BureaucraticDocumentPrototype>? _selectedDocumentId;
     private BureaucracyAutoFillState? _autoFillData;
 
     public Regex FieldRegex = SharedBureacraticComputerSystem.FieldRegex;
@@ -125,6 +128,7 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
             var textEdit = new TextEdit
             {
                 HorizontalExpand = true,
+                VerticalExpand = true,
                 MinHeight = 40,
                 Margin = new Thickness(5)
             };
@@ -155,17 +159,54 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
             {
                 var text = Rope.Collapse(args.Control.TextRope) ?? string.Empty;
                 var lineCount = text.Split('\n').Length;
-                args.Control.MinHeight = Math.Max(40, lineCount * 40 + 10);
+                args.Control.MinHeight = Math.Max(40, lineCount * 30 + 10);
+
+                UpdatePreview();
             };
 
             textEditBackground.AddChild(textEdit);
-
             container.AddChild(label);
             container.AddChild(textEditBackground);
 
             DocumentFields.AddChild(container);
             InputControls.Add(fieldId, textEdit);
         }
+
+        UpdatePreview();
+    }
+
+    private void UpdatePreview()
+    {
+        if (_selectedDocumentId == null || PreviewTextLabel == null)
+            return;
+
+        if (!_prototypeManager.TryIndex<BureaucraticDocumentPrototype>(_selectedDocumentId, out var doc))
+            return;
+
+        var previewText = doc.Text;
+
+        foreach (Match match in FieldRegex.Matches(doc.Text))
+        {
+            var fullMatch = match.Value; // Наприклад: [stationname|Назва]
+            var fieldId = match.Groups[1].Value.Trim();
+
+            // Беремо текст з TextEdit, якщо він є, інакше ставимо лінію для краси
+            var replacement = InputControls.TryGetValue(fieldId, out var input)
+                ? (Rope.Collapse(input.TextRope) ?? string.Empty)
+                : string.Empty;
+
+            if (string.IsNullOrWhiteSpace(replacement))
+            {
+                replacement = "_________";
+            }
+
+            previewText = previewText.Replace(fullMatch, replacement);
+        }
+        var coloredPreview = $"[color=#000]{previewText}[/color]";
+
+        var msg = new FormattedMessage();
+        msg.AddMarkupPermissive(coloredPreview);
+        PreviewTextLabel.SetMessage(msg);
     }
 
     public void UpdateAutoFill(BureaucracyAutoFillState state)
