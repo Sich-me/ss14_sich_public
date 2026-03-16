@@ -133,6 +133,8 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
                 Margin = new Thickness(5)
             };
 
+            textEdit.ToolTip = $"Введіть дані для цього поля тут. \nЦя інформація буде перенесена у фінальний документ.";
+
             var prefilledText = string.Empty;
             switch (fieldId.ToLowerInvariant())
             {

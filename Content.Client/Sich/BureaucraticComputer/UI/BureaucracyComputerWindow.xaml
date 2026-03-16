@@ -3,7 +3,7 @@
                xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
                x:Class="Content.Client.Sich.BureaucraticComputer.UI.BureaucracyComputerWindow"
                Title="Бюрократичний Комп'ютер"
-               MinSize="1250 610">
+               MinSize="1200 650">
     <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True">
 
         <BoxContainer Orientation="Vertical" MinWidth="250" Margin="5">
@@ -15,17 +15,18 @@
             </PanelContainer>
         </BoxContainer>
 
-        <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True" MinWidth="350" Margin="5">
-            <Label Text="Заповнення документу:" Margin="0 0 0 10" HorizontalAlignment="Center" StyleClasses="LabelHeading" />
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True" MinWidth="300" Margin="5">
+            <Label Text="Заповнення документу:" Margin="0 0 0 5" HorizontalAlignment="Center" StyleClasses="LabelHeading" />
             <PanelContainer Name="RightBackgroundPanel" VerticalExpand="True" HorizontalExpand="True">
-                <ScrollContainer Margin="10">
+                <ScrollContainer Margin="5">
                     <BoxContainer Name="DocumentFields" Orientation="Vertical" SeparationOverride="12" />
                 </ScrollContainer>
             </PanelContainer>
-            <Button Name="PrintButton"
+                <Button Name="PrintButton"
                     Text="Роздрукувати"
                     HorizontalAlignment="Right"
-                    Margin="0 15 0 0"
+                    Margin="0 5 0 0"
+                    VerticalAlignment="Center"
                     MinSize="140 35"
                     Disabled="True"
                     StyleClasses="ButtonColorGreen" />
