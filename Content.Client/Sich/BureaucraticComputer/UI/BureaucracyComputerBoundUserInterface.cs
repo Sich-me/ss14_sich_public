@@ -1,9 +1,6 @@
-using Content.Client.Sich.BureaucraticComputer.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Content.Shared.Sich.BureaucraticComputer;
 
-namespace Content.Client.Sich.BureaucraticСomputer.UI;
+namespace Content.Client.Sich.BureaucraticComputer.UI;
 
 public sealed class BureaucracyComputerBoundUserInterface : BoundUserInterface
 {
@@ -16,6 +13,12 @@ public sealed class BureaucracyComputerBoundUserInterface : BoundUserInterface
         base.Open();
         _window = new BureaucracyComputerWindow();
         _window.OnClose += Close;
+
+        _window.OnPrintPressed += (docId, fields) =>
+        {
+            SendMessage(new BureaucracyPrintMessage(docId, fields));
+        };
+
         _window.OpenCentered();
     }
 

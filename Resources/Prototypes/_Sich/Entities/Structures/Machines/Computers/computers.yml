@@ -1,5 +1,7 @@
 - type: entity
   id: BureaucracyComputer
+  name: "Bureaucracy Computer"
+  description: "A computer used for bureaucratic"
   parent: BaseComputerAiAccess
   components:
   - type: BureaucracyComputer
@@ -32,3 +34,28 @@
         enum.WiresVisualLayers.MaintenancePanel:
           True: { visible: false }
           False: { visible: true }
+
+
+- type: bureaucraticDocument
+  id: testDocument
+  name: "Test Document"
+  text: "This is a test document for the Bureaucracy Computer. [field=Test Field]"
+
+- type: bureaucraticDocument
+  id: OrderOfRelease.
+  name: Наказ про звільнення
+  text: |
+    [color=Navy]█▄ █ ▀█▀[/color] [field=station]
+    [color=Navy]█ ▀█ ░█░[/color] [bold]ДАТА:[/bold][field=date]
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    [head=3][bold][italic]Наказ про звільнення[/head][/bold][/italic]
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    [head=3]Ім'я: [field=Name][/head]
+    [head=3]Посада: [field=Position][/head]
+    [head=3]Причина: [field=Reason][/head]
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    Відповідальний за звільнення:
+    [field=NameV]
+    [field=PositionV]
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    ПЕЧАТКА/ПІДПИС

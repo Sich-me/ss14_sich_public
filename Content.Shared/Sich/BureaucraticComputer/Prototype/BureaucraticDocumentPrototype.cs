@@ -1,9 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Sich.BureaucraticComputer;
 
-//public sealed class BureaucraticDocumentPrototype
-//{
-//}
+[Prototype]
+public sealed partial class BureaucraticDocumentPrototype : IPrototype
+{
+    [IdDataField]
+    public string ID { get; private set; } = default!;
+
+    [DataField]
+    public string Name { get; private set; } = string.Empty;
+
+    [DataField(required: true)]
+    public string Text { get; private set; } = string.Empty;
+}

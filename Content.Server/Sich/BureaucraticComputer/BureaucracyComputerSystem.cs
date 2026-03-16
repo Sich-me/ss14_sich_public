@@ -1,29 +1,81 @@
+using Content.Server.Cargo.Components;
+using Content.Server.Station.Systems;
+using Content.Shared.Cargo;
+using Content.Shared.Cargo.Components;
+using Content.Shared.Cargo.Prototypes;
 using Content.Shared.Interaction;
-using Content.Shared.Sich.BureaucraticComputer; // Переконайся, що тут латинська 'C'
-using Robust.Server.GameObjects; // Для UserInterfaceSystem та ActorComponent
+using Content.Shared.Paper;
+using Content.Shared.Sich.BureaucraticComputer;
+using Robust.Server.GameObjects;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Utility;
+
 
 namespace Content.Server.Sich.BureaucraticComputer;
 
-public sealed class BureaucracyComputerSystem : EntitySystem
+public sealed class BureaucracyComputerSystem : SharedBureacraticComputerSystem
 {
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly PaperSystem _paperSystem = default!;
 
     public override void Initialize()
     {
         base.Initialize();
-
-        // Підписуємось на подію взаємодії рукою (клік по об'єкту)
         SubscribeLocalEvent<BureaucracyComputerComponent, InteractHandEvent>(OnInteractHand);
+
+        Subs.BuiEvents<BureaucracyComputerComponent>(BureaucracyUiKey.Key, subs =>
+        {
+            subs.Event<BureaucracyPrintMessage>(OnPrintMessage);
+        });
     }
 
     private void OnInteractHand(EntityUid uid, BureaucracyComputerComponent component, InteractHandEvent args)
     {
-        // Перевіряємо, чи є у користувача ActorComponent (чи це гравець)
         if (!TryComp<ActorComponent>(args.User, out var actor))
             return;
 
-        // Намагаємось відкрити інтерфейс за ключем, визначеним у Shared
         _uiSystem.OpenUi(uid, BureaucracyUiKey.Key, actor.PlayerSession);
+    }
+
+    private void OnPrintMessage(EntityUid uid, BureaucracyComputerComponent component, BureaucracyPrintMessage args)
+    {
+        if (Timing.CurTime < component.NextPrintTime)
+            return;
+
+        if (_station.GetOwningStation(uid) is not { } station)
+            return;
+
+        var paper = Spawn(component.PaperId, Transform(uid).Coordinates);
+        component.NextPrintTime = Timing.CurTime + component.PrintDelay;
+
+        // Передаємо args повністю, щоб мати доступ до args.Fields
+        SetupBountyLabel(paper, station, args);
+
+        _audio.PlayPvs(component.PrintSound, uid);
+    }
+
+    public void SetupBountyLabel(EntityUid uid, EntityUid stationId, BureaucracyPrintMessage args, PaperComponent? paper = null)
+    {
+        var prototype = _prototypeManager.Index<BureaucraticDocumentPrototype>(args.PrototypeId);
+
+        // Правильна перевірка наявності компонента (стандарт RobustToolbox)
+        if (!Resolve(uid, ref paper, false))
+            return;
+
+        // Замінюємо теги на реальний текст з полів
+        var finalString = prototype.Text;
+        foreach (var (key, value) in args.Fields)
+        {
+            finalString = finalString.Replace($"[field={key}]", value);
+        }
+
+        var msg = new FormattedMessage();
+        msg.AddMarkupOrThrow(finalString);
+        _paperSystem.SetContent((uid, paper), msg.ToMarkup());
     }
 }
