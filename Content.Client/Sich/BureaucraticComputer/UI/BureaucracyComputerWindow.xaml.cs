@@ -79,7 +79,6 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
         _selectedDocumentId = document.ID;
         PrintButton.Disabled = false;
 
-        // 1. Додаємо назву обраного документу зверху списку полів
         var documentTitle = new Label
         {
             Text = document.Name,
@@ -101,7 +100,7 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
             if (!processedFields.Add(fieldId))
                 continue;
 
-            var finalHeader = _loc.TryGetString(headerText, out var locStr) ? locStr : headerText;
+            var finalHeader = Loc.TryGetString(headerText, out var locStr) ? locStr : headerText;
 
             var container = new BoxContainer
             {
@@ -109,7 +108,6 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
                 Margin = new Thickness(0, 0, 0, 10)
             };
 
-            // 2. Робимо заголовки полів виразнішими
             var label = new Label
             {
                 Text = $"▶ {finalHeader.ToUpper()}:",
@@ -127,15 +125,37 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
             var textEdit = new TextEdit
             {
                 HorizontalExpand = true,
-                MinHeight = 35,
+                MinHeight = 40,
                 Margin = new Thickness(5)
             };
+
+            var prefilledText = string.Empty;
+            switch (fieldId.ToLowerInvariant())
+            {
+                case "stationname":
+                    prefilledText = _autoFillData?.StationName ?? "";
+                    break;
+                case "username":
+                    prefilledText = _autoFillData?.CharacterName ?? "";
+                    break;
+                case "userjob":
+                    prefilledText = _autoFillData?.CharacterJob ?? "";
+                    break;
+                case "date":
+                    prefilledText = DateTime.Now.AddYears(210).ToString("dd.MM.yyyy");
+                    break;
+            }
+
+            if (!string.IsNullOrEmpty(prefilledText))
+            {
+                textEdit.TextRope = new Rope.Leaf(prefilledText);
+            }
 
             textEdit.OnTextChanged += args =>
             {
                 var text = Rope.Collapse(args.Control.TextRope) ?? string.Empty;
                 var lineCount = text.Split('\n').Length;
-                args.Control.MinHeight = Math.Max(35, lineCount * 20 + 15);
+                args.Control.MinHeight = Math.Max(40, lineCount * 40 + 10);
             };
 
             textEditBackground.AddChild(textEdit);

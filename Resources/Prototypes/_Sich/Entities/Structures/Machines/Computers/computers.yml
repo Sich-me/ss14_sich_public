@@ -1,7 +1,7 @@
 - type: entity
   id: BureaucracyComputer
-  name: "Bureaucracy Computer"
-  description: "A computer used for bureaucratic"
+  name: "Комп'ютер бюрократії"
+  description: "Комп'ютер для бюрократії!"
   parent: BaseComputerAiAccess
   components:
   - type: BureaucracyComputer
@@ -35,27 +35,36 @@
           True: { visible: false }
           False: { visible: true }
 
-
 - type: bureaucraticDocument
-  id: testDocument
-  name: "Test Document"
-  text: "This is a test document for the Bureaucracy Computer. [field=Test Field]"
-
-- type: bureaucraticDocument
-  id: OrderOfRelease.
+  id: OrderOfRelease
   name: Наказ про звільнення
   text: |
-    [color=Navy]█▄ █ ▀█▀[/color] [field=station]
-    [color=Navy]█ ▀█ ░█░[/color] [bold]ДАТА:[/bold][field=date]
+    [color=Navy]█▄ █ ▀█▀[/color] [head=2]{field=StationName|Назва станції}[/head]
+    [color=Navy]█ ▀█ [color=#0000]░[/color]█[color=#0000]░[/color][/color] [bold]ДАТА:[/bold]{field=date|Сьогодняшня дата}
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
     [head=3][bold][italic]Наказ про звільнення[/head][/bold][/italic]
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-    [head=3]Ім'я: [field=Name][/head]
-    [head=3]Посада: [field=Position][/head]
-    [head=3]Причина: [field=Reason][/head]
+    [head=3]Ім'я: {field=releaseName|Ім'я звільненого}[/head]
+    [head=3]Посада: {field=releaseJob|Посада звільненого}[/head]
+    [head=3]Причина: {field=reason|Причина}[/head]
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
     Відповідальний за звільнення:
-    [field=NameV]
-    [field=PositionV]
+    {field=username|Ім'я відповідального за звільнення}
+    {field=userjob|Посада відповідального за звільнення}
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    ПЕЧАТКА/ПІДПИС
+
+- type: bureaucraticDocument
+  id: CentComRequest
+  name: Запит до Центрального командування
+  text: |
+    [color=Navy]█▄ █ ▀█▀[/color] [head=2]{field=StationName|Назва станції}[/head]
+    [color=Navy]█ ▀█ [color=#0000]░[/color]█[color=#0000]░[/color][/color] [bold]ДАТА:[/bold]{field=date|Сьогодняшня дата}
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    [bold]ВІДПРАВНИК:[/bold] {field=username|Ім'я заявника} ({field=userjob|Посада})
+    [bold]АДРЕСАТ:[/bold]Цетнральне Командування
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    [head=3]{field=RequestHeader|Заголовок звернення}[/head]
+    {field=reason|Звернення}
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
     ПЕЧАТКА/ПІДПИС

@@ -1,6 +1,7 @@
 using Content.Server.Cargo.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Access.Components;
+using Content.Shared.Access.Systems;
 using Content.Shared.Cargo;
 using Content.Shared.Cargo.Components;
 using Content.Shared.Cargo.Prototypes;
@@ -25,7 +26,7 @@ public sealed class BureaucracyComputerSystem : SharedBureacraticComputerSystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly PaperSystem _paperSystem = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private readonly SharedIdCardSystem _idCardSystem = default!;
 
     public override void Initialize()
     {
@@ -43,29 +44,17 @@ public sealed class BureaucracyComputerSystem : SharedBureacraticComputerSystem
         if (!TryComp<ActorComponent>(args.User, out var actor))
             return;
 
-        // Збираємо дані для автозаповнення
-        var stationName = "Невідома станція";
-        if (_station.GetOwningStation(uid) is { } station)
-            stationName = Name(station);
+        var station = _station.GetOwningStation(args.User);
+        var stationName = station.HasValue ? Name(station.Value) : "";
 
         var charName = Name(args.User);
-        var charJob = "Невідома посада";
+        var charJob = "";
 
-        // Шукаємо посаду в ID-картці або КПК
-        if (_inventory.TryGetSlotEntity(args.User, "id", out var idEntity))
+        if (_idCardSystem.TryFindIdCard(args.User, out var idCard))
         {
-            if (TryComp<PdaComponent>(idEntity, out var pda) && pda.ContainedId != null)
-            {
-                if (TryComp<IdCardComponent>(pda.ContainedId, out var pdaId))
-                    charJob = pdaId.JobTitle ?? charJob;
-            }
-            else if (TryComp<IdCardComponent>(idEntity, out var id))
-            {
-                charJob = id.JobTitle ?? charJob;
-            }
+            charJob = idCard.Comp.LocalizedJobTitle ?? idCard.Comp.JobTitle ?? "";
         }
 
-        // Відкриваємо UI та надсилаємо стан
         _uiSystem.OpenUi(uid, BureaucracyUiKey.Key, actor.PlayerSession);
 
         var state = new BureaucracyAutoFillState(stationName, charName, charJob);
@@ -84,25 +73,25 @@ public sealed class BureaucracyComputerSystem : SharedBureacraticComputerSystem
         component.NextPrintTime = Timing.CurTime + component.PrintDelay;
 
         // Передаємо args повністю, щоб мати доступ до args.Fields
-        SetupBountyLabel(paper, station, args);
+        SetupDocument(paper, station, args);
 
         _audio.PlayPvs(component.PrintSound, uid);
     }
 
-    public void SetupBountyLabel(EntityUid uid, EntityUid stationId, BureaucracyPrintMessage args, PaperComponent? paper = null)
+    public void SetupDocument(EntityUid uid, EntityUid stationId, BureaucracyPrintMessage args, PaperComponent? paper = null)
     {
-        var prototype = _prototypeManager.Index<BureaucraticDocumentPrototype>(args.PrototypeId);
+        if (!_prototypeManager.TryIndex<BureaucraticDocumentPrototype>(args.PrototypeId, out var prototype))
+            return;
 
-        // Правильна перевірка наявності компонента (стандарт RobustToolbox)
         if (!Resolve(uid, ref paper, false))
             return;
 
-        // Замінюємо теги на реальний текст з полів
-        var finalString = prototype.Text;
-        foreach (var (key, value) in args.Fields)
+        var finalString = FieldRegex.Replace(prototype.Text, match =>
         {
-            finalString = finalString.Replace($"[field={key}]", value);
-        }
+            var fieldId = match.Groups[1].Value.Trim();
+
+            return args.Fields.TryGetValue(fieldId, out var value) ? value : match.Value;
+        });
 
         var msg = new FormattedMessage();
         msg.AddMarkupOrThrow(finalString);

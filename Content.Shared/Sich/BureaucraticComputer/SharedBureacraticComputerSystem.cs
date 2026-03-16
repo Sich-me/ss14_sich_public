@@ -11,7 +11,7 @@ namespace Content.Shared.Sich.BureaucraticComputer;
 
 public abstract class SharedBureacraticComputerSystem : EntitySystem
 {
-    public static readonly Regex FieldRegex = new(@"\[field=([^;\]]+)(?:;\s*([^\]]+))?\]", RegexOptions.Compiled);
+    public static readonly Regex FieldRegex = new(@"\{field=([^|\}]+)(?:\|([^\}]+))?\}", RegexOptions.Compiled);
     [Dependency] protected readonly IGameTiming Timing = default!;
 }
 
