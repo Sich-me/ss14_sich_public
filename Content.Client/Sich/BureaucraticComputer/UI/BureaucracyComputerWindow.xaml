@@ -1,5 +1,6 @@
-<DefaultWindow xmlns="https://spacestation14.io"
+<ui:FancyWindow xmlns="https://spacestation14.io"
                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
                x:Class="Content.Client.Sich.BureaucraticComputer.UI.BureaucracyComputerWindow"
                Title="Бюрократичний Комп'ютер"
                MinSize="750 500">
@@ -9,18 +10,22 @@
         <BoxContainer Orientation="Vertical" MinWidth="220" Margin="10">
             <Label Text="Доступні шаблони:" Margin="0 0 0 10" HorizontalAlignment="Center" StyleClasses="LabelHeading" />
 
-            <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
-                <BoxContainer Name="DocumentList" Orientation="Vertical" SeparationOverride="4" />
-            </ScrollContainer>
+            <PanelContainer Name="LeftBackgroundPanel" VerticalExpand="True" HorizontalExpand="True">
+                <ScrollContainer Margin="5">
+                    <BoxContainer Name="DocumentList" Orientation="Vertical" SeparationOverride="4" />
+                </ScrollContainer>
+            </PanelContainer>
         </BoxContainer>
 
         <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True" Margin="15 10 10 10">
 
             <Label Text="Заповнення документу:" Margin="0 0 0 10" HorizontalAlignment="Center" StyleClasses="LabelHeading" />
 
-            <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
-                <BoxContainer Name="DocumentFields" Orientation="Vertical" SeparationOverride="12" />
-            </ScrollContainer>
+            <PanelContainer Name="RightBackgroundPanel" VerticalExpand="True" HorizontalExpand="True">
+                <ScrollContainer Margin="10">
+                    <BoxContainer Name="DocumentFields" Orientation="Vertical" SeparationOverride="12" />
+                </ScrollContainer>
+            </PanelContainer>
 
             <Button Name="PrintButton"
                     Text="Роздрукувати"
@@ -33,4 +38,4 @@
         </BoxContainer>
 
     </BoxContainer>
-</DefaultWindow>
+</ui:FancyWindow>
