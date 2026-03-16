@@ -796,7 +796,7 @@
 - type: entity
   parent: [ BaseSyndicateContraband, ClothingOuterWinterWarden ]
   id: ClothingOuterWinterSyndieCapArmored
-  name: броньоване зимове пальто Синдикату
+  name: броньоване зимове пальто синдикату
   description: "Армоване зимове пальто Синдикату, виготовлене з міцної тканини з позолоченими візерунками, та грубої вовни."
   components:
   - type: Sprite

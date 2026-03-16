@@ -94,7 +94,7 @@
   parent: ClothingOuterEVASuitBase
   id: ClothingOuterHardsuitAncientEVA
   name: скафандр АКДНТ #Nanotrasen Space Research Association
-  description: Старинний скафандр розроблений Асоціацією Космічних Досліджень НТ. Він відрізняється тонкою майстерністю виготовлення, що забезпечує кращу рухливість у порівнянні з більшістю сучасних скафандрів.
+  description: Старинний скафандр розроблений Асоціацією Космічних Досліджень НТ при Центральному Командуванні. Він відрізняється тонкою майстерністю виготовлення, що забезпечує кращу рухливість у порівнянні з більшістю сучасних скафандрів.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Suits/ancient_voidsuit.rsi
