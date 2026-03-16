@@ -100,7 +100,7 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
             if (!processedFields.Add(fieldId))
                 continue;
 
-            var finalHeader = Loc.TryGetString(headerText, out var locStr) ? locStr : headerText;
+            var finalHeader = _loc.TryGetString(headerText, out var locStr) ? locStr : headerText;
 
             var container = new BoxContainer
             {
