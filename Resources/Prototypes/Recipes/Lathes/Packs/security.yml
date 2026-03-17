@@ -75,6 +75,14 @@
   - ClothingBackpackHarmpack
 
 - type: latheRecipePack
+  id: SecuritySpaceWork
+  recipes:
+  - ClothingOuterHardsuitSecurity
+  - ClothingOuterHardsuitEVAPrisoner
+  - ClothingHeadHelmetEVA
+  - JetpackSecurity
+
+- type: latheRecipePack
   id: SecurityBoards
   recipes:
   - ShuttleGunDusterCircuitboard

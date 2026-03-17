@@ -212,6 +212,7 @@
     - Janitor
     - Instruments
     - Equipment
+    - JetpackSpaceWorks
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -285,7 +286,7 @@
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter_hypercon.rsi
   - type: Machine
-    board: CircuitImprinterHyperConvectionMachineCircuitboard
+    board: CircuitImprinterHyperConvectionClothingMachineCircuitboard
 
 - type: entity
   id: ExosuitFabricator
@@ -316,6 +317,7 @@
     - BorgModules
     - MechParts
     - MechEquipment
+    - HardsuitsSpaceWorks
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
   - type: OreSiloClient
@@ -386,8 +388,6 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    unlitIdleState: unlit
-    unlitRunningState: unlit-building
     staticPacks:
     - SecurityEquipmentStatic
     - SecurityPracticeStatic
@@ -402,6 +402,7 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - SecuritySpaceWork
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
@@ -435,8 +436,6 @@
     - type: Lathe
       idleState: icon
       runningState: icon
-      unlitIdleState: unlit
-      unlitRunningState: unlit-building
       staticPacks:
       - SecurityAmmoStatic
     - type: EmagLatheRecipes
@@ -468,8 +467,6 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    unlitIdleState: unlit
-    unlitRunningState: unlit-building
     staticPacks:
     - TopicalsStatic
     - ChemistryStatic

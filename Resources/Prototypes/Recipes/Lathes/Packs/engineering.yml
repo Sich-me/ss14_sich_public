@@ -65,6 +65,22 @@
   - FultonBeacon
 
 - type: latheRecipePack
+  id: JetpackSpaceWorks
+  recipes:
+  - JetpackMini
+  - JetpackBlue
+
+- type: latheRecipePack
+  id: HardsuitsSpaceWorks
+  recipes:
+  - ClothingOuterHardsuitSpatio
+  - ClothingOuterHardsuitEngineering
+  - ClothingOuterHardsuitAtmos
+  - ClothingHeadHelmetEVA
+  - ClothingOuterHardsuitEVA
+  - ClothingOuterSuitEmergency
+
+- type: latheRecipePack
   id: AtmosTools
   recipes:
   - HolofanProjector
