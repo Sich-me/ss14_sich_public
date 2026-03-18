@@ -78,6 +78,13 @@
         layer:
         - MidImpassable
         - LowImpassable
+  - type: Prayable
+    sentMessage: prayer-popup-notify-carp-sent
+    notificationPrefix: prayer-chat-notify-carp
+  - type: PointLight
+    enabled: true
+    radius: 2
+    energy: 1.5
   - type: Construction
     graph: CarpStatue
     node: statue

@@ -41,6 +41,9 @@
   - type: Construction
     graph: BananiumStatueClown
     node: bananiumStatue
+  - type: Prayable
+    sentMessage: prayer-popup-notify-honkmother-rescuer-sent
+    notificationPrefix: prayer-chat-notify-honkmother
 
 # Ironsand Statues
 
