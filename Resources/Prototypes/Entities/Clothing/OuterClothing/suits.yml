@@ -118,7 +118,7 @@
 - type: entity
   parent: [ClothingOuterBaseLarge, GeigerCounterClothing, AllowSuitStorageClothing]
   id: ClothingOuterSuitRad
-  name: радіаційний костюм
+  name: протирадіаційний костюм
   description: "Костюм що захищає від радіації. На етикетці написано: 'Зроблено зі свинцю. Прохання, не їсти.'"
   components:
   - type: Sprite
@@ -146,7 +146,7 @@
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseToggleClothing, BaseHighlyIllegalContraband]
   id: ClothingOuterSuitSpaceNinja
-  name: космічний костюм ніндзя
+  name: костюм космічного ніндзя
   description: Цей технологічно просунутий, кібернетично вдосконалений костюм має багато різних функцій, такі як невидимість та телепортація.
   components:
   - type: Sprite

@@ -5,7 +5,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseEngineeringContraband]
   id: ClothingOuterHardsuitAtmos
-  name: скафандр атмосферного інженера.
+  name: скафандр атмосферного інженера
   description: Спеціальний скафандр що захищає він небезпечних умов з низьким або підвищеним тиском. Має термічний захист.
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseEngineeringContraband]
   id: ClothingOuterHardsuitEngineering
-  name: скафандр інженера.
+  name: інженерний скафандр
   description: Спеціальний скафандр що захищає він небезпечних умов з низьким або підвищеним тиском. Має захист від радіації. Колись, подібні скафандри мали назву R.I.G. Яка вже не використовується.
   components:
   - type: Sprite
@@ -151,8 +151,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
   id: ClothingOuterHardsuitGoliath
-  name: goliath hardsuit
-  description: A lightweight hardsuit, adorned with a patchwork of thick, chitinous goliath hide.
+  name: скафандр Голіафа
+  description: Легкий промисловий скафандр, покращений міцною хітиновою шкірою жахливих Голіафів.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/goliath.rsi
@@ -190,7 +190,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
   id: ClothingOuterHardsuitMaxim
-  name: шахтарський скафандр "Максимум"
+  name: шахтарський скафандр "Максим"
   description: Вогонь та мороз загартовують не лише зброю, а й шахтарів.
   components:
   - type: Sprite
@@ -223,7 +223,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
   id: ClothingOuterHardsuitSecurity
-  name: скафандр служби безпеки
+  name: скафандр СБ
   description: Спеціальний скафандр, який захищає від середовища з низьким тиском. Має додатковий шар броні.
   components:
   - type: Sprite
@@ -259,7 +259,7 @@
   parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
   id: ClothingOuterHardsuitBrigmedic
   name: скафандр брігмедика
-  description: Спеціальний скафандр ангела хранителя СБ. Це медична версія скафандру служби безпеки.
+  description: Спеціальний скафандр янгола охоронця СБ. Є медичною версією звичайного скафандру служби безпеки.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/brigmedic.rsi
@@ -274,9 +274,11 @@
         Blunt: 0.8
         Slash: 0.8
         Piercing: 0.7
+        Heat: 0.8
+        Caustic: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBrigmedic
@@ -316,7 +318,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
   id: ClothingOuterHardsuitCap
-  name: капітанський армований скафандр
+  name: скафандр капітана
   description: Формальний, броньований скафандр, виготовлений для капітана станції.
   components:
   - type: Sprite
@@ -514,9 +516,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.8
-        Piercing: 0.9
+        Blunt: 0.8
+        Slash: 0.7
+        Piercing: 0.7
         Heat: 0.9
         Radiation: 0.5
         Caustic: 0.8
@@ -533,7 +535,7 @@
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
   id: ClothingOuterHardsuitSyndie
   name: криваво-червоний скафандр
-  description: Важкоброньований скафандр, призначений для проведення спецоперацій. Власність Мародерів Горлаксу.
+  description: Важкоброньований скафандр, призначений для проведення бойових операцій. Власність Мародерів Горлаксу.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
@@ -576,8 +578,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitSyndie, BaseSyndicateContraband]
   id: ClothingOuterHardsuitSyndieMedic
-  name: криваво-червоний медичний скафандр
-  description: Важкоброньований та водночас легкий, вдосконалений скафандр. Розроблений спеціально для надання медичної допомоги при проведенні спецоперацій.
+  name: криваво-червоний скафандр санітара
+  description: Важкоброньований та водночас легкий, вдосконалений скафандр. Розроблений спеціально для надання медичної допомоги при проведенні бойових операцій.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
@@ -595,7 +597,7 @@
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
   id: ClothingOuterHardsuitSyndieElite
   name: елітний скафандр Синдикату
-  description: Елітний варіант криваво-червоного комбінезону з підвищеною радіаційною стійкістю та вогнестійкістю. Власність Мародерів Горлаксу.
+  description: Елітний варіант криваво-червоного скафандру з підвищеною стійкістю до радіації та тепла. Власність Мародерів Горлаксу.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
@@ -640,7 +642,7 @@
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
   id: ClothingOuterHardsuitSyndieCommander
   name: скафандр командира Синдикату
-  description: Посилена версія криваво-червоного скафандру, спеціально для командира ядерних сил Синдикату. Має серйозно покращену броню для ведення смертельних передових боїв.
+  description: Посилена версія криваво-червоного скафандру, спеціально для командира ядерних сил Синдикату. Має серйозно покращену броню для ведення тривалих боїв.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
@@ -678,8 +680,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
   id: ClothingOuterHardsuitJuggernaut
-  name: скафандр Кіберсан "Джагернаут"
-  description: Виготовлений передовим відділом досліджень та розробок Кіберсан, щоб бути надстійким. З цим скафандром не треба ховатись за стінами, БО ВИ І Є СТІНА.
+  name: скафандр "Джагернаут"
+  description: Виготовлений передовим відділом досліджень та розробок Кіберсан, щоб бути надстійким. Станьте рухомою стіною одягнувши цей скафандр!
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/cybersun.rsi

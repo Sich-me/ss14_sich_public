@@ -175,7 +175,7 @@
   parent: CrateGenericSteel
   id: CrateSalvageHardsuit
   name: ящик з шахтарським скафандром
-  description: Містить у собі шахтарський скафандр, дихальну маску та балон з киснем.
+  description: Містить у собі шахтарський скафандр, дихальну маску балон з киснем та балон з нітрогеном.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -184,6 +184,7 @@
         - id: ClothingOuterHardsuitSalvage
         - id: ClothingMaskBreath
         - id: OxygenTankFilled
+        - id: NitrogenTankFilled
 
 - type: entity
   parent: CrateGenericSteel

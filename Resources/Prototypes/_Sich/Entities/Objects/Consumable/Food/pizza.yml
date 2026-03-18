@@ -1,0 +1,110 @@
+# Алкоголь тє файно. ТАКОЖ ВАЖЛИВА РЕМАРКА! ПІСЛЯ ОНОВЛЕННЯ КУЛІНАРІЇ - ТО ВИДАЛИТИ!
+- type: entity
+  name: пивна піца
+  parent: FoodPizzaBase
+  id: FoodPizzaBeer
+  description: У цій піці є пиво. Вітаємо – ви щойно стали найкращим другом інженерів.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cheesy
+      - salty
+      - oily
+      - like piss
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/pizza.rsi
+    layers:
+    - state: beer-pizza
+  - type: SliceableFood
+    slice: FoodPizzaBeerSlice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 39
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 14
+        - ReagentId: Beer
+          Quantity: 20
+
+- type: entity
+  name: шматок пивної піци
+  parent: FoodPizzaSliceBase
+  id: FoodPizzaBeerSlice
+  description: У цьому шматочку піци є пиво. Вітаємо – ви щойно стали найкращим другом інженерів.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cheesy
+      - salty
+      - oily
+      - like piss
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/pizza.rsi
+    layers:
+    - state: beer-slice
+  - type: Item
+    heldPrefix: beer-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 9.5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Beer
+          Quantity: 2.5
+
+- type: entity
+  name: винна піца
+  parent: FoodPizzaBase
+  id: FoodPizzaWine
+  description: У цій піці є вино. Вибір справжній аристократів... Або людей, які дуже хочуть ними здаватися.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - like grape rinds
+      - fruity
+      - fishy
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/pizza.rsi
+    layers:
+    - state: wine-pizza
+  - type: SliceableFood
+    slice: FoodPizzaWineSlice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 39
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 14
+        - ReagentId: Wine
+          Quantity: 20
+
+- type: entity
+  name: шматочок винної піци
+  parent: FoodPizzaSliceBase
+  id: FoodPizzaWineSlice
+  description: У цьому шматочку піци є вино. Вибір справжній аристократів... Або людей, які дуже хочуть ними здаватися.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - like grape rinds
+      - fruity
+      - fishy
+  - type: Sprite
+    sprite: _Sich/Objects/Consumable/Food/pizza.rsi
+    layers:
+    - state: wine-slice
+  - type: Item
+    heldPrefix: wine-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 9.5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Wine
+          Quantity: 2.5

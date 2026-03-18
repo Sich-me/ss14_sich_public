@@ -248,6 +248,7 @@
     materialComposition:
       Glass: 500
       Steel: 200
+
 - type: entity
   name: розбитий прожектор
   id: FloodlightBroken

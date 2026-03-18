@@ -209,6 +209,7 @@
   parent: [DoorRemoteCanEletrifyDoors, BaseCommandContraband]
   id: DoorRemoteAll
   name: супер пульт від дверей
+  description: Гаджет, який може дистанційно відкривати та блокувати двері. Цей працює навіть на дерев’яних дверях!
   suffix: Admeme
   components:
   - type: Sprite
@@ -220,6 +221,8 @@
       color: "#22871a"
   - type: DoorRemote
     includeUserAccess: true
+    requireInRangeUnoccluded: false
+    requireTagWhitelist: false
   - type: Access
     groups:
     - AllAccess
