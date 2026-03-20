@@ -1,7 +1,7 @@
 - type: entity
   id: BaseDefibrillator
   parent: BaseItem
-  name: дефибрилятор
+  name: дефібрилятор
   description: РОЗРЯД! ТЗЗЗЗЗЗ!
   abstract: true
   components:
@@ -68,8 +68,8 @@
 - type: entity
   id: DefibrillatorCompact # This should be a research item at some point
   parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
-  name: compact defibrillator
-  description: Now in fun size!
+  name: компактний дефібрилятор
+  description: Тепер зручного розміру!
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/defibsmall.rsi
@@ -98,8 +98,8 @@
 - type: entity
   id: DefibrillatorSyndicate
   parent: [ DefibrillatorCompact, BaseSyndicateContraband ]
-  name: interdyne defibrillator
-  description: Doubles as a self-defense weapon against war-crime inclined tiders.
+  name: дефібрилятор Інтердайну
+  description: Окрім запуску серця також використовується як зброя для самозахисту від любителей військових злочинів. Іронія.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/defibsyndi.rsi

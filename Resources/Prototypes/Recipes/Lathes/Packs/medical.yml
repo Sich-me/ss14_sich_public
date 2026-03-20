@@ -108,3 +108,8 @@
   - StasisBedMachineCircuitboard
   - CryoPodMachineCircuitboard
   - BiomassReclaimerMachineCircuitboard
+
+- type: latheRecipePack
+  id: CompactReanimation
+  recipes:
+  - DefibrillatorCompact

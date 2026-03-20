@@ -128,6 +128,16 @@
     Steel: 300
 
 - type: latheRecipe
+  id: DefibrillatorCompact
+  result: DefibrillatorCompact
+  completetime: 4
+  materials:
+    Steel: 600
+    Plastic: 300
+    Plasma: 200
+    Silver: 100
+
+- type: latheRecipe
   id: Medkit
   result: Medkit
   name: lathe-recipe-Medkit-name

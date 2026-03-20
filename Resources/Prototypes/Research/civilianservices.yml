@@ -235,6 +235,18 @@
   - SyringeBluespace
 
 - type: technology
+  id: CompactReanimation
+  name: research-technology-compact-CompactReanimation
+  Icon: 
+    sprite: Objects/Specific/Medical/defibsmall.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - DefibrillatorCompact
+
+- type: technology
   id: LauncherSyringe
   name: research-technology-launcher-syringe
   icon:
