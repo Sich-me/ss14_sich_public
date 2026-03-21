@@ -1,20 +1,19 @@
-using Content.Server.Paper; // Перевірте, чи такий using у вашому форку для PaperSystem
 using Content.Shared.Paper;
 using Content.Shared.Photography;
-using Robust.Shared.GameObjects;
-using Robust.Shared.IoC;
+using Robust.Server.GameObjects;
 
 namespace Content.Server.Photography;
 
 public sealed class PhotographySystem : EntitySystem
 {
-    [Dependency] private readonly PaperSystem _paperSystem = default!;
     [Dependency] private readonly MetaDataSystem _metaDataSystem = default!;
+    [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
 
     public override void Initialize()
     {
         base.Initialize();
         SubscribeNetworkEvent<CameraPhotoCapturedEvent>(OnPhotoCaptured);
+        SubscribeLocalEvent<PhotographComponent, BoundUIOpenedEvent>(OnUIOpened);
     }
 
     private void OnPhotoCaptured(CameraPhotoCapturedEvent ev, EntitySessionEventArgs args)
@@ -35,15 +34,40 @@ public sealed class PhotographySystem : EntitySystem
 
         var coords = Transform(player.Value).Coordinates;
 
-        var photoEntity = Spawn("Paper", coords);
+        var photoEntity = Spawn("PalaroidPaper", coords);
 
-        // Змінюємо назву та опис створеного предмета
         _metaDataSystem.SetEntityName(photoEntity, "фотографія");
         _metaDataSystem.SetEntityDescription(photoEntity, "Маленьке піксельне фото, щойно видрукуване з камери.");
 
-        if (TryComp<PaperComponent>(photoEntity, out var paperComp))
+        if (TryComp<PhotographComponent>(photoEntity, out var photoComp))
         {
-            _paperSystem.SetContent(photoEntity, ev.GeneratedText);
+            photoComp.ImageText = ev.GeneratedText;
+            Dirty(photoEntity, photoComp);
         }
+    }
+
+    private void OnUIOpened(EntityUid uid, PhotographComponent photo, BoundUIOpenedEvent args)
+    {
+        // Перевіряємо, що відкривається саме наш полароїд (ключ з Shared)
+        if (args.UiKey is not PolaroidUiKey.Key)
+            return;
+
+        UpdateUserInterface(uid, photo);
+    }
+
+    private void UpdateUserInterface(EntityUid uid, PhotographComponent photo)
+    {
+        if (!TryComp<PaperComponent>(uid, out var paper))
+            return;
+
+        // Збираємо наш кастомний стан
+        var state = new PolaroidBoundUserInterfaceState(
+            photo.ImageText,
+            paper.Content,
+            paper.Mode,
+            paper.StampedBy
+        );
+
+        _uiSystem.SetUiState(uid, PolaroidUiKey.Key, state);
     }
 }
