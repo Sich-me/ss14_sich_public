@@ -14,17 +14,15 @@ public sealed class PhotographySystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-
-        // Підписуємось на подію, яка прилітає по мережі від клієнта
         SubscribeNetworkEvent<CameraPhotoCapturedEvent>(OnPhotoCaptured);
     }
 
     private void OnPhotoCaptured(CameraPhotoCapturedEvent ev, EntitySessionEventArgs args)
     {
-        if (ev.IsHandled)
+        if (ev.Handled)
             return;
-        ev.IsHandled = true; // Позначаємо івент як оброблений, щоб інші системи не обробляли його повторно
-        // Отримуємо сутність гравця, який відправив івент
+        ev.Handled = true;
+
         var player = args.SenderSession.AttachedEntity;
 
         if (player == null)
@@ -32,29 +30,19 @@ public sealed class PhotographySystem : EntitySystem
 
         var cameraUid = GetEntity(ev.CameraNetUid);
 
-        // Перевіряємо, чи існує камера, про яку каже клієнт
         if (!Exists(cameraUid))
             return;
 
-        // ПРИМІТКА ДЛЯ БЕЗПЕКИ: 
-        // В ідеалі тут варто додати перевірку через SharedHandsSystem, 
-        // чи цей гравець дійсно тримає ev.CameraUid у руках, щоб уникнути читерства.
-
-        // Отримуємо координати гравця, щоб заспавнити фотографію біля нього
         var coords = Transform(player.Value).Coordinates;
 
-        // Спавнимо базовий аркуш паперу (ID прототипу зазвичай "Paper")
         var photoEntity = Spawn("Paper", coords);
 
         // Змінюємо назву та опис створеного предмета
         _metaDataSystem.SetEntityName(photoEntity, "фотографія");
         _metaDataSystem.SetEntityDescription(photoEntity, "Маленьке піксельне фото, щойно видрукуване з камери.");
 
-        // Записуємо згенерований клієнтом RichText у компонент паперу
         if (TryComp<PaperComponent>(photoEntity, out var paperComp))
         {
-            // Метод може трохи відрізнятися залежно від версії SS14. 
-            // Іноді це просто _paperSystem.SetContent(photoEntity, ev.GeneratedText);
             _paperSystem.SetContent(photoEntity, ev.GeneratedText);
         }
     }

@@ -1,20 +1,24 @@
-using System.IO; // Додаємо для MemoryStream
-using System.Text;
-using System.Threading.Tasks;
+using Content.Client.Viewport;
 using Content.Shared.Interaction;
 using Content.Shared.Photography;
 using Robust.Client.Graphics;
+using Robust.Client.State;
 using Robust.Shared.Map;
+using Robust.Shared.Timing;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
+using System.IO;
+using System.Numerics;
+using System.Text;
 
 namespace Content.Client.Photography;
 
 public sealed class PhotographySystem : EntitySystem
 {
-    [Dependency] private readonly IClyde _clyde = default!;
     [Dependency] private readonly IEyeManager _eyeManager = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
+    [Dependency] private readonly IStateManager _stateManager = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -28,68 +32,98 @@ public sealed class PhotographySystem : EntitySystem
             return;
         args.Handled = true;
 
-        if (!args.ClickLocation.IsValid(EntityManager))
+        if (!_timing.IsFirstTimePredicted || !args.ClickLocation.IsValid(EntityManager))
             return;
 
-        await CaptureWorldImage(uid, args.ClickLocation, component);
+        CaptureWorldImage(uid, args.ClickLocation, component);
     }
 
-    private async Task CaptureWorldImage(EntityUid cameraUid, EntityCoordinates targetCoords, CameraComponent camera)
+    private void CaptureWorldImage(EntityUid cameraUid, EntityCoordinates targetCoords, CameraComponent camera)
     {
+        if (_stateManager.CurrentState is not IMainViewportState state)
+        {
+            Logger.Error("Camera error: Current state is not IMainViewportState");
+            return;
+        }
+
+        if (state.Viewport.Viewport is not ScalingViewport scalingViewport)
+        {
+            Logger.Error("Camera error: Viewport is not ScalingViewport");
+            return;
+        }
+
         var mapCoords = _transformSystem.ToMapCoordinates(targetCoords);
-        var screenPos = _eyeManager.WorldToScreen(mapCoords.Position);
+
+        var screenPos = scalingViewport.WorldToScreen(mapCoords.Position);
+
+        Matrix3x2.Invert(scalingViewport.GetLocalToScreenMatrix(), out var invMatrix);
+
+        var localPos = Vector2.Transform(screenPos, invMatrix);
 
         float zoom = _eyeManager.CurrentEye.Zoom.X;
+        float renderScale = scalingViewport.CurrentRenderScale;
         float ppu = 32f;
-        int boxSize = (int)((3 * ppu) / zoom);
 
-        int startX = Math.Max(0, (int)screenPos.X - (boxSize / 2));
-        int startY = Math.Max(0, (int)screenPos.Y - (boxSize / 2));
+        int boxSize = (int)((2 * ppu * renderScale) / zoom);
 
-        var subRegion = UIBox2i.FromDimensions(startX, startY, boxSize, boxSize);
+        int startX = Math.Max(0, (int)localPos.X - (boxSize / 2));
+        int startY = Math.Max(0, (int)localPos.Y - (boxSize / 2));
 
-        using var worldImage = await _clyde.ScreenshotAsync(ScreenshotType.Final, subRegion);
+        scalingViewport.Screenshot(worldImage =>
+        {
+            if (worldImage == null)
+                return;
 
-        if (worldImage == null)
-            return;
+            string generatedRichText = ProcessImageToRichText(
+                worldImage,
+                cropX: startX,
+                cropY: startY,
+                cropWidth: boxSize,
+                cropHeight: boxSize,
+                targetWidth: camera.TargetWidth,
+                fontSize: camera.ImageSize
+            );
 
-        string generatedRichText = ProcessImageToRichText(worldImage, targetWidth: camera.TargetWidth, fontSize: camera.ImageSize);
-
-        RaiseNetworkEvent(new CameraPhotoCapturedEvent(GetNetEntity(cameraUid), generatedRichText));
+            var ev = new CameraPhotoCapturedEvent(GetNetEntity(cameraUid), generatedRichText);
+            RaiseNetworkEvent(ev);
+        });
     }
 
-    private string ProcessImageToRichText(Image<Rgb24> image, int targetWidth, float fontSize)
+    private string ProcessImageToRichText(Image<Rgba32> image, int cropX, int cropY, int cropWidth, int cropHeight, int targetWidth, float fontSize)
     {
         using var ms = new MemoryStream();
         image.SaveAsBmp(ms);
         byte[] bmpBytes = ms.ToArray();
 
         int dataOffset = BitConverter.ToInt32(bmpBytes, 10);
-        int width = BitConverter.ToInt32(bmpBytes, 18);
-        int height = Math.Abs(BitConverter.ToInt32(bmpBytes, 22));
+        int imgWidth = BitConverter.ToInt32(bmpBytes, 18);
+        int imgHeight = Math.Abs(BitConverter.ToInt32(bmpBytes, 22));
         short bpp = BitConverter.ToInt16(bmpBytes, 28);
 
         int bytesPerPixel = bpp / 8;
-        int rowStride = ((width * bytesPerPixel) + 3) & ~3;
+        int rowStride = ((imgWidth * bytesPerPixel) + 3) & ~3;
 
-        int targetHeight = (int)(height * ((float)targetWidth / width));
+        cropX = Math.Clamp(cropX, 0, imgWidth - 1);
+        cropY = Math.Clamp(cropY, 0, imgHeight - 1);
+        cropWidth = Math.Clamp(cropWidth, 1, imgWidth - cropX);
+        cropHeight = Math.Clamp(cropHeight, 1, imgHeight - cropY);
+
+        int targetHeight = (int)(cropHeight * ((float)targetWidth / cropWidth));
 
         var sb = new StringBuilder();
         sb.AppendLine($"[font=\"Picture\" size={fontSize}]");
 
         for (int y = 0; y < targetHeight; y++)
         {
-            int srcY = y * height / targetHeight;
-
-            int bmpY = height - 1 - srcY;
+            int srcY = cropY + (y * cropHeight / targetHeight);
+            int bmpY = imgHeight - 1 - srcY;
 
             int count = 0;
             string currentHex = "";
 
             for (int x = 0; x < targetWidth; x++)
             {
-                int srcX = x * width / targetWidth;
-
+                int srcX = cropX + (x * cropWidth / targetWidth);
                 int pixelIndex = dataOffset + (bmpY * rowStride) + (srcX * bytesPerPixel);
 
                 byte b = bmpBytes[pixelIndex];

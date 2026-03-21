@@ -16,11 +16,10 @@ public sealed partial class CameraComponent : Component
 
 
 [Serializable, NetSerializable]
-public sealed class CameraPhotoCapturedEvent : EntityEventArgs
+public sealed class CameraPhotoCapturedEvent : HandledEntityEventArgs
 {
     public NetEntity CameraNetUid;
     public string GeneratedText;
-    public bool IsHandled = false;
 
     public CameraPhotoCapturedEvent(NetEntity cameraUid, string text)
     {
