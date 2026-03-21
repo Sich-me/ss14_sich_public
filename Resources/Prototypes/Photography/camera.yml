@@ -1,0 +1,12 @@
+- type: entity
+  name: фотоапарат
+  id: PhotoCamera
+  parent: BaseItem
+  description: Робить чудові піксельні знімки 3х3 тайли.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/cd.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Camera
