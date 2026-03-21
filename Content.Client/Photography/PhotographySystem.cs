@@ -50,7 +50,9 @@ public sealed class PhotographySystem : EntitySystem
         var mapCoords = _transformSystem.ToMapCoordinates(targetCoords);
         var playerEye = _eyeManager.CurrentEye;
 
-        int boxSizePixels = 3 * 32;
+        var dpi = 32;
+
+        int boxSizePixels = camera.TargetWidth * dpi;
 
         var cameraViewport = _clyde.CreateViewport(new Vector2i(boxSizePixels, boxSizePixels), "CameraLens");
 
@@ -81,7 +83,7 @@ public sealed class PhotographySystem : EntitySystem
                 cropY: 0,
                 cropWidth: boxSizePixels,
                 cropHeight: boxSizePixels,
-                targetWidth: camera.TargetWidth,
+                targetWidth: camera.TargetWidth * dpi,
                 fontSize: camera.ImageSize
             );
 

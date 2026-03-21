@@ -2,16 +2,17 @@ using Robust.Shared.GameObjects;
 using System;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Serialization;
+using Robust.Shared.GameStates;
 
 namespace Content.Shared.Photography;
 
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class CameraComponent : Component
 {
-    [DataField]
+    [DataField, AutoNetworkedField]
     public float ImageSize = 3f;
-    [DataField]
-    public int TargetWidth = 100;
+    [DataField, AutoNetworkedField]
+    public int TargetWidth = 3;
 }
 
 
