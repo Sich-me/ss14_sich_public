@@ -1,5 +1,10 @@
+using Content.Client.Interactable.Components;
+using Content.Client.Outline;
 using Content.Client.Viewport;
+using Content.Shared.Hands;
 using Content.Shared.Interaction;
+using Content.Shared.Inventory.Events;
+using Content.Shared.Item;
 using Content.Shared.Photography;
 using Robust.Client.Graphics;
 using Robust.Client.State;
@@ -19,6 +24,7 @@ public sealed class PhotographySystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly IStateManager _stateManager = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly InteractionOutlineSystem _interactionOutlineSystem = default!;
 
     public override void Initialize()
     {
@@ -26,7 +32,7 @@ public sealed class PhotographySystem : EntitySystem
         SubscribeLocalEvent<CameraComponent, AfterInteractEvent>(OnAfterInteract);
     }
 
-    private async void OnAfterInteract(EntityUid uid, CameraComponent component, AfterInteractEvent args)
+    private void OnAfterInteract(EntityUid uid, CameraComponent component, AfterInteractEvent args)
     {
         if (args.Handled)
             return;
@@ -68,9 +74,10 @@ public sealed class PhotographySystem : EntitySystem
 
         int startX = Math.Max(0, (int)localPos.X - (boxSize / 2));
         int startY = Math.Max(0, (int)localPos.Y - (boxSize / 2));
-
+        _interactionOutlineSystem.SetEnabled(false);
         scalingViewport.Screenshot(worldImage =>
         {
+            _interactionOutlineSystem.SetEnabled(true);
             if (worldImage == null)
                 return;
 
@@ -87,6 +94,7 @@ public sealed class PhotographySystem : EntitySystem
             var ev = new CameraPhotoCapturedEvent(GetNetEntity(cameraUid), generatedRichText);
             RaiseNetworkEvent(ev);
         });
+
     }
 
     private string ProcessImageToRichText(Image<Rgba32> image, int cropX, int cropY, int cropWidth, int cropHeight, int targetWidth, float fontSize)
