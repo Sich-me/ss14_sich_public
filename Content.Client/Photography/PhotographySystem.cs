@@ -25,6 +25,7 @@ public sealed class PhotographySystem : EntitySystem
     [Dependency] private readonly IStateManager _stateManager = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly InteractionOutlineSystem _interactionOutlineSystem = default!;
+    [Dependency] private readonly IClyde _clyde = default!;
 
     public override void Initialize()
     {
@@ -46,47 +47,40 @@ public sealed class PhotographySystem : EntitySystem
 
     private void CaptureWorldImage(EntityUid cameraUid, EntityCoordinates targetCoords, CameraComponent camera)
     {
-        if (_stateManager.CurrentState is not IMainViewportState state)
-        {
-            Logger.Error("Camera error: Current state is not IMainViewportState");
-            return;
-        }
-
-        if (state.Viewport.Viewport is not ScalingViewport scalingViewport)
-        {
-            Logger.Error("Camera error: Viewport is not ScalingViewport");
-            return;
-        }
-
         var mapCoords = _transformSystem.ToMapCoordinates(targetCoords);
+        var playerEye = _eyeManager.CurrentEye;
 
-        var screenPos = scalingViewport.WorldToScreen(mapCoords.Position);
+        int boxSizePixels = 3 * 32;
 
-        Matrix3x2.Invert(scalingViewport.GetLocalToScreenMatrix(), out var invMatrix);
+        var cameraViewport = _clyde.CreateViewport(new Vector2i(boxSizePixels, boxSizePixels), "CameraLens");
 
-        var localPos = Vector2.Transform(screenPos, invMatrix);
-
-        float zoom = _eyeManager.CurrentEye.Zoom.X;
-        float renderScale = scalingViewport.CurrentRenderScale;
-        float ppu = 32f;
-
-        int boxSize = (int)((2 * ppu * renderScale) / zoom);
-
-        int startX = Math.Max(0, (int)localPos.X - (boxSize / 2));
-        int startY = Math.Max(0, (int)localPos.Y - (boxSize / 2));
-        _interactionOutlineSystem.SetEnabled(false);
-        scalingViewport.Screenshot(worldImage =>
+        cameraViewport.Eye = new Robust.Shared.Graphics.Eye
         {
-            _interactionOutlineSystem.SetEnabled(true);
+            Position = playerEye.Position,
+            Offset = mapCoords.Position - playerEye.Position.Position,
+            Zoom = new Vector2(1f, 1f),
+            Rotation = playerEye.Rotation
+        };
+
+        _interactionOutlineSystem.SetEnabled(false);
+
+        cameraViewport.Render();
+
+        _interactionOutlineSystem.SetEnabled(true);
+
+        cameraViewport.RenderTarget.CopyPixelsToMemory<Rgba32>(worldImage =>
+        {
+            cameraViewport.Dispose();
+
             if (worldImage == null)
                 return;
 
             string generatedRichText = ProcessImageToRichText(
                 worldImage,
-                cropX: startX,
-                cropY: startY,
-                cropWidth: boxSize,
-                cropHeight: boxSize,
+                cropX: 0,
+                cropY: 0,
+                cropWidth: boxSizePixels,
+                cropHeight: boxSizePixels,
                 targetWidth: camera.TargetWidth,
                 fontSize: camera.ImageSize
             );
@@ -94,7 +88,6 @@ public sealed class PhotographySystem : EntitySystem
             var ev = new CameraPhotoCapturedEvent(GetNetEntity(cameraUid), generatedRichText);
             RaiseNetworkEvent(ev);
         });
-
     }
 
     private string ProcessImageToRichText(Image<Rgba32> image, int cropX, int cropY, int cropWidth, int cropHeight, int targetWidth, float fontSize)
