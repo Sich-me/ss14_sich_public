@@ -21,7 +21,7 @@
   name: research-technology-space-works
   icon:
     sprite: Clothing/Head/Helmets/eva.rsi
-    state: handdrill
+    state: icon
   discipline: Industrial
   tier: 1
   cost: 7500
