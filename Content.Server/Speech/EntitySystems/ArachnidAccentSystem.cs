@@ -17,80 +17,80 @@ public sealed class ArachnidAccentSystem : EntitySystem
     private void OnAccent(EntityUid uid, ArachnidAccentComponent component, AccentGetEvent args)
     {
         var message = args.Message;
-        var msg_res = new System.Text.StringBuilder();
+        if (string.IsNullOrEmpty(message)) return;
 
-        foreach (var c in message)
+        ReadOnlySpan<char> ispan = message.AsSpan();
+        int messageSeed = _random.Next(0, int.MaxValue);
+
+        const uint chance30 = 644245094; 
+        const uint chance50 = 1073741823;
+
+        int boundary = ispan.Length;
+        for (int i = ispan.Length - 1; i >= 0; i--)
         {
-            msg_res.Append(c);
-
-            if ("ццччщщЦЦЧЧЩЩ".Contains(c)) 
+            if (char.IsLetter(ispan[i]))
             {
-                if (_random.Prob(0.3f)) 
-                {
-                    msg_res.Append(c);
-                }
-            }
-        }
-
-        args.Message = AddEndingTch(msg_res.ToString());
-    }
-
-    public string AddEndingTch(string msg_res)
-    {
-        var msg = msg_res;
-        var ending = "";
-        char last_letter = '.';
-        int lastLetterIdx = -1;
-        for (int j = msg.Length - 1; j >= 0; j--)
-        {
-            if (char.IsLetter(msg[j]))
-            {
-                lastLetterIdx = j;
+                boundary = i + 1;
                 break;
             }
         }
-        if (lastLetterIdx == -1)
-        return msg_res;
-        var textPart = msg.Substring(0, lastLetterIdx + 1);
-        var punctuationPart = msg.Substring(lastLetterIdx + 1);       
 
-        int i = 1;
-        while(i < msg.Length)
-            {
-                if(char.IsLetter(msg[^i]))
-                {
-                    last_letter = msg[^i];
-                    break;
-                }
-                i++;
-            }
-        if(msg_res.Length > 5)
+        var budgetRng = new FastRandom(messageSeed);
+        int extraSpace = 0;
+
+        for (int i = 0; i < boundary; i++)
         {
-            if(_random.Prob(0.1f))
+            char c = ispan[i];
+            if (c == 'ц' || c == 'ч' || c == 'щ' || c == 'Ц' || c == 'Ч' || c == 'Щ')
             {
-                int choice = 0;
-                if(!string.IsNullOrEmpty(msg))
-                {
-                    choice = _random.Next(2);
-                }
-
-                switch(choice)
-                {
-                    case 0:
-                        ending ="-тц";
-                        break;
-                    case 1:
-                        ending = "-кх";
-                        break;
-                }
+                if (budgetRng.NextUint() < chance30) extraSpace++; 
             }
         }
 
-        if (!string.IsNullOrEmpty(msg) && char.IsUpper(last_letter))
+        bool addEnding = budgetRng.NextUint() < chance50;
+        if (addEnding) extraSpace += 3;
+
+        int finalLength = ispan.Length + extraSpace;
+        args.Message = string.Create(finalLength, (message, boundary, addEnding, messageSeed), (dest, state) =>
         {
-            ending = ending.ToUpper();
+            var (original, bnd, hasEnding, seed) = state;
+            var originalSpan = original.AsSpan();
+            var writeRng = new FastRandom(seed);
+            int writeIdx = 0;
+    
+            for (int i = 0; i < bnd; i++)
+            {
+                char c = original[i];
+                dest[writeIdx++] = c;
+
+                if (c == 'ц' || c == 'ч' || c == 'щ' || c == 'Ц' || c == 'Ч' || c == 'Щ')
+                {
+                    if (writeRng.NextUint() < chance30) dest[writeIdx++] = c; 
+                }
+            }
+
+            if (hasEnding)
+            {
+                "-тц".AsSpan().CopyTo(dest.Slice(writeIdx));
+                writeIdx += 3;
+            }
+
+            originalSpan.Slice(bnd).CopyTo(dest.Slice(writeIdx));
+        });
+    }
+    private struct FastRandom
+    {
+        private uint _state;
+        
+        public FastRandom(int seed)
+        {
+            _state = seed == 0 ? 123456789u : (uint)seed;
         }
 
-        return textPart + ending + punctuationPart;
+        public uint NextUint()
+        {
+            _state = (_state * 1103515245u + 12345u) & 0x7FFFFFFF;
+            return _state;
+        }
     }
 }
