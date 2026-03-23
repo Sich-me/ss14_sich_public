@@ -1,4 +1,3 @@
-using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
 using Content.Shared.Speech;
 using Robust.Shared.Random;
@@ -25,6 +24,13 @@ public sealed class ArachnidAccentSystem : EntitySystem
         const uint chance30 = 644245094; 
         const uint chance50 = 1073741823;
 
+        var budgetRng = new FastRandom(messageSeed);
+        uint endingRoll = budgetRng.NextUint();
+
+        bool hasEnding = endingRoll < chance50;
+
+        int extraSpace = hasEnding ? 3 : 0;
+
         int boundary = ispan.Length;
         for (int i = ispan.Length - 1; i >= 0; i--)
         {
@@ -34,10 +40,6 @@ public sealed class ArachnidAccentSystem : EntitySystem
                 break;
             }
         }
-
-        var budgetRng = new FastRandom(messageSeed);
-        int extraSpace = 0;
-
         for (int i = 0; i < boundary; i++)
         {
             char c = ispan[i];
@@ -47,15 +49,15 @@ public sealed class ArachnidAccentSystem : EntitySystem
             }
         }
 
-        bool addEnding = budgetRng.NextUint() < chance50;
-        if (addEnding) extraSpace += 3;
 
         int finalLength = ispan.Length + extraSpace;
-        args.Message = string.Create(finalLength, (message, boundary, addEnding, messageSeed), (dest, state) =>
+        args.Message = string.Create(finalLength, (message, boundary, hasEnding, endingRoll, messageSeed), (dest, state) =>
         {
-            var (original, bnd, hasEnding, seed) = state;
-            var originalSpan = original.AsSpan();
+            var (original, bnd, addEnding, endRoll, seed) = state;
             var writeRng = new FastRandom(seed);
+            // Синхронізуйте з budgetRng.NextUint() для endingRoll
+            writeRng.NextUint();
+
             int writeIdx = 0;
     
             for (int i = 0; i < bnd; i++)
@@ -69,13 +71,14 @@ public sealed class ArachnidAccentSystem : EntitySystem
                 }
             }
 
-            if (hasEnding)
+            if (addEnding)  
             {
-                "-тц".AsSpan().CopyTo(dest.Slice(writeIdx));
+                ReadOnlySpan<char> suffix = ((endRoll & 1) == 0) ? "-тц" : "-кх";
+                suffix.CopyTo(dest.Slice(writeIdx));
                 writeIdx += 3;
             }
 
-            originalSpan.Slice(bnd).CopyTo(dest.Slice(writeIdx));
+            original.AsSpan().Slice(bnd).CopyTo(dest.Slice(writeIdx));
         });
     }
     private struct FastRandom
