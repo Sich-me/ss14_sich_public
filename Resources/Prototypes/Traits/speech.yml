@@ -13,7 +13,7 @@
     removes:
     - type: LizardAccent
     - type: MothAccent
-    - type: ArachnidAccent
+    - type: ArachnidAccent # Sich
     - type: ReplacementAccent
       accent: scottish
 
