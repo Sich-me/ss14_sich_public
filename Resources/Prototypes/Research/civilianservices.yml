@@ -237,7 +237,7 @@
 - type: technology
   id: CompactReanimation
   name: research-technology-compact-CompactReanimation
-  Icon: 
+  icon: 
     sprite: Objects/Specific/Medical/defibsmall.rsi
     state: icon
   discipline: CivilianServices
