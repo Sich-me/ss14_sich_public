@@ -237,14 +237,14 @@
     allowedStates:
     - Alive
     - Critical
-    damageCap: 180
     damage:
       types:
         Cold: -0.01
         Heat: -0.01
         Shock: -0.01
-      groups:
-        Brute: -0.01
+        Blunt: -0.01
+        Piercing: -0.01
+        Slash: -0.01
   - type: SlowOnDamage
     speedModifierThresholds:
       70: 0.6
