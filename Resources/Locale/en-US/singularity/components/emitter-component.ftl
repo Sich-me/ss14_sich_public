@@ -15,6 +15,6 @@ emitter-component-current-type = Поточний вибраний тип - це
 emitter-component-type-set = Тип встановлений на: {$type}
 
 emitter-destroyed-broadcast = Увімкнений емітер {$location} було знищено.
-emitter-deconstructed-broadcast = Увімкнений {$location} було розібрано.
-emitter-unlocked-broadcast = Увімкнений {$location} було розблоковано.
-emitter-unpowered-broadcast = Увімкнений {$location} втратив живлення.
+emitter-deconstructed-broadcast = Увімкнений емітер {$location} було розібрано.
+emitter-unlocked-broadcast = Увімкнений емітер {$location} було розблоковано.
+emitter-unpowered-broadcast = Увімкнений емітер {$location} втратив живлення.
