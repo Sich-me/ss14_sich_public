@@ -20,10 +20,10 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 2
       required: false
     enum.HumanoidVisualLayers.HeadSide:
-      limit: 1
+      limit: 2
       required: true
       default: [ TajaraEars ]
     enum.HumanoidVisualLayers.LArm:
@@ -164,7 +164,7 @@
       types:
         Heat: 2
   - type: Temperature
-    currentTemperature: 310.15
+    currentTemperature: 313.15
     specificHeat: 46
   - type: TemperatureDamage
     heatDamageThreshold: 400
