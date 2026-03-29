@@ -183,9 +183,8 @@
     attackRate: 1.7
     damage:
       types:
-        Slash: 18
+        Slash: 28
         Cellular: 8
-        Brain: 10
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
