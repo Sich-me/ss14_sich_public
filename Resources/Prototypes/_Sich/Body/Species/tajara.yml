@@ -21,11 +21,11 @@
       required: false
     enum.HumanoidVisualLayers.HeadTop:
       limit: 2
-      required: false
-    enum.HumanoidVisualLayers.HeadSide:
-      limit: 2
       required: true
       default: [ TajaraEars ]
+    enum.HumanoidVisualLayers.HeadSide:
+      limit: 1
+      required: false
     enum.HumanoidVisualLayers.LArm:
       limit: 1
       required: false
