@@ -95,7 +95,11 @@
       "name": "ears_cat_outer",
       "directions": 4
     },
-    {
+	{
+      "name": "ears_cat_outer_1",
+      "directions": 4
+    },
+	{
       "name": "tail_cat",
       "directions": 4
     }

@@ -7,6 +7,14 @@
     state: ears_cat_outer
 
 - type: marking
+  id: TajaraEars2
+  bodyPart: HeadTop
+  groupWhitelist: [Tajara]
+  sprites:
+  - sprite: _Sich/Mobs/Customization/tajara_markings.rsi
+    state: ears_cat_outer_1
+
+- type: marking
   id: TajaraTail
   bodyPart: Tail
   groupWhitelist: [Tajara]
