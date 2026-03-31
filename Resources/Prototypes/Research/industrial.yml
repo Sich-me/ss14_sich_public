@@ -17,6 +17,28 @@
   - ClothingShoesBootsJump
 
 - type: technology
+  id: TestEquipment
+  name: research-technology-space-works
+  icon:
+    sprite: Clothing/Head/Helmets/eva.rsi
+    state: icon
+  discipline: Industrial
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - ClothingOuterHardsuitSpatio
+  - ClothingOuterHardsuitEngineering
+  - ClothingOuterHardsuitAtmos
+  - ClothingHeadHelmetEVA
+  - ClothingOuterHardsuitEVA
+  - ClothingOuterSuitEmergency
+  - ClothingOuterHardsuitEVAPrisoner
+  - ClothingOuterHardsuitSecurity
+  - JetpackMini
+  - JetpackBlue
+  - JetpackSecurity
+
+- type: technology
   id: SpaceScanning
   name: research-technology-space-scanning
   icon:
