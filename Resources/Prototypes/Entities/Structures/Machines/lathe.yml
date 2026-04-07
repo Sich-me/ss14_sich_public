@@ -480,6 +480,7 @@
     - SurgeryStatic
     dynamicPacks:
     - Chemistry
+    - CompactReanimation
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget
