@@ -349,3 +349,67 @@
           Quantity: 15
         - ReagentId: EZNutrient #Ботанік все ж
           Quantity: 5
+
+#Іграшки від Хітароко
+- type: entity
+  parent: BasePlushie
+  id: SichPlushieDragon
+  name: плюшевий дракон
+  description: Лиха гарнюня, що не проти обіймів
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Hitaroko/dragon.rsi
+    state: icon
+
+- type: entity
+  parent: BasePlushie
+  id: SichPlushieZirka
+  name: плюшева Зірка
+  description: Любить Мірку, бзззз!
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Hitaroko/zirka.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Voice/Moth/moth_chitter.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Voice/Moth/moth_scream.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: Edible
+    useSound: /Audio/Voice/Moth/moth_laugh.ogg
+  - type: FoodSequenceElement
+    entries:
+      CottonBurger: MothPlushie
+
+- type: entity
+  parent: BasePlushie
+  id: SichPlushieZegl
+  name: плюшевий Зегл
+  description: На дотик слизька, як розподіл бюджету.
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Hitaroko/zegl.rsi
+    state: icon
+
+- type: entity
+  parent: BasePlushie
+  id: SichPlushieTayar
+  name: плюшевий таяран
+  description: На етикетці написано; 0% котячої шерсті, 0% вошей, 100% милості
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/Plushies/Hitaroko/tayara.rsi
+    state: icon
