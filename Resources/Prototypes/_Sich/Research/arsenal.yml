@@ -20,7 +20,7 @@
   id: AdvancedGrenades
   name: research-technology-advanced-grenades
   icon:
-    sprite: _Sich/Objects/Weapons/Guns/Projectiles/grenades.rsi
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
     state: bola
   discipline: Arsenal
   tier: 1

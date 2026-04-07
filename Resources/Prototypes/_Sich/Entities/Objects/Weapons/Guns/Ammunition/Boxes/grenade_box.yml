@@ -31,7 +31,7 @@
       zeroVisible: false
     - type: Sprite
       layers:
-      - state: base
+      - state: base_flash
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-1
         map: ["enum.GunVisualLayers.Mag"]
@@ -51,7 +51,7 @@
       zeroVisible: false
     - type: Sprite
       layers:
-      - state: base
+      - state: base_teargas
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-1
         map: ["enum.GunVisualLayers.Mag"]
@@ -71,7 +71,7 @@
       zeroVisible: false
     - type: Sprite
       layers:
-      - state: base
+      - state: base_bola
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-1
         map: ["enum.GunVisualLayers.Mag"]
@@ -91,7 +91,7 @@
       zeroVisible: false
     - type: Sprite
       layers:
-      - state: base
+      - state: base_stinger
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-1
         map: ["enum.GunVisualLayers.Mag"]
@@ -111,7 +111,7 @@
       zeroVisible: false
     - type: Sprite
       layers:
-      - state: base
+      - state: base_frag
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-1
         map: ["enum.GunVisualLayers.Mag"]
@@ -131,7 +131,7 @@
       zeroVisible: false
     - type: Sprite
       layers:
-      - state: base
+      - state: base_fire
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-1
         map: ["enum.GunVisualLayers.Mag"]

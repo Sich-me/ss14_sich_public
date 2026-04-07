@@ -11,6 +11,24 @@
             "name": "base"
         },
         {
+            "name": "base_frag"
+        },
+        {
+            "name": "base_stinger"
+        },
+        {
+            "name": "base_bola"
+        },
+        {
+            "name": "base_teargas"
+        },
+        {
+            "name": "base_flash"
+        },
+        {
+            "name": "base_fire"
+        },
+        {
             "name": "mag-1"
         },
         {
