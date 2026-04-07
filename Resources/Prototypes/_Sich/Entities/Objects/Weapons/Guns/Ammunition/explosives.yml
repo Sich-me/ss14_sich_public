@@ -1,0 +1,120 @@
+- type: entity
+  abstract: true
+  parent: [BaseItem, BaseMajorContraband]
+  id: BaseSmallGrenade
+  name: base small grenade
+  components:
+  - type: Tag
+    tags:
+    - SmallGrenade
+  - type: Item
+    size: Small
+  - type: Sprite
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeFlash
+  name: мала світлошумова граната
+  description: мала граната для гранатомета, яка при вибуху рбить ПФІІІІІІІІІІУ! МОЇ ОЧІ, МОЇ ВУХА!! 
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeFlash
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: flash
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: flash
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeSmoke
+  name: мала сльзоточива граната
+  description: мала граната для гранатомета, яка при вибуху розповсюджує сльозоточивий газ 
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeSmoke
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: teargas
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: teargas
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeBola
+  name: боллова граната
+  description: мала граната для гранатомета, яка при попаданні вистрилює боли
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeBola
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: bola
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: bola
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeStinger
+  name: мала стінгер граната
+  description: мала граната для гранатомета, яка вибухає купою зносячих з ніг куль
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeStinger
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: stinger
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: stinger
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeFrag
+  name: мала фрагментована граната
+  description: мала граната для гранатомета, яка вибухає купою куль
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeFrag
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: frag
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeFire
+  name: малий запальний набій
+  description: фактично це набій для дробовика з флаєром, який був послинений та збільшений до розміру гранатомета.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeFire
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: fire
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: fire
+    suffix: false
