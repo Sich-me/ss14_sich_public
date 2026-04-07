@@ -50,7 +50,7 @@
 - type: entity
   parent: BaseSmallGrenade
   id: SmallGrenadeBola
-  name: боллова граната
+  name: мала боллова граната
   description: мала граната для гранатомета, яка при попаданні вистрилює боли
   components:
   - type: CartridgeAmmo
