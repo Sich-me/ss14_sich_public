@@ -33,7 +33,7 @@
   parent: BaseSmallGrenade
   id: SmallGrenadeSmoke
   name: мала сльзоточива граната
-  description: мала граната для гранатомета, яка при вибуху розповсюджує сльозоточивий газ 
+  description: мала граната для гранатомета, яка при вибуху розповсюджує сльозоточивий газ. Гарна для розгону натовпу, якщо в них немає маско звіснож.
   components:
   - type: CartridgeAmmo
     proto: BulletSmallGrenadeSmoke
@@ -51,7 +51,7 @@
   parent: BaseSmallGrenade
   id: SmallGrenadeBola
   name: мала боллова граната
-  description: мала граната для гранатомета, яка при попаданні вистрилює боли
+  description: мала граната для гранатомета, яка при попаданні вистрилює боли. Гарна для массового затримання бунтарів, тільки не забудьте що вони можуть зняти боли.
   components:
   - type: CartridgeAmmo
     proto: BulletSmallGrenadeBola
@@ -69,7 +69,7 @@
   parent: BaseSmallGrenade
   id: SmallGrenadeStinger
   name: мала стінгер граната
-  description: мала граната для гранатомета, яка вибухає купою зносячих з ніг куль
+  description: мала граната для гранатомета, яка вибухає купою зносячих з ніг куль. Непогана опція для розгоняння бунтів, та массових затримок, та гарно комбінується з гранатою з болами.
   components:
   - type: CartridgeAmmo
     proto: BulletSmallGrenadeStinger
@@ -87,7 +87,7 @@
   parent: BaseSmallGrenade
   id: SmallGrenadeFrag
   name: мала уламкова граната
-  description: мала граната для гранатомета, яка вибухає купою куль
+  description: мала граната для гранатомета, яка вибухає купою куль. Є непоганою бойовою опцією для гранатомета.
   components:
   - type: CartridgeAmmo
     proto: BulletSmallGrenadeFrag
@@ -105,7 +105,7 @@
   parent: BaseSmallGrenade
   id: SmallGrenadeFire
   name: малий запальний набій
-  description: фактично це набій для дробовика з флаєром, який був послинений та збільшений до розміру гранатомета.
+  description: фактично це набій для дробовика з флаєром, який був послинений та збільшений до розміру гранатомета. Дуже гарно підходить для спалення зомбі.
   components:
   - type: CartridgeAmmo
     proto: BulletSmallGrenadeFire
