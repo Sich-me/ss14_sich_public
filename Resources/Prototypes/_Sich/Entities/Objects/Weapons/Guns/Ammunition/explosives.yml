@@ -86,7 +86,7 @@
 - type: entity
   parent: BaseSmallGrenade
   id: SmallGrenadeFrag
-  name: мала фрагментована граната
+  name: мала уламкова граната
   description: мала граната для гранатомета, яка вибухає купою куль
   components:
   - type: CartridgeAmmo

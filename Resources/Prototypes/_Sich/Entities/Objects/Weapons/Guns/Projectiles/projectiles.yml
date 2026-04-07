@@ -86,7 +86,7 @@
 
 - type: entity
   id: BulletSmallGrenadeFrag
-  name: фрагментарна граната
+  name: уламкова граната
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
