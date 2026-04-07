@@ -1,0 +1,4 @@
+- type: currency
+  id: PoltergeistEssence
+  displayName: store-currency-display-stolen-essence
+  canWithdraw: false

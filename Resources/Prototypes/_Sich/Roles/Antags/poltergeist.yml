@@ -1,0 +1,5 @@
+- type: antag
+  id: Poltergeist
+  name: roles-antag-poltergeist-name
+  antagonist: true
+  objective: roles-antag-poltergeist-objective
