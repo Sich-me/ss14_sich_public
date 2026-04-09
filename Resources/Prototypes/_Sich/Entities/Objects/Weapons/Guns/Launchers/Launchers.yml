@@ -2,7 +2,7 @@
   name: Гранатомет Гріндар
   parent: [BaseWeaponLauncher, BaseSecurityContraband]
   id: WeaponLauncherGrindar
-  description: Гранатомет який може помістити собі дві гранати, та має простий приціл. Розробленний для придушення бунтів, але може бути використаний, і для бою, з відповідними гранатами.
+  description: Гранатомет який може помістити собі дві гранати, та має простий приціл. Розроблений для придушення бунтів, але може бути використаний, і для бою, з відповідними гранатами.
   components:
   - type: Sprite
     sprite: _Sich/Objects/Weapons/Guns/Launchers/grindar.rsi

@@ -20,8 +20,8 @@
 - type: entity
   parent: AmmoProviderSmallGrenades
   id: BoxGrenadesFlash
-  name: коробка світлошумових гранат
-  description: кортонна коробка світлошумових гранат для гранатомета
+  name: коробка світло-шумових гранат
+  description: Картонна коробка світло-шумових гранат для гранатомета.
   components:
     - type: BallisticAmmoProvider
       proto: SmallGrenadeFlash
@@ -40,8 +40,8 @@
 - type: entity
   parent: AmmoProviderSmallGrenades
   id: BoxGrenadesSmoke
-  name: коробка сльозоточивих гранат
-  description: кортонна коробка сльозоточивих гранат для гранатомета
+  name: коробка сльозогінних гранат
+  description: Картонна коробка сльозогінних гранат для гранатомета.
   components:
     - type: BallisticAmmoProvider
       proto: SmallGrenadeSmoke
@@ -61,7 +61,7 @@
   parent: AmmoProviderSmallGrenades
   id: BoxGrenadesBola
   name: коробка боллових гранат
-  description: кортонна коробка боллових гранат для гранатомета
+  description: Картонна коробка боллових гранат для гранатомета.
   components:
     - type: BallisticAmmoProvider
       proto: SmallGrenadeBola
@@ -81,7 +81,7 @@
   parent: AmmoProviderSmallGrenades
   id: BoxGrenadesStinger
   name: коробка стінгерних гранат
-  description: кортонна коробка стінгерних гранат для гранатомета
+  description: Картонна коробка стінгерних гранат для гранатомета.
   components:
     - type: BallisticAmmoProvider
       proto: SmallGrenadeStinger
@@ -101,7 +101,7 @@
   parent: AmmoProviderSmallGrenades
   id: BoxGrenadesFrag
   name: коробка уламкових гранат
-  description: кортонна коробка уламкових гранат для гранатомета
+  description: Картонна коробка уламкових гранат для гранатомета.
   components:
     - type: BallisticAmmoProvider
       proto: SmallGrenadeFrag
@@ -121,7 +121,7 @@
   parent: AmmoProviderSmallGrenades
   id: BoxGrenadesFire
   name: коробка запальних гранат
-  description: кортонна коробка запальних гранат для гранатомета
+  description: Картонна коробка запальних гранат для гранатомета.
   components:
     - type: BallisticAmmoProvider
       proto: SmallGrenadeFire

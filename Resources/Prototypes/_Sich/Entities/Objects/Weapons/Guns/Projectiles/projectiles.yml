@@ -2,7 +2,7 @@
 
 - type: entity
   id: BulletSmallGrenadeFlash
-  name: світлошумова граната
+  name: світло-шумова граната
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
@@ -18,7 +18,7 @@
 
 - type: entity
   id: BulletSmallGrenadeSmoke
-  name: димова граната
+  name: сльозогінна граната
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
